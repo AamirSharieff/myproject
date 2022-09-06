@@ -7,7 +7,7 @@ LeftNavigation As CanvasComponent:
     Y: =0
     ZIndex: =1
 
-    Icon1 As icon.Hamburger:
+    IcoHamburger As icon.Hamburger:
         Height: =70
         Icon: =Icon.Hamburger
         OnSelect: =Set(varOpenMenu,!varOpenMenu)
@@ -17,4 +17,13 @@ LeftNavigation As CanvasComponent:
         PaddingTop: =15
         Width: =70
         ZIndex: =1
+
+    galNAvigation As gallery.galleryVertical:
+        Height: =Parent.Height-IcoHamburger.Height
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Width: =Parent.Width
+        Y: =IcoHamburger.Y+IcoHamburger.Height
+        ZIndex: =2
 
