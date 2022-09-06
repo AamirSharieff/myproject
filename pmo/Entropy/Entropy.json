@@ -1,6 +1,7 @@
 {
   "ComponentIndexes": {
-    "LeftNavigation": 3
+    "LeftNavigation": 3,
+    "LeftNavigation_1": 3
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -16,10 +17,12 @@
     "galleryTemplate1": 13,
     "HeaderContainer2": 7,
     "HomeScreen": 5,
+    "Icon1": 34,
     "Image1": 9,
     "Label3": 8,
     "Label4": 10,
     "LeftNavigation": 32,
+    "LeftNavigation_1": 33,
     "MainSectionContainer2": 15,
     "PMO Application_Column1": 26,
     "po number_Column1": 25,
@@ -38,7 +41,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/06/2022 08:39:19",
+  "HeaderLastSavedDateTimeUTC": "09/06/2022 08:45:56",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -69,6 +72,7 @@
     "button": 0,
     "gallery": 4,
     "groupContainer": 1,
+    "icon": 5,
     "image": 3,
     "label": 2
   },
@@ -85,10 +89,12 @@
     "galleryTemplate1": 8,
     "HeaderContainer2": 2,
     "HomeScreen": 0,
+    "Icon1": 27,
     "Image1": 4,
     "Label3": 3,
     "Label4": 5,
     "LeftNavigation": 0,
+    "LeftNavigation_1": 26,
     "MainSectionContainer2": 10,
     "PMO Application_Column1": 21,
     "po number_Column1": 20,
@@ -114,6 +120,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 0.1778162,
     "ControlCount": {
+      "7f61c45fa99549e189501ffcaf137fc1": 1,
       "button": 2,
       "dataTable": 1,
       "dataTableColumn": 14,

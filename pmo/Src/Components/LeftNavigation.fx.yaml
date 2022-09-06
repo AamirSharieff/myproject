@@ -1,8 +1,20 @@
 LeftNavigation As CanvasComponent:
     Fill: =RGBA(230, 230, 230, 1)
     Height: =Max(App.Height, App.MinScreenWidth)
+    MenuWidth: =If(varOpenMenu,Max(App.Width, App.MinScreenWidth)/5,70)
     Width: =Max(App.Width, App.MinScreenWidth)/5
     X: =0
     Y: =0
     ZIndex: =1
+
+    Icon1 As icon.Hamburger:
+        Height: =70
+        Icon: =Icon.Hamburger
+        OnSelect: =Set(varOpenMenu,!varOpenMenu)
+        PaddingBottom: =15
+        PaddingLeft: =15
+        PaddingRight: =15
+        PaddingTop: =15
+        Width: =70
+        ZIndex: =1
 
