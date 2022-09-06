@@ -1,7 +1,7 @@
 LeftNavigation As CanvasComponent:
     Fill: =RGBA(230, 230, 230, 1)
     Height: =Max(App.Height, App.MinScreenWidth)
-    MenuWidth: =If(varOpenMenu,Max(App.Width, App.MinScreenWidth)/5,70)
+    MenuWidth: =If(varOpenMenu,Max(App.Width, App.MinScreenWidth)/5+40,70)
     Width: =LeftNavigation.MenuWidth
     X: =0
     Y: =0
@@ -23,21 +23,33 @@ LeftNavigation As CanvasComponent:
         Items: =CustomGallerySample
         Layout: =Layout.Vertical
         TemplateSize: =80
-        Width: =60
+        Width: =70
         Y: =IcoHamburger.Y+IcoHamburger.Height
         ZIndex: =2
 
         rectSelected As rectangle:
-            Height: =40
+            Height: =80
             OnSelect: =Select(Parent)
             Width: =7
-            Y: =10
             ZIndex: =1
 
-        Icon2 As icon.Add:
-            Height: =69
+        IcoNav As icon.Add:
+            Height: =Parent.TemplateHeight
             Icon: =Icon.Add
             OnSelect: =Select(Parent)
-            Width: =60
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =50
             ZIndex: =2
+
+        lblTitle As label:
+            FontWeight: =FontWeight.Bold
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            PaddingLeft: =70
+            Text: =ThisItem.SampleHeading
+            Width: =Parent.Width
+            ZIndex: =3
 
