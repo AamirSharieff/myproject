@@ -22,8 +22,22 @@ LeftNavigation As CanvasComponent:
         Height: =Parent.Height-IcoHamburger.Height
         Items: =CustomGallerySample
         Layout: =Layout.Vertical
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-        Width: =Parent.Width
+        TemplateSize: =80
+        Width: =60
         Y: =IcoHamburger.Y+IcoHamburger.Height
         ZIndex: =2
+
+        rectSelected As rectangle:
+            Height: =40
+            OnSelect: =Select(Parent)
+            Width: =7
+            Y: =10
+            ZIndex: =1
+
+        Icon2 As icon.Add:
+            Height: =69
+            Icon: =Icon.Add
+            OnSelect: =Select(Parent)
+            Width: =60
+            ZIndex: =2
 
