@@ -1,5 +1,7 @@
 {
-  "ComponentIndexes": {},
+  "ComponentIndexes": {
+    "LeftNavigation": 3
+  },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "account manager_Column1": 30,
@@ -17,6 +19,7 @@
     "Image1": 9,
     "Label3": 8,
     "Label4": 10,
+    "LeftNavigation": 32,
     "MainSectionContainer2": 15,
     "PMO Application_Column1": 26,
     "po number_Column1": 25,
@@ -24,6 +27,7 @@
     "project manager_Column1": 24,
     "project name_Column1": 23,
     "project type_Column1": 22,
+    "Screen1": 31,
     "ScreenContainer2": 6,
     "start date_Column1": 21,
     "StartScreen": 3,
@@ -34,7 +38,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/06/2022 05:20:47",
+  "HeaderLastSavedDateTimeUTC": "09/06/2022 08:39:19",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -42,10 +46,14 @@
     "IMG_20220205_144912__01": "0cd334a8-b9ae-49f3-be4a-ff2ab98c2741.jpg"
   },
   "LocalResourceRootPaths": {
-    "IMG_20220205_144912__01": "https://docserverpwaprodsin.blob.core.windows.net/bfc838b7-1a07-467c-97a4-abbd42e8e07e-1/resource/Assets0Images00cd334a8-b9ae-49f3-be4a-ff2ab98c2741.jpg?sv=2017-04-17&sr=b&sig=O0FGtVPYYhsJ6pAyDtFOTGy9LhvHQGPgAQnbZpHvKn0%3D&spr=https&se=2022-09-07T05%3A35%3A23Z&sp=r"
+    "IMG_20220205_144912__01": "https://docserverpwaprodcin.blob.core.windows.net/92fae445-71b5-4625-a715-2113b5a1e407-1/resource/Assets0Images00cd334a8-b9ae-49f3-be4a-ff2ab98c2741.jpg?sv=2017-04-17&sr=b&sig=kGm8B25pSDwJek2RZCZzqKj9isMvG0YhYA3DmJzOpfM%3D&spr=https&se=2022-09-07T08%3A02%3A25Z&sp=r"
   },
-  "OrderComponentMetadata": {},
-  "OrderComponentTemplate": {},
+  "OrderComponentMetadata": {
+    "7f61c45fa99549e189501ffcaf137fc1": 0
+  },
+  "OrderComponentTemplate": {
+    "7f61c45fa99549e189501ffcaf137fc1": 0
+  },
   "OrderDataSource": {
     "CustomGallerySample": 4,
     "project masters": 5,
@@ -80,6 +88,7 @@
     "Image1": 4,
     "Label3": 3,
     "Label4": 5,
+    "LeftNavigation": 0,
     "MainSectionContainer2": 10,
     "PMO Application_Column1": 21,
     "po number_Column1": 20,
@@ -87,6 +96,7 @@
     "project manager_Column1": 19,
     "project name_Column1": 18,
     "project type_Column1": 17,
+    "Screen1": 0,
     "ScreenContainer2": 1,
     "start date_Column1": 16,
     "StartScreen": 0,
@@ -102,7 +112,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1854091,
+    "AnalysisLoadTime": 0.1778162,
     "ControlCount": {
       "button": 2,
       "dataTable": 1,
@@ -114,7 +124,7 @@
       "label": 2,
       "screen": 2
     },
-    "DeserializationLoadTime": 3.0350217,
+    "DeserializationLoadTime": 1.9747506,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": false

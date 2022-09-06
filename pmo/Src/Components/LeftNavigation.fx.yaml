@@ -1,0 +1,8 @@
+LeftNavigation As CanvasComponent:
+    Fill: =RGBA(230, 230, 230, 1)
+    Height: =Max(App.Height, App.MinScreenWidth)
+    Width: =Max(App.Width, App.MinScreenWidth)/5
+    X: =0
+    Y: =0
+    ZIndex: =1
+

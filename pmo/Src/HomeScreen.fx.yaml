@@ -55,13 +55,12 @@
             ZIndex: =2
 
             "Gallery1 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
-                Height: =71
+                Height: =80
                 Items: |-
                     =Table({ID:1,Label:"Home"},{ID:1,Label:"Project Details"},{ID:1,Label:"Account Details"},{ID:1,Label:"Timeline"})
                 TemplatePadding: =0
                 TemplateSize: =322
                 Width: =1366
-                Y: =9
                 ZIndex: =1
 
                 Button2 As button:
