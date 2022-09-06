@@ -324,7 +324,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637980507428487207",
+    "LastModifiedTimestamp": "637980508532201456",
     "Name": "LeftNavigation",
     "Rules": [
       {
@@ -353,7 +353,7 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "Max(App.Width, App.MinScreenWidth)/5",
+        "InvariantScript": "LeftNavigation.MenuWidth",
         "Property": "Width",
         "RuleProviderType": "System"
       },
@@ -399,7 +399,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637980507428487207",
+  "LastModifiedTimestamp": "637980508532201456",
   "Name": "7f61c45fa99549e189501ffcaf137fc1",
   "OverridableProperties": {},
   "Version": "637980502125814947"
