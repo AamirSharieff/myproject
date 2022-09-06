@@ -1,5 +1,5 @@
 Screen1 As screen:
 
     LeftNavigation_1 As LeftNavigation:
-        Width: =69
+        Width: =LeftNavigation_1.MenuWidth
 
