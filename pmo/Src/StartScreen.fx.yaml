@@ -1,5 +1,5 @@
 StartScreen As screen:
-    BackgroundImage: =IMG_20220205_144912__01
+    BackgroundImage: =
 
     Button1 As button:
         OnSelect: =Navigate(HomeScreen, ScreenTransition.Fade)
