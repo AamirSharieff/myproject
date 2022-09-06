@@ -1,0 +1,9 @@
+StartScreen As screen:
+
+    Button1 As button:
+        OnSelect: =Navigate(HomeScreen, ScreenTransition.Fade)
+        Text: ="Start"
+        X: =585
+        Y: =441
+        ZIndex: =1
+
