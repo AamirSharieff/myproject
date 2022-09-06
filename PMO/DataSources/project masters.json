@@ -1,0 +1,139 @@
+[
+  {
+    "DisplayName": "project masters (Views)",
+    "Name": "_cre9a_pmoapplication_views",
+    "RelatedEntityName": "project masters",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "26b759c4-ecff-4b06-94d3-155a83243828": "PMO Application Advanced Find View",
+      "2d35fed0-e4a8-42a2-ac1d-cacfd73bae63": "Active PMO Applications",
+      "7a28c23b-3fd5-446c-97e5-3ca85b379808": "PMO Application Associated View",
+      "834cafbd-e0c4-4650-b2cb-2ad5798f053d": "Inactive PMO Applications",
+      "87b39973-6ff1-481f-97e8-d17abf083957": "PMO Application Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (project masters)",
+    "Name": "cre9a_pmoapplication_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "project masters"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "project masters",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (project masters)",
+    "Name": "cre9a_pmoapplication_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "project masters"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "project masters",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "PMO Project type",
+    "Name": "cre9a_pmoprojecttype",
+    "OptionSetInfoNameMapping": {
+      "235190000": "fixed project",
+      "235190001": "time and material"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cre9a_projecttype",
+        "OptionSetReferenceEntityName": "project masters"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cre9a_projecttype",
+    "RelatedEntityName": "project masters",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cre9a_pmoapplications",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cre9a_pmoapplication",
+    "MaxGetRowsCount": 500,
+    "Name": "project masters",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cre9a_accountmanager": "account manager",
+      "cre9a_accountmanagers": "account managers",
+      "cre9a_amount": "amount",
+      "cre9a_amountachieved": "amount achieved ",
+      "cre9a_amountplanned": "amount planned ",
+      "cre9a_billingcycle": "billing cycle",
+      "cre9a_date": "date",
+      "cre9a_designation": "designation",
+      "cre9a_enddate": "end date",
+      "cre9a_pmoapplication_AsyncOperations": "System Jobs",
+      "cre9a_pmoapplication_BulkDeleteFailures": "Bulk Delete Failures",
+      "cre9a_pmoapplication_DuplicateBaseRecord": "Duplicate Records (cre9a_pmoapplication_DuplicateBaseRecord)",
+      "cre9a_pmoapplication_DuplicateMatchingRecord": "Duplicate Records (cre9a_pmoapplication_DuplicateMatchingRecord)",
+      "cre9a_pmoapplication_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cre9a_pmoapplication_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cre9a_pmoapplication_ProcessSession": "Process Sessions",
+      "cre9a_pmoapplication_SyncErrors": "Sync Errors",
+      "cre9a_pmoapplicationid": "PMO Application",
+      "cre9a_ponumber": "po number",
+      "cre9a_projectid": "project id",
+      "cre9a_projectmanager": "project manager (cre9a_projectmanager)",
+      "cre9a_projectmanger": "project manager (cre9a_projectmanger)",
+      "cre9a_projectname": "project name",
+      "cre9a_projecttype": "project type",
+      "cre9a_resource": "resource",
+      "cre9a_resources": "resources",
+      "cre9a_startdate": "start date",
+      "cre9a_status": "status",
+      "cre9a_teamlead": "team lead",
+      "cre9a_teamleader": "team leader",
+      "cre9a_teamsize": "team size",
+      "cre9a_teamsizes": "Team sizes",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "project masters",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]
