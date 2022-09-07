@@ -1,1 +1,19 @@
-{}
+{
+  "84820fbb-3827-4b05-a1f7-5c330d9fcf5d": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1596/1.0.1596.2995/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "84820fbb-3827-4b05-a1f7-5c330d9fcf5d"
+  }
+}
