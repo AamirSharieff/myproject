@@ -68,6 +68,6 @@ LeftNavigation As CanvasComponent:
                 OnSelect: =Select(Parent)
                 PaddingLeft: =80
                 Text: ="Menu 1"
-                Width: =Parent.Width
+                Width: =60
                 ZIndex: =1
 
