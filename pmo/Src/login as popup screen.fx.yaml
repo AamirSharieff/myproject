@@ -1,63 +1,63 @@
 "'login as popup screen' As screen":
 
-    Rectangle1 As rectangle:
-        Fill: =RGBA(5, 14, 66, 1)
-        Height: =454
-        Width: =802
-        X: =300
-        Y: =170
-        ZIndex: =1
-
-    Label15 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =60
-        Size: =16
-        Text: ="please enter your name"
-        Width: =343
-        X: =517
-        Y: =293
-        ZIndex: =3
-
     TextInput1 As text:
-        Default: ="Text input"
-        X: =541
-        Y: =377
+        Align: =Align.Center
+        Default: ="Enter your name"
+        X: =865
+        Y: =257
         ZIndex: =4
 
     Button3 As button:
-        Height: =34
-        Text: ="Login as CEO"
-        X: =492
-        Y: =478
+        Height: =50
+        Text: ="CEO"
+        Width: =241
+        X: =738
+        Y: =354
         ZIndex: =5
 
     Image5 As image:
-        Height: =67
+        Height: =221
         Image: =download_1
         ImagePosition: =ImagePosition.Stretch
-        Width: =87
-        X: =344
-        Y: =198
+        Width: =316
+        X: =1014
         ZIndex: =6
 
     Button15 As button:
-        Text: ="Login as project manager"
-        Width: =299
-        X: =715
-        Y: =472
+        Height: =50
+        Text: =" Project manager"
+        Width: =246
+        X: =1049
+        Y: =354
         ZIndex: =7
 
     Label26 As label:
         Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(0, 18, 107, 1)
+        Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Semibold
-        Height: =54
-        Size: =20
+        Height: =70
+        Size: =24
         Text: ="PMO APPLICATION"
-        Width: =268
-        X: =579
-        Y: =211
+        Width: =371
+        X: =147
+        Y: =109
         ZIndex: =8
+
+    Image4 As image:
+        Height: =768
+        Image: ='data-management-software'
+        ImagePosition: =ImagePosition.Center
+        Width: =666
+        ZIndex: =9
+
+    Label7 As label:
+        Color: =RGBA(0, 18, 107, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Size: =22
+        Text: ="Login"
+        X: =979
+        Y: =179
+        ZIndex: =10
 
