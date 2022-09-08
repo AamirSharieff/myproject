@@ -2,17 +2,11 @@
 
     Rectangle1 As rectangle:
         Fill: =RGBA(5, 14, 66, 1)
-        Height: =574
+        Height: =454
         Width: =802
         X: =300
-        Y: =50
+        Y: =170
         ZIndex: =1
-
-    Image4 As image:
-        Image: ='1609392125837'
-        X: =651
-        Y: =70
-        ZIndex: =2
 
     Label15 As label:
         Align: =Align.Center
@@ -37,4 +31,9 @@
         X: =621
         Y: =413
         ZIndex: =5
+
+    Image5 As image:
+        X: =40
+        Y: =40
+        ZIndex: =6
 

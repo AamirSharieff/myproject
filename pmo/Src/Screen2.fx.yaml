@@ -42,7 +42,8 @@ Screen2 As screen:
         Size: =26
         Text: ="PMO APPLICATION"
         Width: =325
-        X: =546
+        X: =529
+        Y: =39
         ZIndex: =7
 
     Label9 As label:
