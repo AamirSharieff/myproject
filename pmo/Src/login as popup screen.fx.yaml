@@ -34,11 +34,12 @@
         ZIndex: =5
 
     Image5 As image:
+        Height: =67
         Image: =download_1
         ImagePosition: =ImagePosition.Stretch
-        Width: =221
-        X: =590
-        Y: =193
+        Width: =87
+        X: =344
+        Y: =198
         ZIndex: =6
 
     Button15 As button:
@@ -47,4 +48,16 @@
         X: =715
         Y: =472
         ZIndex: =7
+
+    Label26 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =54
+        Size: =20
+        Text: ="PMO APPLICATION"
+        Width: =268
+        X: =579
+        Y: =211
+        ZIndex: =8
 
