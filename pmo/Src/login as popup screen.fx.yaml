@@ -36,7 +36,7 @@
     Label26 As label:
         Align: =Align.Center
         Color: =RGBA(0, 18, 107, 1)
-        Font: =Font.'Lato Black'
+        Font: =Font.Verdana
         FontWeight: =FontWeight.Semibold
         Height: =70
         Size: =24
