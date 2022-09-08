@@ -99,7 +99,7 @@
         "Name": "IcoHamburger",
         "Parent": "LeftNavigation",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 40,
+        "PublishOrderIndex": 45,
         "Rules": [
           {
             "Category": "Design",
@@ -308,7 +308,7 @@
             "Name": "galleryTemplate3",
             "Parent": "galNAvigation",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 42,
+            "PublishOrderIndex": 47,
             "Rules": [
               {
                 "Category": "Design",
@@ -381,7 +381,7 @@
             "Name": "rectSelected",
             "Parent": "galNAvigation",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 43,
+            "PublishOrderIndex": 48,
             "Rules": [
               {
                 "Category": "Design",
@@ -584,7 +584,7 @@
             "Name": "IcoNav",
             "Parent": "galNAvigation",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 44,
+            "PublishOrderIndex": 49,
             "Rules": [
               {
                 "Category": "Design",
@@ -871,7 +871,7 @@
             "Name": "lblTitle",
             "Parent": "galNAvigation",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 45,
+            "PublishOrderIndex": 50,
             "Rules": [
               {
                 "Category": "Data",
@@ -1152,7 +1152,7 @@
                 "Name": "galleryTemplate4",
                 "Parent": "Gallery3",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 47,
+                "PublishOrderIndex": 52,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1256,7 +1256,7 @@
                 "Name": "Label2",
                 "Parent": "Gallery3",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 48,
+                "PublishOrderIndex": 53,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1577,7 +1577,7 @@
             "Name": "Gallery3",
             "Parent": "galNAvigation",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 46,
+            "PublishOrderIndex": 51,
             "Rules": [
               {
                 "Category": "Data",
@@ -1814,7 +1814,7 @@
         "Name": "galNAvigation",
         "Parent": "LeftNavigation",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 41,
+        "PublishOrderIndex": 46,
         "Rules": [
           {
             "Category": "Data",

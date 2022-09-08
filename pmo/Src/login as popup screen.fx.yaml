@@ -1,0 +1,40 @@
+"'login as popup screen' As screen":
+
+    Rectangle1 As rectangle:
+        Fill: =RGBA(5, 14, 66, 1)
+        Height: =574
+        Width: =802
+        X: =300
+        Y: =50
+        ZIndex: =1
+
+    Image4 As image:
+        Image: ='1609392125837'
+        X: =651
+        Y: =70
+        ZIndex: =2
+
+    Label15 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =60
+        Size: =16
+        Text: ="please enter your name"
+        Width: =343
+        X: =518
+        Y: =213
+        ZIndex: =3
+
+    TextInput1 As text:
+        Default: ="Text input"
+        X: =541
+        Y: =317
+        ZIndex: =4
+
+    Button3 As button:
+        Text: ="Login"
+        X: =621
+        Y: =413
+        ZIndex: =5
+
