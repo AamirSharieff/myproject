@@ -1,0 +1,99 @@
+"'tab1 new popup' As screen":
+
+    Rectangle2 As rectangle:
+        Fill: =RGBA(0, 13, 75, 1)
+        Height: =473
+        Width: =1022
+        X: =168
+        Y: =66
+        ZIndex: =1
+
+    Label17 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =83
+        Size: =16
+        Text: ="Please fill the details"
+        Width: =513
+        X: =422
+        Y: =90
+        ZIndex: =2
+
+    Label18 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="Project id"
+        X: =225
+        Y: =184
+        ZIndex: =3
+
+    Label19 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Text: ="Project name"
+        X: =225
+        Y: =230
+        ZIndex: =4
+
+    TextInput2 As text:
+        Default: ="Text input"
+        X: =386
+        Y: =184
+        ZIndex: =5
+
+    TextInput3 As text:
+        Default: ="Text input"
+        X: =386
+        Y: =236
+        ZIndex: =6
+
+    TextInput4 As text:
+        Default: ="Text input"
+        X: =386
+        Y: =296
+        ZIndex: =7
+
+    Label20 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="PO number"
+        X: =225
+        Y: =296
+        ZIndex: =8
+
+    Label21 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="Start date"
+        X: =225
+        Y: =356
+        ZIndex: =9
+
+    TextInput5 As text:
+        Default: ="Text input"
+        X: =386
+        Y: =356
+        ZIndex: =10
+
+    Label21_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="End date"
+        X: =225
+        Y: =416
+        ZIndex: =11
+
+    TextInput5_1 As text:
+        Default: ="Text input"
+        X: =386
+        Y: =416
+        ZIndex: =12
+
+    Button7 As button:
+        Text: ="Submit"
+        X: =375
+        Y: =480
+        ZIndex: =13
+
+    Button8 As button:
+        Text: ="Reset"
+        X: =570
+        Y: =480
+        ZIndex: =14
+
