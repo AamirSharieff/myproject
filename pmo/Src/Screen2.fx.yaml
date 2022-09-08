@@ -46,13 +46,6 @@ Screen2 As screen:
         Y: =39
         ZIndex: =7
 
-    Label9 As label:
-        FontWeight: =FontWeight.Semibold
-        Text: ="Login as"
-        X: =146
-        Y: =405
-        ZIndex: =8
-
     Label10 As label:
         Text: ="Tab1"
         X: =209
@@ -70,18 +63,6 @@ Screen2 As screen:
         X: =209
         Y: =273
         ZIndex: =13
-
-    Label13 As label:
-        Text: ="CEO"
-        X: =227
-        Y: =437
-        ZIndex: =14
-
-    Label14 As label:
-        Text: ="Project manager"
-        X: =227
-        Y: =493
-        ZIndex: =15
 
     Image3 As image:
         Height: =385

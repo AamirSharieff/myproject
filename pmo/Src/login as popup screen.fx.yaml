@@ -16,24 +16,35 @@
         Size: =16
         Text: ="please enter your name"
         Width: =343
-        X: =518
-        Y: =213
+        X: =517
+        Y: =293
         ZIndex: =3
 
     TextInput1 As text:
         Default: ="Text input"
         X: =541
-        Y: =317
+        Y: =377
         ZIndex: =4
 
     Button3 As button:
-        Text: ="Login"
-        X: =621
-        Y: =413
+        Height: =34
+        Text: ="Login as CEO"
+        X: =492
+        Y: =478
         ZIndex: =5
 
     Image5 As image:
-        X: =40
-        Y: =40
+        Image: =download_1
+        ImagePosition: =ImagePosition.Stretch
+        Width: =221
+        X: =590
+        Y: =193
         ZIndex: =6
+
+    Button15 As button:
+        Text: ="Login as project manager"
+        Width: =299
+        X: =715
+        Y: =472
+        ZIndex: =7
 
