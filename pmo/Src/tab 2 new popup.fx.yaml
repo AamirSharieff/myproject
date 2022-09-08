@@ -20,8 +20,8 @@
 
     Label23 As label:
         Color: =RGBA(255, 255, 255, 1)
-        Text: ="Text"
-        X: =284
+        Text: ="Project manager"
+        X: =242
         Y: =140
         ZIndex: =3
 
@@ -33,22 +33,23 @@
 
     Label23_1 As label:
         Color: =RGBA(255, 255, 255, 1)
-        Text: ="Text"
-        X: =284
-        Y: =213
+        Text: ="Account Manager"
+        Width: =187
+        X: =242
+        Y: =209
         ZIndex: =5
 
     Label23_2 As label:
         Color: =RGBA(255, 255, 255, 1)
-        Text: ="Text"
-        X: =284
+        Text: ="Team lead"
+        X: =242
         Y: =279
         ZIndex: =6
 
     Label23_3 As label:
         Color: =RGBA(255, 255, 255, 1)
-        Text: ="Text"
-        X: =284
+        Text: ="Team Size"
+        X: =242
         Y: =346
         ZIndex: =7
 
