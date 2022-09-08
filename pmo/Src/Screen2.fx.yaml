@@ -7,37 +7,32 @@ Screen2 As screen:
         ZIndex: =1
 
     Label1 As label:
-        Text: ="Text"
-        X: =40
-        Y: =141
+        FontWeight: =FontWeight.Semibold
+        Text: ="Home"
+        X: =146
+        Y: =123
         ZIndex: =2
 
     Label5 As label:
-        Text: ="Text"
-        X: =40
-        Y: =260
+        FontWeight: =FontWeight.Semibold
+        Text: ="Projects"
+        X: =146
+        Y: =162
         ZIndex: =3
 
     Label6 As label:
-        Text: ="Text"
-        X: =40
-        Y: =383
-        ZIndex: =4
-
-    Label7 As label:
-        Align: =Align.Center
         FontWeight: =FontWeight.Semibold
-        Size: =24
-        Text: ="Login"
-        X: =552
-        Y: =301
-        ZIndex: =5
+        Height: =41
+        Text: ="Timeline"
+        X: =146
+        Y: =336
+        ZIndex: =4
 
     Image2 As image:
         Height: =193
         Image: =download
         Width: =184
-        X: =587
+        X: =1007
         ZIndex: =6
 
     Label8 As label:
@@ -47,26 +42,51 @@ Screen2 As screen:
         Size: =26
         Text: ="PMO APPLICATION"
         Width: =325
-        X: =508
-        Y: =104
+        X: =546
         ZIndex: =7
 
     Label9 As label:
-        Text: ="Text"
-        X: =60
-        Y: =616
+        FontWeight: =FontWeight.Semibold
+        Text: ="Login as"
+        X: =146
+        Y: =405
         ZIndex: =8
 
-    Dropdown1 As dropdown:
-        Items: =DropDownSample
-        X: =424
-        Y: =538
-        ZIndex: =9
+    Label10 As label:
+        Text: ="Tab1"
+        X: =209
+        Y: =193
+        ZIndex: =11
 
-    ComboBox1 As combobox:
-        Items: =ComboBoxSample
-        SearchItems: =Search(ComboBoxSample,ComboBox1.SearchText,"Value1")
-        X: =481
-        Y: =411
-        ZIndex: =10
+    Label11 As label:
+        Text: ="Tab 2"
+        X: =209
+        Y: =233
+        ZIndex: =12
+
+    Label12 As label:
+        Text: ="Tab 3"
+        X: =209
+        Y: =273
+        ZIndex: =13
+
+    Label13 As label:
+        Text: ="CEO"
+        X: =227
+        Y: =437
+        ZIndex: =14
+
+    Label14 As label:
+        Text: ="Project manager"
+        X: =227
+        Y: =493
+        ZIndex: =15
+
+    Image3 As image:
+        Height: =385
+        Image: ='data-management-software'
+        Width: =646
+        X: =399
+        Y: =115
+        ZIndex: =16
 
