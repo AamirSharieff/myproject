@@ -2,33 +2,35 @@
 
     TextInput1 As text:
         Align: =Align.Center
-        Default: ="Enter your name"
-        X: =865
-        Y: =257
+        Default: =""
+        HintText: ="Enter your name"
+        X: =851
+        Y: =244
         ZIndex: =4
 
     Button3 As button:
-        Height: =50
+        Height: =23
         Text: ="CEO"
-        Width: =241
-        X: =738
-        Y: =354
+        Width: =185
+        X: =915
+        Y: =350
         ZIndex: =5
 
     Image5 As image:
-        Height: =221
+        Height: =179
         Image: =download_1
         ImagePosition: =ImagePosition.Stretch
-        Width: =316
-        X: =1014
+        Width: =216
+        X: =1108
+        Y: =544
         ZIndex: =6
 
     Button15 As button:
-        Height: =50
+        Height: =23
         Text: =" Project manager"
-        Width: =246
-        X: =1049
-        Y: =354
+        Width: =193
+        X: =915
+        Y: =447
         ZIndex: =7
 
     Label26 As label:
@@ -40,7 +42,7 @@
         Size: =24
         Text: ="PMO APPLICATION"
         Width: =371
-        X: =147
+        X: =175
         Y: =109
         ZIndex: =8
 
@@ -49,15 +51,16 @@
         Image: ='data-management-software'
         ImagePosition: =ImagePosition.Center
         Width: =666
+        X: =42
         ZIndex: =9
 
     Label7 As label:
         Color: =RGBA(0, 18, 107, 1)
-        Font: =Font.'Lato Black'
+        Font: =Font.Verdana
         FontWeight: =FontWeight.Semibold
-        Size: =22
+        Size: =18
         Text: ="Login"
-        X: =979
-        Y: =179
+        X: =958
+        Y: =163
         ZIndex: =10
 
