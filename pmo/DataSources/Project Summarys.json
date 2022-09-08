@@ -1,0 +1,108 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cre9a_projectsummaries",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cre9a_projectsummary",
+    "Name": "Project Summarys",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cre9a_achivedbilling": "Achived Billing",
+      "cre9a_achivedbillinginmonths": "Achived Billing in Months",
+      "cre9a_balancebilling": "Balance Billing",
+      "cre9a_budgetusd": "Budget - USD",
+      "cre9a_ponumber": "PO Number",
+      "cre9a_projectcost": "Project Cost",
+      "cre9a_projectcurrentstatusinmonths": "Project Current status in months",
+      "cre9a_projectexpectedcompletiion": "Project Expected completiion",
+      "cre9a_projectid": "ProjectID",
+      "cre9a_projectmanager": "Project Manager",
+      "cre9a_projects": "Projects",
+      "cre9a_projectsummary_AsyncOperations": "System Jobs",
+      "cre9a_projectsummary_BulkDeleteFailures": "Bulk Delete Failures",
+      "cre9a_projectsummary_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cre9a_projectsummary_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cre9a_projectsummary_ProcessSession": "Process Sessions",
+      "cre9a_projectsummary_SyncErrors": "Sync Errors",
+      "cre9a_projectsummaryid": "Project Summary",
+      "cre9a_projecttype": "Project Type",
+      "cre9a_slippage": "Slippage",
+      "cre9a_startdate": "Start Date",
+      "cre9a_teamsize": "Team Size",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Project Summarys",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Project Summarys (Views)",
+    "Name": "_cre9a_projectsummary_views",
+    "RelatedEntityName": "Project Summarys",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "36455a3c-78e7-4b1c-b2be-b49a6b656c74": "Project Summary Lookup View",
+      "828fe62d-beea-4360-99dc-a2bce9930c7e": "Project Summary Advanced Find View",
+      "8ba99755-e1fd-434a-8729-4a4db33cb611": "Project Summary Associated View",
+      "8fd66c67-11d4-46e1-9090-5c94521cbf50": "Inactive Project Summarys",
+      "992ecc18-048b-46ce-9bb7-b43f237011b8": "Active Project Summarys"
+    }
+  },
+  {
+    "DisplayName": "Status (Project Summarys)",
+    "Name": "cre9a_projectsummary_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Project Summarys"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Project Summarys",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Project Summarys)",
+    "Name": "cre9a_projectsummary_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Project Summarys"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Project Summarys",
+    "Type": "OptionSetInfo"
+  }
+]
