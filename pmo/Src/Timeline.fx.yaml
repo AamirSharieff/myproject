@@ -50,3 +50,59 @@ Timeline As screen:
             Y: =0
             ZIndex: =3
 
+        Month_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Month"
+            FieldName: ="cre9a_month"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.Month
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        "'Project Type_Column3' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Project Type"
+            FieldName: ="cre9a_projecttype"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'Project Type'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        Projects_Column3 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Projects"
+            FieldName: ="cre9a_projects"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.Projects
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        Year_Column1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Year"
+            FieldName: ="cre9a_year"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.Year
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+

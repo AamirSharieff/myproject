@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cre9a_projectdetails",
+    "MaxGetRowsCount": 500,
     "Name": "Project Detailss",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

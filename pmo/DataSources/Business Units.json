@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "businessunit",
+    "MaxGetRowsCount": 500,
     "Name": "Business Units",
     "NativeCDSDataSourceInfoNameMapping": {
       "address1_addresstypecode": "Address 1: Address Type",

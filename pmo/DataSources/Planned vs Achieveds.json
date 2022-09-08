@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cre9a_plannedvsachieved",
+    "MaxGetRowsCount": 500,
     "Name": "Planned vs Achieveds",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
