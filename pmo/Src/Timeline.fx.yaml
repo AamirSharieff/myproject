@@ -1,0 +1,52 @@
+Timeline As screen:
+
+    Label27 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =104
+        Size: =16
+        Text: ="TImeline"
+        Width: =324
+        X: =578
+        Y: =20
+        ZIndex: =1
+
+    DataTable6 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =500
+        Items: ='Planned vs Achieveds'
+        Width: =1000
+        X: =159
+        Y: =87
+        ZIndex: =2
+
+        ID_Column3 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ID"
+            FieldName: ="cre9a_id"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.ID
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Planned_Acheived_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Planned_Acheived"
+            FieldName: ="cre9a_planned_acheived"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Planned_Acheived
+            Width: =414
+            X: =586
+            Y: =0
+            ZIndex: =3
+

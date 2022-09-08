@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cre9a_plannedvsachieveds",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cre9a_plannedvsachieved",
+    "Name": "Planned vs Achieveds",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cre9a_advancepaid": "Advance Paid",
+      "cre9a_id": "ID",
+      "cre9a_month": "Month",
+      "cre9a_planned_acheived": "Planned_Acheived",
+      "cre9a_plannedvsachieved_AsyncOperations": "System Jobs",
+      "cre9a_plannedvsachieved_BulkDeleteFailures": "Bulk Delete Failures",
+      "cre9a_plannedvsachieved_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cre9a_plannedvsachieved_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cre9a_plannedvsachieved_ProcessSession": "Process Sessions",
+      "cre9a_plannedvsachieved_SyncErrors": "Sync Errors",
+      "cre9a_plannedvsachievedid": "Planned vs Achieved",
+      "cre9a_projects": "Projects",
+      "cre9a_projecttype": "Project Type",
+      "cre9a_value": "Value",
+      "cre9a_year": "Year",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Planned vs Achieveds",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Planned vs Achieveds (Views)",
+    "Name": "_cre9a_plannedvsachieved_views",
+    "RelatedEntityName": "Planned vs Achieveds",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1389acb7-39f9-433a-a79c-1b2760492b76": "Planned vs Achieved Associated View",
+      "377ccfcc-7067-4944-bf57-4e8ebd61019d": "Active Planned vs Achieveds",
+      "c18e05a8-8f6a-46a4-a1af-32046cf49182": "Planned vs Achieved Lookup View",
+      "c76223ba-b2cf-4dbc-91f0-28319bb36c9f": "Planned vs Achieved Advanced Find View",
+      "dc5196c6-c5d1-4d01-a5ff-3e0f85873fd6": "Inactive Planned vs Achieveds"
+    }
+  },
+  {
+    "DisplayName": "Status (Planned vs Achieveds)",
+    "Name": "cre9a_plannedvsachieved_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Planned vs Achieveds"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Planned vs Achieveds",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Planned vs Achieveds)",
+    "Name": "cre9a_plannedvsachieved_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Planned vs Achieveds"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Planned vs Achieveds",
+    "Type": "OptionSetInfo"
+  }
+]
