@@ -1,0 +1,113 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cre9a_projectdetailses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cre9a_projectdetails",
+    "Name": "Project Detailss",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cre9a_accountmanager": "Account Manager",
+      "cre9a_actualstartdate": "Actual Start Date",
+      "cre9a_balancetobebilled": "Balance to be billed",
+      "cre9a_billingcycle": "Billing Cycle",
+      "cre9a_contractamount": "Contract Amount",
+      "cre9a_currentactiveteamsize": "Current Active Team Size",
+      "cre9a_datetobebilled": "Date to be Billed",
+      "cre9a_expectedcompletiondate": "Expected Completion date",
+      "cre9a_expectedslipageinmonths": "Expected Slipage in Months",
+      "cre9a_expectedslipageinrevenue": "Expected Slipage in revenue",
+      "cre9a_id": "ID",
+      "cre9a_plannedcompletiondate": "Planned Completion Date",
+      "cre9a_plannedstartdate": "Planned Start Date",
+      "cre9a_ponumber": "PO Number",
+      "cre9a_previouslybilledincurrentyear": "Previously billed in current year",
+      "cre9a_projectdetails_AsyncOperations": "System Jobs",
+      "cre9a_projectdetails_BulkDeleteFailures": "Bulk Delete Failures",
+      "cre9a_projectdetails_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cre9a_projectdetails_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cre9a_projectdetails_ProcessSession": "Process Sessions",
+      "cre9a_projectdetails_SyncErrors": "Sync Errors",
+      "cre9a_projectdetailsid": "Project Details",
+      "cre9a_projectmanager": "Project Manager",
+      "cre9a_projectname": "Project Name",
+      "cre9a_projecttype": "Project Type",
+      "cre9a_technicallead": "Technical Lead",
+      "cre9a_totalbilledamount": "Total Billed Amount",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Project Detailss",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Project Detailss (Views)",
+    "Name": "_cre9a_projectdetails_views",
+    "RelatedEntityName": "Project Detailss",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "030e8ae3-6b6f-42a9-9375-6925c727355f": "Project Details Lookup View",
+      "2a6e5b78-8491-4546-93ae-6cc4d9838e4c": "Project Details Advanced Find View",
+      "85cd6288-e4da-4e00-909c-b646ca385b2a": "Inactive Project Detailss",
+      "b17a9a6e-b7d7-4dcb-b120-c47c197eba97": "Project Details Associated View",
+      "f013e817-f6c0-4200-a678-b0b012e21e73": "Active Project Detailss"
+    }
+  },
+  {
+    "DisplayName": "Status (Project Detailss)",
+    "Name": "cre9a_projectdetails_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Project Detailss"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Project Detailss",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Project Detailss)",
+    "Name": "cre9a_projectdetails_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Project Detailss"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Project Detailss",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,74 @@
+"'Tab 2' As screen":
+
+    DataTable4 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =500
+        Items: ='Project Detailss'
+        Width: =800
+        X: =240
+        Y: =33
+        ZIndex: =1
+
+        ID_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ID"
+            FieldName: ="cre9a_id"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.ID
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        "'Project Manager_Column2' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Project Manager"
+            FieldName: ="cre9a_projectmanager"
+            FieldVariantName: ="textualColumn"
+            Height: =520
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'Project Manager'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        "'Account Manager_Column1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Account Manager"
+            FieldName: ="cre9a_accountmanager"
+            FieldVariantName: ="textualColumn"
+            Height: =416
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.'Account Manager'
+            Width: =157
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+    Button9 As button:
+        Text: ="New"
+        X: =1052
+        Y: =33
+        ZIndex: =2
+
+    Button10 As button:
+        Text: ="Update"
+        X: =1052
+        Y: =103
+        ZIndex: =3
+
+    Button11 As button:
+        Text: ="Edit"
+        X: =1052
+        Y: =163
+        ZIndex: =4
+
