@@ -1,0 +1,90 @@
+"'tab 2 new popup' As screen":
+
+    Rectangle3 As rectangle:
+        Fill: =RGBA(0, 13, 75, 1)
+        Height: =445
+        Width: =973
+        X: =222
+        Y: =56
+        ZIndex: =1
+
+    Label22 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =48
+        Text: ="Please fill the details"
+        Width: =338
+        X: =514
+        Y: =78
+        ZIndex: =2
+
+    Label23 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="Text"
+        X: =284
+        Y: =140
+        ZIndex: =3
+
+    TextInput6 As text:
+        Default: ="text"
+        X: =392
+        Y: =140
+        ZIndex: =4
+
+    Label23_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="Text"
+        X: =284
+        Y: =213
+        ZIndex: =5
+
+    Label23_2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="Text"
+        X: =284
+        Y: =279
+        ZIndex: =6
+
+    Label23_3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="Text"
+        X: =284
+        Y: =346
+        ZIndex: =7
+
+    TextInput6_1 As text:
+        Default: ="text"
+        X: =392
+        Y: =213
+        ZIndex: =8
+
+    TextInput6_2 As text:
+        Default: ="text"
+        X: =392
+        Y: =279
+        ZIndex: =9
+
+    TextInput6_3 As text:
+        Default: ="text"
+        X: =392
+        Y: =346
+        ZIndex: =10
+
+    Button12 As button:
+        Text: ="Submit"
+        X: =284
+        Y: =410
+        ZIndex: =11
+
+    Button12_1 As button:
+        Text: ="Reset"
+        X: =552
+        Y: =410
+        ZIndex: =12
+
+    Button12_2 As button:
+        Text: ="Update"
+        X: =798
+        Y: =410
+        ZIndex: =13
+
