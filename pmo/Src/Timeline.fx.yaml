@@ -4,7 +4,7 @@ Timeline As screen:
         FontWeight: =FontWeight.Semibold
         Height: =104
         Size: =16
-        Text: ="TImeline"
+        Text: ="Timeline"
         Width: =324
         X: =578
         Y: =20
@@ -16,9 +16,9 @@ Timeline As screen:
         Fill: =RGBA(0, 0, 0, 0)
         Height: =500
         Items: ='Planned vs Achieveds'
-        Width: =1000
-        X: =159
-        Y: =87
+        Width: =1256
+        X: =75
+        Y: =125
         ZIndex: =2
 
         ID_Column3 As dataTableColumn.textualColumn:
