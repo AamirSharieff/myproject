@@ -99,7 +99,7 @@
         "Name": "IcoHamburger",
         "Parent": "LeftNavigation",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 136,
+        "PublishOrderIndex": 156,
         "Rules": [
           {
             "Category": "Design",
@@ -308,7 +308,7 @@
             "Name": "galleryTemplate3",
             "Parent": "galNAvigation",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 138,
+            "PublishOrderIndex": 158,
             "Rules": [
               {
                 "Category": "Design",
@@ -381,7 +381,7 @@
             "Name": "rectSelected",
             "Parent": "galNAvigation",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 139,
+            "PublishOrderIndex": 159,
             "Rules": [
               {
                 "Category": "Design",
@@ -584,7 +584,7 @@
             "Name": "IcoNav",
             "Parent": "galNAvigation",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 140,
+            "PublishOrderIndex": 160,
             "Rules": [
               {
                 "Category": "Design",
@@ -871,7 +871,7 @@
             "Name": "lblTitle",
             "Parent": "galNAvigation",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 141,
+            "PublishOrderIndex": 161,
             "Rules": [
               {
                 "Category": "Data",
@@ -1152,7 +1152,7 @@
                 "Name": "galleryTemplate4",
                 "Parent": "Gallery3",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 143,
+                "PublishOrderIndex": 163,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1256,7 +1256,7 @@
                 "Name": "Label2",
                 "Parent": "Gallery3",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 144,
+                "PublishOrderIndex": 164,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1577,7 +1577,7 @@
             "Name": "Gallery3",
             "Parent": "galNAvigation",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 142,
+            "PublishOrderIndex": 162,
             "Rules": [
               {
                 "Category": "Data",
@@ -1814,7 +1814,7 @@
         "Name": "galNAvigation",
         "Parent": "LeftNavigation",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 137,
+        "PublishOrderIndex": 157,
         "Rules": [
           {
             "Category": "Data",
@@ -2015,7 +2015,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637985864948081842",
+    "LastModifiedTimestamp": "637985858338984324",
     "Name": "LeftNavigation",
     "Rules": [
       {
@@ -2090,7 +2090,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637985864948081842",
+  "LastModifiedTimestamp": "637985858338984324",
   "Name": "7f61c45fa99549e189501ffcaf137fc1",
   "OverridableProperties": {},
   "Version": "637980502125814947"
