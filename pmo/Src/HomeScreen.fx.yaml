@@ -55,8 +55,8 @@
 
     Label9 As label:
         Text: ="Dashboard"
-        X: =120
-        Y: =123
+        X: =93
+        Y: =125
         ZIndex: =5
 
     Icon2 As icon.ListScrollWatchlist:
@@ -70,8 +70,8 @@
 
     Label9_1 As label:
         Text: ="Project master"
-        X: =120
-        Y: =246
+        X: =93
+        Y: =231
         ZIndex: =8
 
     Label9_2 As label:
@@ -93,4 +93,16 @@
         X: =23
         Y: =233
         ZIndex: =11
+
+    Icon6 As icon.Publish:
+        Icon: =Icon.Publish
+        X: =16
+        Y: =325
+        ZIndex: =12
+
+    Icon7 As icon.Add:
+        Icon: =Icon.Add
+        X: =26
+        Y: =428
+        ZIndex: =13
 

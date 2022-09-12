@@ -53,6 +53,8 @@
     "Icon2": 191,
     "Icon4": 82,
     "Icon5": 197,
+    "Icon6": 198,
+    "Icon7": 199,
     "IcoNav": 8,
     "ID_Column1": 164,
     "ID_Column3": 75,
@@ -177,7 +179,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/12/2022 14:10:10",
+  "HeaderLastSavedDateTimeUTC": "09/12/2022 14:14:54",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "84820fbb-3827-4b05-a1f7-5c330d9fcf5d": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/9dc0fb4b26024e1abc23f897466bcb8c\""
@@ -336,6 +338,8 @@
     "Icon2": 0,
     "Icon4": 114,
     "Icon5": 0,
+    "Icon6": 0,
+    "Icon7": 0,
     "IcoNav": 141,
     "ID_Column1": 69,
     "ID_Column3": 108,
