@@ -1,49 +1,55 @@
 "HomeScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+    Fill: =RGBA(241, 244, 249, 1)
     OnVisible: =
 
-    ScreenContainer2 As groupContainer.verticalAutoLayoutContainer:
-        Height: =Parent.Height
-        LayoutAlignItems: =LayoutAlignItems.Stretch
-        LayoutDirection: =LayoutDirection.Vertical
+    HeaderContainer2 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =74
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
-        Width: =Parent.Width
-        ZIndex: =1
+        Width: =1366
+        ZIndex: =2
 
-        HeaderContainer2 As groupContainer.horizontalAutoLayoutContainer:
-            FillPortions: =0
-            Height: =75
-            LayoutAlignItems: =LayoutAlignItems.Center
-            LayoutJustifyContent: =LayoutJustifyContent.Center
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
+        Label3 As label:
+            Align: =Align.Center
+            AlignInContainer: =AlignInContainer.Stretch
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =1
+            FontWeight: =FontWeight.Bold
+            Size: =24
+            Text: =""
             ZIndex: =1
 
-            Label3 As label:
-                Align: =Align.Center
-                AlignInContainer: =AlignInContainer.Stretch
-                Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 18, 107, 1)
-                FillPortions: =1
-                FontWeight: =FontWeight.Bold
-                Size: =24
-                Text: ="PMO APPLICATION"
-                ZIndex: =1
+        Label4 As label:
+            Align: =Align.Center
+            AlignInContainer: =AlignInContainer.Stretch
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Text: |-
+                ="Welcome,
+                " & User().FullName
+            Visible: =HomeScreen.Size<>1
+            Width: =200
+            ZIndex: =2
 
-            Image1 As image:
-                Height: =75
-                Image: =User().Image 
-                ImagePosition: =ImagePosition.Fill
-                ZIndex: =2
+        Image1 As image:
+            Height: =75
+            Image: =User().Image 
+            ImagePosition: =ImagePosition.Fill
+            ZIndex: =3
 
-            Label4 As label:
-                Align: =Align.Center
-                AlignInContainer: =AlignInContainer.Stretch
-                Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 18, 107, 1)
-                FontWeight: =FontWeight.Semibold
-                Text: ="Welcome," & User().FullName
-                Visible: =HomeScreen.Size<>1
-                Width: =200
-                ZIndex: =3
+    Image6 As image:
+        Height: =65
+        Image: ='MicrosoftTeams-image (6)'
+        Width: =195
+        Y: =9
+        ZIndex: =3
+
+    Rectangle1 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =694
+        Width: =174
+        Y: =74
+        ZIndex: =4
 
