@@ -90,7 +90,7 @@
         Label4 As label:
             Height: =54
             OnSelect: =Select(Parent)
-            Size: =18
+            Size: =17
             Text: =ThisItem.'Project Manager'
             Width: =118
             X: =636
