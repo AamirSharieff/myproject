@@ -50,7 +50,9 @@
     "HomeScreen": 13,
     "IcoHamburger": 4,
     "Icon1": 64,
+    "Icon2": 191,
     "Icon4": 82,
+    "Icon5": 197,
     "IcoNav": 8,
     "ID_Column1": 164,
     "ID_Column3": 75,
@@ -94,6 +96,10 @@
     "Label6": 71,
     "Label7": 102,
     "Label8": 63,
+    "Label9": 190,
+    "Label9_1": 193,
+    "Label9_2": 194,
+    "Label9_3": 195,
     "lblTitle": 9,
     "LeftNavigation": 3,
     "LeftNavigation_1": 131,
@@ -171,7 +177,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/12/2022 14:01:20",
+  "HeaderLastSavedDateTimeUTC": "09/12/2022 14:10:10",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "84820fbb-3827-4b05-a1f7-5c330d9fcf5d": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/9dc0fb4b26024e1abc23f897466bcb8c\""
@@ -184,7 +190,8 @@
     "download_1": "9d24c0c9-e98c-46e5-95b8-816ce1e2aeea.png",
     "download_2": "29cfc2c7-bf4d-4355-9a88-c5d42511e033.png",
     "IMG_20220205_144912__01": "0cd334a8-b9ae-49f3-be4a-ff2ab98c2741.jpg",
-    "MicrosoftTeams-image (6)": "52571be9-db1e-4653-8112-aca363705d5c.png"
+    "MicrosoftTeams-image (6)": "52571be9-db1e-4653-8112-aca363705d5c.png",
+    "MicrosoftTeams-image (7)": "e451b6d6-072a-48fe-a9f6-54ff277ffb2b.png"
   },
   "LocalResourceRootPaths": {
     "1609392125837": "https://docserverpwaprodcin.blob.core.windows.net/b888e347-cd86-437f-948b-a851ba85b934-1/resource/Assets0Images0ae7f6b9b-332a-4de6-b04d-39244338dc6d.jpg?sv=2017-04-17&sr=b&sig=7IE7mZEBu8wvGsnHYGMnhHpfX048RHhTg%2BFAn1Ih4qk%3D&spr=https&se=2022-09-13T13%3A38%3A52Z&sp=r",
@@ -193,7 +200,8 @@
     "download_1": "https://docserverpwaprodcin.blob.core.windows.net/b888e347-cd86-437f-948b-a851ba85b934-1/resource/Assets0Images09d24c0c9-e98c-46e5-95b8-816ce1e2aeea.png?sv=2017-04-17&sr=b&sig=Idl58WfGz7uqtf6HcbHc4BTRdaY%2BN8NMW1ONzU%2F47MY%3D&spr=https&se=2022-09-13T13%3A38%3A52Z&sp=r",
     "download_2": "https://docserverpwaprodcin.blob.core.windows.net/b888e347-cd86-437f-948b-a851ba85b934-1/resource/a54d2ee9-e847-4071-bdb0-ba5207d4072c.png?sv=2017-04-17&sr=b&sig=V%2FvOssC3ez7A15AVqcOq6W1Wj%2F46b7%2Bg3FYz2RhZ2ew%3D&spr=https&se=2022-09-13T14%3A00%3A24Z&sp=r",
     "IMG_20220205_144912__01": "https://docserverpwaprodcin.blob.core.windows.net/b888e347-cd86-437f-948b-a851ba85b934-1/resource/Assets0Images00cd334a8-b9ae-49f3-be4a-ff2ab98c2741.jpg?sv=2017-04-17&sr=b&sig=AI%2FgeH2%2FRlA%2FNch%2BmsuiwEad1KiscW1Moi4Z61Sy%2Fbg%3D&spr=https&se=2022-09-13T13%3A38%3A52Z&sp=r",
-    "MicrosoftTeams-image (6)": "https://docserverpwaprodcin.blob.core.windows.net/b888e347-cd86-437f-948b-a851ba85b934-1/resource/2c8fb5e9-6ba2-4007-a942-78d6481329f0.png?sv=2017-04-17&sr=b&sig=1dpi6KopaUN9iy%2BQo25MJU6dbgcjXp1k82lMMY4W0%2Fs%3D&spr=https&se=2022-09-13T14%3A03%3A34Z&sp=r"
+    "MicrosoftTeams-image (6)": "https://docserverpwaprodcin.blob.core.windows.net/b888e347-cd86-437f-948b-a851ba85b934-1/resource/2c8fb5e9-6ba2-4007-a942-78d6481329f0.png?sv=2017-04-17&sr=b&sig=1dpi6KopaUN9iy%2BQo25MJU6dbgcjXp1k82lMMY4W0%2Fs%3D&spr=https&se=2022-09-13T14%3A03%3A34Z&sp=r",
+    "MicrosoftTeams-image (7)": "https://docserverpwaprodcin.blob.core.windows.net/b888e347-cd86-437f-948b-a851ba85b934-1/resource/7a730603-1e55-4d6e-a29a-5da3e0cf5778.png?sv=2017-04-17&sr=b&sig=ol7kmidHx14NaGc%2FqkqZIRaZ8%2FGSq3itVa4FJ2DZIFk%3D&spr=https&se=2022-09-13T14%3A23%3A03Z&sp=r"
   },
   "OrderComponentMetadata": {
     "7f61c45fa99549e189501ffcaf137fc1": 0
@@ -270,14 +278,14 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 5,
+    "button": 6,
     "gallery": 7,
-    "groupContainer": 0,
-    "icon": 6,
-    "image": 2,
-    "label": 1,
-    "rectangle": 3,
-    "text": 4
+    "groupContainer": 2,
+    "icon": 1,
+    "image": 3,
+    "label": 0,
+    "rectangle": 4,
+    "text": 5
   },
   "PublishOrderIndices": {
     "Account Manager_Column1": 71,
@@ -325,7 +333,9 @@
     "HomeScreen": 0,
     "IcoHamburger": 137,
     "Icon1": 10,
+    "Icon2": 0,
     "Icon4": 114,
+    "Icon5": 0,
     "IcoNav": 141,
     "ID_Column1": 69,
     "ID_Column3": 108,
@@ -369,6 +379,10 @@
     "Label6": 17,
     "Label7": 20,
     "Label8": 9,
+    "Label9": 0,
+    "Label9_1": 0,
+    "Label9_2": 0,
+    "Label9_3": 0,
     "lblTitle": 142,
     "LeftNavigation": 0,
     "LeftNavigation_1": 7,
@@ -452,6 +466,7 @@
     "Image-download_2": 6,
     "Image-IMG_20220205_144912__01": 1,
     "Image-MicrosoftTeams-image (6)": 7,
+    "Image-MicrosoftTeams-image (7)": 8,
     "Image-SampleImage": 0
   },
   "RuleScreenIdWithoutScreen": {},
@@ -468,7 +483,7 @@
       "groupContainer": 5,
       "icon": 4,
       "image": 6,
-      "label": 37,
+      "label": 40,
       "rectangle": 4,
       "screen": 15,
       "text": 16

@@ -49,7 +49,48 @@
     Rectangle1 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =694
-        Width: =174
+        Width: =270
         Y: =74
         ZIndex: =4
+
+    Label9 As label:
+        Text: ="Dashboard"
+        X: =120
+        Y: =123
+        ZIndex: =5
+
+    Icon2 As icon.ListScrollWatchlist:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =35
+        Icon: =Icon.ListScrollWatchlist
+        Width: =70
+        X: =23
+        Y: =128
+        ZIndex: =6
+
+    Label9_1 As label:
+        Text: ="Project master"
+        X: =120
+        Y: =246
+        ZIndex: =8
+
+    Label9_2 As label:
+        Text: ="Timeline"
+        X: =120
+        Y: =349
+        ZIndex: =9
+
+    Label9_3 As label:
+        Text: ="Register member"
+        X: =93
+        Y: =452
+        ZIndex: =10
+
+    Icon5 As icon.AddLibrary:
+        Height: =53
+        Icon: =Icon.AddLibrary
+        Width: =50
+        X: =23
+        Y: =233
+        ZIndex: =11
 
