@@ -15,54 +15,56 @@
         Items: ='Project Summarys'
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =75
-        Width: =1134
-        X: =214
+        TemplateSize: =45
+        Width: =1146
+        X: =202
         Y: =217
         ZIndex: =1
 
         Title6 As label:
             FontWeight: =FontWeight.Normal
-            Height: =36
+            Height: =22
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =16
+            Size: =13
             Text: =ThisItem.Projects
             VerticalAlign: =VerticalAlign.Top
             Width: =173
-            X: =16
-            Y: =24
+            X: =19
+            Y: =12
             ZIndex: =1
 
         Subtitle6 As label:
-            Height: =41
+            Height: =34
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =13
             Text: =ThisItem.ProjectID
             VerticalAlign: =VerticalAlign.Top
-            Width: =181
-            X: =261
-            Y: =19
+            Width: =115
+            X: =243
+            Y: =12
             ZIndex: =2
 
         Body2 As label:
-            Height: =54
+            Height: =26
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =13
             Text: =ThisItem.'Project Type'
             VerticalAlign: =VerticalAlign.Top
             Width: =88
-            X: =475
-            Y: =21
+            X: =453
+            Y: =8
             ZIndex: =3
 
         NextArrow6 As icon.ChevronRight:
@@ -88,22 +90,42 @@
             ZIndex: =5
 
         Label4 As label:
-            Height: =54
+            Height: =33
             OnSelect: =Select(Parent)
-            Size: =17
             Text: =ThisItem.'Project Manager'
             Width: =118
-            X: =636
-            Y: =13
+            X: =624
+            Y: =8
             ZIndex: =6
 
         Label14 As label:
+            Height: =28
             OnSelect: =Select(Parent)
-            Size: =18
             Text: =ThisItem.'PO Number'
-            X: =849
-            Y: =22
+            Width: =117
+            X: =825
+            Y: =12
             ZIndex: =7
+
+        Icon3 As icon.Edit:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =25
+            Icon: =Icon.Edit
+            OnSelect: =Select(Parent)
+            Width: =24
+            X: =1001
+            Y: =13
+            ZIndex: =8
+
+        Icon8 As icon.Trash:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =28
+            Icon: =Icon.Trash
+            OnSelect: =Select(Parent)
+            Width: =46
+            X: =1038
+            Y: =7
+            ZIndex: =9
 
     Label9 As label:
         Height: =33
@@ -255,8 +277,8 @@
         Height: =51
         Text: ="Project Manager"
         Width: =149
-        X: =787
-        Y: =169
+        X: =795
+        Y: =168
         ZIndex: =20
 
     Label30_5 As label:
