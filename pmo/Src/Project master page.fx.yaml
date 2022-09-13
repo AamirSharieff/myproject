@@ -198,9 +198,8 @@
 
     Rectangle5 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =74
-        Width: =1360
-        X: =3
+        Height: =46
+        Width: =1368
         ZIndex: =10
 
     Image1 As image:
@@ -328,9 +327,12 @@
         ZIndex: =24
 
     TextInput14 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
         Default: =""
+        Height: =35
         HintText: ="Search here"
-        X: =782
-        Y: =17
+        Width: =312
+        X: =826
+        Y: =6
         ZIndex: =25
 
