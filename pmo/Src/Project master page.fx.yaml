@@ -4,9 +4,9 @@
 
     Rectangle1 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =694
-        Width: =191
-        Y: =74
+        Height: =768
+        Width: =198
+        X: =3
         ZIndex: =1
 
     "Gallery6 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
@@ -203,23 +203,25 @@
         ZIndex: =10
 
     Image1 As image:
-        Height: =62
+        Height: =40
         Image: =User().Image
-        Width: =84
-        X: =1277
+        Width: =40
+        X: =1307
         ZIndex: =11
 
     Label3 As label:
         Align: =Align.Center
+        Size: =12
         Text: =User().FullName
-        X: =1127
-        Y: =34
+        X: =1138
+        Y: =17
         ZIndex: =12
 
     Label3_1 As label:
         Align: =Align.Center
-        Text: ="Welcome Admin,"
-        X: =1127
+        Size: =14
+        Text: ="Admin,"
+        X: =1157
         ZIndex: =13
 
     Image6 As image:
@@ -229,11 +231,11 @@
         ZIndex: =14
 
     Rectangle7 As rectangle:
-        Fill: =RGBA(49, 132, 176, 1)
-        Height: =50
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =58
         Width: =1146
-        X: =202
-        Y: =167
+        X: =201
+        Y: =127
         ZIndex: =15
 
     Label30 As label:
@@ -242,8 +244,8 @@
         Height: =51
         Text: ="Project Name"
         Width: =138
-        X: =202
-        Y: =167
+        X: =201
+        Y: =134
         ZIndex: =16
 
     Label30_1 As label:
@@ -252,18 +254,18 @@
         Height: =51
         Text: ="Project ID"
         Width: =149
-        X: =403
-        Y: =167
+        X: =390
+        Y: =134
         ZIndex: =17
 
     Label30_2 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
-        Height: =51
+        Height: =75
         Text: ="Action"
         Width: =149
-        X: =1187
-        Y: =167
+        X: =1158
+        Y: =121
         ZIndex: =18
 
     Label30_3 As label:
@@ -272,8 +274,8 @@
         Height: =51
         Text: ="PO number"
         Width: =149
-        X: =996
-        Y: =168
+        X: =989
+        Y: =134
         ZIndex: =19
 
     Label30_4 As label:
@@ -282,48 +284,48 @@
         Height: =51
         Text: ="Project Manager"
         Width: =149
-        X: =795
-        Y: =168
+        X: =794
+        Y: =134
         ZIndex: =20
 
     Label30_5 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
-        Height: =51
+        Height: =27
         Text: ="Project Type"
         Width: =149
-        X: =608
-        Y: =168
+        X: =591
+        Y: =149
         ZIndex: =21
 
     Rectangle8 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =68
-        Width: =1146
-        X: =202
-        Y: =95
+        Height: =72
+        Width: =1165
+        X: =201
+        Y: =57
         ZIndex: =22
 
     Label30_6 As label:
         Align: =Align.Center
         Color: =RGBA(39, 67, 125, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =39
+        Height: =20
         Size: =18
         Text: ="Recent Projects"
-        Width: =201
-        X: =202
-        Y: =113
+        Width: =256
+        X: =191
+        Y: =89
         ZIndex: =23
 
     Button2 As button:
-        Fill: =RGBA(49, 132, 176, 1)
-        Height: =39
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =31
         OnSelect: =Navigate('Add projects admin',ScreenTransition.Fade)
         Text: ="Create New Project"
-        Width: =200
-        X: =1127
-        Y: =109
+        Width: =205
+        X: =1129
+        Y: =85
         ZIndex: =24
 
     TextInput14 As text:
