@@ -12,7 +12,10 @@
     "Gallery6 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
         Height: =550
-        Items: ='Project Summarys'
+        Items: |-
+            =Filter('Project Summarys',
+                    (StartsWith (Projects,TextInput14) || (StartsWith('Project Manager',TextInput14))))
+                    
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =45
