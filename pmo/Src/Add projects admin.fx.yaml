@@ -95,13 +95,6 @@
         Y: =12
         ZIndex: =14
 
-    TextInput14_1 As text:
-        Default: =""
-        HintText: ="Search here"
-        X: =782
-        Y: =17
-        ZIndex: =15
-
     Label3_2 As label:
         Align: =Align.Center
         Text: |-
