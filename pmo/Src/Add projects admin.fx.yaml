@@ -149,7 +149,8 @@
 
     Form1 As form:
         DataSource: ='Project Summarys'
-        DefaultMode: =FormMode.New
+        DefaultMode: |
+            =FormMode.New
         X: =236
         Y: =176
         ZIndex: =20
@@ -665,6 +666,7 @@
         Height: =26
         OnSelect: |
             =SubmitForm(Form1) ;
+            Navigate(Screen2,ScreenTransition.Cover)
         Text: ="Save"
         Width: =133
         X: =1206
