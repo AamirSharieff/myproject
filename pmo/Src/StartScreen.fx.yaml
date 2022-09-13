@@ -2,7 +2,7 @@ StartScreen As screen:
     BackgroundImage: =
 
     Button1 As button:
-        OnSelect: =Navigate(HomeScreen, ScreenTransition.Fade)
+        OnSelect: =Navigate('Project master page', ScreenTransition.Fade)
         Text: ="Start"
         X: =585
         Y: =441
