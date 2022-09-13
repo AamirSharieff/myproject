@@ -316,7 +316,7 @@
 
     Label30_6 As label:
         Align: =Align.Center
-        Color: =RGBA(39, 67, 125, 1)
+        Color: =RGBA(0, 130, 204, 1)
         FontWeight: =FontWeight.Semibold
         Height: =20
         Size: =18
