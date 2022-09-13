@@ -316,11 +316,12 @@
 
     Button2 As button:
         Fill: =RGBA(49, 132, 176, 1)
-        Height: =45
+        Height: =39
+        OnSelect: =Navigate('Add projects admin',ScreenTransition.Fade)
         Text: ="Create New Project"
-        Width: =210
-        X: =1077
-        Y: =113
+        Width: =200
+        X: =1127
+        Y: =109
         ZIndex: =24
 
     TextInput14 As text:
