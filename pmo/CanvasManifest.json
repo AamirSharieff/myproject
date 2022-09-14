@@ -107,8 +107,10 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Project master page",
     "Project manager page_1",
-    "Add projects admin"
+    "Project master page",
+    "Project master page_1",
+    "Add projects admin",
+    "Project manager page_2"
   ]
 }
