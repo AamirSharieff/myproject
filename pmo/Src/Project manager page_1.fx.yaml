@@ -383,7 +383,7 @@
             ZIndex: =29
 
         TextInput13 As text:
-            Default: ="Madon BI"
+            Default: =Gallery6_1.Selected.Projects
             Height: =35
             Visible: |
                 =popupvisible
@@ -393,7 +393,7 @@
             ZIndex: =30
 
         TextInput13_1 As text:
-            Default: ="Text input"
+            Default: =Gallery6_1.Selected.'Project Manager'
             Height: =35
             Visible: |
                 =popupvisible
@@ -411,7 +411,7 @@
             ZIndex: =32
 
         TextInput13_2 As text:
-            Default: ="Madon BI"
+            Default: =Gallery6_1.Selected.'PO Number'
             Height: =35
             Visible: |
                 =popupvisible
@@ -437,6 +437,7 @@
             ZIndex: =35
 
         DatePicker1 As datepicker:
+            DefaultDate: =Gallery6_1.Selected.'Start Date'
             Height: =35
             Visible: |
                 =popupvisible
@@ -446,6 +447,7 @@
             ZIndex: =36
 
         DatePicker1_1 As datepicker:
+            DefaultDate: =Gallery6_1.Selected.'End date'
             Height: =35
             Visible: |
                 =popupvisible

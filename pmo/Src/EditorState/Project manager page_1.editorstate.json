@@ -527,7 +527,14 @@
     "DatePicker1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "DefaultDate",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Today()",
+          "InvariantPropertyName": "DefaultDate",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DateTimeZone",
         "Format",
         "InputTextPlaceholder",
@@ -839,7 +846,14 @@
     "DatePicker1_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "DefaultDate",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Today()",
+          "InvariantPropertyName": "DefaultDate",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DateTimeZone",
         "Format",
         "InputTextPlaceholder",
@@ -10913,7 +10927,14 @@
     "TextInput13_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Default",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"Text input\"",
+          "InvariantPropertyName": "Default",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Mode",
         "Format",
         "VirtualKeyboardMode",

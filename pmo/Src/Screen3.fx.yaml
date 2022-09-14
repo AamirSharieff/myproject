@@ -1,0 +1,41 @@
+Screen3 As screen:
+
+    DataTable8 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =500
+        Items: ='Project Detailss'
+        Width: =800
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        ID_Column2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ID"
+            FieldName: ="cre9a_id"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.ID
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        "'Created On_Column1' As dataTableColumn.dateTimeColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Created On"
+            FieldName: ="createdon"
+            FieldVariantName: ="dateTimeColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =Text(ThisItem.'Created On',DateTimeFormat.LongDateTime)
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+

@@ -1,4 +1,21 @@
 {
+  "745ec69f-0b33-4b0a-9657-91f04bf38e96": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1593/1.0.1593.2980/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "745ec69f-0b33-4b0a-9657-91f04bf38e96"
+  },
   "84820fbb-3827-4b05-a1f7-5c330d9fcf5d": {
     "connectionParameters": {
       "sku": "Enterprise"

@@ -107,13 +107,9 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "StartScreen",
     "Project master page",
     "Project manager page_1",
-    "Screen1",
     "Add projects admin",
-    "login as popup screen",
-    "Home",
     "Tab 1",
     "tab1 new popup",
     "Tab 2",
@@ -123,6 +119,7 @@
     "Timeline",
     "CEO LANDING",
     "Screen4",
-    "Screen2"
+    "Screen2",
+    "Screen3"
   ]
 }
