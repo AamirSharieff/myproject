@@ -616,23 +616,23 @@
                 ZIndex: =7
 
     Button6 As button:
-        Height: =26
+        Height: =35
         OnSelect: =Navigate('Project master page',ScreenTransition.None)
         Text: ="Back"
-        Width: =129
-        X: =1051
-        Y: =702
+        Width: =110
+        X: =1058
+        Y: =721
         ZIndex: =21
 
     Button16 As button:
-        Height: =26
+        Height: =35
         OnSelect: |
             =SubmitForm(Form1) ;
             Navigate(Screen2,ScreenTransition.Cover)
         Text: ="Save"
-        Width: =133
-        X: =1206
-        Y: =702
+        Width: =110
+        X: =1209
+        Y: =721
         ZIndex: =22
 
     Image2 As image:
@@ -666,4 +666,49 @@
         X: =20
         Y: =263
         ZIndex: =26
+
+    Label1 As label:
+        Text: ="Acesss PM"
+        X: =272
+        Y: =401
+        ZIndex: =27
+
+    Label1_1 As label:
+        Text: ="Acesss PM"
+        X: =538
+        Y: =406
+        ZIndex: =28
+
+    Label1_2 As label:
+        Text: ="Acesss PM"
+        X: =804
+        Y: =406
+        ZIndex: =29
+
+    Dropdown1 As dropdown:
+        Default: =""
+        Height: =22
+        Items: =DropDownSample
+        Width: =207
+        X: =266
+        Y: =446
+        ZIndex: =30
+
+    Dropdown1_1 As dropdown:
+        Default: =""
+        Height: =22
+        Items: =DropDownSample
+        Width: =204
+        X: =538
+        Y: =446
+        ZIndex: =31
+
+    Dropdown1_2 As dropdown:
+        Default: =""
+        Height: =22
+        Items: =DropDownSample
+        Width: =190
+        X: =817
+        Y: =446
+        ZIndex: =32
 
