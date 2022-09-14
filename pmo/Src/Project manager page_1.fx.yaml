@@ -26,7 +26,7 @@
 
         Title6_1 As label:
             FontWeight: =FontWeight.Normal
-            Height: =22
+            Height: =25
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -114,7 +114,9 @@
             Color: =RGBA(0, 0, 0, 1)
             Height: =25
             Icon: =Icon.Edit
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =Select(Parent);
+                UpdateContext({popupvisible:true})
             Width: =24
             X: =1001
             Y: =13
@@ -325,16 +327,6 @@
         Y: =89
         ZIndex: =23
 
-    Button2_1 As button:
-        Fill: =RGBA(0, 130, 204, 1)
-        Height: =31
-        OnSelect: =
-        Text: ="Create New Project"
-        Width: =205
-        X: =1129
-        Y: =85
-        ZIndex: =24
-
     TextInput14_1 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         Default: =""
@@ -344,4 +336,155 @@
         X: =826
         Y: =6
         ZIndex: =25
+
+    "'popup plan project' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =41
+
+        Rectangle10 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =509
+            Visible: |
+                =popupvisible
+            Width: =967
+            X: =210
+            Y: =171
+            ZIndex: =26
+
+        Label5 As label:
+            Color: =RGBA(0, 130, 204, 1)
+            Height: =37
+            Size: =18
+            Text: ="Plan a project"
+            Visible: |
+                =popupvisible
+            Width: =182
+            X: =284
+            Y: =200
+            ZIndex: =27
+
+        Label6 As label:
+            Text: ="Project name "
+            Visible: |
+                =popupvisible
+            X: =284
+            Y: =258
+            ZIndex: =28
+
+        Label6_1 As label:
+            Text: ="Description"
+            Visible: |
+                =popupvisible
+            X: =617
+            Y: =258
+            ZIndex: =29
+
+        TextInput13 As text:
+            Default: ="Madon BI"
+            Height: =35
+            Visible: |
+                =popupvisible
+            Width: =300
+            X: =273
+            Y: =298
+            ZIndex: =30
+
+        TextInput13_1 As text:
+            Default: ="Text input"
+            Height: =35
+            Visible: |
+                =popupvisible
+            Width: =300
+            X: =617
+            Y: =298
+            ZIndex: =31
+
+        Label6_2 As label:
+            Text: ="PO No"
+            Visible: |
+                =popupvisible
+            X: =273
+            Y: =350
+            ZIndex: =32
+
+        TextInput13_2 As text:
+            Default: ="Madon BI"
+            Height: =35
+            Visible: |
+                =popupvisible
+            Width: =300
+            X: =273
+            Y: =390
+            ZIndex: =33
+
+        Label6_3 As label:
+            Text: ="Sart date"
+            Visible: |
+                =popupvisible
+            X: =668
+            Y: =350
+            ZIndex: =34
+
+        Label6_4 As label:
+            Text: ="End date"
+            Visible: |
+                =popupvisible
+            X: =873
+            Y: =350
+            ZIndex: =35
+
+        DatePicker1 As datepicker:
+            Height: =35
+            Visible: |
+                =popupvisible
+            Width: =134
+            X: =655
+            Y: =390
+            ZIndex: =36
+
+        DatePicker1_1 As datepicker:
+            Height: =35
+            Visible: |
+                =popupvisible
+            Width: =134
+            X: =873
+            Y: =390
+            ZIndex: =37
+
+        Label8 As label:
+            Color: =RGBA(0, 130, 204, 1)
+            Height: =46
+            Size: =18
+            Text: ="Assign resources"
+            Visible: |
+                =popupvisible
+            Width: =238
+            X: =273
+            Y: =464
+            ZIndex: =38
+
+        Dropdown3 As dropdown:
+            Height: =35
+            Items: =DropDownSample
+            Visible: |
+                =popupvisible
+            Width: =836
+            X: =254
+            Y: =510
+            ZIndex: =39
+
+        Button17 As button:
+            Height: =35
+            OnSelect: |-
+                =UpdateContext({popupvisible:false});
+            Text: ="Update"
+            Visible: |
+                =popupvisible
+            Width: =110
+            X: =1028
+            Y: =625
+            ZIndex: =40
 

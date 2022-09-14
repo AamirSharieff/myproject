@@ -689,8 +689,6 @@
         Default: =""
         Height: =22
         Items: =DropDownSample
-        OnSelect: |-
-            =Office365Users.({searchTerm:Dropdown1})
         Width: =207
         X: =266
         Y: =446
