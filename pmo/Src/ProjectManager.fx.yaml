@@ -1,4 +1,4 @@
-"'Project master page_1' As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+"ProjectManager As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(230, 230, 230, 1)
     OnVisible: =
 
@@ -154,14 +154,16 @@
         Size: =12
         Text: =User().FullName
         X: =1138
-        Y: =17
         ZIndex: =12
 
     Label3_4 As label:
         Align: =Align.Center
+        Height: =21
         Size: =14
         Text: ="PM,"
-        X: =1157
+        Width: =135
+        X: =1172
+        Y: =30
         ZIndex: =13
 
     Image6_2 As image:

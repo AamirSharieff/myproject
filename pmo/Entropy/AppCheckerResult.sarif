@@ -684,19 +684,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page'.TextInput14.AccessibleLabel"
+                  "fullyQualifiedName": "Admin.TextInput14.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page'.TextInput14.AccessibleLabel",
+                  "fullyQualifiedName": "Admin.TextInput14.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page",
-                "type": "'Project master page'.TextInput14"
+                "module": "Admin",
+                "type": "Admin.TextInput14"
               }
             }
           ],
@@ -714,19 +714,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page'.Gallery6.AccessibleLabel"
+                  "fullyQualifiedName": "Admin.Gallery6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page'.Gallery6.AccessibleLabel",
+                  "fullyQualifiedName": "Admin.Gallery6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page",
-                "type": "'Project master page'.Gallery6"
+                "module": "Admin",
+                "type": "Admin.Gallery6"
               }
             }
           ],
@@ -744,19 +744,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page'.Gallery6.TabIndex"
+                  "fullyQualifiedName": "Admin.Gallery6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page'.Gallery6.TabIndex",
+                  "fullyQualifiedName": "Admin.Gallery6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Project master page",
-                "type": "'Project master page'.Gallery6"
+                "module": "Admin",
+                "type": "Admin.Gallery6"
               }
             }
           ],
@@ -774,19 +774,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page'.Gallery6.Icon3.AccessibleLabel"
+                  "fullyQualifiedName": "Admin.Gallery6.Icon3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page'.Gallery6.Icon3.AccessibleLabel",
+                  "fullyQualifiedName": "Admin.Gallery6.Icon3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page",
-                "type": "'Project master page'.Gallery6.Icon3"
+                "module": "Admin",
+                "type": "Admin.Gallery6.Icon3"
               }
             }
           ],
@@ -804,19 +804,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page'.Gallery6.Icon3.TabIndex"
+                  "fullyQualifiedName": "Admin.Gallery6.Icon3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page'.Gallery6.Icon3.TabIndex",
+                  "fullyQualifiedName": "Admin.Gallery6.Icon3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Project master page",
-                "type": "'Project master page'.Gallery6.Icon3"
+                "module": "Admin",
+                "type": "Admin.Gallery6.Icon3"
               }
             }
           ],
@@ -834,19 +834,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.TextInput14_1.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.TextInput14_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.TextInput14_1.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.TextInput14_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.TextInput14_1"
+                "module": "ProjectManager",
+                "type": "ProjectManager.TextInput14_1"
               }
             }
           ],
@@ -864,19 +864,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.Projects_DataCard1.DataCardValue7.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.Form2.Projects_DataCard1.DataCardValue7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.Projects_DataCard1.DataCardValue7.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.Form2.Projects_DataCard1.DataCardValue7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Form2.Projects_DataCard1.DataCardValue7"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Form2.Projects_DataCard1.DataCardValue7"
               }
             }
           ],
@@ -894,19 +894,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'Project Type_DataCard2'.DataCardValue9.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.Form2.'Project Type_DataCard2'.DataCardValue9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'Project Type_DataCard2'.DataCardValue9.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.Form2.'Project Type_DataCard2'.DataCardValue9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Form2.'Project Type_DataCard2'.DataCardValue9"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Form2.'Project Type_DataCard2'.DataCardValue9"
               }
             }
           ],
@@ -924,19 +924,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'PO Number_DataCard2'.DataCardValue10.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.Form2.'PO Number_DataCard2'.DataCardValue10.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'PO Number_DataCard2'.DataCardValue10.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.Form2.'PO Number_DataCard2'.DataCardValue10.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Form2.'PO Number_DataCard2'.DataCardValue10"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Form2.'PO Number_DataCard2'.DataCardValue10"
               }
             }
           ],
@@ -954,19 +954,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'Start Date_DataCard2'.DateValue3.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.Form2.'Start Date_DataCard2'.DateValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'Start Date_DataCard2'.DateValue3.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.Form2.'Start Date_DataCard2'.DateValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Form2.'Start Date_DataCard2'.DateValue3"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Form2.'Start Date_DataCard2'.DateValue3"
               }
             }
           ],
@@ -984,19 +984,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'Start Date_DataCard2'.HourValue3.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.Form2.'Start Date_DataCard2'.HourValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'Start Date_DataCard2'.HourValue3.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.Form2.'Start Date_DataCard2'.HourValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Form2.'Start Date_DataCard2'.HourValue3"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Form2.'Start Date_DataCard2'.HourValue3"
               }
             }
           ],
@@ -1014,19 +1014,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'Start Date_DataCard2'.MinuteValue3.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.Form2.'Start Date_DataCard2'.MinuteValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'Start Date_DataCard2'.MinuteValue3.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.Form2.'Start Date_DataCard2'.MinuteValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Form2.'Start Date_DataCard2'.MinuteValue3"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Form2.'Start Date_DataCard2'.MinuteValue3"
               }
             }
           ],
@@ -1044,19 +1044,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'End date_DataCard2'.DateValue4.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.Form2.'End date_DataCard2'.DateValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'End date_DataCard2'.DateValue4.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.Form2.'End date_DataCard2'.DateValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Form2.'End date_DataCard2'.DateValue4"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Form2.'End date_DataCard2'.DateValue4"
               }
             }
           ],
@@ -1074,19 +1074,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'End date_DataCard2'.HourValue4.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.Form2.'End date_DataCard2'.HourValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'End date_DataCard2'.HourValue4.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.Form2.'End date_DataCard2'.HourValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Form2.'End date_DataCard2'.HourValue4"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Form2.'End date_DataCard2'.HourValue4"
               }
             }
           ],
@@ -1104,19 +1104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'End date_DataCard2'.MinuteValue4.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.Form2.'End date_DataCard2'.MinuteValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Form2.'End date_DataCard2'.MinuteValue4.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.Form2.'End date_DataCard2'.MinuteValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Form2.'End date_DataCard2'.MinuteValue4"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Form2.'End date_DataCard2'.MinuteValue4"
               }
             }
           ],
@@ -1134,19 +1134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Gallery6_1.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.Gallery6_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Gallery6_1.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.Gallery6_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Gallery6_1"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Gallery6_1"
               }
             }
           ],
@@ -1164,19 +1164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Gallery6_1.TabIndex"
+                  "fullyQualifiedName": "ProjectManager.Gallery6_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Gallery6_1.TabIndex",
+                  "fullyQualifiedName": "ProjectManager.Gallery6_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Gallery6_1"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Gallery6_1"
               }
             }
           ],
@@ -1194,19 +1194,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Gallery6_1.Icon3_1.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.Gallery6_1.Icon3_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Gallery6_1.Icon3_1.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.Gallery6_1.Icon3_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Gallery6_1.Icon3_1"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Gallery6_1.Icon3_1"
               }
             }
           ],
@@ -1224,19 +1224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.Gallery6_1.Icon3_1.TabIndex"
+                  "fullyQualifiedName": "ProjectManager.Gallery6_1.Icon3_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.Gallery6_1.Icon3_1.TabIndex",
+                  "fullyQualifiedName": "ProjectManager.Gallery6_1.Icon3_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.Gallery6_1.Icon3_1"
+                "module": "ProjectManager",
+                "type": "ProjectManager.Gallery6_1.Icon3_1"
               }
             }
           ],
@@ -1254,19 +1254,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.ComboBox1.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.ComboBox1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.ComboBox1.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.ComboBox1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.ComboBox1"
+                "module": "ProjectManager",
+                "type": "ProjectManager.ComboBox1"
               }
             }
           ],
@@ -1434,6 +1434,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Main Screen'.TextInput1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Main Screen'.TextInput1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Main Screen",
+                "type": "'Main Screen'.TextInput1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Main Screen'.Label8.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Main Screen'.Label8.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Main Screen",
+                "type": "'Main Screen'.Label8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Main Screen'.Label8.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Main Screen'.Label8.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Main Screen",
+                "type": "'Main Screen'.Label8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.1609392125837"
                 }
               ],
@@ -1457,7 +1547,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1487,7 +1577,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1517,7 +1607,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1547,7 +1637,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1577,7 +1667,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1607,7 +1697,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1637,7 +1727,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1667,26 +1757,26 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Project master page_1'.ComboBox1.Items"
+                  "fullyQualifiedName": "ProjectManager.ComboBox1.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Project master page_1'.ComboBox1.Items",
+                  "fullyQualifiedName": "ProjectManager.ComboBox1.Items",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Items",
-                "module": "Project master page_1",
-                "type": "'Project master page_1'.ComboBox1"
+                "module": "ProjectManager",
+                "type": "ProjectManager.ComboBox1"
               }
             }
           ],
@@ -1697,7 +1787,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 4
+          "ruleIndex": 5
         }
       ],
       "tool": {
@@ -1754,6 +1844,23 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+              }
+            },
+            {
+              "id": "acc-FocusBorderShouldBeVisible",
+              "messageStrings": {
+                "issue": {
+                  "text": "Focus isn't showing"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Change the FocusedBorderThickness property to be more than 0."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "If the focus isn't visible, people who don't use a mouse won't be able to see it when they're interacting with the app."
               }
             },
             {
