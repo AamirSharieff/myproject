@@ -18,7 +18,6 @@
     "Button2_1": 322,
     "Button3": 219,
     "Button6": 73,
-    "Circle1": 227,
     "ComboBox1": 152,
     "ComboBox2": 70,
     "ComboBox2_1": 71,
@@ -309,7 +308,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/15/2022 16:44:34",
+  "HeaderLastSavedDateTimeUTC": "09/15/2022 16:45:49",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "745ec69f-0b33-4b0a-9657-91f04bf38e96": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/ae1adbdad10b45cfbbef5ca8d7ecfcca\"",
@@ -452,7 +451,6 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 8,
-    "circle": 11,
     "combobox": 7,
     "datepicker": 5,
     "dropdown": 6,
@@ -479,7 +477,6 @@
     "Button2_1": 72,
     "Button3": 16,
     "Button6": 238,
-    "Circle1": 22,
     "ComboBox1": 177,
     "ComboBox2": 235,
     "ComboBox2_1": 236,

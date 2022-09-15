@@ -280,27 +280,18 @@
         BorderColor: =RGBA(166, 166, 166, 1)
         Default: =""
         Height: =35
-        HintText: ="Search here"
+        HintText: ="Search "
         Width: =312
         X: =826
         Y: =6
         ZIndex: =25
 
-    Circle1 As circle:
-        Fill: =RGBA(219, 219, 219, 1)
-        Height: =46
-        Width: =52
-        X: =1307
-        Y: =3
-        ZIndex: =26
-
     Image1_3 As image:
-        Height: =32
-        Image: =User().Image
+        Height: =70
+        Image: =Office365Users.UserPhotoV2(User().Email)
         ImagePosition: =ImagePosition.Stretch
-        Width: =54
-        X: =1312
-        Y: =21
+        Width: =78
+        X: =1288
         ZIndex: =27
 
     Rectangle2 As rectangle:
