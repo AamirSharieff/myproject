@@ -1,2 +1,33 @@
 Screen1 As screen:
 
+    Image1 As image:
+        Height: =503
+        Image: ='Mask Group 6'
+        Width: =175
+        X: =687
+        Y: =143
+        ZIndex: =1
+
+    Image4 As image:
+        Height: =503
+        Image: ='Mask Group 7'
+        Width: =175
+        X: =879
+        Y: =198
+        ZIndex: =2
+
+    Image5 As image:
+        Height: =503
+        Image: ='Mask Group 8'
+        Width: =175
+        X: =1071
+        Y: =143
+        ZIndex: =3
+
+    Image9 As image:
+        Height: =344
+        Image: =blob
+        Width: =265
+        Y: =522
+        ZIndex: =4
+
