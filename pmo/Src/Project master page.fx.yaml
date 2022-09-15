@@ -115,7 +115,8 @@
             Color: =RGBA(0, 0, 0, 1)
             Height: =25
             Icon: =Icon.Edit
-            OnSelect: =Select(Parent)
+            OnSelect: |
+                =Select(Parent);
             Width: =24
             X: =1001
             Y: =13
