@@ -413,7 +413,6 @@
 
         Label10 As label:
             Color: =RGBA(0, 130, 204, 1)
-            Height: =23
             Size: =18
             Text: ="Plan a project"
             Visible: =popupvisible
@@ -878,12 +877,16 @@
             ZIndex: =43
 
         ComboBox1 As combobox:
+            DisplayFields: =["DisplayName"]
             Height: =35
             InputTextPlaceholder: |-
                 ="
                 "
-            Items: =ComboBoxSample
-            SearchItems: =Search(ComboBoxSample,ComboBox1.SearchText,"Value1")
+            IsSearchable: =false
+            Items: |-
+                =Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName
+            SearchFields: =["DisplayName"]
+            SearchItems: =[]
             Visible: =popupvisible
             Width: =836
             X: =286
