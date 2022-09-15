@@ -665,14 +665,6 @@
         Y: =204
         ZIndex: =25
 
-    Image8 As image:
-        Height: =30
-        Image: ='Group 323'
-        Width: =22
-        X: =20
-        Y: =263
-        ZIndex: =26
-
     Label1 As label:
         Text: ="Acesss PM"
         X: =272
@@ -727,4 +719,13 @@
         X: =792
         Y: =466
         ZIndex: =32
+
+    Icon2 As icon.Add:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =47
+        Icon: =Icon.Add
+        Width: =22
+        X: =20
+        Y: =252
+        ZIndex: =33
 
