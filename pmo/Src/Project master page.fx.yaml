@@ -144,8 +144,10 @@
     Rectangle5 As rectangle:
         BorderColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =57
-        Width: =1368
+        Height: =29
+        Width: =149
+        X: =21
+        Y: =9
         ZIndex: =10
 
     Label3 As label:
