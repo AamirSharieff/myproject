@@ -1,0 +1,903 @@
+"'Project master page_1' As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+    Fill: =RGBA(230, 230, 230, 1)
+    OnVisible: =
+
+    Rectangle1_2 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =768
+        Width: =198
+        X: =3
+        ZIndex: =1
+
+    "Gallery6_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =590
+        Items: |-
+            =Filter('Project Summarys',
+                    (StartsWith (Projects,TextInput14_1) || (StartsWith('Project Manager',TextInput14_1))))
+                    
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =45
+        Width: =1146
+        X: =202
+        Y: =178
+        ZIndex: =1
+
+        Title6_1 As label:
+            FontWeight: =FontWeight.Normal
+            Height: =22
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.Projects
+            VerticalAlign: =VerticalAlign.Top
+            Width: =173
+            X: =19
+            Y: =12
+            ZIndex: =1
+
+        Subtitle6_1 As label:
+            Height: =34
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.ProjectID
+            VerticalAlign: =VerticalAlign.Top
+            Width: =115
+            X: =243
+            Y: =11
+            ZIndex: =2
+
+        Body2_1 As label:
+            Height: =26
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.'Project Type'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =88
+            X: =453
+            Y: =8
+            ZIndex: =3
+
+        NextArrow6_1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =45
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =50
+            X: =1084
+            ZIndex: =4
+
+        Separator6_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Label4_1 As label:
+            Height: =33
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Project Manager'
+            Width: =118
+            X: =624
+            Y: =8
+            ZIndex: =6
+
+        Label14_1 As label:
+            Height: =28
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'PO Number'
+            Width: =117
+            X: =825
+            Y: =12
+            ZIndex: =7
+
+        Icon3_1 As icon.Edit:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =25
+            Icon: =Icon.Edit
+            OnSelect: |
+                =Select(Parent);
+                UpdateContext({popupvisible:true});
+            Width: =24
+            X: =1001
+            Y: =13
+            ZIndex: =8
+
+        Icon8_1 As icon.Trash:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =28
+            Icon: =Icon.Trash
+            OnSelect: =Select(Parent)
+            Width: =46
+            X: =1038
+            Y: =7
+            ZIndex: =9
+
+    Icon7_1 As icon.Add:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =26
+        Icon: =Icon.Add
+        Width: =38
+        X: =12
+        Y: =236
+        ZIndex: =9
+
+    Rectangle5_2 As rectangle:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =57
+        Width: =1366
+        ZIndex: =10
+
+    Label3_5 As label:
+        Align: =Align.Center
+        Size: =12
+        Text: =User().FullName
+        X: =1138
+        Y: =17
+        ZIndex: =12
+
+    Label3_4 As label:
+        Align: =Align.Center
+        Size: =14
+        Text: ="PM,"
+        X: =1157
+        ZIndex: =13
+
+    Image6_2 As image:
+        Height: =74
+        Image: ='MicrosoftTeams-image (6)'
+        Width: =202
+        ZIndex: =14
+
+    Rectangle7_1 As rectangle:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =45
+        Width: =1139
+        X: =201
+        Y: =127
+        ZIndex: =15
+
+    Label30_12 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =51
+        Size: =14
+        Text: ="Project Name"
+        Width: =138
+        X: =210
+        Y: =129
+        ZIndex: =16
+
+    Label30_11 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =51
+        Size: =14
+        Text: ="Project ID"
+        Width: =149
+        X: =375
+        Y: =127
+        ZIndex: =17
+
+    Label30_9 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Size: =14
+        Text: ="Action"
+        Width: =149
+        X: =1148
+        Y: =108
+        ZIndex: =18
+
+    Label30_10 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =51
+        Size: =14
+        Text: ="PO number"
+        Width: =149
+        X: =989
+        Y: =124
+        ZIndex: =19
+
+    Label30_13 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =42
+        Size: =14
+        Text: ="Project Manager"
+        Width: =195
+        X: =767
+        Y: =129
+        ZIndex: =20
+
+    Label30_14 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =27
+        Size: =14
+        Text: ="Project Type"
+        Width: =149
+        X: =591
+        Y: =136
+        ZIndex: =21
+
+    Rectangle8_1 As rectangle:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =55
+        Width: =1165
+        X: =201
+        Y: =74
+        ZIndex: =22
+
+    Label30_8 As label:
+        Color: =RGBA(0, 130, 204, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =20
+        Size: =18
+        Text: =" Projects"
+        Width: =256
+        X: =191
+        Y: =89
+        ZIndex: =23
+
+    TextInput14_1 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Default: =""
+        Height: =35
+        HintText: ="Search here"
+        Width: =312
+        X: =826
+        Y: =6
+        ZIndex: =25
+
+    Circle1_1 As circle:
+        Fill: =RGBA(219, 219, 219, 1)
+        Height: =46
+        Width: =52
+        X: =1307
+        Y: =3
+        ZIndex: =26
+
+    Image1_4 As image:
+        Height: =32
+        Image: =User().Image
+        ImagePosition: =ImagePosition.Stretch
+        Width: =54
+        X: =1312
+        Y: =21
+        ZIndex: =27
+
+    Rectangle2_4 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Width: =195
+        X: =3
+        Y: =84
+        ZIndex: =28
+
+    Rectangle2_5 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Width: =195
+        X: =3
+        Y: =139
+        ZIndex: =29
+
+    Rectangle2_6 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Width: =195
+        X: =3
+        Y: =184
+        ZIndex: =30
+
+    Rectangle2_7 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Width: =195
+        X: =4
+        Y: =227
+        ZIndex: =31
+
+    Icon2_5 As icon.ListScrollWatchlist:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =33
+        Icon: =Icon.ListScrollWatchlist
+        Width: =41
+        X: =4
+        Y: =97
+        ZIndex: =32
+
+    Icon5_5 As icon.AddLibrary:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =38
+        Icon: =Icon.AddLibrary
+        Width: =29
+        X: =8
+        Y: =146
+        ZIndex: =33
+
+    Icon6_5 As icon.Publish:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =33
+        Icon: =Icon.Publish
+        Width: =24
+        X: =12
+        Y: =194
+        ZIndex: =34
+
+    Icon7_5 As icon.Add:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =26
+        Icon: =Icon.Add
+        Width: =38
+        X: =8
+        Y: =239
+        ZIndex: =35
+
+    Label9_24 As label:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =33
+        Text: ="Dashboard"
+        Width: =127
+        X: =54
+        Y: =95
+        ZIndex: =36
+
+    Label9_25 As label:
+        Height: =27
+        Text: ="Project master"
+        Width: =153
+        X: =57
+        Y: =145
+        ZIndex: =37
+
+    Label9_26 As label:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =33
+        Text: ="Timeline"
+        Width: =127
+        X: =64
+        Y: =189
+        ZIndex: =38
+
+    Label9_27 As label:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =31
+        Text: ="Register member"
+        Width: =160
+        X: =38
+        Y: =234
+        ZIndex: =39
+
+    "'popup PM' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =46
+
+        Rectangle4 As rectangle:
+            DisplayMode: =
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =509
+            Visible: =popupvisible
+            Width: =1010
+            X: =200
+            Y: =71
+            ZIndex: =40
+
+        Label10 As label:
+            Color: =RGBA(0, 130, 204, 1)
+            Height: =23
+            Size: =18
+            Text: ="Plan a project"
+            Visible: =popupvisible
+            Width: =178
+            X: =244
+            Y: =89
+            ZIndex: =41
+
+        Form2 As form:
+            DataSource: ='Project Summarys'
+            DefaultMode: =FormMode.New
+            Height: =302
+            Visible: =popupvisible
+            Width: =862
+            X: =252
+            Y: =146
+            ZIndex: =42
+
+            Projects_DataCard1 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_projects"
+                Default: =ThisItem.Projects
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_projects")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_projects")
+                Required: =false
+                Update: =DataCardValue7.Text
+                Width: =287
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey7 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue7 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Gallery6_1.Selected.Projects
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage5 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue7.Y + DataCardValue7.Height
+                    ZIndex: =3
+
+                StarVisible5 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey7.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey7.Y
+                    ZIndex: =4
+
+            "'Project Type_DataCard2' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_projecttype"
+                Default: =ThisItem.'Project Type'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_projecttype")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_projecttype")
+                Required: =false
+                Update: =DataCardValue9.Text
+                Width: =287
+                X: =1
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey11 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue9 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Gallery6_1.Selected.'Project Type'
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage8 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue9.Y + DataCardValue9.Height
+                    ZIndex: =3
+
+                StarVisible8 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey11.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey11.Y
+                    ZIndex: =4
+
+            "'PO Number_DataCard2' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_ponumber"
+                Default: =ThisItem.'PO Number'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_ponumber")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_ponumber")
+                Required: =false
+                Update: =DataCardValue10.Text
+                Width: =287
+                X: =2
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey12 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue10 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Gallery6_1.Selected.'PO Number'
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage9 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue10.Y + DataCardValue10.Height
+                    ZIndex: =3
+
+                StarVisible9 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey12.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey12.Y
+                    ZIndex: =4
+
+            "'Start Date_DataCard2' As typedDataCard.dateTimeEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_startdate"
+                Default: =ThisItem.'Start Date'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_startdate")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DateValue3.SelectedDate + Time(Value(HourValue3.Selected.Value), Value(MinuteValue3.Selected.Value), 0)
+                Width: =287
+                X: =0
+                Y: =1
+                ZIndex: =1
+
+                DataCardKey13 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DateValue3 As datepicker:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultDate: =Parent.Default
+                    DisplayMode: =Parent.DisplayMode
+                    EndYear: =Year(Today())+100
+                    IsEditable: =true
+                    PaddingBottom: =0
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    StartYear: =1899
+                    Tooltip: =Parent.DisplayName
+                    Width: =245
+                    X: =30
+                    Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                    ZIndex: =2
+
+                HourValue3 As dropdown:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Text(Hour(Parent.Default),"00")
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =DateValue3.Height
+                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Tooltip: =Parent.DisplayName
+                    Visible: =false
+                    Width: =DateValue3.Width / 2 - 10
+                    X: =DateValue3.X + DateValue3.Width + 10
+                    Y: =DateValue3.Y
+                    ZIndex: =3
+
+                Separator3 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Height: =HourValue3.Height
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: |-
+                        =":"
+                    Width: =10
+                    Wrap: =false
+                    X: =HourValue3.X + HourValue3.Width
+                    Y: =HourValue3.Y
+                    ZIndex: =4
+
+                MinuteValue3 As dropdown:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Text(Minute(Parent.Default),"00")
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =HourValue3.Height
+                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Tooltip: =Parent.DisplayName
+                    Visible: =false
+                    Width: =HourValue3.Width
+                    X: =HourValue3.X + HourValue3.Width + Separator3.Width
+                    Y: =HourValue3.Y
+                    ZIndex: =5
+
+                ErrorMessage10 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =HourValue3.Y + HourValue3.Height
+                    ZIndex: =6
+
+                StarVisible10 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey13.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey13.Y
+                    ZIndex: =7
+
+            "'End date_DataCard2' As typedDataCard.dateTimeEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_enddate"
+                Default: =ThisItem.'End date'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_enddate")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =true
+                Update: =DateValue4.SelectedDate + Time(Value(HourValue4.Selected.Value), Value(MinuteValue4.Selected.Value), 0)
+                Width: =287
+                X: =1
+                Y: =1
+                ZIndex: =1
+
+                DataCardKey14 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DateValue4 As datepicker:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultDate: =Gallery6_1.Selected.'End date'
+                    DisplayMode: =Parent.DisplayMode
+                    EndYear: =Year(Today())+100
+                    IsEditable: =true
+                    PaddingBottom: =0
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    StartYear: =1899
+                    Tooltip: =Parent.DisplayName
+                    Width: =257
+                    X: =30
+                    Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                    ZIndex: =2
+
+                HourValue4 As dropdown:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Text(Hour(Parent.Default),"00")
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =DateValue4.Height
+                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Tooltip: =Parent.DisplayName
+                    Visible: =false
+                    Width: =DateValue4.Width / 2 - 10
+                    X: =DateValue4.X + DateValue4.Width + 10
+                    Y: =DateValue4.Y
+                    ZIndex: =3
+
+                Separator4 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Height: =HourValue4.Height
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: |-
+                        =":"
+                    Width: =10
+                    Wrap: =false
+                    X: =HourValue4.X + HourValue4.Width
+                    Y: =HourValue4.Y
+                    ZIndex: =4
+
+                MinuteValue4 As dropdown:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Text(Minute(Parent.Default),"00")
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =HourValue4.Height
+                    Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Tooltip: =Parent.DisplayName
+                    Visible: =false
+                    Width: =HourValue4.Width
+                    X: =HourValue4.X + HourValue4.Width + Separator4.Width
+                    Y: =HourValue4.Y
+                    ZIndex: =5
+
+                ErrorMessage11 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =HourValue4.Y + HourValue4.Height
+                    ZIndex: =6
+
+                StarVisible11 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey14.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey14.Y
+                    ZIndex: =7
+
+        Label12 As label:
+            Color: =RGBA(0, 130, 204, 1)
+            Height: =28
+            Size: =18
+            Text: ="Assign resources"
+            Visible: =popupvisible
+            Width: =200
+            X: =286
+            Y: =382
+            ZIndex: =43
+
+        ComboBox1 As combobox:
+            Height: =35
+            InputTextPlaceholder: |-
+                ="
+                "
+            Items: =ComboBoxSample
+            SearchItems: =Search(ComboBoxSample,ComboBox1.SearchText,"Value1")
+            Visible: =popupvisible
+            Width: =836
+            X: =286
+            Y: =437
+            ZIndex: =44
+
+        Button1 As button:
+            Height: =35
+            OnSelect: |-
+                =UpdateContext({popupvisible:false})
+            Text: ="Update"
+            Visible: =popupvisible
+            Width: =110
+            X: =1062
+            Y: =520
+            ZIndex: =45
+

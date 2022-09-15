@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "Project manager page": {
+    "Timeline": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -28,15 +28,10 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Project manager page",
+      "Name": "Timeline",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
-        },
         {
           "Category": "Design",
           "PropertyName": "ImagePosition",
@@ -44,12 +39,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Size",
+          "PropertyName": "Height",
           "RuleProviderType": "Unknown"
         },
         {
@@ -64,12 +54,22 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Orientation",
+          "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Size",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
           "PropertyName": "LoadingSpinnerColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Orientation",
           "RuleProviderType": "Unknown"
         },
         {
@@ -82,5 +82,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Project manager page"
+  "TopParentName": "Timeline"
 }
