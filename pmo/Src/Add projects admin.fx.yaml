@@ -113,8 +113,9 @@
         DataSource: ='Project Summarys'
         DefaultMode: |
             =FormMode.New
+        Height: =427
         X: =236
-        Y: =176
+        Y: =158
         ZIndex: =20
 
         "'Project Name_DataCard1' As typedDataCard.textualEditCard":
@@ -625,8 +626,8 @@
         OnSelect: =
         Text: ="Back"
         Width: =110
-        X: =1058
-        Y: =721
+        X: =944
+        Y: =661
         ZIndex: =21
 
     Button16 As button:
@@ -636,8 +637,8 @@
             
         Text: ="Save"
         Width: =110
-        X: =1209
-        Y: =721
+        X: =1169
+        Y: =661
         ZIndex: =22
 
     Image2 As image:
