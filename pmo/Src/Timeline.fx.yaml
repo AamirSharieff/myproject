@@ -421,3 +421,36 @@
         Y: =203
         ZIndex: =33
 
+    Label30_23 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Size: =14
+        Text: =" All Project"
+        Width: =130
+        X: =233
+        Y: =127
+        ZIndex: =34
+
+    Label30_24 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Size: =14
+        Text: =" Active"
+        Width: =130
+        X: =392
+        Y: =132
+        ZIndex: =35
+
+    Label30_25 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Size: =14
+        Text: ="Completed"
+        Width: =130
+        X: =536
+        Y: =131
+        ZIndex: =36
+
