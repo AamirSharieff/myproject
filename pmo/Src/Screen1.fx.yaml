@@ -74,3 +74,9 @@ Screen1 As screen:
         Y: =28
         ZIndex: =9
 
+    Image10 As image:
+        Height: =80
+        Image: ='Screenshot (51)'
+        Width: =130
+        ZIndex: =10
+
