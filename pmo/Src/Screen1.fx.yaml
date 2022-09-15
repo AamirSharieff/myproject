@@ -69,7 +69,7 @@ Screen1 As screen:
     Label12 As label:
         Height: =25
         Text: ="Timeline"
-        Width: =78
+        Width: =79
         X: =1169
         Y: =28
         ZIndex: =9
