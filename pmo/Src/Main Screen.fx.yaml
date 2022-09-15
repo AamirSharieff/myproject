@@ -51,14 +51,6 @@
         Width: =170
         ZIndex: =7
 
-    Label5 As label:
-        Height: =25
-        Text: ="Menu"
-        Width: =58
-        X: =716
-        Y: =28
-        ZIndex: =8
-
     Label6 As label:
         Height: =25
         Text: ="Dashboard"
@@ -69,9 +61,9 @@
 
     Label7 As label:
         Height: =25
-        Text: ="Project"
-        Width: =68
-        X: =1027
+        Text: ="Project Token"
+        Width: =122
+        X: =973
         Y: =28
         ZIndex: =10
 
