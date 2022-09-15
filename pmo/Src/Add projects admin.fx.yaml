@@ -57,11 +57,10 @@
         ZIndex: =13
 
     Image1_1 As image:
-        Height: =62
+        Height: =74
         Image: =User().Image
-        Width: =84
-        X: =1279
-        Y: =12
+        Width: =98
+        X: =1265
         ZIndex: =14
 
     Label3_2 As label:
@@ -76,12 +75,13 @@
     Label3_3 As label:
         Align: =Align.Center
         Text: =User().FullName
-        X: =1129
+        Width: =190
+        X: =1089
         ZIndex: =17
 
     Rectangle6 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =671
+        Height: =683
         OnSelect: |+
             =
             
@@ -92,9 +92,9 @@
             
         Visible: |
             =true
-        Width: =1149
+        Width: =1161
         X: =202
-        Y: =86
+        Y: =74
         ZIndex: =18
 
     Label30_7 As label:
