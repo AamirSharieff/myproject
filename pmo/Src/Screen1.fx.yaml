@@ -77,7 +77,7 @@ Screen1 As screen:
     Image10 As image:
         Height: =80
         Image: ='Screenshot (51)'
-        Width: =130
+        Width: =179
         ZIndex: =10
 
     Label13 As label:
