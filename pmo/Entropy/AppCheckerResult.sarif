@@ -864,6 +864,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.blob@2x"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.blob@2x",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "blob@2x",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.blob"
                 }
               ],
@@ -1044,6 +1074,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Mask Group 6"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Mask Group 6",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Mask Group 6",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Mask Group 7"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Mask Group 7",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Mask Group 7",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Mask Group 8"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Mask Group 8",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Mask Group 8",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.MicrosoftTeams-image (7)"
                 }
               ],
@@ -1055,6 +1175,36 @@
               },
               "properties": {
                 "member": "MicrosoftTeams-image (7)",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Screenshot (51)"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Screenshot (51)",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Screenshot (51)",
                 "module": "App",
                 "type": "App"
               }
