@@ -441,7 +441,7 @@
             Height: =35
             Visible: |
                 =popupvisible
-            Width: =134
+            Width: =163
             X: =655
             Y: =390
             ZIndex: =36
@@ -451,7 +451,7 @@
             Height: =35
             Visible: |
                 =popupvisible
-            Width: =134
+            Width: =155
             X: =873
             Y: =390
             ZIndex: =37
@@ -469,11 +469,11 @@
             ZIndex: =38
 
         Dropdown3 As dropdown:
-            Height: =35
+            Height: =39
             Items: =DropDownSample
             Visible: |
                 =popupvisible
-            Width: =836
+            Width: =414
             X: =254
             Y: =510
             ZIndex: =39
