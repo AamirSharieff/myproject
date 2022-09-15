@@ -276,23 +276,6 @@
         Y: =6
         ZIndex: =25
 
-    Circle1_1 As circle:
-        Fill: =RGBA(219, 219, 219, 1)
-        Height: =46
-        Width: =52
-        X: =1307
-        Y: =3
-        ZIndex: =26
-
-    Image1_4 As image:
-        Height: =32
-        Image: =User().Image
-        ImagePosition: =ImagePosition.Stretch
-        Width: =54
-        X: =1312
-        Y: =21
-        ZIndex: =27
-
     Rectangle2_4 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =50
@@ -395,6 +378,13 @@
         X: =38
         Y: =234
         ZIndex: =39
+
+    Image12 As image:
+        Height: =57
+        Image: =Office365Users.UserPhotoV2(User().Email)
+        Width: =78
+        X: =1288
+        ZIndex: =46
 
     "'popup PM' As group":
         Height: =5
