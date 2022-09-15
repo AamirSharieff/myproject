@@ -25,9 +25,52 @@ Screen1 As screen:
         ZIndex: =3
 
     Image9 As image:
-        Height: =344
-        Image: =blob
+        Height: =295
+        Image: ='blob@2x'
         Width: =265
-        Y: =522
+        Y: =494
         ZIndex: =4
+
+    Rectangle3 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =80
+        Width: =1366
+        ZIndex: =5
+
+    Label9 As label:
+        Align: =Align.Right
+        Height: =25
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Text: ="Menu"
+        Width: =50
+        X: =716
+        Y: =28
+        ZIndex: =6
+
+    Label10 As label:
+        Height: =25
+        Text: ="Dashboard"
+        Width: =101
+        X: =846
+        Y: =28
+        ZIndex: =7
+
+    Label11 As label:
+        Height: =25
+        Text: ="Project"
+        Width: =68
+        X: =1027
+        Y: =28
+        ZIndex: =8
+
+    Label12 As label:
+        Height: =25
+        Text: ="Timeline"
+        Width: =78
+        X: =1169
+        Y: =28
+        ZIndex: =9
 
