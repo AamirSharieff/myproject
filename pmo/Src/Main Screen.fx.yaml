@@ -55,16 +55,16 @@
         Height: =25
         Text: ="Dashboard"
         Width: =101
-        X: =846
-        Y: =28
+        X: =778
+        Y: =27
         ZIndex: =9
 
     Label7 As label:
         Height: =25
         Text: ="Project Token"
         Width: =122
-        X: =973
-        Y: =28
+        X: =932
+        Y: =27
         ZIndex: =10
 
     Label8 As label:
@@ -73,8 +73,8 @@
             =UpdateContext({popupvisible:true});
         Text: ="Login"
         Width: =79
-        X: =1149
-        Y: =28
+        X: =1246
+        Y: =27
         ZIndex: =11
 
     Label9 As label:
@@ -111,6 +111,16 @@
         X: =345
         Y: =401
         ZIndex: =14
+
+    Label8_1 As label:
+        Height: =25
+        OnSelect: |-
+            =UpdateContext({popupvisible:true});
+        Text: ="Timeline"
+        Width: =109
+        X: =1103
+        Y: =27
+        ZIndex: =19
 
     Login As group:
         Height: =5
