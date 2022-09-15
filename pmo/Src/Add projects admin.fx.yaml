@@ -424,7 +424,7 @@
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =118
+                Width: =216
                 X: =30
                 Y: =DataCardKey8.Y + DataCardKey8.Height + 5
                 ZIndex: =2
@@ -440,6 +440,7 @@
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: =Parent.DisplayName
+                Visible: =false
                 Width: =DateValue1.Width / 2 - 10
                 X: =148
                 Y: =49
@@ -457,7 +458,7 @@
                     =":"
                 Width: =10
                 Wrap: =false
-                X: =HourValue1.X + HourValue1.Width
+                X: =236
                 Y: =HourValue1.Y
                 ZIndex: =4
 
@@ -472,6 +473,7 @@
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: =Parent.DisplayName
+                Visible: =false
                 Width: =HourValue1.Width
                 X: =197
                 Y: =HourValue1.Y
@@ -537,7 +539,7 @@
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =(Parent.Width - 60) / 2
+                Width: =206
                 X: =30
                 Y: =DataCardKey9.Y + DataCardKey9.Height + 5
                 ZIndex: =2
@@ -553,6 +555,7 @@
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: =Parent.DisplayName
+                Visible: =false
                 Width: =DateValue2.Width / 2 - 10
                 X: =133
                 Y: =DateValue2.Y
@@ -560,6 +563,7 @@
 
             Separator2 As label:
                 Align: =Align.Center
+                AutoHeight: =true
                 FontWeight: =FontWeight.Bold
                 Height: =HourValue2.Height
                 PaddingBottom: =0
@@ -585,8 +589,9 @@
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: =Parent.DisplayName
+                Visible: =false
                 Width: =HourValue2.Width
-                X: =174
+                X: =184
                 Y: =49
                 ZIndex: =5
 
@@ -674,41 +679,51 @@
         ZIndex: =27
 
     Label1_1 As label:
-        Text: ="Acesss PM"
+        Text: ="Acesss TL"
         X: =538
         Y: =406
         ZIndex: =28
 
     Label1_2 As label:
-        Text: ="Acesss PM"
+        Text: ="Acesss AM"
         X: =804
         Y: =406
         ZIndex: =29
 
-    Dropdown1 As dropdown:
-        Default: =""
-        Height: =22
-        Items: =DropDownSample
-        Width: =207
-        X: =266
-        Y: =446
+    ComboBox2 As combobox:
+        DisplayFields: =["DisplayName"]
+        InputTextPlaceholder: =""
+        Items: |-
+            =Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName
+        SearchFields: =["DisplayName"]
+        SearchItems: |-
+            =Search(Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName,ComboBox2.SearchText,"DisplayName")
+        Width: =206
+        X: =257
+        Y: =461
         ZIndex: =30
 
-    Dropdown1_1 As dropdown:
-        Default: =""
-        Height: =22
-        Items: =DropDownSample
-        Width: =204
-        X: =538
-        Y: =446
+    ComboBox2_1 As combobox:
+        DisplayFields: =["DisplayName"]
+        IsSearchable: =false
+        Items: |-
+            =Office365Users.SearchUser({searchTerm:ComboBox2_1.SearchText}).DisplayName
+        SearchFields: =["DisplayName"]
+        SearchItems: =[]
+        Width: =206
+        X: =527
+        Y: =466
         ZIndex: =31
 
-    Dropdown1_2 As dropdown:
-        Default: =""
-        Height: =22
-        Items: =DropDownSample
-        Width: =190
-        X: =817
-        Y: =446
+    ComboBox2_2 As combobox:
+        DisplayFields: =["DisplayName"]
+        IsSearchable: =false
+        Items: |-
+            =Office365Users.SearchUser({searchTerm:ComboBox2_2.SearchText}).DisplayName
+        SearchFields: =["DisplayName"]
+        SearchItems: =[]
+        Width: =206
+        X: =792
+        Y: =466
         ZIndex: =32
 
