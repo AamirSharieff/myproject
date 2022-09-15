@@ -2,3 +2,430 @@
     Fill: =RGBA(230, 230, 230, 1)
     OnVisible: =
 
+    "Gallery6_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =520
+        Items: ='Project Detailss'
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =57
+        Width: =1139
+        X: =210
+        Y: =234
+        ZIndex: =1
+
+        Title6_2 As label:
+            FontWeight: =FontWeight.Normal
+            Height: =22
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.'Project Name'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =173
+            X: =19
+            Y: =12
+            ZIndex: =1
+
+        Subtitle6_2 As label:
+            Height: =34
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.ID
+            VerticalAlign: =VerticalAlign.Top
+            Width: =115
+            X: =243
+            Y: =11
+            ZIndex: =2
+
+        Body2_2 As label:
+            Height: =26
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.'Project Type'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =88
+            X: =373
+            Y: =8
+            ZIndex: =3
+
+        NextArrow6_2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =45
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =50
+            X: =1084
+            ZIndex: =4
+
+        Separator6_2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Label4_2 As label:
+            Height: =48
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Project Manager'
+            Width: =178
+            X: =490
+            Y: =8
+            ZIndex: =6
+
+        Label14_2 As label:
+            Height: =28
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Contract Amount'
+            Width: =117
+            X: =695
+            Y: =12
+            ZIndex: =7
+
+        Icon3_2 As icon.Edit:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =25
+            Icon: =Icon.Edit
+            OnSelect: |
+                =Select(Parent);
+            Width: =24
+            X: =1001
+            Y: =13
+            ZIndex: =8
+
+        Icon8_2 As icon.Trash:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =28
+            Icon: =Icon.Trash
+            OnSelect: =Select(Parent)
+            Width: =46
+            X: =1038
+            Y: =7
+            ZIndex: =9
+
+        Label14_3 As label:
+            Align: =Align.Center
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =28
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Status
+            Width: =117
+            X: =832
+            Y: =10
+            ZIndex: =10
+
+    Rectangle1_3 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =768
+        Width: =198
+        X: =3
+        ZIndex: =2
+
+    Icon7_2 As icon.Add:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =26
+        Icon: =Icon.Add
+        Width: =38
+        X: =12
+        Y: =236
+        ZIndex: =3
+
+    Rectangle5_3 As rectangle:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =74
+        Width: =1363
+        X: =3
+        ZIndex: =4
+
+    Label3_7 As label:
+        Align: =Align.Center
+        Size: =12
+        Text: =User().FullName
+        X: =1128
+        Y: =17
+        ZIndex: =5
+
+    Label3_6 As label:
+        Align: =Align.Center
+        Size: =14
+        Text: ="Admin,"
+        X: =1157
+        ZIndex: =6
+
+    Image6_3 As image:
+        Height: =74
+        Image: ='MicrosoftTeams-image (6)'
+        Width: =202
+        X: =3
+        ZIndex: =7
+
+    Rectangle7_2 As rectangle:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =45
+        Width: =1139
+        X: =210
+        Y: =191
+        ZIndex: =8
+
+    Label30_19 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =19
+        Size: =14
+        Text: ="Project Name"
+        Width: =130
+        X: =225
+        Y: =203
+        ZIndex: =9
+
+    Label30_18 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Size: =14
+        Text: ="Project ID"
+        Width: =100
+        X: =424
+        Y: =203
+        ZIndex: =10
+
+    Label30_16 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =19
+        Size: =14
+        Text: ="Action"
+        Width: =83
+        X: =1208
+        Y: =203
+        ZIndex: =11
+
+    Label30_17 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Size: =14
+        Text: ="Amount"
+        Width: =115
+        X: =897
+        Y: =203
+        ZIndex: =12
+
+    Label30_20 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Size: =14
+        Text: ="Project Manager"
+        Width: =163
+        X: =697
+        Y: =203
+        ZIndex: =13
+
+    Label30_21 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =19
+        Size: =14
+        Text: ="Project Type"
+        Width: =120
+        X: =559
+        Y: =203
+        ZIndex: =14
+
+    Rectangle8_2 As rectangle:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =80
+        Width: =1165
+        X: =201
+        Y: =72
+        ZIndex: =15
+
+    Label30_15 As label:
+        Align: =Align.Center
+        Color: =RGBA(0, 130, 204, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =20
+        Size: =18
+        Text: ="Recent Projects"
+        Width: =256
+        X: =191
+        Y: =89
+        ZIndex: =16
+
+    Button2_1 As button:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =31
+        OnSelect: =Navigate('Add projects admin',ScreenTransition.Fade)
+        Text: ="Create New Project"
+        Width: =205
+        X: =1129
+        Y: =85
+        ZIndex: =17
+
+    TextInput14_2 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Default: =""
+        Height: =35
+        HintText: ="Search here"
+        Width: =312
+        X: =826
+        Y: =6
+        ZIndex: =18
+
+    Rectangle2_8 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Width: =195
+        X: =3
+        Y: =84
+        ZIndex: =19
+
+    Rectangle2_9 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Width: =195
+        X: =3
+        Y: =139
+        ZIndex: =20
+
+    Rectangle2_10 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Width: =195
+        X: =3
+        Y: =184
+        ZIndex: =21
+
+    Rectangle2_11 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Width: =195
+        X: =4
+        Y: =227
+        ZIndex: =22
+
+    Icon2_6 As icon.ListScrollWatchlist:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =33
+        Icon: =Icon.ListScrollWatchlist
+        Width: =41
+        X: =4
+        Y: =97
+        ZIndex: =23
+
+    Icon5_6 As icon.AddLibrary:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =38
+        Icon: =Icon.AddLibrary
+        Width: =29
+        X: =8
+        Y: =146
+        ZIndex: =24
+
+    Icon6_6 As icon.Publish:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =33
+        Icon: =Icon.Publish
+        Width: =24
+        X: =12
+        Y: =194
+        ZIndex: =25
+
+    Icon7_6 As icon.Add:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =26
+        Icon: =Icon.Add
+        Width: =38
+        X: =8
+        Y: =239
+        ZIndex: =26
+
+    Label9_28 As label:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =33
+        Text: ="Dashboard"
+        Width: =127
+        X: =54
+        Y: =95
+        ZIndex: =27
+
+    Label9_29 As label:
+        Height: =27
+        Text: ="Project master"
+        Width: =153
+        X: =57
+        Y: =145
+        ZIndex: =28
+
+    Label9_30 As label:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =33
+        Text: ="Timeline"
+        Width: =127
+        X: =64
+        Y: =189
+        ZIndex: =29
+
+    Label9_31 As label:
+        Color: =RGBA(166, 166, 166, 1)
+        Height: =31
+        Text: ="Register member"
+        Width: =160
+        X: =38
+        Y: =234
+        ZIndex: =30
+
+    Circle1_2 As circle:
+        Fill: =RGBA(219, 219, 219, 1)
+        Height: =51
+        Width: =61
+        X: =1288
+        Y: =6
+        ZIndex: =31
+
+    Image1_5 As image:
+        Height: =51
+        Image: =User().Image
+        ImagePosition: =ImagePosition.Stretch
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =61
+        X: =1288
+        Y: =6
+        ZIndex: =32
+
+    Label30_22 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Size: =14
+        Text: ="Status"
+        Width: =115
+        X: =1054
+        Y: =203
+        ZIndex: =33
+
