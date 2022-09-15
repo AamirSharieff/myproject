@@ -617,7 +617,7 @@
 
     Button6 As button:
         Height: =35
-        OnSelect: =Navigate('Project master page',ScreenTransition.None)
+        OnSelect: =
         Text: ="Back"
         Width: =110
         X: =1058
@@ -626,9 +626,9 @@
 
     Button16 As button:
         Height: =35
-        OnSelect: |
+        OnSelect: |+
             =SubmitForm(Form1) ;
-            Navigate(Screen2,ScreenTransition.Cover)
+            
         Text: ="Save"
         Width: =110
         X: =1209
