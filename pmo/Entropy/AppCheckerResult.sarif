@@ -234,19 +234,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ProjectManager.TextInput14_1.AccessibleLabel"
+                  "fullyQualifiedName": "ProjectManager.TextInput14_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ProjectManager.TextInput14_1.AccessibleLabel",
+                  "fullyQualifiedName": "ProjectManager.TextInput14_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ProjectManager",
-                "type": "ProjectManager.TextInput14_1"
+                "type": "ProjectManager.TextInput14_4"
               }
             }
           ],
@@ -1404,19 +1404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin.TextInput14.AccessibleLabel"
+                  "fullyQualifiedName": "Admin.TextInput14_5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin.TextInput14.AccessibleLabel",
+                  "fullyQualifiedName": "Admin.TextInput14_5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Admin",
-                "type": "Admin.TextInput14"
+                "type": "Admin.TextInput14_5"
               }
             }
           ],
@@ -1674,6 +1674,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Admin.Form3.Projects_DataCard2.DataCardValue1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin.Form3.Projects_DataCard2.DataCardValue1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin",
+                "type": "Admin.Form3.Projects_DataCard2.DataCardValue1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.1609392125837"
                 }
               ],
@@ -1884,6 +1914,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Group 325"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Group 325",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Group 325",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Group 329"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Group 329",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Group 329",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Group 331"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Group 331",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Group 331",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.IMG_20220205_144912__01"
                 }
               ],
@@ -1895,6 +2015,36 @@
               },
               "properties": {
                 "member": "IMG_20220205_144912__01",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.MicrosoftTeams-image (6)"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.MicrosoftTeams-image (6)",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "MicrosoftTeams-image (6)",
                 "module": "App",
                 "type": "App"
               }
