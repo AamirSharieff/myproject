@@ -61,21 +61,6 @@
             Y: =8
             ZIndex: =3
 
-        NextArrow6_2 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Height: =45
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            TabIndex: =0
-            Tooltip: ="View item details"
-            Width: =50
-            X: =1084
-            ZIndex: =4
-
         Separator6_2 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
