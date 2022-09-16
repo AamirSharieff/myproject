@@ -294,10 +294,10 @@
 
         Form3 As form:
             DataSource: ='Project Summarys'
-            Height: =368
+            Height: =328
             Visible: =popupvisible
             X: =312
-            Y: =140
+            Y: =164
             ZIndex: =35
 
             "'Project Type_DataCard3' As typedDataCard.textualEditCard":
