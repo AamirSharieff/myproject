@@ -1,6 +1,7 @@
 "Timeline As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(230, 230, 230, 1)
-    OnVisible: =
+    OnVisible: |-
+        =UpdateContext({status:false})
 
     "Gallery6_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
@@ -88,7 +89,6 @@
             Text: =ThisItem.'Project Manager'
             Width: =178
             X: =490
-            Y: =8
             ZIndex: =6
 
         Label14_2 As label:
@@ -105,7 +105,7 @@
             Height: =25
             Icon: =Icon.Edit
             OnSelect: |
-                =Select(Parent);
+                =UpdateContext({status:true})
             Width: =24
             X: =1001
             Y: =13
@@ -134,6 +134,20 @@
             X: =832
             Y: =10
             ZIndex: =10
+
+        Dropdown1 As dropdown:
+            Height: =38
+            Items: =["Completed","Pending"]
+            OnChange: |-
+                =Patch('Project Detailss',
+                LookUp('Project Detailss',ID = ThisItem.ID),{'Project Status':Dropdown1.SelectedText.Value});
+                    UpdateContext({status:false})
+            OnSelect: =Select(Parent)
+            Visible: =status && ThisItem.IsSelected
+            Width: =152
+            X: =812
+            Y: =7
+            ZIndex: =11
 
     Rectangle7_2 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
@@ -245,6 +259,7 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =18
+        OnSelect: =Reset(Gallery6_2)
         Text: ="All Project"
         Width: =106
         X: =225
@@ -255,7 +270,7 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =20
-        OnSelect: =
+        OnSelect: =true
         Text: =" Active"
         Width: =78
         X: =380

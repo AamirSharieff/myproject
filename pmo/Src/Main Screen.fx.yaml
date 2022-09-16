@@ -54,6 +54,7 @@
     Label6 As label:
         Height: =25
         Text: ="Dashboard"
+        Visible: =false
         Width: =108
         X: =778
         Y: =27
@@ -63,6 +64,7 @@
         Height: =25
         OnSelect: =
         Text: ="Project master"
+        Visible: =false
         Width: =139
         X: =932
         Y: =27
@@ -73,7 +75,9 @@
         BorderThickness: =1
         Fill: =RGBA(255, 255, 255, 1)
         Height: =25
-        OnSelect: =If(User().Email="namratha.n@datasemantics.co",Navigate(Admin),Navigate(ProjectManager))
+        OnSelect: |-
+            =If(CountRows(Filter('Project Summarys','Project Manager'= User().FullName))>1,Navigate(ProjectManager),
+            If(User().Email="namratha.n@datasemantics.co",Navigate(Admin),Notify("Invalid User")))
         Text: ="Login"
         Width: =79
         X: =1246
@@ -120,6 +124,7 @@
         OnSelect: |-
             =UpdateContext({popupvisible:true});
         Text: ="Timeline"
+        Visible: =false
         Width: =109
         X: =1103
         Y: =27

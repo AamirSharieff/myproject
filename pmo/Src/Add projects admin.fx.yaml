@@ -20,14 +20,12 @@
         ZIndex: =5
 
     Label30_7 As label:
-        Align: =Align.Center
         Color: =RGBA(0, 134, 208, 1)
         FontWeight: =FontWeight.Semibold
         Height: =39
-        Italic: =true
         Size: =18
-        Text: ="Create a new project"
-        Width: =264
+        Text: ="Plan a project"
+        Width: =178
         X: =244
         Y: =94
         ZIndex: =6
@@ -549,7 +547,6 @@
         Color: =RGBA(0, 130, 204, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Height: =38
-        Italic: =true
         OnSelect: =Navigate(Admin,ScreenTransition.Cover)
         Text: ="Back"
         Width: =125
@@ -559,10 +556,13 @@
 
     Button16 As button:
         Height: =39
-        Italic: =true
-        OnSelect: |+
-            =SubmitForm(Form1) ;
-            
+        OnSelect: |-
+            =SubmitForm(Form1);
+            Office365Outlook.SendEmail(
+                DataCardValue6.Text,
+                "New Project Added",
+                "Project Name :" & DataCardValue3.Text & "<br><br>Project Type :" & DataCardValue4.Text & "<br><br>Start Date :" & DateValue1.SelectedDate & "<br><br>End Date :" & DateValue2.SelectedDate
+            )
         Text: ="Save"
         Width: =110
         X: =1179

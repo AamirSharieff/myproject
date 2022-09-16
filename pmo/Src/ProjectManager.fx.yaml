@@ -246,7 +246,12 @@
         Button1 As button:
             Height: =35
             OnSelect: |-
-                =UpdateContext({popupvisible:false})
+                =Office365Outlook.SendEmail(
+                    ComboBox1.Selected.DisplayName,
+                    "New Project Added",
+                    "Project Name :" & DataCardValue7.Text & "<br><br>Project Type :" & DataCardValue9.Text & "<br><br>Start Date :" & DateValue3.SelectedDate & "<br><br>End Date :" & DateValue4.SelectedDate
+                );
+                UpdateContext({popupvisible: false})
             Size: =13
             Text: ="Update"
             Visible: =popupvisible
@@ -275,7 +280,6 @@
         Label12 As label:
             Color: =RGBA(0, 130, 204, 1)
             Height: =25
-            Italic: =true
             Text: ="Assign resources"
             Visible: =popupvisible
             Width: =152
@@ -730,7 +734,6 @@
         Label10 As label:
             Color: =RGBA(0, 130, 204, 1)
             Height: =25
-            Italic: =true
             Text: ="Plan a project"
             Visible: =popupvisible
             Width: =130
