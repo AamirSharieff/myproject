@@ -254,7 +254,7 @@
     Label30_24 As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
-        Height: =20
+        Height: =21
         OnSelect: =true
         Text: =" Pending"
         Width: =84
