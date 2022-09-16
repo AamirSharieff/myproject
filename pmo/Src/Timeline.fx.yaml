@@ -24,7 +24,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =13
-            Text: =ThisItem.ID
+            Text: =ThisItem.'Project Name'
             VerticalAlign: =VerticalAlign.Top
             Width: =173
             X: =19
@@ -39,7 +39,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =13
-            Text: =ThisItem.'Created On'
+            Text: =ThisItem.ID
             VerticalAlign: =VerticalAlign.Top
             Width: =115
             X: =243
@@ -54,7 +54,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =13
-            Text: =ThisItem.'Account Manager'
+            Text: =ThisItem.'Project Type'
             VerticalAlign: =VerticalAlign.Top
             Width: =88
             X: =373
@@ -71,7 +71,7 @@
         Label4_2 As label:
             Height: =48
             OnSelect: =Select(Parent)
-            Text: =ThisItem.'Actual Start Date'
+            Text: =ThisItem.'Project Manager'
             Width: =178
             X: =490
             ZIndex: =6
@@ -79,7 +79,7 @@
         Label14_2 As label:
             Height: =28
             OnSelect: =Select(Parent)
-            Text: =ThisItem.'Balance to be billed'
+            Text: =ThisItem.'Contract Amount'
             Width: =117
             X: =695
             Y: =12
