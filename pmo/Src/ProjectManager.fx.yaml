@@ -202,10 +202,10 @@
     Rectangle8_1 As rectangle:
         BorderColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =67
+        Height: =68
         Width: =1138
-        X: =200
-        Y: =131
+        X: =210
+        Y: =61
         ZIndex: =9
 
     Label30_8 As label:
