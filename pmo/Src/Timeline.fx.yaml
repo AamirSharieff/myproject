@@ -4,14 +4,14 @@
 
     "Gallery6_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =520
+        Height: =539
         Items: ='Project Detailss'
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =57
-        Width: =1139
-        X: =210
-        Y: =234
+        Width: =1135
+        X: =214
+        Y: =215
         ZIndex: =1
 
         Title6_2 As label:
@@ -155,8 +155,8 @@
     Rectangle5_3 As rectangle:
         BorderColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =74
-        Width: =1363
+        Height: =46
+        Width: =1366
         X: =3
         ZIndex: =4
 
@@ -164,30 +164,35 @@
         Align: =Align.Center
         Size: =12
         Text: =User().FullName
-        X: =1128
-        Y: =17
+        Width: =134
+        X: =1165
         ZIndex: =5
 
     Label3_6 As label:
         Align: =Align.Center
+        Height: =24
         Size: =14
         Text: ="Admin,"
-        X: =1157
+        Width: =88
+        X: =1188
+        Y: =27
         ZIndex: =6
 
     Image6_3 As image:
-        Height: =74
+        Height: =40
         Image: ='MicrosoftTeams-image (6)'
-        Width: =202
+        ImagePosition: =ImagePosition.Stretch
+        Width: =178
         X: =3
+        Y: =6
         ZIndex: =7
 
     Rectangle7_2 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
         Height: =45
         Width: =1139
-        X: =210
-        Y: =191
+        X: =214
+        Y: =170
         ZIndex: =8
 
     Label30_19 As label:
@@ -197,8 +202,8 @@
         Size: =14
         Text: ="Project Name"
         Width: =130
-        X: =225
-        Y: =203
+        X: =231
+        Y: =190
         ZIndex: =9
 
     Label30_18 As label:
@@ -208,8 +213,8 @@
         Size: =14
         Text: ="Project ID"
         Width: =100
-        X: =424
-        Y: =203
+        X: =423
+        Y: =191
         ZIndex: =10
 
     Label30_16 As label:
@@ -219,8 +224,8 @@
         Size: =14
         Text: ="Action"
         Width: =83
-        X: =1208
-        Y: =203
+        X: =1216
+        Y: =191
         ZIndex: =11
 
     Label30_17 As label:
@@ -230,8 +235,8 @@
         Size: =14
         Text: ="Amount"
         Width: =115
-        X: =897
-        Y: =203
+        X: =901
+        Y: =191
         ZIndex: =12
 
     Label30_20 As label:
@@ -241,8 +246,8 @@
         Size: =14
         Text: ="Project Manager"
         Width: =163
-        X: =697
-        Y: =203
+        X: =700
+        Y: =190
         ZIndex: =13
 
     Label30_21 As label:
@@ -253,15 +258,15 @@
         Text: ="Project Type"
         Width: =120
         X: =559
-        Y: =203
+        Y: =190
         ZIndex: =14
 
     Rectangle8_2 As rectangle:
         BorderColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        Width: =1165
-        X: =201
-        Y: =82
+        Width: =1139
+        X: =214
+        Y: =67
         ZIndex: =15
 
     Label30_15 As label:
@@ -273,7 +278,7 @@
         Text: ="Recent Projects"
         Width: =256
         X: =191
-        Y: =89
+        Y: =76
         ZIndex: =16
 
     TextInput14_2 As text:
@@ -282,8 +287,8 @@
         Height: =35
         HintText: ="Search here"
         Width: =312
-        X: =741
-        Y: =17
+        X: =744
+        Y: =5
         ZIndex: =18
 
     Rectangle2_8 As rectangle:
@@ -323,8 +328,8 @@
         Height: =33
         Icon: =Icon.ListScrollWatchlist
         Width: =41
-        X: =4
-        Y: =97
+        X: =8
+        Y: =67
         ZIndex: =23
 
     Icon5_6 As icon.AddLibrary:
@@ -332,8 +337,8 @@
         Height: =38
         Icon: =Icon.AddLibrary
         Width: =29
-        X: =8
-        Y: =146
+        X: =14
+        Y: =106
         ZIndex: =24
 
     Icon6_6 As icon.Publish:
@@ -341,8 +346,8 @@
         Height: =33
         Icon: =Icon.Publish
         Width: =24
-        X: =12
-        Y: =194
+        X: =14
+        Y: =151
         ZIndex: =25
 
     Label9_28 As label:
@@ -350,16 +355,16 @@
         Height: =33
         Text: ="Dashboard"
         Width: =127
-        X: =54
-        Y: =95
+        X: =57
+        Y: =67
         ZIndex: =27
 
     Label9_29 As label:
         Height: =27
         Text: ="Project master"
         Width: =153
-        X: =57
-        Y: =145
+        X: =49
+        Y: =112
         ZIndex: =28
 
     Label9_30 As label:
@@ -367,8 +372,8 @@
         Height: =33
         Text: ="Timeline"
         Width: =127
-        X: =64
-        Y: =189
+        X: =51
+        Y: =151
         ZIndex: =29
 
     Label30_22 As label:
@@ -378,8 +383,8 @@
         Size: =14
         Text: ="Status"
         Width: =115
-        X: =1054
-        Y: =203
+        X: =1044
+        Y: =190
         ZIndex: =33
 
     Label30_23 As label:
@@ -417,10 +422,10 @@
         ZIndex: =36
 
     Image13 As image:
-        Height: =68
+        Height: =46
         Image: =Office365Users.UserPhotoV2(User().Email)
-        Width: =88
-        X: =1278
-        Y: =6
+        ImagePosition: =ImagePosition.Stretch
+        Width: =50
+        X: =1315
         ZIndex: =37
 
