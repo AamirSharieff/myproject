@@ -229,6 +229,7 @@
         Rectangle10 As rectangle:
             Fill: =RGBA(0, 0, 0, 0.4)
             Height: =768
+            Visible: =popupvisible
             Width: =1366
             ZIndex: =28
 
