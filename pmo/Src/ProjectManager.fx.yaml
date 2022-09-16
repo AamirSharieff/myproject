@@ -204,8 +204,8 @@
         Fill: =RGBA(255, 255, 255, 1)
         Height: =67
         Width: =1138
-        X: =210
-        Y: =67
+        X: =200
+        Y: =131
         ZIndex: =9
 
     Label30_8 As label:
@@ -219,12 +219,18 @@
         Y: =88
         ZIndex: =10
 
-    "'popup PM' As group":
+    "'pop up' As group":
         Height: =5
         Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =46
+        X: =80
+        Y: =80
+        ZIndex: =35
+
+        Rectangle10 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.4)
+            Height: =768
+            Width: =1366
+            ZIndex: =28
 
         Rectangle4 As rectangle:
             DisplayMode: =
@@ -234,27 +240,57 @@
             Width: =1010
             X: =200
             Y: =71
-            ZIndex: =11
+            ZIndex: =29
 
-        Label10 As label:
-            Color: =RGBA(0, 130, 204, 1)
-            Size: =18
-            Text: ="Plan a project"
+        Button1 As button:
+            Height: =27
+            OnSelect: |-
+                =UpdateContext({popupvisible:false})
+            Size: =13
+            Text: ="Update"
             Visible: =popupvisible
-            Width: =178
+            Width: =85
+            X: =1068
+            Y: =540
+            ZIndex: =30
+
+        ComboBox1 As combobox:
+            DisplayFields: =["DisplayName"]
+            Height: =35
+            InputTextPlaceholder: |-
+                ="
+                "
+            IsSearchable: =false
+            Items: |-
+                =Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName
+            SearchFields: =["DisplayName"]
+            SearchItems: =[]
+            Visible: =popupvisible
+            Width: =836
             X: =244
-            Y: =89
-            ZIndex: =12
+            Y: =413
+            ZIndex: =31
+
+        Label12 As label:
+            Color: =RGBA(0, 130, 204, 1)
+            Height: =25
+            Italic: =true
+            Text: ="Assign resources"
+            Visible: =popupvisible
+            Width: =152
+            X: =244
+            Y: =373
+            ZIndex: =32
 
         Form2 As form:
             DataSource: ='Project Summarys'
             DefaultMode: =FormMode.New
-            Height: =302
+            Height: =245
             Visible: =popupvisible
-            Width: =862
-            X: =252
-            Y: =146
-            ZIndex: =13
+            Width: =1010
+            X: =208
+            Y: =121
+            ZIndex: =33
 
             Projects_DataCard1 As typedDataCard.textualEditCard:
                 BorderStyle: =BorderStyle.Solid
@@ -690,44 +726,16 @@
                     Y: =DataCardKey14.Y
                     ZIndex: =7
 
-        Label12 As label:
+        Label10 As label:
             Color: =RGBA(0, 130, 204, 1)
-            Height: =28
-            Size: =18
-            Text: ="Assign resources"
+            Height: =25
+            Italic: =true
+            Text: ="Plan a project"
             Visible: =popupvisible
-            Width: =200
-            X: =286
-            Y: =382
-            ZIndex: =14
-
-        ComboBox1 As combobox:
-            DisplayFields: =["DisplayName"]
-            Height: =35
-            InputTextPlaceholder: |-
-                ="
-                "
-            IsSearchable: =false
-            Items: |-
-                =Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName
-            SearchFields: =["DisplayName"]
-            SearchItems: =[]
-            Visible: =popupvisible
-            Width: =836
-            X: =286
-            Y: =437
-            ZIndex: =15
-
-        Button1 As button:
-            Height: =35
-            OnSelect: |-
-                =UpdateContext({popupvisible:false})
-            Text: ="Update"
-            Visible: =popupvisible
-            Width: =110
-            X: =1062
-            Y: =520
-            ZIndex: =16
+            Width: =130
+            X: =244
+            Y: =89
+            ZIndex: =34
 
     Group2_2 As group:
         Height: =5
@@ -741,7 +749,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =50
             Width: =1366
-            ZIndex: =17
+            ZIndex: =11
 
         Label3_10 As label:
             Align: =Align.Center
@@ -752,7 +760,7 @@
             Width: =58
             X: =1238
             Y: =4
-            ZIndex: =18
+            ZIndex: =12
 
         Label3_11 As label:
             Align: =Align.Center
@@ -766,7 +774,7 @@
             Width: =45
             X: =1244
             Y: =24
-            ZIndex: =19
+            ZIndex: =13
 
         TextInput14_4 As text:
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -776,7 +784,7 @@
             Width: =312
             X: =823
             Y: =6
-            ZIndex: =20
+            ZIndex: =14
 
         Image13_2 As image:
             Height: =46
@@ -784,7 +792,7 @@
             ImagePosition: =ImagePosition.Stretch
             Width: =50
             X: =1312
-            ZIndex: =21
+            ZIndex: =15
 
         Circle1_2 As circle:
             BorderThickness: =0.2
@@ -792,7 +800,7 @@
             Height: =46
             Width: =50
             X: =1312
-            ZIndex: =22
+            ZIndex: =16
 
         Image6_5 As image:
             Height: =41
@@ -800,7 +808,7 @@
             ImagePosition: =ImagePosition.Stretch
             Width: =195
             X: =3
-            ZIndex: =33
+            ZIndex: =27
 
     Group1_2 As group:
         Height: =5
@@ -814,7 +822,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =768
             Width: =198
-            ZIndex: =23
+            ZIndex: =17
 
         Rectangle2_14 As rectangle:
             BorderThickness: =0.2
@@ -822,7 +830,7 @@
             Height: =46
             Width: =198
             Y: =50
-            ZIndex: =24
+            ZIndex: =18
 
         Rectangle2_15 As rectangle:
             BorderThickness: =0.2
@@ -830,7 +838,7 @@
             Height: =50
             Width: =198
             Y: =96
-            ZIndex: =25
+            ZIndex: =19
 
         Rectangle2_16 As rectangle:
             BorderThickness: =0.2
@@ -838,7 +846,7 @@
             Height: =50
             Width: =198
             Y: =146
-            ZIndex: =26
+            ZIndex: =20
 
         Label9_34 As label:
             Color: =RGBA(166, 166, 166, 1)
@@ -848,7 +856,7 @@
             Width: =80
             X: =43
             Y: =60
-            ZIndex: =27
+            ZIndex: =21
 
         Label9_35 As label:
             Height: =23
@@ -857,7 +865,7 @@
             Width: =118
             X: =43
             Y: =110
-            ZIndex: =28
+            ZIndex: =22
 
         Label9_36 As label:
             Color: =RGBA(166, 166, 166, 1)
@@ -868,7 +876,7 @@
             Width: =68
             X: =43
             Y: =160
-            ZIndex: =29
+            ZIndex: =23
 
         Image8_3 As image:
             Height: =23
@@ -876,7 +884,7 @@
             Width: =23
             X: =11
             Y: =60
-            ZIndex: =30
+            ZIndex: =24
 
         Image11_3 As image:
             Height: =23
@@ -884,7 +892,7 @@
             Width: =23
             X: =11
             Y: =109
-            ZIndex: =31
+            ZIndex: =25
 
         Image14_3 As image:
             Height: =23
@@ -892,5 +900,5 @@
             Width: =23
             X: =11
             Y: =160
-            ZIndex: =32
+            ZIndex: =26
 

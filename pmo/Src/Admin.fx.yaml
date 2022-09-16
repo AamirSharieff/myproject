@@ -239,7 +239,7 @@
         ZIndex: =36
 
         Rectangle1 As rectangle:
-            Fill: =RGBA(0, 0, 0, 0.29)
+            Fill: =RGBA(0, 0, 0, 0.4)
             Height: =768
             Visible: =popupvisible
             Width: =1366
