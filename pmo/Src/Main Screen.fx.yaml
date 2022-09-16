@@ -61,8 +61,8 @@
 
     Label7 As label:
         Height: =25
-        Text: ="Project Token"
-        Width: =122
+        Text: ="Project master"
+        Width: =139
         X: =932
         Y: =27
         ZIndex: =10
