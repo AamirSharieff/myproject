@@ -12,7 +12,7 @@
 
     "Gallery6_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =559
+        Height: =540
         Items: |-
             =Filter('Project Summarys',
                     (StartsWith (Projects,TextInput14_1) || (StartsWith('Project Manager',TextInput14_1))))
@@ -20,9 +20,9 @@
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =45
-        Width: =1146
-        X: =202
-        Y: =209
+        Width: =1134
+        X: =214
+        Y: =184
         ZIndex: =1
 
         Title6_1 As label:
@@ -145,7 +145,7 @@
     Rectangle5_2 As rectangle:
         BorderColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =57
+        Height: =46
         Width: =1366
         ZIndex: =10
 
@@ -153,7 +153,7 @@
         Align: =Align.Center
         Size: =12
         Text: =User().FullName
-        X: =1138
+        X: =1142
         ZIndex: =12
 
     Label3_4 As label:
@@ -162,7 +162,7 @@
         Size: =14
         Text: ="PM,"
         Width: =135
-        X: =1172
+        X: =1157
         Y: =30
         ZIndex: =13
 
@@ -174,10 +174,10 @@
 
     Rectangle7_1 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
-        Height: =63
-        Width: =1146
-        X: =202
-        Y: =146
+        Height: =47
+        Width: =1138
+        X: =210
+        Y: =137
         ZIndex: =15
 
     Label30_12 As label:
@@ -187,8 +187,8 @@
         Size: =14
         Text: ="Project Name"
         Width: =138
-        X: =202
-        Y: =156
+        X: =214
+        Y: =144
         ZIndex: =16
 
     Label30_11 As label:
@@ -198,8 +198,8 @@
         Size: =14
         Text: ="Project ID"
         Width: =149
-        X: =375
-        Y: =146
+        X: =397
+        Y: =137
         ZIndex: =17
 
     Label30_9 As label:
@@ -209,8 +209,8 @@
         Size: =14
         Text: ="Action"
         Width: =149
-        X: =1142
-        Y: =156
+        X: =1157
+        Y: =137
         ZIndex: =18
 
     Label30_10 As label:
@@ -220,8 +220,8 @@
         Size: =14
         Text: ="PO number"
         Width: =149
-        X: =989
-        Y: =156
+        X: =993
+        Y: =144
         ZIndex: =19
 
     Label30_13 As label:
@@ -231,8 +231,8 @@
         Size: =14
         Text: ="Project Manager"
         Width: =195
-        X: =767
-        Y: =156
+        X: =769
+        Y: =144
         ZIndex: =20
 
     Label30_14 As label:
@@ -242,17 +242,17 @@
         Size: =14
         Text: ="Project Type"
         Width: =149
-        X: =591
-        Y: =146
+        X: =594
+        Y: =131
         ZIndex: =21
 
     Rectangle8_1 As rectangle:
         BorderColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =57
-        Width: =1165
-        X: =201
-        Y: =73
+        Height: =67
+        Width: =1138
+        X: =210
+        Y: =67
         ZIndex: =22
 
     Label30_8 As label:
@@ -263,7 +263,7 @@
         Text: =" Projects"
         Width: =256
         X: =210
-        Y: =94
+        Y: =64
         ZIndex: =23
 
     TextInput14_1 As text:
@@ -272,8 +272,8 @@
         Height: =35
         HintText: ="Search "
         Width: =312
-        X: =800
-        Y: =11
+        X: =802
+        Y: =16
         ZIndex: =25
 
     Rectangle2_4 As rectangle:
@@ -308,40 +308,13 @@
         Y: =227
         ZIndex: =31
 
-    Icon2_5 As icon.ListScrollWatchlist:
-        Color: =RGBA(166, 166, 166, 1)
-        Height: =33
-        Icon: =Icon.ListScrollWatchlist
-        Width: =41
-        X: =4
-        Y: =97
-        ZIndex: =32
-
-    Icon5_5 As icon.AddLibrary:
-        Color: =RGBA(0, 0, 0, 1)
-        Height: =38
-        Icon: =Icon.AddLibrary
-        Width: =29
-        X: =8
-        Y: =146
-        ZIndex: =33
-
-    Icon6_5 As icon.Publish:
-        Color: =RGBA(166, 166, 166, 1)
-        Height: =33
-        Icon: =Icon.Publish
-        Width: =24
-        X: =12
-        Y: =194
-        ZIndex: =34
-
     Label9_24 As label:
         Color: =RGBA(166, 166, 166, 1)
         Height: =33
         Text: ="Dashboard"
         Width: =127
-        X: =54
-        Y: =95
+        X: =50
+        Y: =78
         ZIndex: =36
 
     Label9_25 As label:
@@ -349,7 +322,7 @@
         Text: ="Project master"
         Width: =153
         X: =57
-        Y: =145
+        Y: =124
         ZIndex: =37
 
     Label9_26 As label:
@@ -357,15 +330,15 @@
         Height: =33
         Text: ="Timeline"
         Width: =127
-        X: =64
-        Y: =189
+        X: =61
+        Y: =164
         ZIndex: =38
 
     Image12 As image:
-        Height: =57
+        Height: =46
         Image: =Office365Users.UserPhotoV2(User().Email)
-        Width: =78
-        X: =1288
+        Width: =55
+        X: =1311
         ZIndex: =46
 
     "'popup PM' As group":
@@ -877,4 +850,28 @@
             X: =1062
             Y: =520
             ZIndex: =45
+
+    Image15 As image:
+        Height: =59
+        Image: ='Group 331'
+        Width: =33
+        X: =12
+        Y: =64
+        ZIndex: =47
+
+    Image16 As image:
+        Height: =49
+        Image: ='Group 325'
+        Width: =37
+        X: =10
+        Y: =114
+        ZIndex: =48
+
+    Image17 As image:
+        Height: =71
+        Image: ='Group 329'
+        Width: =42
+        X: =15
+        Y: =145
+        ZIndex: =49
 
