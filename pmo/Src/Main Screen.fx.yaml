@@ -68,9 +68,9 @@
         ZIndex: =10
 
     Label8 As label:
+        BorderThickness: =1
         Height: =25
-        OnSelect: |-
-            =UpdateContext({popupvisible:true});
+        OnSelect: =If(User().Email="namratha.n@datasemantics.co",Navigate(Admin),Navigate(ProjectManager))
         Text: ="Login"
         Width: =79
         X: =1246
@@ -121,53 +121,4 @@
         X: =1103
         Y: =27
         ZIndex: =19
-
-    Login As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =19
-
-        Rectangle10 As rectangle:
-            Fill: =RGBA(241, 244, 249, 1)
-            Height: =456
-            OnSelect: =
-            Visible: =popupvisible
-            Width: =782
-            X: =292
-            Y: =166
-            ZIndex: =15
-
-        TextInput1 As text:
-            Default: =""
-            Height: =52
-            OnSelect: =
-            Visible: =popupvisible
-            Width: =606
-            X: =367
-            Y: =310
-            ZIndex: =16
-
-        Label11 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =56
-            OnSelect: =
-            Size: =15
-            Text: ="Email Id"
-            Visible: =popupvisible
-            Width: =170
-            X: =372
-            Y: =239
-            ZIndex: =17
-
-        Button3 As button:
-            Color: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(184, 214, 222, 1)
-            OnSelect: =
-            Text: ="Login"
-            Visible: =popupvisible
-            X: =579
-            Y: =429
-            ZIndex: =18
 

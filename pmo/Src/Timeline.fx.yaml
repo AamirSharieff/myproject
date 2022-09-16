@@ -415,6 +415,7 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =39
+        OnSelect: =
         Size: =14
         Text: =" Active"
         Width: =130
