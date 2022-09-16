@@ -146,7 +146,7 @@
     Label30_19 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
-        Height: =24
+        Height: =20
         Size: =14
         Text: ="Project Name"
         Width: =138
@@ -162,18 +162,18 @@
         Text: ="Project ID"
         Width: =100
         X: =424
-        Y: =205
+        Y: =203
         ZIndex: =10
 
     Label30_16 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
-        Height: =19
+        Height: =20
         Size: =14
         Text: ="Action"
         Width: =83
         X: =1209
-        Y: =205
+        Y: =203
         ZIndex: =11
 
     Label30_17 As label:
@@ -238,7 +238,7 @@
         Text: ="Status"
         Width: =115
         X: =1044
-        Y: =205
+        Y: =203
         ZIndex: =23
 
     Label30_23 As label:
