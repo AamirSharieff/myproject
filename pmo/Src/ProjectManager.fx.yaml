@@ -219,12 +219,12 @@
         Y: =88
         ZIndex: =10
 
-    "'pop up' As group":
+    "'pop pm' As group":
         Height: =5
         Width: =5
         X: =80
         Y: =80
-        ZIndex: =35
+        ZIndex: =36
 
         Rectangle10 As rectangle:
             Fill: =RGBA(0, 0, 0, 0.4)
@@ -740,6 +740,18 @@
             X: =244
             Y: =89
             ZIndex: =34
+
+        Button3 As button:
+            Height: =35
+            OnSelect: |-
+                =UpdateContext({popupvisible: false})
+            Size: =13
+            Text: ="Back"
+            Visible: =popupvisible
+            Width: =115
+            X: =906
+            Y: =533
+            ZIndex: =35
 
     Group2_2 As group:
         Height: =5
