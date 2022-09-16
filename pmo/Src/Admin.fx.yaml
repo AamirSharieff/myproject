@@ -12,7 +12,7 @@
 
     "Gallery6 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =619
+        Height: =599
         Items: |-
             =Filter('Project Summarys',
                     (StartsWith (Projects,TextInput14) || (StartsWith('Project Manager',TextInput14))))
@@ -20,9 +20,9 @@
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =45
-        Width: =1165
-        X: =201
-        Y: =149
+        Width: =1123
+        X: =220
+        Y: =144
         ZIndex: =1
 
         Title6 As label:
@@ -164,10 +164,10 @@
 
     Rectangle7 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
-        Height: =41
-        Width: =1168
-        X: =198
-        Y: =108
+        Height: =36
+        Width: =1123
+        X: =210
+        Y: =114
         ZIndex: =15
 
     Label30 As label:
@@ -177,7 +177,7 @@
         Size: =14
         Text: ="Project Name"
         Width: =138
-        X: =207
+        X: =230
         Y: =106
         ZIndex: =16
 
@@ -239,20 +239,21 @@
     Rectangle8 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =53
-        Width: =1165
-        X: =201
-        Y: =53
+        Height: =49
+        Width: =1130
+        X: =213
+        Y: =65
         ZIndex: =22
 
     Label30_6 As label:
+        Align: =Align.Center
         Color: =RGBA(0, 130, 204, 1)
         FontWeight: =FontWeight.Semibold
         Height: =55
         Size: =18
         Text: ="Recent Projects"
         Width: =256
-        X: =202
+        X: =207
         Y: =53
         ZIndex: =23
 
@@ -263,7 +264,7 @@
         Text: ="Create New Project"
         Width: =205
         X: =1134
-        Y: =68
+        Y: =77
         ZIndex: =24
 
     TextInput14 As text:
