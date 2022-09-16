@@ -47,14 +47,6 @@
         Y: =212
         ZIndex: =12
 
-    Label9_7 As label:
-        Color: =RGBA(166, 166, 166, 1)
-        Height: =52
-        Text: ="Register member"
-        X: =52
-        Y: =256
-        ZIndex: =13
-
     Image1_1 As image:
         Height: =74
         Image: =User().Image
@@ -721,13 +713,4 @@
         X: =792
         Y: =431
         ZIndex: =32
-
-    Icon2 As icon.Add:
-        Color: =RGBA(0, 0, 0, 1)
-        Height: =47
-        Icon: =Icon.Add
-        Width: =22
-        X: =20
-        Y: =252
-        ZIndex: =33
 
