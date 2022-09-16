@@ -6,7 +6,7 @@
     "Gallery6_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
         Height: =532
-        Items: ='Project Detailss'
+        Items: =Filter('Project Detailss',StartsWith('Project Status',Label30_24)|| StartsWith('Project Status',Label30_25)||StartsWith('Project Status',""))
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =45
@@ -244,7 +244,7 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =18
-        OnSelect: =Reset(Gallery6_2)
+        OnSelect: =Reset(Gallery6_2);Refresh('Project Detailss');
         Text: ="All Project"
         Width: =106
         X: =225
@@ -256,8 +256,8 @@
         FontWeight: =FontWeight.Semibold
         Height: =20
         OnSelect: =true
-        Text: =" Active"
-        Width: =78
+        Text: =" Pending"
+        Width: =84
         X: =380
         Y: =151
         ZIndex: =25
