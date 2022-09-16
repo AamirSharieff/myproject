@@ -287,8 +287,8 @@
             DefaultMode: =FormMode.New
             Height: =245
             Visible: =popupvisible
-            Width: =1010
-            X: =208
+            Width: =976
+            X: =220
             Y: =121
             ZIndex: =33
 
@@ -303,7 +303,7 @@
                 MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_projects")
                 Required: =false
                 Update: =DataCardValue7.Text
-                Width: =287
+                Width: =325
                 X: =0
                 Y: =0
                 ZIndex: =1
@@ -371,7 +371,7 @@
                 MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_projecttype")
                 Required: =false
                 Update: =DataCardValue9.Text
-                Width: =287
+                Width: =325
                 X: =1
                 Y: =0
                 ZIndex: =1
@@ -439,7 +439,7 @@
                 MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_ponumber")
                 Required: =false
                 Update: =DataCardValue10.Text
-                Width: =287
+                Width: =325
                 X: =2
                 Y: =0
                 ZIndex: =1
@@ -506,7 +506,7 @@
                 Height: =50
                 Required: =false
                 Update: =DateValue3.SelectedDate + Time(Value(HourValue3.Selected.Value), Value(MinuteValue3.Selected.Value), 0)
-                Width: =287
+                Width: =325
                 X: =0
                 Y: =1
                 ZIndex: =1
@@ -621,7 +621,7 @@
                 Height: =50
                 Required: =true
                 Update: =DateValue4.SelectedDate + Time(Value(HourValue4.Selected.Value), Value(MinuteValue4.Selected.Value), 0)
-                Width: =287
+                Width: =325
                 X: =1
                 Y: =1
                 ZIndex: =1
