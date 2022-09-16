@@ -631,7 +631,7 @@
         Rectangle5_4 As rectangle:
             BorderColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =46
+            Height: =50
             Width: =1366
             ZIndex: =26
 
@@ -709,7 +709,7 @@
             ZIndex: =16
 
         Rectangle2_11 As rectangle:
-            BorderThickness: =0.5
+            BorderThickness: =0.2
             Fill: =RGBA(255, 255, 255, 1)
             Height: =46
             Width: =198

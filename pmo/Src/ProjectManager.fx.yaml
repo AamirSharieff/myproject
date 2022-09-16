@@ -739,7 +739,7 @@
         Rectangle5_5 As rectangle:
             BorderColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =46
+            Height: =50
             Width: =1366
             ZIndex: =17
 
@@ -817,7 +817,7 @@
             ZIndex: =23
 
         Rectangle2_14 As rectangle:
-            BorderThickness: =0.5
+            BorderThickness: =0.2
             Fill: =RGBA(255, 255, 255, 1)
             Height: =46
             Width: =198
@@ -862,6 +862,7 @@
         Label9_36 As label:
             Color: =RGBA(166, 166, 166, 1)
             Height: =23
+            OnSelect: =Navigate(Timeline)
             Size: =10
             Text: ="Timeline"
             Width: =68

@@ -4,7 +4,7 @@
 
     "Gallery6 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =599
+        Height: =592
         Items: |-
             =Filter('Project Summarys',
                     (StartsWith (Projects,TextInput14_5) || (StartsWith('Project Manager',TextInput14_5))))
@@ -12,9 +12,9 @@
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =45
-        Width: =1123
-        X: =216
-        Y: =144
+        Width: =1139
+        X: =210
+        Y: =176
         ZIndex: =1
 
         Title6 As label:
@@ -127,107 +127,108 @@
 
     Rectangle7 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
-        Height: =36
-        Width: =1123
+        Height: =45
+        Width: =1139
         X: =210
-        Y: =114
+        Y: =131
         ZIndex: =2
 
     Label30 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
-        Height: =51
+        Height: =20
         Size: =14
         Text: ="Project Name"
         Width: =138
-        X: =230
-        Y: =106
+        X: =225
+        Y: =143
         ZIndex: =3
 
     Label30_1 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
-        Height: =60
+        Height: =20
         Size: =14
         Text: ="Project ID"
         Width: =149
-        X: =399
-        Y: =104
+        X: =424
+        Y: =143
         ZIndex: =4
 
     Label30_2 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
-        Height: =50
+        Height: =20
         Size: =14
         Text: ="Action"
         Width: =149
         X: =1162
-        Y: =107
+        Y: =143
         ZIndex: =5
 
     Label30_3 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
-        Height: =50
+        Height: =20
         Size: =14
         Text: ="PO number"
         Width: =149
         X: =985
-        Y: =108
+        Y: =143
         ZIndex: =6
 
     Label30_4 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
-        Height: =56
+        Height: =20
         Size: =14
         Text: ="Project Manager"
         Width: =195
         X: =772
-        Y: =103
+        Y: =143
         ZIndex: =7
 
     Label30_5 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
-        Height: =50
+        Height: =20
         Size: =14
         Text: ="Project Type"
         Width: =149
         X: =594
-        Y: =104
+        Y: =143
         ZIndex: =8
 
     Rectangle8 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =49
-        Width: =1130
-        X: =213
-        Y: =65
+        Height: =70
+        Width: =1139
+        X: =210
+        Y: =60
         ZIndex: =9
 
     Label30_6 As label:
         Align: =Align.Center
         Color: =RGBA(0, 130, 204, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =55
+        Height: =21
         Size: =18
         Text: ="Recent Projects"
-        Width: =256
-        X: =207
-        Y: =53
+        Width: =199
+        X: =225
+        Y: =88
         ZIndex: =10
 
     Button2 As button:
         Fill: =RGBA(0, 130, 204, 1)
-        Height: =26
+        Height: =32
         OnSelect: =Navigate('Add projects admin',ScreenTransition.Fade)
+        Size: =13
         Text: ="Create  New  Project"
-        Width: =199
-        X: =1112
-        Y: =77
+        Width: =183
+        X: =1135
+        Y: =82
         ZIndex: =11
 
     "'update pop' As group":
@@ -294,6 +295,7 @@
 
         Form3 As form:
             DataSource: ='Project Summarys'
+            DefaultMode: =FormMode.New
             Height: =328
             Visible: =popupvisible
             X: =312
@@ -514,7 +516,7 @@
         Rectangle5_6 As rectangle:
             BorderColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =46
+            Height: =50
             Width: =1366
             ZIndex: =12
 
@@ -537,7 +539,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =8
-            Text: ="PMO"
+            Text: ="Admin"
             Width: =45
             X: =1244
             Y: =24
@@ -592,7 +594,7 @@
             ZIndex: =18
 
         Rectangle2_17 As rectangle:
-            BorderThickness: =0.5
+            BorderThickness: =0.2
             Fill: =RGBA(255, 255, 255, 1)
             Height: =46
             Width: =198
