@@ -650,6 +650,9 @@
 
         Button4_1 As button:
             Height: =35
+            OnSelect: |-
+                =SubmitForm(Form3);
+                Navigate(Admin,ScreenTransition.Cover);
             Text: ="Save"
             Visible: =popupvisible
             Width: =110
