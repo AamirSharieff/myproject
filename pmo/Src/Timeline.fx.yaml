@@ -2,21 +2,6 @@
     Fill: =RGBA(204, 231, 246, 1)
     OnVisible: =
 
-    Rectangle1_3 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =768
-        Width: =198
-        ZIndex: =1
-
-    Rectangle2_10 As rectangle:
-        BorderThickness: =0.5
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =46
-        Width: =198
-        Y: =50
-        ZIndex: =2
-
     "Gallery6_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
         Height: =532
@@ -150,47 +135,6 @@
             Y: =10
             ZIndex: =10
 
-    Rectangle5_3 As rectangle:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =46
-        Width: =1366
-        X: =3
-        ZIndex: =4
-
-    Label3_7 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Semibold
-        Height: =20
-        Size: =8
-        Text: =User().FullName
-        Width: =58
-        X: =1241
-        Y: =4
-        ZIndex: =5
-
-    Label3_6 As label:
-        Align: =Align.Center
-        Height: =20
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =8
-        Text: ="PMO"
-        Width: =45
-        X: =1247
-        Y: =24
-        ZIndex: =6
-
-    Image6_3 As image:
-        Height: =41
-        Image: ='Screenshot (51)'
-        ImagePosition: =ImagePosition.Stretch
-        Width: =195
-        X: =3
-        ZIndex: =7
-
     Rectangle7_2 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
         Height: =45
@@ -286,61 +230,6 @@
         Y: =88
         ZIndex: =16
 
-    TextInput14_2 As text:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Default: =""
-        Height: =35
-        HintText: ="Search here"
-        Width: =312
-        X: =826
-        Y: =6
-        ZIndex: =17
-
-    Rectangle2_8 As rectangle:
-        BorderThickness: =0.2
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =50
-        Width: =198
-        Y: =96
-        ZIndex: =18
-
-    Rectangle2_9 As rectangle:
-        BorderThickness: =0.2
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =50
-        Width: =198
-        Y: =146
-        ZIndex: =19
-
-    Label9_28 As label:
-        Color: =RGBA(166, 166, 166, 1)
-        Height: =23
-        Size: =10
-        Text: ="Dashboard"
-        Width: =80
-        X: =43
-        Y: =60
-        ZIndex: =20
-
-    Label9_29 As label:
-        Height: =23
-        Size: =10
-        Text: ="Project master"
-        Width: =118
-        X: =43
-        Y: =110
-        ZIndex: =21
-
-    Label9_30 As label:
-        Color: =RGBA(166, 166, 166, 1)
-        Height: =23
-        Size: =10
-        Text: ="Timeline"
-        Width: =68
-        X: =43
-        Y: =160
-        ZIndex: =22
-
     Label30_22 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -384,35 +273,168 @@
         Y: =149
         ZIndex: =26
 
-    Image13 As image:
-        Height: =46
-        Image: =Office365Users.UserPhotoV2(User().Email)
-        ImagePosition: =ImagePosition.Stretch
-        Width: =50
-        X: =1315
-        ZIndex: =27
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =31
 
-    Image8_1 As image:
-        Height: =23
-        Image: ='Group 331_1'
-        Width: =23
-        X: =11
-        Y: =60
-        ZIndex: =28
+        Rectangle1_3 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            Width: =198
+            ZIndex: =1
 
-    Image11_1 As image:
-        Height: =23
-        Image: ='Group 325_1'
-        Width: =23
-        X: =11
-        Y: =109
-        ZIndex: =29
+        Rectangle2_10 As rectangle:
+            BorderThickness: =0.5
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =46
+            Width: =198
+            Y: =50
+            ZIndex: =2
 
-    Image14_1 As image:
-        Height: =23
-        Image: ='Group 329_1'
-        Width: =23
-        X: =11
-        Y: =160
-        ZIndex: =30
+        Rectangle2_8 As rectangle:
+            BorderThickness: =0.2
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =50
+            Width: =198
+            Y: =96
+            ZIndex: =18
+
+        Rectangle2_9 As rectangle:
+            BorderThickness: =0.2
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =50
+            Width: =198
+            Y: =146
+            ZIndex: =19
+
+        Label9_28 As label:
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =23
+            Size: =10
+            Text: ="Dashboard"
+            Width: =80
+            X: =43
+            Y: =60
+            ZIndex: =20
+
+        Label9_29 As label:
+            Height: =23
+            Size: =10
+            Text: ="Project master"
+            Width: =118
+            X: =43
+            Y: =110
+            ZIndex: =21
+
+        Label9_30 As label:
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =23
+            Size: =10
+            Text: ="Timeline"
+            Width: =68
+            X: =43
+            Y: =160
+            ZIndex: =22
+
+        Image8_1 As image:
+            Height: =23
+            Image: ='Group 331_1'
+            Width: =23
+            X: =11
+            Y: =60
+            ZIndex: =28
+
+        Image11_1 As image:
+            Height: =23
+            Image: ='Group 325_1'
+            Width: =23
+            X: =11
+            Y: =109
+            ZIndex: =29
+
+        Image14_1 As image:
+            Height: =23
+            Image: ='Group 329_1'
+            Width: =23
+            X: =11
+            Y: =160
+            ZIndex: =30
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =32
+
+        Rectangle5_3 As rectangle:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =46
+            Width: =1366
+            X: =3
+            ZIndex: =4
+
+        Label3_7 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =20
+            Size: =8
+            Text: =User().FullName
+            Width: =58
+            X: =1241
+            Y: =4
+            ZIndex: =5
+
+        Label3_6 As label:
+            Align: =Align.Center
+            Height: =20
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =8
+            Text: ="PMO"
+            Width: =45
+            X: =1247
+            Y: =24
+            ZIndex: =6
+
+        Image6_3 As image:
+            Height: =41
+            Image: ='Screenshot (51)'
+            ImagePosition: =ImagePosition.Stretch
+            Width: =195
+            X: =3
+            ZIndex: =7
+
+        TextInput14_2 As text:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Default: =""
+            Height: =35
+            HintText: ="Search here"
+            Width: =312
+            X: =826
+            Y: =6
+            ZIndex: =17
+
+        Image13 As image:
+            Height: =46
+            Image: =Office365Users.UserPhotoV2(User().Email)
+            ImagePosition: =ImagePosition.Stretch
+            Width: =50
+            X: =1315
+            ZIndex: =27
+
+        Circle1 As circle:
+            BorderThickness: =0.2
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =46
+            Width: =50
+            X: =1315
+            ZIndex: =31
 
