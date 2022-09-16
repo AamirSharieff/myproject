@@ -3,23 +3,24 @@
 
     Rectangle5_1 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =74
-        Width: =1360
+        Height: =46
+        Width: =1366
         X: =3
         ZIndex: =1
 
     Image6_1 As image:
-        Height: =74
+        Height: =43
         Image: ='MicrosoftTeams-image (6)'
-        Width: =202
+        ImagePosition: =ImagePosition.Stretch
+        Width: =173
         ZIndex: =2
 
     Rectangle1_1 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =694
+        Height: =722
         Width: =212
         X: =3
-        Y: =74
+        Y: =46
         ZIndex: =3
 
     Label9_4 As label:
@@ -28,7 +29,7 @@
         Text: ="Dashboard"
         Width: =127
         X: =61
-        Y: =97
+        Y: =111
         ZIndex: =5
 
     Label9_5 As label:
@@ -48,10 +49,11 @@
         ZIndex: =12
 
     Image1_1 As image:
-        Height: =74
+        Height: =46
         Image: =User().Image
-        Width: =98
-        X: =1265
+        ImagePosition: =ImagePosition.Stretch
+        Width: =58
+        X: =1305
         ZIndex: =14
 
     Label3_2 As label:
@@ -59,20 +61,21 @@
         Text: |-
             ="
             Admin,"
-        X: =1115
-        Y: =23
+        X: =1121
+        Y: =3
         ZIndex: =16
 
     Label3_3 As label:
         Align: =Align.Center
+        Height: =23
         Text: =User().FullName
-        Width: =190
-        X: =1089
+        Width: =159
+        X: =1121
         ZIndex: =17
 
     Rectangle6 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =694
+        Height: =638
         OnSelect: |+
             =
             
@@ -83,8 +86,8 @@
             
         Visible: |
             =true
-        Width: =1161
-        X: =202
+        Width: =1125
+        X: =225
         Y: =74
         ZIndex: =18
 
@@ -96,8 +99,8 @@
         Size: =18
         Text: ="Create a new project"
         Width: =264
-        X: =215
-        Y: =111
+        X: =244
+        Y: =94
         ZIndex: =19
 
     Form1 As form:
@@ -619,8 +622,8 @@
         OnSelect: =Navigate(Admin,ScreenTransition.Cover)
         Text: ="Back"
         Width: =125
-        X: =972
-        Y: =712
+        X: =971
+        Y: =651
         ZIndex: =21
 
     Button16 As button:
@@ -631,7 +634,7 @@
         Text: ="Save"
         Width: =110
         X: =1206
-        Y: =712
+        Y: =651
         ZIndex: =22
 
     Image2 As image:
