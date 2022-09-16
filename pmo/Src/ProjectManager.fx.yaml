@@ -243,15 +243,15 @@
             ZIndex: =29
 
         Button1 As button:
-            Height: =27
+            Height: =35
             OnSelect: |-
                 =UpdateContext({popupvisible:false})
             Size: =13
             Text: ="Update"
             Visible: =popupvisible
-            Width: =85
-            X: =1068
-            Y: =540
+            Width: =110
+            X: =1060
+            Y: =533
             ZIndex: =30
 
         ComboBox1 As combobox:
