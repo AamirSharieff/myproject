@@ -34,6 +34,7 @@
       "cre9a_projectdetailsid": "Project Details",
       "cre9a_projectmanager": "Project Manager",
       "cre9a_projectname": "Project Name",
+      "cre9a_projectprogress": "ProjectProgress",
       "cre9a_projectstatus": "Project Status",
       "cre9a_projecttype": "Project Type",
       "cre9a_technicallead": "Technical Lead",
@@ -71,6 +72,26 @@
       "b17a9a6e-b7d7-4dcb-b120-c47c197eba97": "Project Details Associated View",
       "f013e817-f6c0-4200-a678-b0b012e21e73": "Active Project Detailss"
     }
+  },
+  {
+    "DisplayName": "ProjectProgress (Project Detailss)",
+    "Name": "cre9a_projectdetails_cre9a_projectprogress",
+    "OptionSetInfoNameMapping": {
+      "235190000": "Completed",
+      "235190001": "Pending"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cre9a_projectprogress",
+        "OptionSetReferenceEntityName": "Project Detailss"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cre9a_projectprogress",
+    "RelatedEntityName": "Project Detailss",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Status (Project Detailss)",
