@@ -96,7 +96,7 @@
                 =Select(Parent);
                 UpdateContext({popupvisible:true});
             Width: =24
-            X: =1001
+            X: =991
             Y: =13
             ZIndex: =8
 
@@ -106,7 +106,7 @@
             Icon: =Icon.Trash
             OnSelect: =Select(Parent)
             Width: =46
-            X: =1038
+            X: =1028
             Y: =7
             ZIndex: =9
 

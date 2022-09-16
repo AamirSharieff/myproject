@@ -9,7 +9,7 @@
         Items: ='Project Detailss'
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =57
+        TemplateSize: =45
         Width: =1139
         X: =210
         Y: =236
@@ -92,7 +92,7 @@
             OnSelect: |
                 =UpdateContext({status:true})
             Width: =24
-            X: =1001
+            X: =1011
             Y: =13
             ZIndex: =8
 
