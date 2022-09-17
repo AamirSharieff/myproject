@@ -6,7 +6,7 @@
     "Gallery6_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
         Height: =532
-        Items: ='Project Detailss'
+        Items: =pmoapp
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =45
@@ -244,7 +244,9 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =18
-        OnSelect: =Reset(Gallery6_2);Refresh('Project Detailss');
+        OnSelect: |-
+            =Reset(Gallery6_2);Refresh('Project Detailss');
+            UpdateContext({pmoapp:'Project Detailss'})
         Text: ="All Project"
         Width: =106
         X: =225
@@ -255,7 +257,8 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =21
-        OnSelect: =true
+        OnSelect: |-
+            =UpdateContext({pmoapp:Filter('Project Detailss','Project Status'="Pending")})
         Text: =" Pending"
         Width: =84
         X: =380
@@ -266,6 +269,8 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =22
+        OnSelect: |-
+            =UpdateContext({pmoapp:Filter('Project Detailss','Project Status'="Completed")})
         Size: =14
         Text: ="Completed"
         Width: =117

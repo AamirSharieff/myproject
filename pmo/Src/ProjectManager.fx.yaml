@@ -92,9 +92,11 @@
             Color: =RGBA(0, 0, 0, 1)
             Height: =25
             Icon: =Icon.Edit
-            OnSelect: |
+            OnSelect: |+
                 =Select(Parent);
+                EditForm(Form2);
                 UpdateContext({popupvisible:true});
+                
             Width: =24
             X: =991
             Y: =13
@@ -104,7 +106,9 @@
             Color: =RGBA(0, 0, 0, 1)
             Height: =28
             Icon: =Icon.Trash
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =Select(Parent);
+                Remove('Project Summarys',ThisItem)
             Width: =46
             X: =1028
             Y: =7
@@ -231,10 +235,14 @@
         Button1 As button:
             Height: =35
             OnSelect: |-
-                =Office365Outlook.SendEmail(
-                    ComboBox1.Selected.DisplayName,
+                =SubmitForm(Form2);
+                Patch('Project Summarys',LookUp('Project Summarys',ProjectID=Gallery6_1.Selected.ProjectID),{'Project Manager':ComboBox1.Selected.DisplayName});
+                
+                
+                Office365Outlook.SendEmail(First(
+                    Office365Users.SearchUser({searchTerm:ComboBox1.Selected.DisplayName})).UserPrincipalName,
                     "New Project Added",
-                    "Project Name :" & DataCardValue7.Text & "<br><br>Project Type :" & DataCardValue9.Text & "<br><br>Start Date :" & DateValue3.SelectedDate & "<br><br>End Date :" & DateValue4.SelectedDate
+                    "Project Name :" & DataCardValue7.Text & "   Project Type :" & DataCardValue9.Text & "   Start Date :" & DateValue3.SelectedDate & "    End Date :" & DateValue4.SelectedDate
                 );
                 UpdateContext({popupvisible: false})
             Size: =13
@@ -251,11 +259,11 @@
             InputTextPlaceholder: |-
                 ="
                 "
-            IsSearchable: =false
             Items: |-
-                =Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName
+                =Office365Users.SearchUser({searchTerm:ComboBox1.SearchText}).DisplayName
             SearchFields: =["DisplayName"]
-            SearchItems: =[]
+            SearchItems: |-
+                =Search(Office365Users.SearchUser({searchTerm:ComboBox1.SearchText}).DisplayName,ComboBox1.SearchText,"DisplayName")
             Visible: =popupvisible
             Width: =836
             X: =244
@@ -274,8 +282,8 @@
 
         Form2 As form:
             DataSource: ='Project Summarys'
-            DefaultMode: =FormMode.New
             Height: =245
+            Item: =Gallery6_1.Selected
             Visible: =popupvisible
             Width: =976
             X: =220

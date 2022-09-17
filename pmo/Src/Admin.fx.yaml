@@ -95,6 +95,7 @@
             OnSelect: |-
                 =Select(Parent);
                 UpdateContext({popupvisible:true});
+                EditForm(Form3)
             Width: =24
             X: =991
             Y: =13
@@ -280,8 +281,8 @@
 
         Form3 As form:
             DataSource: ='Project Summarys'
-            DefaultMode: =FormMode.New
             Height: =328
+            Item: =Gallery6.Selected
             Visible: =popupvisible
             X: =312
             Y: =164
