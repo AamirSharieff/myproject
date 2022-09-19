@@ -92,8 +92,8 @@
             OnSelect: |
                 =UpdateContext({status:true})
             Width: =24
-            X: =1052
-            Y: =13
+            X: =1031
+            Y: =4
             ZIndex: =8
 
         Icon8_2 As icon.Trash:
@@ -102,8 +102,8 @@
             Icon: =Icon.Trash
             OnSelect: =Remove('Project Detailss',ThisItem)
             Width: =46
-            X: =1076
-            Y: =3
+            X: =1073
+            Y: =14
             ZIndex: =9
 
         Label14_3 As label:
@@ -115,6 +115,7 @@
             Height: =28
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Project Status'
+            Visible: =If(IsBlank(ThisItem.'Project Status'),false,true)
             Width: =117
             X: =680
             Y: =17
@@ -134,20 +135,25 @@
             Y: =7
             ZIndex: =11
 
-        Icon1 As icon.Message:
-            Color: =RGBA(0, 0, 0, 1)
-            Height: =34
-            Icon: =Icon.Message
-            OnSelect: =Select(Parent)
-            Width: =25
-            X: =1016
-            ZIndex: =12
-
         Label3 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Comments
+            Text: =TextInput1.Text
             X: =861
             ZIndex: =13
+
+        TextInput1 As text:
+            Default: =ThisItem.Comments
+            Height: =33
+            OnChange: |-
+                =Patch('Project Detailss',
+                LookUp('Project Detailss',ID = ThisItem.ID),{Comments:TextInput1.Text});
+                    UpdateContext({status:false})
+            OnSelect: =Select(Parent)
+            Visible: =status && ThisItem.IsSelected
+            Width: =148
+            X: =850
+            Y: =12
+            ZIndex: =14
 
     Rectangle7_2 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
@@ -251,8 +257,8 @@
         Size: =14
         Text: ="Status"
         Width: =115
-        X: =862
-        Y: =203
+        X: =899
+        Y: =206
         ZIndex: =23
 
     Label30_23 As label:
