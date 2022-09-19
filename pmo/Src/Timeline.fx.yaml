@@ -6,7 +6,7 @@
     "Gallery6_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
         Height: =532
-        Items: =pmoapp
+        Items: =SortByColumns(pmoapp,"cre9a_id")
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =45
