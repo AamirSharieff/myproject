@@ -560,9 +560,8 @@
             Office365Outlook.SendEmail(First(
                 Office365Users.SearchUser({searchTerm:ComboBox2.Selected.DisplayName})).UserPrincipalName,
                 "New Project Added",
-                "Project Name :" & DataCardValue3.Text & "   Project Type :" & DataCardValue4.Text & "   Start Date :" & DateValue1.SelectedDate & "    End Date :" & DateValue2.SelectedDate
-            );
-            NewForm(Form1);
+                "Project Name :" & DataCardValue3.Text & "   Project Type :" & DataCardValue4.Text & "   Start Date :" &DateValue1.SelectedDate & "    End Date :" & DateValue2.SelectedDate);
+                //Navigate(Admin);
         Text: ="Save"
         Width: =110
         X: =1179
