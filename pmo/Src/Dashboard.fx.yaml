@@ -1,0 +1,167 @@
+Dashboard As screen:
+    Fill: =RGBA(241, 244, 249, 1)
+
+    Group2_4 As group:
+        Height: =5
+        Width: =5
+        X: =-3
+        Y: =20
+        ZIndex: =33
+
+        Rectangle5_7 As rectangle:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =50
+            Width: =1366
+            ZIndex: =26
+
+        Label3_14 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =20
+            Size: =8
+            Text: =User().FullName
+            Width: =58
+            X: =1238
+            Y: =4
+            ZIndex: =27
+
+        Label3_15 As label:
+            Align: =Align.Center
+            Height: =20
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =8
+            Text: ="Admin"
+            Width: =45
+            X: =1244
+            Y: =24
+            ZIndex: =28
+
+        Image6_7 As image:
+            Height: =41
+            Image: ='Screenshot (51)'
+            ImagePosition: =ImagePosition.Stretch
+            Width: =195
+            X: =3
+            ZIndex: =29
+
+        TextInput14_6 As text:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Default: =""
+            Height: =35
+            HintText: ="Search here"
+            Width: =312
+            X: =823
+            Y: =6
+            ZIndex: =30
+
+        Image13_4 As image:
+            Height: =46
+            Image: =Office365Users.UserPhotoV2(User().Email)
+            ImagePosition: =ImagePosition.Stretch
+            Width: =50
+            X: =1312
+            ZIndex: =31
+
+        Circle1_4 As circle:
+            BorderThickness: =0.2
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =46
+            Width: =50
+            X: =1312
+            ZIndex: =32
+
+    Group1_4 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =40
+        ZIndex: =43
+
+        Rectangle1_7 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            Width: =198
+            ZIndex: =16
+
+        Rectangle2_20 As rectangle:
+            BorderThickness: =0.2
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =46
+            Width: =198
+            Y: =50
+            ZIndex: =17
+
+        Rectangle2_21 As rectangle:
+            BorderThickness: =0.2
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =50
+            Width: =198
+            Y: =96
+            ZIndex: =18
+
+        Rectangle2_22 As rectangle:
+            BorderThickness: =0.2
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =50
+            Width: =198
+            Y: =146
+            ZIndex: =19
+
+        Label9_40 As label:
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =23
+            Size: =10
+            Text: ="Dashboard"
+            Width: =80
+            X: =43
+            Y: =60
+            ZIndex: =20
+
+        Label9_41 As label:
+            Height: =23
+            Size: =10
+            Text: ="Project master"
+            Width: =118
+            X: =43
+            Y: =110
+            ZIndex: =21
+
+        Label9_42 As label:
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =23
+            Size: =10
+            Text: ="Timeline"
+            Width: =68
+            X: =43
+            Y: =160
+            ZIndex: =22
+
+        Image8_5 As image:
+            Height: =23
+            Image: ='Group 331_1'
+            Width: =23
+            X: =11
+            Y: =60
+            ZIndex: =23
+
+        Image11_5 As image:
+            Height: =23
+            Image: ='Group 325_1'
+            Width: =23
+            X: =11
+            Y: =109
+            ZIndex: =24
+
+        Image14_5 As image:
+            Height: =23
+            Image: ='Group 329_1'
+            Width: =23
+            X: =11
+            Y: =160
+            ZIndex: =25
+
