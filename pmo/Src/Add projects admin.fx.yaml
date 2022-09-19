@@ -32,8 +32,7 @@
 
     Form1 As form:
         DataSource: ='Project Summarys'
-        DefaultMode: |
-            =FormMode.New
+        DefaultMode: =FormMode.New
         Height: =427
         X: =236
         Y: =158
@@ -556,14 +555,14 @@
 
     Button16 As button:
         Height: =39
-        OnSelect: |+
+        OnSelect: |-
             =SubmitForm(Form1);
             Office365Outlook.SendEmail(First(
                 Office365Users.SearchUser({searchTerm:ComboBox2.Selected.DisplayName})).UserPrincipalName,
                 "New Project Added",
                 "Project Name :" & DataCardValue3.Text & "   Project Type :" & DataCardValue4.Text & "   Start Date :" & DateValue1.SelectedDate & "    End Date :" & DateValue2.SelectedDate
             );
-            
+            NewForm(Form1);
         Text: ="Save"
         Width: =110
         X: =1179
