@@ -2,6 +2,10 @@
   "DatasetName": "default.cds",
   "EntityName": "Login users",
   "InstanceUrl": "https://org83ad3957.crm8.dynamics.com/",
+  "LocalReferenceDSJson": {
+    "entitySetName": "cre9a_loginusers",
+    "logicalName": "cre9a_loginuser"
+  },
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://org83ad3957.crm8.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('cre9a_loginuser')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",
