@@ -75,9 +75,7 @@
         BorderThickness: =1
         Fill: =RGBA(255, 255, 255, 1)
         Height: =25
-        OnSelect: |-
-            =If(CountRows(Filter('Project Summarys','Project Manager'= User().FullName))>1,Navigate(ProjectManager),
-            If(User().Email="namratha.n@datasemantics.co",Navigate(Admin),Notify("Invalid User")))
+        OnSelect: =If(User().Email="namratha.n@datasemantics.co",Navigate(Admin),If(CountRows(Filter('Project Summarys','Project Manager'= User().FullName))>1,Navigate(ProjectManager),Notify("Invalid User")))
         Text: ="Login"
         Width: =79
         X: =1246

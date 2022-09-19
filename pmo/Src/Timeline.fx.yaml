@@ -121,7 +121,7 @@
             ZIndex: =10
 
         Dropdown1 As dropdown:
-            Height: =38
+            Height: =36
             Items: =["Completed","Pending"]
             OnChange: |-
                 =Patch('Project Detailss',
@@ -131,7 +131,7 @@
             Visible: =status && ThisItem.IsSelected
             Width: =152
             X: =680
-            Y: =7
+            Y: =8
             ZIndex: =11
 
         Label3 As label:
