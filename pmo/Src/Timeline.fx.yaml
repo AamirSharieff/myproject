@@ -81,7 +81,7 @@
             Text: =ThisItem.'Contract Amount'
             Width: =117
             X: =588
-            Y: =17
+            Y: =7
             ZIndex: =7
 
         Icon3_2 As icon.Edit:
@@ -135,11 +135,12 @@
             ZIndex: =11
 
         Label3 As label:
+            Align: =Left
             Height: =44
             OnSelect: =Select(Parent)
             Text: =TextInput1.Text
-            Width: =191
-            X: =832
+            Width: =173
+            X: =850
             ZIndex: =13
 
         TextInput1 As text:
