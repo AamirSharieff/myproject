@@ -73,26 +73,6 @@
     }
   },
   {
-    "DisplayName": "ProjectProgress (Project Detailss)",
-    "Name": "cre9a_projectdetails_cre9a_projectprogress",
-    "OptionSetInfoNameMapping": {
-      "235190000": "Completed",
-      "235190001": "Pending"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": false,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "cre9a_projectprogress",
-        "OptionSetReferenceEntityName": "Project Detailss"
-      }
-    },
-    "OptionSetTypeKey": "PicklistType",
-    "RelatedColumnInvariantName": "cre9a_projectprogress",
-    "RelatedEntityName": "Project Detailss",
-    "Type": "OptionSetInfo"
-  },
-  {
     "DisplayName": "Status (Project Detailss)",
     "Name": "cre9a_projectdetails_statecode",
     "OptionSetInfoNameMapping": {
