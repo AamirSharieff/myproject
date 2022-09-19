@@ -576,19 +576,6 @@
         Y: =386
         ZIndex: =10
 
-    Label1_1 As label:
-        Height: =25
-        Text: ="Acesss TL"
-        X: =538
-        Y: =406
-        ZIndex: =11
-
-    Label1_2 As label:
-        Text: ="Acesss AM"
-        X: =797
-        Y: =391
-        ZIndex: =12
-
     ComboBox2 As combobox:
         DisplayFields: =["DisplayName"]
         InputTextPlaceholder: =""
@@ -597,34 +584,10 @@
         SearchFields: =["DisplayName"]
         SearchItems: |-
             =Search(Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName,ComboBox2.SearchText,"DisplayName")
-        Width: =206
+        Width: =296
         X: =264
         Y: =431
         ZIndex: =13
-
-    ComboBox2_1 As combobox:
-        DisplayFields: =["DisplayName"]
-        IsSearchable: =false
-        Items: |-
-            =Office365Users.SearchUser({searchTerm:ComboBox2_1.SearchText}).DisplayName
-        SearchFields: =["DisplayName"]
-        SearchItems: =[]
-        Width: =206
-        X: =530
-        Y: =431
-        ZIndex: =14
-
-    ComboBox2_2 As combobox:
-        DisplayFields: =["DisplayName"]
-        IsSearchable: =false
-        Items: |-
-            =Office365Users.SearchUser({searchTerm:ComboBox2_2.SearchText}).DisplayName
-        SearchFields: =["DisplayName"]
-        SearchItems: =[]
-        Width: =206
-        X: =802
-        Y: =431
-        ZIndex: =15
 
     Group2_1 As group:
         Height: =5
