@@ -143,6 +143,12 @@
             X: =1016
             ZIndex: =12
 
+        Label3 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Comments
+            X: =861
+            ZIndex: =13
+
     Rectangle7_2 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
         Height: =45
@@ -378,6 +384,17 @@
             X: =11
             Y: =160
             ZIndex: =30
+
+    Label30_26 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Size: =14
+        Text: ="Comment"
+        Width: =115
+        X: =1054
+        Y: =206
+        ZIndex: =32
 
     Group2 As group:
         Height: =5
