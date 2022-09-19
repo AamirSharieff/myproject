@@ -17,7 +17,7 @@
 
         Title6_2 As label:
             FontWeight: =FontWeight.Normal
-            Height: =22
+            Height: =20
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -26,13 +26,13 @@
             Size: =13
             Text: =ThisItem.'Project Name'
             VerticalAlign: =VerticalAlign.Top
-            Width: =173
-            X: =19
+            Width: =154
+            X: =12
             Y: =12
             ZIndex: =1
 
         Subtitle6_2 As label:
-            Height: =34
+            Height: =35
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -41,8 +41,8 @@
             Size: =13
             Text: =ThisItem.ID
             VerticalAlign: =VerticalAlign.Top
-            Width: =115
-            X: =192
+            Width: =63
+            X: =182
             Y: =9
             ZIndex: =2
 
@@ -57,7 +57,7 @@
             Text: =ThisItem.'Project Type'
             VerticalAlign: =VerticalAlign.Top
             Width: =88
-            X: =297
+            X: =277
             Y: =10
             ZIndex: =3
 
@@ -69,11 +69,10 @@
             ZIndex: =5
 
         Label4_2 As label:
-            Height: =48
+            Height: =44
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Project Manager'
-            Width: =178
-            X: =385
+            X: =414
             ZIndex: =6
 
         Label14_2 As label:
@@ -81,19 +80,19 @@
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Contract Amount'
             Width: =117
-            X: =578
+            X: =588
             Y: =17
             ZIndex: =7
 
         Icon3_2 As icon.Edit:
             Color: =RGBA(0, 0, 0, 1)
-            Height: =25
+            Height: =28
             Icon: =Icon.Edit
             OnSelect: |
                 =UpdateContext({status:true})
-            Width: =24
-            X: =1031
-            Y: =4
+            Width: =30
+            X: =1035
+            Y: =5
             ZIndex: =8
 
         Icon8_2 As icon.Trash:
@@ -102,8 +101,8 @@
             Icon: =Icon.Trash
             OnSelect: =Remove('Project Detailss',ThisItem)
             Width: =46
-            X: =1073
-            Y: =14
+            X: =1063
+            Y: =4
             ZIndex: =9
 
         Label14_3 As label:
@@ -117,8 +116,8 @@
             Text: =ThisItem.'Project Status'
             Visible: =If(IsBlank(ThisItem.'Project Status'),false,true)
             Width: =117
-            X: =680
-            Y: =17
+            X: =694
+            Y: =7
             ZIndex: =10
 
         Dropdown1 As dropdown:
@@ -136,9 +135,11 @@
             ZIndex: =11
 
         Label3 As label:
+            Height: =44
             OnSelect: =Select(Parent)
             Text: =TextInput1.Text
-            X: =861
+            Width: =191
+            X: =832
             ZIndex: =13
 
         TextInput1 As text:
@@ -170,7 +171,7 @@
         Size: =14
         Text: ="Project Name"
         Width: =138
-        X: =209
+        X: =219
         Y: =203
         ZIndex: =9
 
@@ -192,7 +193,7 @@
         Size: =14
         Text: ="Action"
         Width: =83
-        X: =1228
+        X: =1238
         Y: =203
         ZIndex: =11
 
@@ -202,9 +203,9 @@
         Height: =20
         Size: =14
         Text: ="Amount"
-        Width: =115
-        X: =764
-        Y: =206
+        Width: =110
+        X: =774
+        Y: =203
         ZIndex: =12
 
     Label30_20 As label:
@@ -214,8 +215,8 @@
         Size: =14
         Text: ="Project Manager"
         Width: =163
-        X: =604
-        Y: =206
+        X: =614
+        Y: =203
         ZIndex: =13
 
     Label30_21 As label:
@@ -226,7 +227,7 @@
         Text: ="Project Type"
         Width: =120
         X: =479
-        Y: =206
+        Y: =203
         ZIndex: =14
 
     Rectangle8_2 As rectangle:
@@ -257,8 +258,8 @@
         Size: =14
         Text: ="Status"
         Width: =115
-        X: =899
-        Y: =206
+        X: =889
+        Y: =203
         ZIndex: =23
 
     Label30_23 As label:
@@ -282,7 +283,7 @@
             =UpdateContext({pmoapp:Filter('Project Detailss','Project Status'="Pending")})
         Text: =" Pending"
         Width: =84
-        X: =380
+        X: =360
         Y: =151
         ZIndex: =25
 
@@ -340,6 +341,7 @@
         Label9_28 As label:
             Color: =RGBA(166, 166, 166, 1)
             Height: =23
+            OnSelect: =Navigate(Dashboard)
             Size: =10
             Text: ="Dashboard"
             Width: =80
@@ -350,6 +352,7 @@
         Label9_29 As label:
             Color: =RGBA(166, 166, 166, 1)
             Height: =23
+            OnSelect: =Navigate(ProjectManager)
             Size: =10
             Text: ="Project master"
             Width: =118
@@ -399,7 +402,7 @@
         Text: ="Comment"
         Width: =115
         X: =1054
-        Y: =206
+        Y: =203
         ZIndex: =32
 
     Group2 As group:
@@ -418,13 +421,13 @@
             ZIndex: =4
 
         Label3_7 As label:
-            Align: =Align.Center
+            Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Height: =20
             Size: =8
             Text: =User().FullName
-            Width: =58
-            X: =1241
+            Width: =161
+            X: =1138
             Y: =4
             ZIndex: =5
 

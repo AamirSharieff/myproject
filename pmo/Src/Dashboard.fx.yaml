@@ -26,29 +26,15 @@ Dashboard As screen:
             ZIndex: =26
 
         Label3_14 As label:
-            Align: =Align.Center
+            Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Height: =20
             Size: =8
             Text: =User().FullName
-            Width: =58
-            X: =1238
+            Width: =166
+            X: =1146
             Y: =4
             ZIndex: =27
-
-        Label3_15 As label:
-            Align: =Align.Center
-            Height: =20
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =8
-            Text: ="Admin"
-            Width: =45
-            X: =1244
-            Y: =24
-            ZIndex: =28
 
         Image6_7 As image:
             Height: =41
@@ -123,17 +109,21 @@ Dashboard As screen:
             ZIndex: =19
 
         Label9_40 As label:
-            Color: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
             Height: =23
             Size: =10
             Text: ="Dashboard"
-            Width: =80
+            Width: =94
             X: =43
             Y: =60
             ZIndex: =20
 
         Label9_41 As label:
+            Color: =RGBA(128, 128, 128, 1)
             Height: =23
+            OnSelect: |-
+                =If(CountRows(Filter('Project Summarys','Project Manager'= User().FullName))>1,Navigate(ProjectManager),
+                If(User().Email="namratha.n@datasemantics.co",Navigate(Admin),Notify("Invalid User")))
             Size: =10
             Text: ="Project master"
             Width: =118
@@ -144,6 +134,7 @@ Dashboard As screen:
         Label9_42 As label:
             Color: =RGBA(166, 166, 166, 1)
             Height: =23
+            OnSelect: =Navigate(Timeline)
             Size: =10
             Text: ="Timeline"
             Width: =68

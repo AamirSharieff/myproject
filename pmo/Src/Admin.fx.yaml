@@ -507,13 +507,13 @@
             ZIndex: =12
 
         Label3_12 As label:
-            Align: =Align.Center
+            Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Height: =20
             Size: =8
             Text: =User().FullName
-            Width: =58
-            X: =1238
+            Width: =161
+            X: =1135
             Y: =4
             ZIndex: =13
 
@@ -606,6 +606,7 @@
         Label9_37 As label:
             Color: =RGBA(166, 166, 166, 1)
             Height: =23
+            OnSelect: =Navigate(Dashboard);
             Size: =10
             Text: ="Dashboard"
             Width: =80
@@ -614,6 +615,7 @@
             ZIndex: =22
 
         Label9_38 As label:
+            FontWeight: =FontWeight.Semibold
             Height: =23
             Size: =10
             Text: ="Project master"
@@ -625,6 +627,7 @@
         Label9_39 As label:
             Color: =RGBA(166, 166, 166, 1)
             Height: =23
+            OnSelect: =Navigate(Timeline)
             Size: =10
             Text: ="Timeline"
             Width: =68
