@@ -42,8 +42,8 @@
             Text: =ThisItem.ID
             VerticalAlign: =VerticalAlign.Top
             Width: =115
-            X: =243
-            Y: =11
+            X: =192
+            Y: =9
             ZIndex: =2
 
         Body2_2 As label:
@@ -57,8 +57,8 @@
             Text: =ThisItem.'Project Type'
             VerticalAlign: =VerticalAlign.Top
             Width: =88
-            X: =373
-            Y: =8
+            X: =297
+            Y: =10
             ZIndex: =3
 
         Separator6_2 As rectangle:
@@ -73,7 +73,7 @@
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Project Manager'
             Width: =178
-            X: =490
+            X: =385
             ZIndex: =6
 
         Label14_2 As label:
@@ -81,8 +81,8 @@
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Contract Amount'
             Width: =117
-            X: =695
-            Y: =12
+            X: =578
+            Y: =17
             ZIndex: =7
 
         Icon3_2 As icon.Edit:
@@ -92,7 +92,7 @@
             OnSelect: |
                 =UpdateContext({status:true})
             Width: =24
-            X: =1011
+            X: =1052
             Y: =13
             ZIndex: =8
 
@@ -102,8 +102,8 @@
             Icon: =Icon.Trash
             OnSelect: =Remove('Project Detailss',ThisItem)
             Width: =46
-            X: =1038
-            Y: =7
+            X: =1076
+            Y: =3
             ZIndex: =9
 
         Label14_3 As label:
@@ -116,8 +116,8 @@
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Project Status'
             Width: =117
-            X: =832
-            Y: =10
+            X: =680
+            Y: =17
             ZIndex: =10
 
         Dropdown1 As dropdown:
@@ -130,9 +130,18 @@
             OnSelect: =Select(Parent)
             Visible: =status && ThisItem.IsSelected
             Width: =152
-            X: =812
+            X: =680
             Y: =7
             ZIndex: =11
+
+        Icon1 As icon.Message:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =34
+            Icon: =Icon.Message
+            OnSelect: =Select(Parent)
+            Width: =25
+            X: =1016
+            ZIndex: =12
 
     Rectangle7_2 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
@@ -149,7 +158,7 @@
         Size: =14
         Text: ="Project Name"
         Width: =138
-        X: =225
+        X: =209
         Y: =203
         ZIndex: =9
 
@@ -160,7 +169,7 @@
         Size: =14
         Text: ="Project ID"
         Width: =100
-        X: =424
+        X: =372
         Y: =203
         ZIndex: =10
 
@@ -171,7 +180,7 @@
         Size: =14
         Text: ="Action"
         Width: =83
-        X: =1209
+        X: =1228
         Y: =203
         ZIndex: =11
 
@@ -182,8 +191,8 @@
         Size: =14
         Text: ="Amount"
         Width: =115
-        X: =899
-        Y: =203
+        X: =764
+        Y: =206
         ZIndex: =12
 
     Label30_20 As label:
@@ -193,8 +202,8 @@
         Size: =14
         Text: ="Project Manager"
         Width: =163
-        X: =701
-        Y: =203
+        X: =604
+        Y: =206
         ZIndex: =13
 
     Label30_21 As label:
@@ -204,8 +213,8 @@
         Size: =14
         Text: ="Project Type"
         Width: =120
-        X: =561
-        Y: =203
+        X: =479
+        Y: =206
         ZIndex: =14
 
     Rectangle8_2 As rectangle:
@@ -236,7 +245,7 @@
         Size: =14
         Text: ="Status"
         Width: =115
-        X: =1044
+        X: =862
         Y: =203
         ZIndex: =23
 

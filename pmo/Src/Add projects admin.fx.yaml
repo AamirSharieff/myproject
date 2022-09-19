@@ -556,12 +556,16 @@
     Button16 As button:
         Height: =39
         OnSelect: |-
-            =SubmitForm(Form1);
+            =
             Office365Outlook.SendEmail(First(
                 Office365Users.SearchUser({searchTerm:ComboBox2.Selected.DisplayName})).UserPrincipalName,
                 "New Project Added",
                 "Project Name :" & DataCardValue3.Text & "   Project Type :" & DataCardValue4.Text & "   Start Date :" &DateValue1.SelectedDate & "    End Date :" & DateValue2.SelectedDate);
-                //Navigate(Admin);
+                
+                SubmitForm(Form1);
+                NewForm(Form1);
+            
+                Navigate(Admin,ScreenTransition.Cover)
         Text: ="Save"
         Width: =110
         X: =1179
