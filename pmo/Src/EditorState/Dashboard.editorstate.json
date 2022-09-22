@@ -2716,39 +2716,17 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "PowerBI4": {
+    "PowerBI2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "DisplayMode",
         "BorderColor",
         "BorderStyle",
         "X",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Y",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Width",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Y",
+        "Width",
+        "Height",
         "ZIndex",
-        "WorkspaceId",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -2767,15 +2745,10 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PowerBI4",
+      "Name": "PowerBI2",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
-        {
-          "Category": "Data",
-          "PropertyName": "WorkspaceId",
-          "RuleProviderType": "Unknown"
-        },
         {
           "Category": "Data",
           "PropertyName": "TileUrl",

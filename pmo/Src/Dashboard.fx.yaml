@@ -1,13 +1,12 @@
 Dashboard As screen:
     Fill: =RGBA(241, 244, 249, 1)
 
-    PowerBI4 As powerbi:
-        Height: =720
+    PowerBI2 As powerbi:
+        Height: =718
         TileUrl: |-
-            ="https://app.powerbi.com/reportEmbed?reportId=6711ca9c-b853-4400-8955-b0b7686087c6&autoAuth=true&ctid=86fb359e-1360-4ab3-b90d-2a68e8c007b9 "
+            ="https://app.powerbi.com/reportEmbed?reportId=bfed680e-b1c9-43db-af51-486ede69e260&autoAuth=true&ctid=86fb359e-1360-4ab3-b90d-2a68e8c007b9"
         Width: =1164
-        WorkspaceId: ="__my-workspace"
-        X: =203
+        X: =198
         Y: =50
         ZIndex: =33
 
