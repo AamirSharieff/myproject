@@ -75,10 +75,11 @@
         BorderThickness: =1
         Fill: =RGBA(255, 255, 255, 1)
         Height: =25
-        OnSelect: =If(User().Email="rj@datasemantics.co",Navigate(Admin),If(CountRows(Filter('Project Summarys','Project Manager'= User().FullName))>1,Navigate(ProjectManager),Navigate(ProjectManager)))
+        OnSelect: |-
+            =UpdateContext({popupvisible:true})
         Text: ="Login"
         Width: =79
-        X: =1246
+        X: =1127
         Y: =27
         ZIndex: =11
 
@@ -124,7 +125,47 @@
         Text: ="Timeline"
         Visible: =false
         Width: =109
-        X: =1103
+        X: =963
         Y: =27
         ZIndex: =19
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        Rectangle2 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =48
+            Visible: =popupvisible
+            Width: =275
+            X: =1023
+            Y: =80
+            ZIndex: =20
+
+        Button5 As button:
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(215, 223, 240, 1)
+            OnSelect: |-
+                =Navigate(ProjectManager);UpdateContext({popupvisible:false})
+            Text: ="PM"
+            Visible: =popupvisible
+            Width: =124
+            X: =1170
+            Y: =85
+            ZIndex: =21
+
+        Button7 As button:
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(215, 223, 240, 1)
+            OnSelect: |-
+                =Navigate(Admin);UpdateContext({popupvisible:false})
+            Text: ="Admin"
+            Visible: =popupvisible
+            Width: =124
+            X: =1033
+            Y: =85
+            ZIndex: =22
 
