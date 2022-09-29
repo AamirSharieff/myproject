@@ -338,7 +338,9 @@
                     Default: =Parent.Default
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
+                    HintText: =""
                     MaxLength: =Parent.MaxLength
+                    OnChange: =true
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
