@@ -225,12 +225,12 @@
         Y: =143
         ZIndex: =36
 
-    "'pop pm' As group":
+    POP As group:
         Height: =5
         Width: =5
-        X: =80
-        Y: =80
-        ZIndex: =36
+        X: =40
+        Y: =40
+        ZIndex: =42
 
         Rectangle10 As rectangle:
             Fill: =RGBA(0, 0, 0, 0.4)
@@ -283,8 +283,8 @@
                 =Search(Office365Users.SearchUser({searchTerm:ComboBox1.SearchText}).DisplayName,ComboBox1.SearchText,"DisplayName")
             Visible: =popupvisible
             Width: =836
-            X: =244
-            Y: =413
+            X: =248
+            Y: =364
             ZIndex: =31
 
         Label12 As label:
@@ -293,13 +293,13 @@
             Text: ="Assign resources"
             Visible: =popupvisible
             Width: =152
-            X: =244
-            Y: =373
+            X: =242
+            Y: =334
             ZIndex: =32
 
         Form2 As form:
             DataSource: ='Project Detailss'
-            Height: =245
+            Height: =202
             Item: =Gallery6_1.Selected
             Visible: =popupvisible
             Width: =976
@@ -325,6 +325,7 @@
 
                 DataCardKey11 As label:
                     AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -335,9 +336,9 @@
 
                 DataCardValue9 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
+                    Default: =ThisItem.'Project Name'
                     DelayOutput: =true
-                    DisplayMode: =Parent.DisplayMode
+                    DisplayMode: =Parent.DisplayMode.View
                     HintText: =""
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
@@ -394,6 +395,7 @@
 
                 DataCardKey1 As label:
                     AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -406,7 +408,7 @@
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
-                    DisplayMode: =Parent.DisplayMode
+                    DisplayMode: =Parent.DisplayMode.View
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
@@ -462,6 +464,7 @@
 
                 DataCardKey14 As label:
                     AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -474,7 +477,7 @@
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
-                    DisplayMode: =Parent.DisplayMode
+                    DisplayMode: =Parent.DisplayMode.View
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
@@ -529,6 +532,7 @@
 
                 DataCardKey12 As label:
                     AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -540,7 +544,7 @@
                 DateValue3 As datepicker:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultDate: =Parent.Default
-                    DisplayMode: =Parent.DisplayMode
+                    DisplayMode: =Parent.DisplayMode.View
                     EndYear: =Year(Today())+100
                     IsEditable: =true
                     PaddingBottom: =0
@@ -645,6 +649,7 @@
 
                 DataCardKey13 As label:
                     AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -656,7 +661,7 @@
                 DateValue4 As datepicker:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultDate: =Parent.Default
-                    DisplayMode: =Parent.DisplayMode
+                    DisplayMode: =Parent.DisplayMode.View
                     EndYear: =Year(Today())+100
                     IsEditable: =true
                     PaddingBottom: =0
@@ -762,6 +767,7 @@
 
                 DataCardKey10 As label:
                     AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
                     Height: =34
                     Text: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -830,9 +836,67 @@
             Text: ="Back"
             Visible: =popupvisible
             Width: =115
-            X: =906
+            X: =922
             Y: =533
             ZIndex: =35
+
+        Button8 As button:
+            Height: =35
+            OnSelect: |-
+                =UpdateContext({popupvisible1: true})
+            Size: =13
+            Text: ="Edit"
+            Visible: =popupvisible
+            Width: =115
+            X: =772
+            Y: =531
+            ZIndex: =37
+
+    DateEdit As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =42
+
+        Rectangle5 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =170
+            Visible: =popupvisible1
+            Width: =452
+            X: =248
+            Y: =404
+            ZIndex: =38
+
+        Label16 As label:
+            Color: =RGBA(0, 130, 204, 1)
+            Height: =28
+            Text: ="Comments"
+            Visible: =popupvisible1
+            Width: =316
+            X: =244
+            Y: =409
+            ZIndex: =39
+
+        TextInput2 As text:
+            Default: =""
+            Height: =82
+            Visible: =popupvisible1
+            Width: =439
+            X: =254
+            Y: =446
+            ZIndex: =40
+
+        Button9 As button:
+            Height: =35
+            OnSelect: |-
+                =UpdateContext({popupvisible1: false})
+            Text: ="OK"
+            Visible: =popupvisible1
+            Width: =85
+            X: =606
+            Y: =537
+            ZIndex: =41
 
     Group2_2 As group:
         Height: =5
