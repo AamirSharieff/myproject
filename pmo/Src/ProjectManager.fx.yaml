@@ -891,12 +891,16 @@
 
         Button9 As button:
             Height: =35
-            OnSelect: |-
+            OnSelect: |+
                 =Office365Outlook.SendEmail("gopika.sucharitha@datasemantics.co",
                 "Requset Email",
                 "Project Name :" & DataCardValue9.Text & "   Project Type :" & DataCardValue1.Text & "   Start Date :" & DateValue3.SelectedDate & "    End Date :" & DateValue4.SelectedDate & "Comments : "& TextInput2.Text
                 );
-                UpdateContext({popupvisible1: false})
+                UpdateContext({popupvisible1: false});
+                
+                PMOApplication.Run()
+                
+                
             Text: ="OK"
             Visible: =popupvisible1
             Width: =85
