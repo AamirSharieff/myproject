@@ -831,7 +831,8 @@
         Button3 As button:
             Height: =35
             OnSelect: |-
-                =UpdateContext({popupvisible: false})
+                =UpdateContext({popupvisible1: false});
+                UpdateContext({popupvisible: false})
             Size: =13
             Text: ="Back"
             Visible: =popupvisible
@@ -843,7 +844,8 @@
         Button8 As button:
             Height: =35
             OnSelect: |-
-                =UpdateContext({popupvisible1: true})
+                =Reset(TextInput2);
+                UpdateContext({popupvisible1: true})
             Size: =13
             Text: ="Edit"
             Visible: =popupvisible
@@ -879,7 +881,7 @@
             ZIndex: =39
 
         TextInput2 As text:
-            Default: =""
+            Default: =
             Height: =82
             Visible: =popupvisible1
             Width: =439
@@ -890,7 +892,11 @@
         Button9 As button:
             Height: =35
             OnSelect: |-
-                =UpdateContext({popupvisible1: false})
+                =Office365Outlook.SendEmail("gopika.sucharitha@datasemantics.co",
+                "Requset Email",
+                "Project Name :" & DataCardValue9.Text & "   Project Type :" & DataCardValue1.Text & "   Start Date :" & DateValue3.SelectedDate & "    End Date :" & DateValue4.SelectedDate & "Comments : "& TextInput2.Text
+                );
+                UpdateContext({popupvisible1: false})
             Text: ="OK"
             Visible: =popupvisible1
             Width: =85
