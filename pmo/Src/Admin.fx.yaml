@@ -216,7 +216,9 @@
     Button2 As button:
         Fill: =RGBA(0, 130, 204, 1)
         Height: =32
-        OnSelect: =Navigate('Add projects admin',ScreenTransition.Fade)
+        OnSelect: |
+            =Navigate('Add projects admin',ScreenTransition.Fade);
+            ResetForm(Form1)
         Size: =13
         Text: ="Create  New  Project"
         Width: =183
