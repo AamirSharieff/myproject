@@ -90,7 +90,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =Parent.Error
+                Text: ="Project Name is Required"
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
@@ -704,8 +704,8 @@
 
     Label1 As label:
         Text: ="Project Manager"
-        X: =248
-        Y: =447
+        X: =244
+        Y: =493
         ZIndex: =10
 
     ComboBox2 As combobox:
@@ -718,7 +718,7 @@
             =Search(Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName,ComboBox2.SearchText,"DisplayName")
         Width: =313
         X: =244
-        Y: =499
+        Y: =533
         ZIndex: =13
 
     Group2_1 As group:
