@@ -14,30 +14,6 @@
     }
   },
   {
-    "DisplayName": "Billing Cycle",
-    "Name": "cre9a_billingcycle",
-    "OptionSetInfoNameMapping": {
-      "235190000": "Monthly",
-      "235190001": "Quarterly"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": true,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "cre9a_billingcycle",
-        "OptionSetReferenceEntityName": "project masters"
-      },
-      "OptionSetReferenceItem1": {
-        "OptionSetReferenceColumnName": "cre9a_billingcycle",
-        "OptionSetReferenceEntityName": "Project Detailss"
-      }
-    },
-    "OptionSetTypeKey": "PicklistType",
-    "RelatedColumnInvariantName": "cre9a_billingcycle",
-    "RelatedEntityName": "project masters",
-    "Type": "OptionSetInfo"
-  },
-  {
     "DisplayName": "Status (project masters)",
     "Name": "cre9a_pmoapplication_statecode",
     "OptionSetInfoNameMapping": {
@@ -78,6 +54,26 @@
     "Type": "OptionSetInfo"
   },
   {
+    "DisplayName": "PMO Project type",
+    "Name": "cre9a_pmoprojecttype",
+    "OptionSetInfoNameMapping": {
+      "235190000": "fixed project",
+      "235190001": "time and material"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cre9a_projecttype",
+        "OptionSetReferenceEntityName": "project masters"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cre9a_projecttype",
+    "RelatedEntityName": "project masters",
+    "Type": "OptionSetInfo"
+  },
+  {
     "DisplayName": "Project Type1",
     "Name": "cre9a_projecttype1",
     "OptionSetInfoNameMapping": {
@@ -113,7 +109,7 @@
       "cre9a_amount": "amount",
       "cre9a_amountachieved": "amount achieved ",
       "cre9a_amountplanned": "amount planned ",
-      "cre9a_billingcycle": "Billing Cycle ",
+      "cre9a_billingcycle": "billing cycle",
       "cre9a_date": "date",
       "cre9a_designation": "designation",
       "cre9a_enddate": "end date",

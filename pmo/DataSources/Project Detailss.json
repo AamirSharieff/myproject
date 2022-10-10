@@ -6,12 +6,12 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cre9a_projectdetails",
-    "MaxGetRowsCount": 500,
     "Name": "Project Detailss",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
       "cre9a_accountmanager": "Account Manager",
       "cre9a_actualstartdate": "Actual Start Date",
+      "cre9a_balancetobebilled": "Balance to be billed",
       "cre9a_billingcycle": "Billing Cycle",
       "cre9a_comments": "Comments",
       "cre9a_contractamount": "Contract Amount",

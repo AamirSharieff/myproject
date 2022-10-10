@@ -1,89 +1,94 @@
 "'Admin Login' As screen":
 
-    Rectangle3_1 As rectangle:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =80
-        Width: =1366
-        ZIndex: =2
-
-    Image10_1 As image:
+    Image10_3 As image:
         Height: =80
         Image: ='Screenshot (51)'
         Width: =170
+        ZIndex: =2
+
+    Image3 As image:
+        Height: =684
+        Image: ='WhatsApp Image 2022-10-10 at 6.34.42 PM'
+        Width: =709
+        Y: =80
         ZIndex: =3
 
-    Button10_2 As button:
-        Height: =33
-        Text: ="Admin"
-        Width: =119
-        X: =1054
-        Y: =19
+    Rectangle11 As rectangle:
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =651
+        Width: =696
+        X: =670
+        Y: =113
         ZIndex: =4
 
-    Button11 As button:
-        Height: =55
+    Label8 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =79
+        Size: =30
+        Text: ="Hello! Welcome Back."
+        Width: =696
+        X: =670
+        Y: =110
+        ZIndex: =5
+
+    Label17 As label:
+        Height: =75
         Size: =20
-        Text: ="Login"
-        X: =587
-        Y: =585
+        Text: ="Log in with your data  that you entered during registration"
+        Width: =592
+        X: =719
+        Y: =189
+        ZIndex: =6
+
+    Label18 As label:
+        Height: =57
+        Size: =25
+        Text: ="Email Address"
+        Width: =285
+        X: =696
+        Y: =286
+        ZIndex: =7
+
+    Label18_1 As label:
+        Height: =57
+        Size: =25
+        Text: ="Password"
+        Width: =285
+        X: =709
+        Y: =497
         ZIndex: =8
 
-    TextInput4_1 As text:
+    TextInput3 As text:
         Default: =""
-        Height: =71
-        HintText: ="             Password"
-        Size: =20
-        Width: =430
-        X: =456
-        Y: =389
+        Height: =67
+        Width: =565
+        X: =696
+        Y: =360
+        ZIndex: =9
+
+    TextInput3_1 As text:
+        Default: =""
+        Height: =67
+        Width: =565
+        X: =696
+        Y: =577
         ZIndex: =10
 
-    TextInput4_2 As text:
-        Default: =""
-        Height: =77
-        HintText: ="             Username"
+    Label18_2 As label:
+        Color: =RGBA(102, 182, 227, 1)
+        Height: =37
         Size: =20
-        Width: =430
-        X: =456
-        Y: =263
+        Text: ="Forgot password"
+        Width: =235
+        X: =1026
+        Y: =442
         ZIndex: =11
 
-    Icon1 As icon.Person:
-        Height: =56
-        Icon: =Icon.Person
-        Width: =49
-        X: =482
-        Y: =273
-        ZIndex: =12
-
-    Icon2 As icon.Lock:
-        Height: =49
-        Icon: =Icon.Lock
-        X: =482
-        Y: =400
-        ZIndex: =13
-
-    TextInput5 As text:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Default: ="Admin Login"
-        Fill: =RGBA(39, 113, 194, 1)
-        Height: =73
-        HintText: ="    "
-        Size: =25
-        Width: =598
-        X: =368
-        Y: =142
-        ZIndex: =14
-
-    Button11_2 As button:
-        Color: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =55
+    Button12 As button:
         Size: =20
-        Text: ="Forgot Password  ?"
-        Width: =265
-        X: =546
-        Y: =674
-        ZIndex: =15
+        Text: ="Login"
+        X: =1063
+        Y: =667
+        ZIndex: =12
 
