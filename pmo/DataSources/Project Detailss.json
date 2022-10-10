@@ -6,7 +6,6 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cre9a_projectdetails",
-    "MaxGetRowsCount": 500,
     "Name": "Project Detailss",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
@@ -113,6 +112,26 @@
     },
     "OptionSetTypeKey": "StatusType",
     "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Project Detailss",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Project Type",
+    "Name": "cre9a_projecttype",
+    "OptionSetInfoNameMapping": {
+      "235190000": "Fixed Project",
+      "235190001": "Time & Material"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cre9a_projecttype",
+        "OptionSetReferenceEntityName": "Project Detailss"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cre9a_projecttype",
     "RelatedEntityName": "Project Detailss",
     "Type": "OptionSetInfo"
   }

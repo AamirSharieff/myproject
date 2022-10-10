@@ -74,6 +74,26 @@
     "Type": "OptionSetInfo"
   },
   {
+    "DisplayName": "Project Type1",
+    "Name": "cre9a_projecttype1",
+    "OptionSetInfoNameMapping": {
+      "235190000": "Fixed Project",
+      "235190001": "Time & Material"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cre9a_projecttype",
+        "OptionSetReferenceEntityName": "project masters"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cre9a_projecttype",
+    "RelatedEntityName": "project masters",
+    "Type": "OptionSetInfo"
+  },
+  {
     "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
     "EntitySetName": "cre9a_pmoapplications",
     "IsHidden": false,
@@ -107,7 +127,7 @@
       "cre9a_projectmanager": "project manager (cre9a_projectmanager)",
       "cre9a_projectmanger": "project manager (cre9a_projectmanger)",
       "cre9a_projectname": "Project Name",
-      "cre9a_projecttype": "project type",
+      "cre9a_projecttype": "Project Type",
       "cre9a_resource": "resource",
       "cre9a_resources": "resources",
       "cre9a_startdate": "start date",
