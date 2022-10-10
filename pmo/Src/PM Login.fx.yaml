@@ -40,12 +40,12 @@
 
     TextInput4_4 As text:
         Default: =""
-        Height: =77
+        Height: =67
         HintText: ="             Username"
         Size: =20
         Width: =430
         X: =456
-        Y: =263
+        Y: =273
         ZIndex: =11
 
     Icon1_1 As icon.Person:

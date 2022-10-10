@@ -1,5 +1,5 @@
 "'Main Screen' As screen":
-    Fill: =navigate(
+    Fill: =
 
     Rectangle9 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
