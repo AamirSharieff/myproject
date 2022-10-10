@@ -380,6 +380,38 @@
                     Y: =DataCardKey27.Y
                     ZIndex: =4
 
+            "'Project Type_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_projecttype"
+                Default: =ThisItem.'Project Type'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_projecttype")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =true
+                Update: =DataCardValue14.Selected.Value
+                Width: =353
+                X: =1
+                Y: =0
+                ZIndex: =1
+
+                DataCardValue14 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =[Parent.Default]
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    IsSearchable: =false
+                    Items: =Choices('Project Type')
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =[]
+                    SelectMultiple: =false
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey18.Y + DataCardKey18.Height + 5
+                    ZIndex: =2
+
             "'Project Manager_DataCard2' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_projectmanager"
@@ -943,38 +975,6 @@
                     Wrap: =false
                     Y: =DataCardKey38.Y
                     ZIndex: =4
-
-            "'Project Type_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="cre9a_projecttype"
-                Default: =ThisItem.'Project Type'
-                DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_projecttype")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
-                Required: =true
-                Update: =DataCardValue14.Selected.Value
-                Width: =353
-                X: =1
-                Y: =0
-                ZIndex: =1
-
-                DataCardValue14 As combobox:
-                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultSelectedItems: =[Parent.Default]
-                    DisplayFields: =["Value"]
-                    DisplayMode: =Parent.DisplayMode
-                    IsSearchable: =false
-                    Items: =Choices('Project Type')
-                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                    SearchFields: =["Value"]
-                    SearchItems: =[]
-                    SelectMultiple: =false
-                    Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey18.Y + DataCardKey18.Height + 5
-                    ZIndex: =2
 
     Group2_3 As group:
         Height: =5
