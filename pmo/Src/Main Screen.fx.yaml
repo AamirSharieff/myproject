@@ -70,19 +70,6 @@
         Y: =27
         ZIndex: =10
 
-    Label8 As label:
-        BorderColor: =RGBA(255, 255, 255, 1)
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =25
-        OnSelect: |-
-            =UpdateContext({popupvisible:true})
-        Text: ="Login"
-        Width: =79
-        X: =1127
-        Y: =27
-        ZIndex: =11
-
     Label9 As label:
         FontWeight: =FontWeight.Semibold
         Height: =267
@@ -129,6 +116,19 @@
         Y: =27
         ZIndex: =19
 
+    Label8_2 As label:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =25
+        OnSelect: |-
+            =UpdateContext({popupvisible:true})
+        Text: =""
+        Width: =79
+        X: =1246
+        Y: =27
+        ZIndex: =23
+
     Group3 As group:
         Height: =5
         Width: =5
@@ -168,4 +168,20 @@
             X: =1033
             Y: =85
             ZIndex: =22
+
+    Button10 As button:
+        Height: =33
+        Text: ="PM"
+        Width: =119
+        X: =1206
+        Y: =19
+        ZIndex: =24
+
+    Button10_1 As button:
+        Height: =33
+        Text: ="Admin"
+        Width: =119
+        X: =1054
+        Y: =19
+        ZIndex: =25
 

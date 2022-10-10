@@ -1,0 +1,89 @@
+"'PM Login' As screen":
+
+    Rectangle3_2 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =80
+        Width: =1366
+        ZIndex: =2
+
+    Image10_2 As image:
+        Height: =80
+        Image: ='Screenshot (51)'
+        Width: =170
+        ZIndex: =3
+
+    Button10_3 As button:
+        Height: =33
+        Text: ="PM"
+        Width: =119
+        X: =1054
+        Y: =19
+        ZIndex: =4
+
+    Button11_1 As button:
+        Height: =60
+        Size: =20
+        Text: ="Login"
+        X: =587
+        Y: =580
+        ZIndex: =8
+
+    TextInput4_3 As text:
+        Default: =""
+        Height: =71
+        HintText: ="             Password"
+        Size: =20
+        Width: =430
+        X: =456
+        Y: =389
+        ZIndex: =10
+
+    TextInput4_4 As text:
+        Default: =""
+        Height: =77
+        HintText: ="             Username"
+        Size: =20
+        Width: =430
+        X: =456
+        Y: =263
+        ZIndex: =11
+
+    Icon1_1 As icon.Person:
+        Height: =56
+        Icon: =Icon.Person
+        Width: =49
+        X: =482
+        Y: =273
+        ZIndex: =12
+
+    Icon2_1 As icon.Lock:
+        Height: =49
+        Icon: =Icon.Lock
+        X: =482
+        Y: =400
+        ZIndex: =13
+
+    TextInput5_1 As text:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Default: ="PM Login"
+        Fill: =RGBA(39, 113, 194, 1)
+        Height: =73
+        HintText: ="    "
+        Size: =25
+        Width: =598
+        X: =368
+        Y: =142
+        ZIndex: =14
+
+    Button11_3 As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =60
+        Size: =20
+        Text: ="Forgot Password ?"
+        Width: =267
+        X: =533
+        Y: =690
+        ZIndex: =15
+
