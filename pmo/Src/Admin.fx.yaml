@@ -6,7 +6,7 @@
         Fill: =RGBA(255, 255, 255, 1)
         Height: =592
         Items: |-
-            =Filter('Project Detailss',(StartsWith('Project Name',TextInput14_5)))
+            =Filter('Project Detailss',(StartsWith('Project Name',TextInput14_5.Text)||StartsWith('Project Manager',TextInput14_5.Text)))
             
             //Filter('Project Detailss',(StartsWith ('Project Name',TextInput14_5)) || (StartsWith('Project Manager',TextInput14_5)))
         Layout: =Layout.Vertical
