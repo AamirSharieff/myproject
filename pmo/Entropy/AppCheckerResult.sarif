@@ -2154,19 +2154,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Add projects admin'.Form1.'Project Name_DataCard1'.DataCardValue4.AccessibleLabel"
+                  "fullyQualifiedName": "'Add projects admin'.Form1.'Project Name_DataCard1'.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Add projects admin'.Form1.'Project Name_DataCard1'.DataCardValue4.AccessibleLabel",
+                  "fullyQualifiedName": "'Add projects admin'.Form1.'Project Name_DataCard1'.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Add projects admin",
-                "type": "'Add projects admin'.Form1.'Project Name_DataCard1'.DataCardValue4"
+                "type": "'Add projects admin'.Form1.'Project Name_DataCard1'.DataCardValue2"
               }
             }
           ],
