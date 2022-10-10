@@ -116,7 +116,7 @@
 
         Label15 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.'Billing Cycle'
+            Text: =ThisItem.cre9a_billingcycle
             X: =841
             ZIndex: =10
 
@@ -752,7 +752,7 @@
             "'Billing Cycle_DataCard1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingcycle"
-                Default: =ThisItem.'Billing Cycle'
+                Default: =ThisItem.cre9a_billingcycle
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_billingcycle")
                 Fill: =RGBA(0, 0, 0, 0)

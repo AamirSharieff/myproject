@@ -54,26 +54,6 @@
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "PMO Project type",
-    "Name": "cre9a_pmoprojecttype",
-    "OptionSetInfoNameMapping": {
-      "235190000": "fixed project",
-      "235190001": "time and material"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": true,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "cre9a_projecttype",
-        "OptionSetReferenceEntityName": "project masters"
-      }
-    },
-    "OptionSetTypeKey": "PicklistType",
-    "RelatedColumnInvariantName": "cre9a_projecttype",
-    "RelatedEntityName": "project masters",
-    "Type": "OptionSetInfo"
-  },
-  {
     "DisplayName": "Project Type1",
     "Name": "cre9a_projecttype1",
     "OptionSetInfoNameMapping": {
