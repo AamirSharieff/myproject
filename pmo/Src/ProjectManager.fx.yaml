@@ -7,7 +7,7 @@
         Height: =592
         Items: |-
             =Filter('Project Detailss',
-                    (StartsWith ('Project Name',TextInput14_4) || (StartsWith('Project Manager',TextInput14_4))))
+                    (StartsWith ('Project Name',TextInput14_4.Text) || (StartsWith('Project Manager',TextInput14_4.Text))))
                     
         Layout: =Layout.Vertical
         TemplatePadding: =0

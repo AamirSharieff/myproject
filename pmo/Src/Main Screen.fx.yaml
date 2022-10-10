@@ -116,19 +116,6 @@
         Y: =27
         ZIndex: =19
 
-    Label8_2 As label:
-        BorderColor: =RGBA(255, 255, 255, 1)
-        BorderThickness: =1
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =25
-        OnSelect: |-
-            =UpdateContext({popupvisible:true})
-        Text: =""
-        Width: =79
-        X: =1246
-        Y: =27
-        ZIndex: =23
-
     Group3 As group:
         Height: =5
         Width: =5
@@ -168,6 +155,19 @@
             X: =1033
             Y: =85
             ZIndex: =22
+
+    Label8_2 As label:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =25
+        OnSelect: |-
+            =UpdateContext({popupvisible:true})
+        Text: =""
+        Width: =79
+        X: =1246
+        Y: =27
+        ZIndex: =23
 
     Button10 As button:
         Height: =33
