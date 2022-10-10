@@ -14,30 +14,6 @@
     }
   },
   {
-    "DisplayName": "Billing Cycle",
-    "Name": "cre9a_billingcycle",
-    "OptionSetInfoNameMapping": {
-      "235190000": "Monthly",
-      "235190001": "Quarterly"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": true,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "cre9a_billingcycle",
-        "OptionSetReferenceEntityName": "project masters"
-      },
-      "OptionSetReferenceItem1": {
-        "OptionSetReferenceColumnName": "cre9a_billingcycle",
-        "OptionSetReferenceEntityName": "Project Detailss"
-      }
-    },
-    "OptionSetTypeKey": "PicklistType",
-    "RelatedColumnInvariantName": "cre9a_billingcycle",
-    "RelatedEntityName": "project masters",
-    "Type": "OptionSetInfo"
-  },
-  {
     "DisplayName": "Status (project masters)",
     "Name": "cre9a_pmoapplication_statecode",
     "OptionSetInfoNameMapping": {
