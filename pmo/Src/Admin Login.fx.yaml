@@ -54,24 +54,16 @@
         Size: =20
         Text: ="Password"
         Width: =285
-        X: =792
-        Y: =417
+        X: =788
+        Y: =402
         ZIndex: =8
-
-    TextInput3 As text:
-        Default: =""
-        Height: =67
-        Width: =552
-        X: =792
-        Y: =295
-        ZIndex: =9
 
     TextInput3_1 As text:
         Default: =""
-        Height: =67
-        Width: =565
-        X: =785
-        Y: =481
+        Height: =55
+        Width: =572
+        X: =778
+        Y: =463
         ZIndex: =10
 
     Label18_2 As label:
@@ -82,7 +74,7 @@
         Size: =20
         Text: ="Forgot password"
         Width: =235
-        X: =1109
+        X: =1108
         Y: =380
         ZIndex: =11
 
@@ -111,8 +103,8 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =531
             Visible: =popupvisible
-            Width: =996
-            X: =241
+            Width: =671
+            X: =343
             Y: =113
             ZIndex: =14
 
@@ -129,13 +121,13 @@
             ZIndex: =15
 
         Label20 As label:
-            Height: =58
+            Height: =66
             Size: =20
             Text: ="The verification OTP will be sent to your register email Please check it."
             Visible: =popupvisible
-            Width: =880
-            X: =284
-            Y: =206
+            Width: =656
+            X: =343
+            Y: =198
             ZIndex: =16
 
         Label21 As label:
@@ -143,8 +135,8 @@
             Text: ="Email Address"
             Visible: =popupvisible
             Width: =285
-            X: =295
-            Y: =264
+            X: =354
+            Y: =287
             ZIndex: =17
 
         Label21_1 As label:
@@ -152,26 +144,26 @@
             Text: ="Verification Code"
             Visible: =popupvisible
             Width: =285
-            X: =295
-            Y: =390
+            X: =354
+            Y: =424
             ZIndex: =18
 
         TextInput4 As text:
             Default: =""
             Height: =67
             Visible: =popupvisible
-            Width: =669
-            X: =284
-            Y: =313
+            Width: =599
+            X: =350
+            Y: =343
             ZIndex: =19
 
         TextInput4_1 As text:
             Default: =""
-            Height: =67
+            Height: =55
             Visible: =popupvisible
-            Width: =669
-            X: =284
-            Y: =463
+            Width: =599
+            X: =354
+            Y: =493
             ZIndex: =20
 
         Label22 As label:
@@ -183,8 +175,8 @@
             Text: ="Back to login"
             Visible: =popupvisible
             Width: =207
-            X: =752
-            Y: =577
+            X: =617
+            Y: =567
             ZIndex: =21
 
         Button11 As button:
@@ -193,9 +185,17 @@
             Size: =20
             Text: ="Next"
             Visible: =popupvisible
-            X: =1003
-            Y: =577
+            X: =812
+            Y: =576
             ZIndex: =22
+
+    TextInput3_4 As text:
+        Default: =""
+        Height: =55
+        Width: =572
+        X: =776
+        Y: =313
+        ZIndex: =33
 
     "'New password popup' As group":
         Height: =5
@@ -208,8 +208,8 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =618
             Visible: =popupvisible1
-            Width: =1081
-            X: =156
+            Width: =664
+            X: =350
             Y: =102
             ZIndex: =23
 
@@ -219,19 +219,19 @@
             Size: =30
             Text: ="Reset your Password"
             Visible: =popupvisible1
-            Width: =428
-            X: =469
-            Y: =116
+            Width: =426
+            X: =488
+            Y: =110
             ZIndex: =24
 
         Label24 As label:
-            Height: =49
+            Height: =53
             Size: =15
             Text: ="Please type new password"
             Visible: =popupvisible1
-            Width: =272
-            X: =531
-            Y: =198
+            Width: =269
+            X: =566
+            Y: =192
             ZIndex: =25
 
         Label24_1 As label:
@@ -239,9 +239,9 @@
             Size: =18
             Text: ="New Password"
             Visible: =popupvisible1
-            Width: =272
-            X: =325
-            Y: =287
+            Width: =216
+            X: =454
+            Y: =264
             ZIndex: =26
 
         Label24_2 As label:
@@ -249,31 +249,23 @@
             Size: =18
             Text: ="Confirm New Password"
             Visible: =popupvisible1
-            Width: =423
-            X: =330
+            Width: =331
+            X: =457
             Y: =407
             ZIndex: =27
 
         TextInput5 As text:
             Default: =""
-            Height: =50
+            Height: =59
             Visible: =popupvisible1
-            Width: =512
-            X: =330
-            Y: =341
+            Width: =490
+            X: =444
+            Y: =321
             ZIndex: =28
-
-        TextInput5_1 As text:
-            Default: =""
-            Height: =46
-            Visible: =popupvisible1
-            Width: =517
-            X: =330
-            Y: =472
-            ZIndex: =29
 
         Label25 As label:
             Color: =RGBA(0, 121, 187, 1)
+            Height: =55
             OnSelect: |-
                 =UpdateContext({popupvisible1:false});
                 
@@ -281,26 +273,37 @@
             Size: =18
             Text: ="Back to login"
             Visible: =popupvisible1
-            Width: =187
-            X: =762
-            Y: =659
+            Width: =168
+            X: =639
+            Y: =644
             ZIndex: =30
 
         Button13 As button:
+            Height: =42
             Size: =18
             Text: ="Confirm"
             Visible: =popupvisible1
-            X: =1003
-            Y: =659
+            Width: =164
+            X: =835
+            Y: =650
             ZIndex: =31
 
         Label26 As label:
-            Height: =77
+            Height: =63
             Size: =15
             Text: ="Make sure it's at least 8 characters including a number and a lowercase letter."
             Visible: =popupvisible1
-            Width: =623
-            X: =325
+            Width: =480
+            X: =454
             Y: =556
             ZIndex: =32
+
+    TextInput5_1 As text:
+        Default: =""
+        Height: =59
+        Visible: =popupvisible1
+        Width: =490
+        X: =450
+        Y: =466
+        ZIndex: =34
 
