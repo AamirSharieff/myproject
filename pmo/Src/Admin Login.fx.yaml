@@ -33,9 +33,9 @@
         ZIndex: =5
 
     Label17 As label:
-        Height: =75
+        Height: =82
         Text: ="Log in with your data  that you entered during registration"
-        Width: =351
+        Width: =518
         X: =803
         Y: =169
         ZIndex: =6
@@ -194,4 +194,99 @@
             X: =1003
             Y: =577
             ZIndex: =22
+
+    "'New password popup' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =33
+
+        Rectangle15 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =618
+            Width: =1105
+            X: =156
+            Y: =102
+            ZIndex: =23
+
+        Label23 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =82
+            Size: =30
+            Text: ="Reset your Password"
+            Width: =428
+            X: =469
+            Y: =116
+            ZIndex: =24
+
+        Label24 As label:
+            Height: =49
+            Size: =15
+            Text: ="Please type new password"
+            Width: =272
+            X: =531
+            Y: =210
+            ZIndex: =25
+
+        Label24_1 As label:
+            Height: =49
+            Size: =25
+            Text: ="New Password"
+            Width: =272
+            X: =325
+            Y: =287
+            ZIndex: =26
+
+        Label24_2 As label:
+            Height: =56
+            Size: =25
+            Text: ="Confirm New Password"
+            Width: =423
+            X: =325
+            Y: =430
+            ZIndex: =27
+
+        TextInput5 As text:
+            Default: =""
+            Height: =58
+            Width: =609
+            X: =335
+            Y: =367
+            ZIndex: =28
+
+        TextInput5_1 As text:
+            Default: =""
+            Height: =58
+            Width: =609
+            X: =335
+            Y: =497
+            ZIndex: =29
+
+        Label25 As label:
+            Color: =RGBA(0, 121, 187, 1)
+            OnSelect: |-
+                =UpdateContext({popupvisible:true})
+            Size: =18
+            Text: ="Back to login"
+            Width: =187
+            X: =847
+            Y: =659
+            ZIndex: =30
+
+        Button13 As button:
+            Size: =18
+            Text: ="Confirm"
+            X: =1063
+            Y: =659
+            ZIndex: =31
+
+        Label26 As label:
+            Height: =77
+            Size: =15
+            Text: ="Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter."
+            Width: =623
+            X: =350
+            Y: =567
+            ZIndex: =32
 
