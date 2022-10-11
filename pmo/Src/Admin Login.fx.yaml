@@ -295,7 +295,7 @@
         Label26 As label:
             Height: =77
             Size: =15
-            Text: ="Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter."
+            Text: ="Make sure it's at least 8 characters including a number and a lowercase letter."
             Visible: =popupvisible1
             Width: =623
             X: =350
