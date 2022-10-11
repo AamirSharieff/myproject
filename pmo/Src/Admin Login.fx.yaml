@@ -78,6 +78,7 @@
     Label18_2 As label:
         Color: =RGBA(102, 182, 227, 1)
         Height: =37
+        OnSelect: =Navigate('otp group')
         Size: =20
         Text: ="Forgot password"
         Width: =235
@@ -91,4 +92,95 @@
         X: =1063
         Y: =667
         ZIndex: =12
+
+    "'otp group' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        Rectangle13 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =764
+            Width: =1366
+            ZIndex: =13
+
+        Rectangle14 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =564
+            Width: =1067
+            X: =170
+            Y: =80
+            ZIndex: =14
+
+        Label19 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =77
+            Size: =30
+            Text: ="Reset your Password"
+            Width: =552
+            X: =407
+            Y: =126
+            ZIndex: =15
+
+        Label20 As label:
+            Height: =58
+            Size: =20
+            Text: ="The verification OTP will be sent to your register email Please check it."
+            Width: =922
+            X: =241
+            Y: =206
+            ZIndex: =16
+
+        Label21 As label:
+            Size: =25
+            Text: ="Email Address"
+            Width: =285
+            X: =257
+            Y: =286
+            ZIndex: =17
+
+        Label21_1 As label:
+            Size: =25
+            Text: ="Verification Code"
+            Width: =285
+            X: =257
+            Y: =415
+            ZIndex: =18
+
+        TextInput4 As text:
+            Default: =""
+            Height: =67
+            Width: =669
+            X: =260
+            Y: =333
+            ZIndex: =19
+
+        TextInput4_1 As text:
+            Default: =""
+            Height: =67
+            Width: =669
+            X: =263
+            Y: =471
+            ZIndex: =20
+
+        Label22 As label:
+            Color: =RGBA(0, 121, 187, 1)
+            Height: =42
+            OnSelect: =Navigate('Admin Login')
+            Size: =20
+            Text: ="Back to login"
+            Width: =207
+            X: =752
+            Y: =577
+            ZIndex: =21
+
+        Button11 As button:
+            Size: =20
+            Text: ="Next"
+            X: =1003
+            Y: =577
+            ZIndex: =22
 
