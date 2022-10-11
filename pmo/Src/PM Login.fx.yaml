@@ -15,10 +15,10 @@
 
     Rectangle11_1 As rectangle:
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =651
+        Height: =650
         Width: =696
         X: =670
-        Y: =113
+        Y: =90
         ZIndex: =4
 
     Label8_3 As label:
@@ -46,8 +46,8 @@
         Size: =25
         Text: ="Email Address"
         Width: =285
-        X: =696
-        Y: =286
+        X: =719
+        Y: =287
         ZIndex: =7
 
     Label18_4 As label:
@@ -55,24 +55,24 @@
         Size: =25
         Text: ="Password"
         Width: =285
-        X: =709
-        Y: =497
+        X: =725
+        Y: =479
         ZIndex: =8
 
     TextInput3_2 As text:
         Default: =""
         Height: =67
         Width: =565
-        X: =696
-        Y: =360
+        X: =719
+        Y: =354
         ZIndex: =9
 
     TextInput3_3 As text:
         Default: =""
         Height: =67
         Width: =565
-        X: =696
-        Y: =577
+        X: =719
+        Y: =536
         ZIndex: =10
 
     Label18_5 As label:
@@ -91,7 +91,7 @@
         Size: =20
         Text: ="Login"
         X: =1063
-        Y: =667
+        Y: =623
         ZIndex: =12
 
     "'otp group_1' As group":
@@ -113,8 +113,8 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =531
             Visible: =popupvisible
-            Width: =996
-            X: =241
+            Width: =705
+            X: =393
             Y: =117
             ZIndex: =14
 
@@ -131,13 +131,13 @@
             ZIndex: =15
 
         Label20_1 As label:
-            Height: =58
+            Height: =71
             Size: =20
             Text: ="The verification OTP will be sent to your register email Please check it."
             Visible: =popupvisible
-            Width: =880
-            X: =284
-            Y: =210
+            Width: =705
+            X: =393
+            Y: =193
             ZIndex: =16
 
         Label21_2 As label:
@@ -145,7 +145,7 @@
             Text: ="Email Address"
             Visible: =popupvisible
             Width: =285
-            X: =295
+            X: =393
             Y: =268
             ZIndex: =17
 
@@ -154,25 +154,25 @@
             Text: ="Verification Code"
             Visible: =popupvisible
             Width: =285
-            X: =295
-            Y: =394
+            X: =393
+            Y: =409
             ZIndex: =18
 
         TextInput4_2 As text:
             Default: =""
-            Height: =67
+            Height: =63
             Visible: =popupvisible
-            Width: =669
-            X: =284
+            Width: =705
+            X: =393
             Y: =317
             ZIndex: =19
 
         TextInput4_3 As text:
             Default: =""
-            Height: =67
+            Height: =69
             Visible: =popupvisible
-            Width: =669
-            X: =284
+            Width: =705
+            X: =393
             Y: =467
             ZIndex: =20
 
@@ -185,17 +185,28 @@
             Text: ="Back to login"
             Visible: =popupvisible
             Width: =207
-            X: =752
-            Y: =581
+            X: =707
+            Y: =577
             ZIndex: =21
 
         Button11_1 As button:
+            OnSelect: |-
+                =UpdateContext({popupvisible1:true})
             Size: =20
             Text: ="Next"
             Visible: =popupvisible
-            X: =1003
-            Y: =581
+            X: =925
+            Y: =578
             ZIndex: =22
+
+    TextInput5_3 As text:
+        Default: =""
+        Height: =59
+        Visible: =popupvisible1
+        Width: =490
+        X: =444
+        Y: =463
+        ZIndex: =32
 
     "'New password popup_1' As group":
         Height: =5
