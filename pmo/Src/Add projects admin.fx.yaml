@@ -668,7 +668,7 @@
                 "New Project Added",
                 "Project Name :" & DataCardValue1.Text & "   Project Type :" & DataCardValue5.Selected.Value & "   Start Date :" &DateValue1.SelectedDate & "    End Date :" & DateValue2.SelectedDate);
             
-             Navigate(Admin,ScreenTransition.Cover)
+             
                 
             
             
