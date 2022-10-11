@@ -188,6 +188,8 @@
             ZIndex: =21
 
         Button11 As button:
+            OnSelect: |-
+                =UpdateContext({popupvisible1:true})
             Size: =20
             Text: ="Next"
             Visible: =popupvisible
@@ -205,6 +207,7 @@
         Rectangle15 As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =618
+            Visible: =popupvisible1
             Width: =1105
             X: =156
             Y: =102
@@ -215,6 +218,7 @@
             Height: =82
             Size: =30
             Text: ="Reset your Password"
+            Visible: =popupvisible1
             Width: =428
             X: =469
             Y: =116
@@ -224,6 +228,7 @@
             Height: =49
             Size: =15
             Text: ="Please type new password"
+            Visible: =popupvisible1
             Width: =272
             X: =531
             Y: =198
@@ -233,6 +238,7 @@
             Height: =49
             Size: =25
             Text: ="New Password"
+            Visible: =popupvisible1
             Width: =272
             X: =325
             Y: =287
@@ -242,6 +248,7 @@
             Height: =56
             Size: =25
             Text: ="Confirm New Password"
+            Visible: =popupvisible1
             Width: =423
             X: =325
             Y: =430
@@ -250,6 +257,7 @@
         TextInput5 As text:
             Default: =""
             Height: =58
+            Visible: =popupvisible1
             Width: =609
             X: =335
             Y: =367
@@ -258,6 +266,7 @@
         TextInput5_1 As text:
             Default: =""
             Height: =58
+            Visible: =popupvisible1
             Width: =609
             X: =335
             Y: =497
@@ -266,9 +275,10 @@
         Label25 As label:
             Color: =RGBA(0, 121, 187, 1)
             OnSelect: |-
-                =UpdateContext({popupvisible:true})
+                =UpdateContext({popupvisible1:true})
             Size: =18
             Text: ="Back to login"
+            Visible: =popupvisible1
             Width: =187
             X: =847
             Y: =659
@@ -277,6 +287,7 @@
         Button13 As button:
             Size: =18
             Text: ="Confirm"
+            Visible: =popupvisible1
             X: =1063
             Y: =659
             ZIndex: =31
@@ -285,6 +296,7 @@
             Height: =77
             Size: =15
             Text: ="Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter."
+            Visible: =popupvisible1
             Width: =623
             X: =350
             Y: =567
