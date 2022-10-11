@@ -80,6 +80,7 @@
         ZIndex: =11
 
     Button12 As button:
+        OnSelect: =LookUp('Admin Credentials','Email Address'=TextInput3_4.Text And Password=TextInput3_1.Text)
         Size: =20
         Text: ="Login"
         X: =1146
