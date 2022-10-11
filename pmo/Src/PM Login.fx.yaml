@@ -70,6 +70,7 @@
     TextInput3_3 As text:
         Default: =""
         Height: =67
+        Mode: =TextMode.Password
         Width: =565
         X: =719
         Y: =536
@@ -202,6 +203,7 @@
     TextInput5_3 As text:
         Default: =""
         Height: =59
+        Mode: =TextMode.Password
         Visible: =popupvisible1
         Width: =490
         X: =444
@@ -268,6 +270,7 @@
         TextInput5_2 As text:
             Default: =""
             Height: =59
+            Mode: =TextMode.Password
             Visible: =popupvisible1
             Width: =490
             X: =444
