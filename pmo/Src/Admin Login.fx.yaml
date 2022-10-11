@@ -74,13 +74,15 @@
             =UpdateContext({popupvisible:true});
         Size: =20
         Text: ="Forgot password"
+        Visible: =ShowForgotMessage
         Width: =235
         X: =1108
         Y: =380
         ZIndex: =11
 
     Button12 As button:
-        OnSelect: =LookUp('Admin Credentials','Email Address'=TextInput3_4.Text And Password=TextInput3_1.Text)
+        OnSelect: |-
+            =If(!IsBlank(LookUp('Admin Credentials','Email Address'=TextInput3_4.Text And Password=TextInput3_1.Text).'Email Address'), Navigate(Dashboard),UpdateContext({ShowForgotMessage:true}))
         Size: =20
         Text: ="Login"
         X: =1146
