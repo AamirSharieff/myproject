@@ -275,7 +275,7 @@
         Label25 As label:
             Color: =RGBA(0, 121, 187, 1)
             OnSelect: |-
-                =UpdateContext({popupvisible1:true})
+                =UpdateContext({popupvisible1:false})
             Size: =18
             Text: ="Back to login"
             Visible: =popupvisible1
