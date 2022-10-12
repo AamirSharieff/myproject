@@ -312,7 +312,7 @@
                 =UpdateContext({popupvisible:false})
             Size: =20
             Text: ="Back to login"
-            Visible: =popupvisible
+            Visible: =varvisible
             Width: =207
             X: =566
             Y: =566
