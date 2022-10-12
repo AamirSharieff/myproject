@@ -1,0 +1,52 @@
+Screen2 As screen:
+
+    TextInput3 As text:
+        Default: =""
+        Height: =64
+        Width: =492
+        X: =381
+        Y: =207
+        ZIndex: =1
+
+    Button14 As button:
+        Height: =78
+        OnSelect: |-
+            =Set(OTPGenerator,Blank());
+            
+            Set(OTPGenerator,RoundDown(Rand()*1000,0));
+            
+            Office365Outlook.SendEmailV2(TextInput3.Text,"OTP to Login to pmo application", "Enter this OTP : "&OTPGenerator&" to Login");
+            
+            Reset(TextInput6);
+            
+            Set(varvisible,true)
+        Text: ="otp"
+        Width: =260
+        X: =486
+        Y: =339
+        ZIndex: =2
+
+    TextInput6 As text:
+        Default: =""
+        Height: =78
+        Visible: =varvisible
+        Width: =540
+        X: =393
+        Y: =483
+        ZIndex: =3
+
+    Button15 As button:
+        Height: =82
+        OnSelect: |-
+            =If(Text(OTPGenerator)=TextInput6.Text,
+            
+            Navigate(Dashboard,Fade),
+            
+            Notify("Invalid OTP or Email",NotificationType.Error,3000);
+            
+            Reset(TextInput6))
+        Text: ="Button"
+        X: =561
+        Y: =606
+        ZIndex: =4
+
