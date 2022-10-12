@@ -294,6 +294,7 @@
 
         Button13_1 As button:
             Height: =42
+            OnSelect: =If(TextInput5_2.Text = TextInput5_3.Text & Navigate(Admin,ScreenTransition.Fade);
             Size: =18
             Text: ="Confirm"
             Visible: =popupvisible1
