@@ -98,8 +98,8 @@ Screen2 As screen:
         Text: ="Back to login"
         Visible: =varvisible
         Width: =207
-        X: =500
-        Y: =642
+        X: =524
+        Y: =650
         ZIndex: =9
 
     Label21_6 As label:
