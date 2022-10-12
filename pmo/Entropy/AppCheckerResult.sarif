@@ -4450,36 +4450,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Admin Login'.popupvisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Admin Login'.popupvisible",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "popupvisible",
-                "module": "Admin Login",
-                "type": "'Admin Login'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "OTP.popupvisible"
                 }
               ],
