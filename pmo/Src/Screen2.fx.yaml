@@ -46,6 +46,8 @@ Screen2 As screen:
             
             Reset(TextInput6))
         Text: ="Button"
+        Visible: |
+            =varvisible
         X: =561
         Y: =606
         ZIndex: =4
