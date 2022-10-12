@@ -1,4 +1,44 @@
 {
+  "186507c4-88e5-4ec1-90a1-70ada9bf46fa": {
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-27.centralindia.logic.azure.com:443/workflows/5db8585a346744269b8786c3cb4ee33a/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=0VBSP9cn9910ZwkvGhG3EwhNetH8jRLHSZwEHxzypYE",
+      "workflowEndpoint": "/subscriptions/cbd472fe-eafa-4c32-b348-555abce6f9ba/resourceGroups/86fb359e13604ab3b90d2a68e8c007b9-25072ee34b4048ffbc11e9798754fa8d/providers/Microsoft.Logic/workflows/274603e4-5719-4c07-acb7-0bb5cad60f07",
+      "workflowName": "274603e4-5719-4c07-acb7-0bb5cad60f07",
+      "workflowPath": "/subscriptions/cbd472fe-eafa-4c32-b348-555abce6f9ba/resourceGroups/86fb359e13604ab3b90d2a68e8c007b9-25072ee34b4048ffbc11e9798754fa8d/providers/Microsoft.Logic/workflows/274603e4-5719-4c07-acb7-0bb5cad60f07"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "84820fbb-3827-4b05-a1f7-5c330d9fcf5d": {
+          "value": "shared_office365"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "274603e4-5719-4c07-acb7-0bb5cad60f07"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365": {
+          "value": "84820fbb-3827-4b05-a1f7-5c330d9fcf5d"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "274603e4-5719-4c07-acb7-0bb5cad60f07"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "OtpAuthentication"
+    ],
+    "dependencies": {
+      "shared_office365": "84820fbb-3827-4b05-a1f7-5c330d9fcf5d"
+    },
+    "dependents": [],
+    "id": "186507c4-88e5-4ec1-90a1-70ada9bf46fa"
+  },
   "4a961f63-751a-4c9d-89d2-517b048ffbdc": {
     "connectionParameters": {
       "sku": "Enterprise"
@@ -48,7 +88,8 @@
     ],
     "dependencies": {},
     "dependents": [
-      "b69b8f05-34bd-4d8e-b55d-a6be8be8141e"
+      "b69b8f05-34bd-4d8e-b55d-a6be8be8141e",
+      "186507c4-88e5-4ec1-90a1-70ada9bf46fa"
     ],
     "id": "84820fbb-3827-4b05-a1f7-5c330d9fcf5d"
   },
