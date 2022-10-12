@@ -213,14 +213,6 @@
         Y: =88
         ZIndex: =11
 
-    Icon1 As icon.Bell:
-        Height: =21
-        Icon: =Icon.Bell
-        Width: =41
-        X: =1177
-        Y: =14
-        ZIndex: =42
-
     POP As group:
         Height: =5
         Width: =5
@@ -1027,7 +1019,7 @@
             OnSelect: |+
                 =//Office365Outlook.SendEmail("gopika.sucharitha@datasemantics.co","Requset Email","Project Name :" & DataCardValue9.Text & "   Project Type :" & DataCardValue1.Text & "   Start Date :" & DateValue3.SelectedDate & "    End Date :" & DateValue4.SelectedDate & "Comments : "& TextInput2.Text);
                 
-                PMOapp.Run(DataCardValue9.Text , DataCardValue8.Selected.Value , DataCardValue33.Text ,DateValue3.SelectedDate,DateValue4.SelectedDate, TextInput2.Text);
+                PMOapp.Run(DataCardValue9.Text , DataCardValue8.Selected.Value , DataCardValue33.Text ,DateValue3.SelectedDate,DateValue4.SelectedDate, TextInput2.Text,Gallery6_1.Selected.'Project Details');
                 UpdateContext({popupvisible1: false});
                 UpdateContext({popupvisible: false});
                 

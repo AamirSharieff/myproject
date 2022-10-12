@@ -2,5 +2,5 @@ App As appinfo:
     BackEnabled: =false
     OnError: =
     SizeBreakpoints: =[600, 900, 1200,14000]
-    StartScreen: =StartScreen
+    StartScreen: =
 
