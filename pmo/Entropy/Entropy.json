@@ -466,7 +466,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/12/2022 09:25:46",
+  "HeaderLastSavedDateTimeUTC": "10/12/2022 09:33:20",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "186507c4-88e5-4ec1-90a1-70ada9bf46fa": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/2ee9da92577d4e57ad9583dea86371c2\"",
@@ -1002,7 +1002,7 @@
     "Image14_3": 218,
     "Image14_4": 123,
     "Image14_5": 37,
-    "Image3": 360,
+    "Image3": 361,
     "Image3_1": 394,
     "Image4": 15,
     "Image5": 14,
@@ -1038,7 +1038,7 @@
     "Label18_5": 412,
     "Label19": 426,
     "Label19_1": 400,
-    "Label19_2": 361,
+    "Label19_2": 360,
     "Label2": 446,
     "Label20": 427,
     "Label20_1": 403,
@@ -1331,7 +1331,7 @@
       "typedDataCard": 25
     },
     "DeserializationLoadTime": 7.204911,
-    "ErrorCount": 12
+    "ErrorCount": 7
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
