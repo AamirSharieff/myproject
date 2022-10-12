@@ -84,6 +84,8 @@
         OnSelect: |-
             =If(!IsBlank(LookUp('Admin Credentials','Email Address'=TextInput3_4.Text And Password=TextInput3_1.Text).'Email Address'), Navigate(Dashboard),
             
+            
+            
             Notify("enter valid user name and password",NotificationType.Error));
             
             Reset(TextInput3_4);
@@ -101,4 +103,15 @@
         X: =776
         Y: =313
         ZIndex: =33
+
+    Icon4_2 As icon.View:
+        Height: =49
+        Icon: =If(varShowPass, Icon.Hide, Icon.View)
+        OnSelect: |+
+            =UpdateContext({varShowPass: !varShowPass})
+            
+        Width: =44
+        X: =1304
+        Y: =463
+        ZIndex: =34
 

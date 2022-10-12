@@ -8,7 +8,6 @@
       <string name="ManualTriggerInput_Startandwaitforanapproval_Details_3_def" />
       <string name="ManualTriggerInput_Startandwaitforanapproval_Details_4_def" />
       <string name="ManualTriggerInput_Startandwaitforanapproval_Details_5_def" />
-      <string name="ManualTriggerInput_Startandwaitforanapproval_Details_6_def" />
       <object name="ManualTriggerInput">
         <property name="Startandwaitforanapproval_Details" type="string" />
         <property name="Startandwaitforanapproval_Details_1" type="string" />
@@ -16,7 +15,6 @@
         <property name="Startandwaitforanapproval_Details_3" type="string" />
         <property name="Startandwaitforanapproval_Details_4" type="string" />
         <property name="Startandwaitforanapproval_Details_5" type="string" />
-        <property name="Startandwaitforanapproval_Details_6" type="string" />
       </object>
     </jsonTypes>
   </grammars>
@@ -36,7 +34,6 @@
             <param style="plain" name="Startandwaitforanapproval_Details_3" path="/Startandwaitforanapproval_Details_3" type="xs:string" required="true" />
             <param style="plain" name="Startandwaitforanapproval_Details_4" path="/Startandwaitforanapproval_Details_4" type="xs:string" required="true" />
             <param style="plain" name="Startandwaitforanapproval_Details_5" path="/Startandwaitforanapproval_Details_5" type="xs:string" required="true" />
-            <param style="plain" name="Startandwaitforanapproval_Details_6" path="/Startandwaitforanapproval_Details_6" type="xs:string" required="true" />
           </representation>
         </request>
       </method>
