@@ -214,6 +214,24 @@
         Y: =466
         ZIndex: =34
 
+    Button11_3 As button:
+        OnSelect: |+
+            =Reset('OTP Generator');
+            
+            Set(RandomNumberGenerated,'OTP Generator'.Result);
+            
+            Office365Outlook.SendEmailV2(TextInput4_4.Rectangle14_2.Email,"OTP for Authentication","The OTP is" & RandomNumberGenerated);
+            
+            Set(OTPSent, true);
+            Set(OTPSent,false);
+            
+        Size: =20
+        Text: ="Send OTP"
+        Visible: =popupvisible
+        X: =754
+        Y: =390
+        ZIndex: =45
+
     "'otp group_2' As group":
         Height: =5
         Width: =5
@@ -231,11 +249,11 @@
 
         Rectangle14_2 As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =531
+            Height: =696
             Visible: =popupvisible
-            Width: =671
-            X: =343
-            Y: =117
+            Width: =849
+            X: =225
+            Y: =38
             ZIndex: =36
 
         Label19_2 As label:
@@ -246,8 +264,8 @@
             Text: ="Reset your Password"
             Visible: =popupvisible
             Width: =514
-            X: =444
-            Y: =130
+            X: =420
+            Y: =80
             ZIndex: =37
 
         Label20_2 As label:
@@ -257,7 +275,7 @@
             Visible: =popupvisible
             Width: =656
             X: =343
-            Y: =202
+            Y: =167
             ZIndex: =38
 
         Label21_4 As label:
@@ -265,8 +283,8 @@
             Text: ="Email Address"
             Visible: =popupvisible
             Width: =285
-            X: =354
-            Y: =291
+            X: =350
+            Y: =263
             ZIndex: =39
 
         Label21_5 As label:
@@ -275,7 +293,7 @@
             Visible: =popupvisible
             Width: =285
             X: =354
-            Y: =428
+            Y: =442
             ZIndex: =40
 
         TextInput4_4 As text:
@@ -283,8 +301,8 @@
             Height: =67
             Visible: =popupvisible
             Width: =599
-            X: =350
-            Y: =347
+            X: =346
+            Y: =311
             ZIndex: =41
 
         TextInput4_5 As text:
@@ -310,8 +328,10 @@
             ZIndex: =43
 
         Button11_2 As button:
-            OnSelect: |-
-                =UpdateContext({popupvisible1:true})
+            OnSelect: |
+                =UpdateContext({popupvisible1:true});
+                
+                If(Value(TextInput4_5.Text)=RandomNumberGenerated,Navigate(Dashboard),Set(InvalidOTP,true))
             Size: =20
             Text: ="Next"
             Visible: =popupvisible
