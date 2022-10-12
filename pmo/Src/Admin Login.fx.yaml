@@ -287,18 +287,6 @@
             Y: =241
             ZIndex: =39
 
-        Label21_5 As label:
-            Size: =22
-            Text: ="Verification Code"
-            Visible: |-
-                =popupvisible;
-                
-                varvisible
-            Width: =285
-            X: =332
-            Y: =437
-            ZIndex: =40
-
         TextInput4_4 As text:
             Default: =""
             Height: =67
@@ -311,10 +299,10 @@
         TextInput4_5 As text:
             Default: =""
             Height: =60
-            Visible: =popupvisible
+            Visible: =varvisible
             Width: =599
-            X: =335
-            Y: =496
+            X: =332
+            Y: =458
             ZIndex: =42
 
         Label22_2 As label:
@@ -326,19 +314,27 @@
             Text: ="Back to login"
             Visible: =popupvisible
             Width: =207
-            X: =617
-            Y: =571
+            X: =566
+            Y: =566
             ZIndex: =43
 
         Button11_2 As button:
-            OnSelect: |
+            OnSelect: |+
                 =UpdateContext({popupvisible1:true});
                 
-                If(Value(TextInput4_5.Text)=RandomNumberGenerated,Navigate(Dashboard),Set(InvalidOTP,true))
+                If(Text(OTPGenerator)=TextInput6.Text,
+                
+                Navigate(Dashboard,Fade),
+                
+                Notify("Invalid OTP or Email",NotificationType.Error,3000);
+                
+                Reset(TextInput6))
+                
+                
             Size: =20
             Text: ="Next"
-            Visible: =popupvisible
-            X: =812
-            Y: =580
+            Visible: =varvisible
+            X: =803
+            Y: =566
             ZIndex: =44
 
