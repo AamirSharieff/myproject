@@ -15,10 +15,10 @@
 
     Rectangle11_1 As rectangle:
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =650
+        Height: =651
         Width: =696
         X: =670
-        Y: =90
+        Y: =113
         ZIndex: =4
 
     Label8_3 As label:
@@ -33,294 +33,85 @@
         ZIndex: =5
 
     Label17_1 As label:
-        Height: =75
-        Size: =20
+        Height: =59
         Text: ="Log in with your data  that you entered during registration"
-        Width: =592
-        X: =719
-        Y: =189
+        Width: =518
+        X: =803
+        Y: =169
         ZIndex: =6
 
     Label18_3 As label:
         Height: =57
-        Size: =25
+        Size: =20
         Text: ="Email Address"
         Width: =285
-        X: =719
-        Y: =287
+        X: =778
+        Y: =239
         ZIndex: =7
 
-    Label18_4 As label:
+    Label18_5 As label:
         Height: =57
-        Size: =25
+        Size: =20
         Text: ="Password"
         Width: =285
-        X: =725
-        Y: =479
+        X: =788
+        Y: =402
         ZIndex: =8
 
     TextInput3_2 As text:
         Default: =""
-        Height: =67
-        Width: =565
-        X: =719
-        Y: =354
-        ZIndex: =9
-
-    TextInput3_3 As text:
-        Default: =""
-        Height: =67
+        Height: =55
         Mode: =TextMode.Password
-        Width: =565
-        X: =719
-        Y: =536
+        Width: =572
+        X: =778
+        Y: =463
         ZIndex: =10
 
-    Label18_5 As label:
+    Label18_4 As label:
         Color: =RGBA(102, 182, 227, 1)
         Height: =37
-        OnSelect: |-
-            =UpdateContext({popupvisible:true})
+        OnSelect: |+
+            =Navigate(OTP,ScreenTransition.Fade)
+            
         Size: =20
         Text: ="Forgot password"
         Width: =235
-        X: =1026
-        Y: =442
+        X: =1121
+        Y: =380
         ZIndex: =11
 
     Button12_1 As button:
+        OnSelect: |-
+            =If(!IsBlank(LookUp('PM Credentials','Email Address'=TextInput3_5.Text And Password=TextInput3_2.Text).'Email Address'), Navigate(ProjectManager),
+            
+            
+            
+            Notify("enter valid user name and password",NotificationType.Error));
+            
+            Reset(TextInput3_5);
+            Reset(TextInput3_2);
         Size: =20
         Text: ="Login"
-        X: =1063
-        Y: =623
+        X: =1146
+        Y: =579
         ZIndex: =12
 
-    "'otp group_1' As group":
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =4
-        ZIndex: =23
-
-        Rectangle13_1 As rectangle:
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =764
-            Visible: =popupvisible
-            Width: =1366
-            Y: =4
-            ZIndex: =13
-
-        Rectangle14_1 As rectangle:
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =531
-            Visible: =popupvisible
-            Width: =705
-            X: =393
-            Y: =117
-            ZIndex: =14
-
-        Label19_1 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Bold
-            Height: =63
-            Size: =30
-            Text: ="Reset your Password"
-            Visible: =popupvisible
-            Width: =514
-            X: =444
-            Y: =130
-            ZIndex: =15
-
-        Label20_1 As label:
-            Height: =71
-            Size: =20
-            Text: ="The verification OTP will be sent to your register email Please check it."
-            Visible: =popupvisible
-            Width: =705
-            X: =393
-            Y: =193
-            ZIndex: =16
-
-        Label21_2 As label:
-            Size: =25
-            Text: ="Email Address"
-            Visible: =popupvisible
-            Width: =285
-            X: =393
-            Y: =268
-            ZIndex: =17
-
-        Label21_3 As label:
-            Size: =25
-            Text: ="Verification Code"
-            Visible: =popupvisible
-            Width: =285
-            X: =393
-            Y: =409
-            ZIndex: =18
-
-        TextInput4_2 As text:
-            Default: =""
-            Height: =63
-            Visible: =popupvisible
-            Width: =705
-            X: =393
-            Y: =317
-            ZIndex: =19
-
-        TextInput4_3 As text:
-            Default: =""
-            Height: =69
-            Visible: =popupvisible
-            Width: =705
-            X: =393
-            Y: =467
-            ZIndex: =20
-
-        Label22_1 As label:
-            Color: =RGBA(0, 121, 187, 1)
-            Height: =42
-            OnSelect: |-
-                =UpdateContext({popupvisible:false})
-            Size: =20
-            Text: ="Back to login"
-            Visible: =popupvisible
-            Width: =207
-            X: =707
-            Y: =577
-            ZIndex: =21
-
-        Button11_1 As button:
-            OnSelect: |-
-                =UpdateContext({popupvisible1:true})
-            Size: =20
-            Text: ="Next"
-            Visible: =popupvisible
-            X: =925
-            Y: =578
-            ZIndex: =22
-
-    TextInput5_3 As text:
+    TextInput3_5 As text:
         Default: =""
-        Height: =59
-        Mode: =TextMode.Password
-        Visible: =popupvisible1
-        Width: =490
-        X: =444
-        Y: =463
-        ZIndex: =32
-
-    "'New password popup_1' As group":
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =32
-
-        Rectangle15_1 As rectangle:
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =618
-            Visible: =popupvisible1
-            Width: =664
-            X: =350
-            Y: =102
-            ZIndex: =23
-
-        Label23_1 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =82
-            Size: =30
-            Text: ="Reset your Password"
-            Visible: =popupvisible1
-            Width: =426
-            X: =488
-            Y: =110
-            ZIndex: =24
-
-        Label24_3 As label:
-            Height: =53
-            Size: =15
-            Text: ="Please type new password"
-            Visible: =popupvisible1
-            Width: =269
-            X: =566
-            Y: =192
-            ZIndex: =25
-
-        Label24_4 As label:
-            Height: =49
-            Size: =18
-            Text: ="New Password"
-            Visible: =popupvisible1
-            Width: =216
-            X: =454
-            Y: =264
-            ZIndex: =26
-
-        Label24_5 As label:
-            Height: =56
-            Size: =18
-            Text: ="Confirm New Password"
-            Visible: =popupvisible1
-            Width: =331
-            X: =457
-            Y: =407
-            ZIndex: =27
-
-        TextInput5_2 As text:
-            Default: =""
-            Height: =59
-            Mode: =TextMode.Password
-            Visible: =popupvisible1
-            Width: =490
-            X: =444
-            Y: =321
-            ZIndex: =28
-
-        Label25_1 As label:
-            Color: =RGBA(0, 121, 187, 1)
-            Height: =55
-            OnSelect: |-
-                =UpdateContext({popupvisible1:false});
-                
-                UpdateContext({popupvisible:false})
-            Size: =18
-            Text: ="Back to login"
-            Visible: =popupvisible1
-            Width: =168
-            X: =639
-            Y: =644
-            ZIndex: =29
-
-        Button13_1 As button:
-            Height: =42
-            OnSelect: =If(TextInput5_2.Text = TextInput5_3.Text & Navigate(Admin,ScreenTransition.Fade);
-            Size: =18
-            Text: ="Confirm"
-            Visible: =popupvisible1
-            Width: =164
-            X: =835
-            Y: =650
-            ZIndex: =30
-
-        Label26_1 As label:
-            Height: =63
-            Size: =15
-            Text: ="Make sure it's at least 8 characters including a number and a lowercase letter."
-            Visible: =popupvisible1
-            Width: =480
-            X: =454
-            Y: =556
-            ZIndex: =31
-
-    Button11_2 As button:
-        OnSelect: |+
-            =UpdateContext({popupvisible1:true})
-            
-        Size: =20
-        Text: ="send OTP"
-        Visible: =popupvisible
-        X: =914
-        Y: =399
+        Height: =55
+        Width: =572
+        X: =776
+        Y: =313
         ZIndex: =33
+
+    Icon4_3 As icon.View:
+        Height: =49
+        Icon: =If(varShowPass, Icon.Hide, Icon.View)
+        OnSelect: |+
+            =UpdateContext({varShowPass: !varShowPass})
+            
+        Width: =44
+        X: =1304
+        Y: =463
+        ZIndex: =34
 

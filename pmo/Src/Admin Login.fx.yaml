@@ -84,6 +84,8 @@
         OnSelect: |-
             =If(!IsBlank(LookUp('Admin Credentials','Email Address'=TextInput3_4.Text And Password=TextInput3_1.Text).'Email Address'), Navigate(Dashboard),
             
+            
+            
             Notify("enter valid user name and password",NotificationType.Error));
             
             Reset(TextInput3_4);

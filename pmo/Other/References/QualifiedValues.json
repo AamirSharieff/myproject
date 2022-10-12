@@ -1,6 +1,13 @@
 {
   "QualifiedValues": [
     {
+      "Kind": "default.cds_cre9a_admincredentials_forms",
+      "Namespace": "Admin Credentials (Forms)",
+      "Values": {
+        "Information": "864ccbb0-9a87-4357-a842-9a4b6649a40d"
+      }
+    },
+    {
       "Kind": "default.cds_businessunit_forms",
       "Namespace": "Business Units (Forms)",
       "Values": {
@@ -63,10 +70,10 @@
       }
     },
     {
-      "Kind": "default.cds_cre9a_admincredentials_forms",
-      "Namespace": "Admin Credentials (Forms)",
+      "Kind": "default.cds_cre9a_pmcredentials_forms",
+      "Namespace": "PM Credentials (Forms)",
       "Values": {
-        "Information": "864ccbb0-9a87-4357-a842-9a4b6649a40d"
+        "Information": "5d084fa3-cd89-4065-8da8-cb5394189142"
       }
     }
   ]
