@@ -66,6 +66,7 @@ Screen1 As screen:
             Default: =""
             Height: =59
             Mode: =TextMode.Password
+            OnSelect: =
             Width: =490
             X: =444
             Y: =321
@@ -87,7 +88,17 @@ Screen1 As screen:
 
         Button13_2 As button:
             Height: =55
-            OnSelect: =Reset(TextInput5_4),(textinput5_5)
+            OnSelect: |
+                =Set(e,"");If(TextInput5_4.Text=TextInput5_5.Text,0,Set(e,"Two fields are not same"));
+                
+                If(Len(TextInput5_4.Text)>4,0,Set(e,"Error in length"));
+                
+                If(IsMatch(TextInput5_4.Text,"[0-9]" ,Contains),0,Set(e,"must contain a numeric digit"));
+                
+                If(IsMatch(TextInput5_4.Text, "[a-z]" ,Contains),0,Set(e,"Must contain  small case letter"));
+                
+                If(IsMatch(password1.Text,"[$&+?@#*()%!]", Contains),0,Set(e,"no special character"));
+                ,
             Size: =18
             Text: ="Confirm"
             Width: =186
@@ -103,4 +114,10 @@ Screen1 As screen:
             X: =454
             Y: =556
             ZIndex: =9
+
+    Image10_1 As image:
+        Height: =80
+        Image: ='Screenshot (51)'
+        Width: =170
+        ZIndex: =11
 
