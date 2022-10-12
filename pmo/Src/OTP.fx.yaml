@@ -42,7 +42,7 @@ OTP As screen:
             
             Navigate(Dashboard,Fade),
             
-            Notify("Invalid OTP or Email",NotificationType.Error,3000);
+            Notify("Invalid OTP or Email",NotificationType.Error,30000);
             
             Reset(TextInput6))
         Text: ="Next"
