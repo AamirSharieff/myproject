@@ -1,4 +1,4 @@
-Screen2 As screen:
+OTP As screen:
 
     TextInput3 As text:
         Default: =""
@@ -62,8 +62,8 @@ Screen2 As screen:
         Visible: |
             =true
         Width: =514
-        X: =477
-        Y: =95
+        X: =446
+        Y: =99
         ZIndex: =5
 
     Image10_5 As image:
@@ -77,8 +77,8 @@ Screen2 As screen:
         Size: =18
         Text: ="The verification OTP will be sent to your register email Please check it."
         Width: =656
-        X: =446
-        Y: =181
+        X: =402
+        Y: =187
         ZIndex: =7
 
     Label21_5 As label:
