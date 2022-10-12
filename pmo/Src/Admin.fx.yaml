@@ -105,10 +105,7 @@
             Color: =RGBA(0, 0, 0, 1)
             Height: =28
             Icon: =Icon.Trash
-            OnSelect: |-
-                =
-                
-                Remove('Project Detailss',Gallery6.Selected)
+            OnSelect: =Set(varShowPopup,true);
             Width: =46
             X: =1028
             Y: =7
@@ -1010,6 +1007,77 @@
                     Wrap: =false
                     Y: =DataCardKey38.Y
                     ZIndex: =4
+
+    Deletepopup As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =43
+
+        Rectangle13 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =768
+            Visible: =varShowPopup
+            Width: =1366
+            ZIndex: =37
+
+        Rectangle14 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =370
+            Visible: =varShowPopup
+            Width: =591
+            X: =407
+            Y: =276
+            ZIndex: =38
+
+        Label19 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 121, 187, 1)
+            Height: =67
+            Size: =20
+            Text: ="Delete Record"
+            Visible: =varShowPopup
+            Width: =591
+            X: =407
+            Y: =271
+            ZIndex: =39
+
+        Label20 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =67
+            Size: =20
+            Text: |
+                ="Are you sure you want to delete record?"
+            Visible: =varShowPopup
+            Width: =559
+            X: =421
+            Y: =367
+            ZIndex: =40
+
+        Button11 As button:
+            Height: =57
+            OnSelect: =Set(varShowPopup,false);
+            Size: =18
+            Text: ="Cancel"
+            Visible: =varShowPopup
+            X: =456
+            Y: =497
+            ZIndex: =41
+
+        Button11_1 As button:
+            Height: =57
+            OnSelect: |-
+                =Remove('Project Detailss',Gallery6.Selected);
+                
+                Set(varShowPopup,false);
+            Size: =18
+            Text: ="Delete"
+            Visible: =varShowPopup
+            X: =729
+            Y: =497
+            ZIndex: =42
 
     Group2_3 As group:
         Height: =5
