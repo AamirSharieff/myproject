@@ -116,3 +116,17 @@
         Y: =463
         ZIndex: =34
 
+    Label25_4 As label:
+        Color: =RGBA(0, 121, 187, 1)
+        Height: =55
+        OnSelect: |-
+            =UpdateContext({popupvisible1:false});
+            
+            UpdateContext({popupvisible:false})
+        Size: =18
+        Text: ="Back to Home"
+        Width: =168
+        X: =934
+        Y: =571
+        ZIndex: =35
+
