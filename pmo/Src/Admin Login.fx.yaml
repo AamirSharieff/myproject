@@ -105,17 +105,6 @@
         Y: =313
         ZIndex: =33
 
-    Icon4_2 As icon.View:
-        Height: =49
-        Icon: =If(varShowPass, Icon.Hide, Icon.View)
-        OnSelect: |+
-            =UpdateContext({varShowPass: !varShowPass})
-            
-        Width: =44
-        X: =1304
-        Y: =463
-        ZIndex: =34
-
     Label25_4 As label:
         Color: =RGBA(0, 121, 187, 1)
         Height: =55
