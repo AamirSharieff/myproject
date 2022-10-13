@@ -1182,7 +1182,9 @@
             ZIndex: =46
 
         Button10_1 As button:
-            OnSelect: =Remove('Project Detailss',Gallery1.Selected);
+            OnSelect: |-
+                =Remove('Project Detailss',Gallery1.Selected);
+                Set(varShowPopup,false);
             Text: ="Delete"
             Visible: |
                 =varShowPopup
