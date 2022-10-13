@@ -4571,19 +4571,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.TextInput4.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Form4.Password_DataCard1.DataCardValue18.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.TextInput4.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Form4.Password_DataCard1.DataCardValue18.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen1",
-                "type": "Screen1.TextInput4"
+                "type": "Screen1.Form4.Password_DataCard1.DataCardValue18"
               }
             }
           ],
@@ -4601,19 +4601,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.TextInput4_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.Form4.'Email Address_DataCard1'.DataCardValue17.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.TextInput4_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.Form4.'Email Address_DataCard1'.DataCardValue17.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen1",
-                "type": "Screen1.TextInput4_1"
+                "type": "Screen1.Form4.'Email Address_DataCard1'.DataCardValue17"
               }
             }
           ],

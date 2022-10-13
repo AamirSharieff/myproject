@@ -16,42 +16,6 @@ Screen1 As screen:
         Y: =113
         ZIndex: =2
 
-    Label22 As label:
-        FontWeight: =FontWeight.Semibold
-        Height: =50
-        Size: =20
-        Text: ="Email Address"
-        Width: =365
-        X: =813
-        Y: =204
-        ZIndex: =3
-
-    TextInput4 As text:
-        Default: =""
-        Height: =59
-        Width: =365
-        X: =813
-        Y: =274
-        ZIndex: =4
-
-    Label22_1 As label:
-        FontWeight: =FontWeight.Semibold
-        Height: =50
-        Size: =20
-        Text: ="Password"
-        Width: =365
-        X: =813
-        Y: =356
-        ZIndex: =5
-
-    TextInput4_1 As text:
-        Default: =""
-        Height: =59
-        Width: =365
-        X: =813
-        Y: =431
-        ZIndex: =6
-
     Image2 As image:
         Height: =640
         Image: ='WhatsApp Image 2022-10-10 at 6.34.42 PM'
@@ -60,8 +24,158 @@ Screen1 As screen:
         ZIndex: =7
 
     Button13 As button:
+        OnSelect: =SubmitForm(Form4)
         Text: ="Sign in"
         X: =915
         Y: =592
         ZIndex: =8
+
+    Form4 As form:
+        DataSource: ='New users'
+        Height: =335
+        NumberOfColumns: =1
+        Width: =634
+        X: =652
+        Y: =205
+        ZIndex: =9
+
+        "'Email Address_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cre9a_emailaddress"
+            Default: =ThisItem.'Email Address'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'New users'],DataSourceInfo.DisplayName,"cre9a_emailaddress")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'New users'], DataSourceInfo.MaxLength, "cre9a_emailaddress")
+            Required: =false
+            Update: =DataCardValue17.Text
+            Width: =634
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey23 As label:
+                AutoHeight: =true
+                Height: =34
+                Size: =18
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =25
+                ZIndex: =1
+
+            DataCardValue17 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =60
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =89
+                ZIndex: =2
+
+            ErrorMessage20 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue17.Y + DataCardValue17.Height
+                ZIndex: =3
+
+            StarVisible20 As label:
+                Align: =Align.Center
+                Height: =DataCardKey23.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey23.Y
+                ZIndex: =4
+
+        Password_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cre9a_password"
+            Default: =ThisItem.Password
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'New users'],DataSourceInfo.DisplayName,"cre9a_password")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'New users'], DataSourceInfo.MaxLength, "cre9a_password")
+            Required: =false
+            Update: =DataCardValue18.Text
+            Width: =634
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey24 As label:
+                AutoHeight: =true
+                Height: =34
+                Size: =18
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =37
+                ZIndex: =1
+
+            DataCardValue18 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =60
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =91
+                ZIndex: =2
+
+            ErrorMessage22 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue18.Y + DataCardValue18.Height
+                ZIndex: =3
+
+            StarVisible22 As label:
+                Align: =Align.Center
+                Height: =DataCardKey24.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey24.Y
+                ZIndex: =4
 
