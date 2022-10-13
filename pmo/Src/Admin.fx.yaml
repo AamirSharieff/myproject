@@ -1071,8 +1071,8 @@
             Height: =137
             Visible: |
                 =varShowPopup
-            Width: =482
-            X: =657
+            Width: =433
+            X: =706
             Y: =188
             ZIndex: =43
 
@@ -1080,13 +1080,13 @@
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 121, 187, 1)
-            Height: =37
+            Height: =45
             Size: =15
             Text: ="Delete Record"
             Visible: |
                 =varShowPopup
-            Width: =482
-            X: =657
+            Width: =433
+            X: =706
             Y: =189
             ZIndex: =44
 
@@ -1097,7 +1097,7 @@
             Visible: |
                 =varShowPopup
             Width: =402
-            X: =706
+            X: =731
             Y: =234
             ZIndex: =45
 
