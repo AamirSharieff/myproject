@@ -33,7 +33,7 @@
     Form1 As form:
         DataSource: ='Project Detailss'
         DefaultMode: =FormMode.New
-        Height: =563
+        Height: =344
         Width: =1113
         X: =220
         Y: =133
