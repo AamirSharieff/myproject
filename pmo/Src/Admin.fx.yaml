@@ -979,7 +979,7 @@
             "'Expected Completion date_DataCard1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_expectedcompletiondate"
-                Default: =ThisItem.'Expected Completion date'
+                Default: =ThisItem.'Expected Completion Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_expectedcompletiondate")
                 Fill: =RGBA(0, 0, 0, 0)

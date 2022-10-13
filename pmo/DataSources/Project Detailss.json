@@ -6,7 +6,6 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cre9a_projectdetails",
-    "MaxGetRowsCount": 500,
     "Name": "Project Detailss",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
@@ -18,7 +17,7 @@
       "cre9a_currentactiveteamsize": "Current Active Team Size",
       "cre9a_datetobebilled": "Date to be Billed",
       "cre9a_enddate": "End Date",
-      "cre9a_expectedcompletiondate": "Expected Completion date",
+      "cre9a_expectedcompletiondate": "Expected Completion Date",
       "cre9a_expectedslipageinmonths": "Expected Slipage in Months",
       "cre9a_expectedslipageinrevenue": "Expected Slipage in revenue",
       "cre9a_id": "ID",
@@ -75,30 +74,6 @@
       "b17a9a6e-b7d7-4dcb-b120-c47c197eba97": "Project Details Associated View",
       "f013e817-f6c0-4200-a678-b0b012e21e73": "Active Project Detailss"
     }
-  },
-  {
-    "DisplayName": "Billing Cycle",
-    "Name": "cre9a_billingcycle",
-    "OptionSetInfoNameMapping": {
-      "235190000": "Monthly",
-      "235190001": "Quarterly"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": true,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "cre9a_billingcycle",
-        "OptionSetReferenceEntityName": "Project Detailss"
-      },
-      "OptionSetReferenceItem1": {
-        "OptionSetReferenceColumnName": "cre9a_billingcycle",
-        "OptionSetReferenceEntityName": "project masters"
-      }
-    },
-    "OptionSetTypeKey": "PicklistType",
-    "RelatedColumnInvariantName": "cre9a_billingcycle",
-    "RelatedEntityName": "Project Detailss",
-    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Status (Project Detailss)",
