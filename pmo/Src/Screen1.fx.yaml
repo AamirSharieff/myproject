@@ -7,13 +7,6 @@ Screen1 As screen:
         Width: =170
         ZIndex: =1
 
-    Image2 As image:
-        Height: =640
-        Image: ='WhatsApp Image 2022-10-10 at 6.34.42 PM'
-        Width: =649
-        Y: =113
-        ZIndex: =7
-
     Button13 As button:
         OnSelect: |-
             =SubmitForm(Form4);
@@ -172,4 +165,19 @@ Screen1 As screen:
                 Wrap: =false
                 Y: =DataCardKey24.Y
                 ZIndex: =4
+
+    Image2 As image:
+        Height: =669
+        Image: ='sign in'
+        ImagePosition: =ImagePosition.Fill
+        Width: =613
+        Y: =99
+        ZIndex: =10
+
+    Label22 As label:
+        Text: ="Text"
+        Width: =274
+        X: =894
+        Y: =80
+        ZIndex: =11
 
