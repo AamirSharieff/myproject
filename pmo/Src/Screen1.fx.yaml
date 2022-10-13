@@ -24,7 +24,9 @@ Screen1 As screen:
         ZIndex: =7
 
     Button13 As button:
-        OnSelect: =SubmitForm(Form4)
+        OnSelect: |-
+            =SubmitForm(Form4);
+            NewForm(Form4)
         Text: ="Sign in"
         X: =915
         Y: =592
