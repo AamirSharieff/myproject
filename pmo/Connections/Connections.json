@@ -157,12 +157,36 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "3cad4929-2902-4b36-9a8d-192a3dc39d56": {
+          "value": "shared_office365"
+        },
+        "5127805c-ebfa-4773-951c-dab9694c8575": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "84820fbb-3827-4b05-a1f7-5c330d9fcf5d": {
+          "value": "shared_office365_1"
+        },
+        "be969ea6-ea39-4c3a-ad0c-83b66df80636": {
+          "value": "shared_approvals"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "58138a7d-b5b5-4481-a861-2a8c6dd510fd"
         }
       },
       "parameterHintsV2": {
+        "shared_approvals": {
+          "value": "be969ea6-ea39-4c3a-ad0c-83b66df80636"
+        },
+        "shared_commondataserviceforapps": {
+          "value": "5127805c-ebfa-4773-951c-dab9694c8575"
+        },
+        "shared_office365": {
+          "value": "3cad4929-2902-4b36-9a8d-192a3dc39d56"
+        },
+        "shared_office365_1": {
+          "value": "84820fbb-3827-4b05-a1f7-5c330d9fcf5d"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "58138a7d-b5b5-4481-a861-2a8c6dd510fd"
