@@ -96,16 +96,6 @@
             Y: =5
             ZIndex: =8
 
-        Icon8_2 As icon.Trash:
-            Color: =RGBA(0, 0, 0, 1)
-            Height: =28
-            Icon: =Icon.Trash
-            OnSelect: =Set(varShowPopup,false);
-            Width: =46
-            X: =1063
-            Y: =4
-            ZIndex: =9
-
         Label14_3 As label:
             Align: =Align.Center
             Color: =RGBA(225,225,225,1)
