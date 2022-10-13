@@ -32,6 +32,7 @@ Screen1 As screen:
 
     Form4 As form:
         DataSource: ='New users'
+        DefaultMode: =FormMode.New
         Height: =335
         NumberOfColumns: =1
         Width: =634
