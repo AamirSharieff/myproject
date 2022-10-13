@@ -10,6 +10,7 @@ Screen1 As screen:
     Button13 As button:
         OnSelect: |-
             =SubmitForm(Form4);
+            
             NewForm(Form4)
         Text: ="Register"
         X: =1088
