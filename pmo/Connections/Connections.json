@@ -39,6 +39,41 @@
     "dependents": [],
     "id": "186507c4-88e5-4ec1-90a1-70ada9bf46fa"
   },
+  "3cad4929-2902-4b36-9a8d-192a3dc39d56": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1599/1.0.1599.3017/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "ede5cc54-2ac1-4d53-82fb-f08a07005d72"
+    ],
+    "id": "3cad4929-2902-4b36-9a8d-192a3dc39d56"
+  },
+  "5127805c-ebfa-4773-951c-dab9694c8575": {
+    "connectionParameters": {
+      "sku": "Enterprise",
+      "token:grantType": "code"
+    },
+    "connectionRef": {
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "ede5cc54-2ac1-4d53-82fb-f08a07005d72"
+    ],
+    "id": "5127805c-ebfa-4773-951c-dab9694c8575"
+  },
   "745ec69f-0b33-4b0a-9657-91f04bf38e96": {
     "connectionParameters": {
       "sku": "Enterprise"
@@ -71,7 +106,8 @@
     ],
     "dependencies": {},
     "dependents": [
-      "186507c4-88e5-4ec1-90a1-70ada9bf46fa"
+      "186507c4-88e5-4ec1-90a1-70ada9bf46fa",
+      "ede5cc54-2ac1-4d53-82fb-f08a07005d72"
     ],
     "id": "84820fbb-3827-4b05-a1f7-5c330d9fcf5d"
   },
@@ -91,5 +127,59 @@
     "dependencies": {},
     "dependents": [],
     "id": "bc14a8f7-cb05-4414-9528-8fc8168cbc6c"
+  },
+  "be969ea6-ea39-4c3a-ad0c-83b66df80636": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Approvals",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1599/1.0.1599.3017/approvals/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_approvals"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "ede5cc54-2ac1-4d53-82fb-f08a07005d72"
+    ],
+    "id": "be969ea6-ea39-4c3a-ad0c-83b66df80636"
+  },
+  "ede5cc54-2ac1-4d53-82fb-f08a07005d72": {
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-12.centralindia.logic.azure.com:443/workflows/f34cb9a4e26b4d1081c13d88e040174a/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=SqSfu9sL96KnlF5TcJtaIeuYHR_-sDW0lRQbQvX7zfk",
+      "workflowEndpoint": "/subscriptions/5072fcc3-8341-442e-9b98-4b441017c969/resourceGroups/86fb359e13604ab3b90d2a68e8c007b9-be01ed15467c4d22b133ea7dadeabb0f/providers/Microsoft.Logic/workflows/58138a7d-b5b5-4481-a861-2a8c6dd510fd",
+      "workflowName": "58138a7d-b5b5-4481-a861-2a8c6dd510fd",
+      "workflowPath": "/subscriptions/5072fcc3-8341-442e-9b98-4b441017c969/resourceGroups/86fb359e13604ab3b90d2a68e8c007b9-be01ed15467c4d22b133ea7dadeabb0f/providers/Microsoft.Logic/workflows/58138a7d-b5b5-4481-a861-2a8c6dd510fd"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "58138a7d-b5b5-4481-a861-2a8c6dd510fd"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "58138a7d-b5b5-4481-a861-2a8c6dd510fd"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PMOapp"
+    ],
+    "dependencies": {
+      "shared_approvals": "be969ea6-ea39-4c3a-ad0c-83b66df80636",
+      "shared_commondataserviceforapps": "5127805c-ebfa-4773-951c-dab9694c8575",
+      "shared_office365": "3cad4929-2902-4b36-9a8d-192a3dc39d56",
+      "shared_office365_1": "84820fbb-3827-4b05-a1f7-5c330d9fcf5d"
+    },
+    "dependents": [],
+    "id": "ede5cc54-2ac1-4d53-82fb-f08a07005d72"
   }
 }
