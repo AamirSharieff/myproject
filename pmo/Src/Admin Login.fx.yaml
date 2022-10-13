@@ -81,9 +81,8 @@
         ZIndex: =11
 
     Button12 As button:
-        OnSelect: |+
-            =If(!IsBlank(LookUp('Admin Credentials','Email Address'=TextInput3_4.Text And Password=TextInput3_1.Text).'Email Address'), Navigate(Dashboard),
-            
+        OnSelect: |-
+            =If(!IsBlank(LookUp('Admin Credentials','Email Address'=TextInput3_4.Text And Password=TextInput3_1.Text).'Email Address'),
             
             
             Notify("enter valid user name and password",NotificationType.Error));
@@ -91,6 +90,7 @@
             Reset(TextInput3_4);
             Reset(TextInput3_1);
             
+            Navigate(Admin,ScreenTransition.Fade)
         Size: =20
         Text: ="Login"
         X: =1146
@@ -122,7 +122,10 @@
         OnSelect: |-
             =UpdateContext({popupvisible1:false});
             
-            UpdateContext({popupvisible:false})
+            
+            UpdateContext({popupvisible:false});
+            
+            Navigate('Main Screen')
         Size: =18
         Text: ="Back to Home"
         Width: =168
