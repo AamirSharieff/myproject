@@ -806,7 +806,7 @@
                     Y: =DataCardKey13.Y
                     ZIndex: =7
 
-            "'Actual Start Date_DataCard2' As typedDataCard.dateTimeEditCard":
+            "'Actual Start Date_DataCard1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_actualstartdate"
                 Default: =ThisItem.'Actual Start Date'
@@ -821,6 +821,16 @@
                 Y: =1
                 ZIndex: =1
 
+                DataCardKey1 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
                 DateValue7 As datepicker:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultDate: =Parent.Default
@@ -831,9 +841,9 @@
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =213
+                    Width: =209
                     X: =30
-                    Y: =DataCardKey18.Y + DataCardKey18.Height + 5
+                    Y: =DataCardKey1.Y + DataCardKey1.Height + 5
                     ZIndex: =2
 
                 HourValue7 As dropdown:
@@ -883,6 +893,31 @@
                     X: =HourValue7.X + HourValue7.Width + Separator8.Width
                     Y: =HourValue7.Y
                     ZIndex: =5
+
+                ErrorMessage5 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =HourValue7.Y + HourValue7.Height
+                    ZIndex: =6
+
+                StarVisible5 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1.Y
+                    ZIndex: =7
 
             "'Billing Cycle_DataCard1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
