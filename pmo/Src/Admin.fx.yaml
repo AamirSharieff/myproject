@@ -1183,7 +1183,7 @@
 
         Button10_1 As button:
             OnSelect: |-
-                =Remove('Project Detailss',Gallery1.Selected);
+                =Remove('Project Detailss',Gallery6.Selected);
                 Set(varShowPopup,false);
             Text: ="Delete"
             Visible: |
