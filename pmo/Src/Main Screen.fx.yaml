@@ -189,10 +189,45 @@
 
     Button10_2 As button:
         Height: =33
-        OnSelect: =Navigate('PM Login')
+        OnSelect: |-
+            =UpdateContext({popupvisible:true})
         Text: ="Sign in"
         Width: =119
         X: =1247
         Y: =19
         ZIndex: =26
+
+    Group4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =30
+
+        Rectangle15 As rectangle:
+            Fill: =RGBA(251, 188, 159, 1)
+            Height: =68
+            Visible: =popupvisible
+            Width: =279
+            X: =1071
+            Y: =63
+            ZIndex: =27
+
+        Button17 As button:
+            Height: =32
+            Text: ="Admin"
+            Visible: =popupvisible
+            Width: =135
+            X: =1089
+            Y: =85
+            ZIndex: =28
+
+        Button18 As button:
+            Height: =32
+            Text: ="PM"
+            Visible: =popupvisible
+            Width: =110
+            X: =1240
+            Y: =85
+            ZIndex: =29
 
