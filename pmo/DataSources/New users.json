@@ -1,0 +1,97 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cre9a_newusers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cre9a_newuser",
+    "Name": "New users",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cre9a_emailaddress": "Email Address",
+      "cre9a_newuser_AsyncOperations": "System Jobs",
+      "cre9a_newuser_BulkDeleteFailures": "Bulk Delete Failures",
+      "cre9a_newuser_DuplicateBaseRecord": "Duplicate Records (cre9a_newuser_DuplicateBaseRecord)",
+      "cre9a_newuser_DuplicateMatchingRecord": "Duplicate Records (cre9a_newuser_DuplicateMatchingRecord)",
+      "cre9a_newuser_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cre9a_newuser_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cre9a_newuser_ProcessSession": "Process Sessions",
+      "cre9a_newuser_SyncErrors": "Sync Errors",
+      "cre9a_newuserid": "New user",
+      "cre9a_password": "Password",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "New users",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "New users (Views)",
+    "Name": "_cre9a_newuser_views",
+    "RelatedEntityName": "New users",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1e6cf258-9184-4cda-b4a1-1d861c77eb21": "Inactive New users",
+      "7e78bb7d-6bdd-41d3-b6dc-3b1b3858710b": "Active New users",
+      "8243d97f-db39-441c-85e2-64f58cbdf141": "New user Lookup View",
+      "bedeb989-071a-457c-aa44-6eebaa2bdec4": "New user Advanced Find View",
+      "d07e70fb-92f4-470c-b4f2-df04972f0e84": "New user Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (New users)",
+    "Name": "cre9a_newuser_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "New users"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "New users",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (New users)",
+    "Name": "cre9a_newuser_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "New users"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "New users",
+    "Type": "OptionSetInfo"
+  }
+]
