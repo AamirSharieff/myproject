@@ -153,20 +153,20 @@
             Text: ="PM"
             Visible: =popupvisible
             Width: =124
-            X: =1170
-            Y: =85
+            X: =1242
+            Y: =88
             ZIndex: =21
 
         Button7 As button:
             Color: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(215, 223, 240, 1)
             OnSelect: |-
-                =Navigate(Admin);UpdateContext({popupvisible:false})
+                =Navigate(Screen1,ScreenTransition.Fade);UpdateContext({popupvisible:false})
             Text: ="Admin"
             Visible: =popupvisible
             Width: =124
-            X: =1033
-            Y: =85
+            X: =1097
+            Y: =84
             ZIndex: =22
 
     Button10 As button:
@@ -196,38 +196,4 @@
         X: =1247
         Y: =19
         ZIndex: =26
-
-    Group4 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =30
-
-        Rectangle15 As rectangle:
-            Fill: =RGBA(251, 188, 159, 1)
-            Height: =68
-            Visible: =popupvisible
-            Width: =279
-            X: =1071
-            Y: =63
-            ZIndex: =27
-
-        Button17 As button:
-            Height: =32
-            Text: ="Admin"
-            Visible: =popupvisible
-            Width: =135
-            X: =1089
-            Y: =85
-            ZIndex: =28
-
-        Button18 As button:
-            Height: =32
-            Text: ="PM"
-            Visible: =popupvisible
-            Width: =110
-            X: =1240
-            Y: =85
-            ZIndex: =29
 
