@@ -247,6 +247,7 @@ Screen1 As screen:
         ZIndex: =11
 
     Button17 As button:
+        OnSelect: =Navigate('Main Screen',ScreenTransition.Fade);
         Text: ="log in"
         Width: =127
         X: =1168

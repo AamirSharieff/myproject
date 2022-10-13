@@ -105,6 +105,7 @@ OTP As screen:
     Label21_6 As label:
         Size: =22
         Text: ="Verification Code"
+        Visible: =varvisible
         Width: =285
         X: =446
         Y: =501

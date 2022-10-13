@@ -169,24 +169,6 @@
             Y: =84
             ZIndex: =22
 
-    Button10 As button:
-        Height: =33
-        OnSelect: =Navigate('PM Login')
-        Text: ="PM"
-        Width: =119
-        X: =1072
-        Y: =19
-        ZIndex: =24
-
-    Button10_1 As button:
-        Height: =33
-        OnSelect: =Navigate('Admin Login')
-        Text: ="Admin"
-        Width: =119
-        X: =888
-        Y: =19
-        ZIndex: =25
-
     Button10_2 As button:
         Height: =33
         OnSelect: |-
