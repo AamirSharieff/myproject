@@ -149,12 +149,12 @@
             Color: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(215, 223, 240, 1)
             OnSelect: |-
-                =Navigate(ProjectManager);UpdateContext({popupvisible:false})
+                =Navigate(Screen1,ScreenTransition.Fade);UpdateContext({popupvisible:false})
             Text: ="PM"
             Visible: =popupvisible
             Width: =124
-            X: =1242
-            Y: =88
+            X: =1223
+            Y: =82
             ZIndex: =21
 
         Button7 As button:
@@ -165,7 +165,7 @@
             Text: ="Admin"
             Visible: =popupvisible
             Width: =124
-            X: =1097
+            X: =1076
             Y: =84
             ZIndex: =22
 
