@@ -1,4 +1,5 @@
 Screen1 As screen:
+    OnVisible: =NewForm(Form4)
 
     Image10_7 As image:
         Height: =80
