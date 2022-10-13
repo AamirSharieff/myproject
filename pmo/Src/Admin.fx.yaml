@@ -364,6 +364,7 @@
             Italic: =true
             OnSelect: |-
                 =SubmitForm(Form3);
+                UpdateContext({popupvisible:false});
                 Navigate(Admin,ScreenTransition.Fade);
             Size: =13
             Text: ="Save"
@@ -428,6 +429,8 @@
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     MaxLength: =Parent.MaxLength
+                    OnChange: |-
+                        =Patch('Project Detailss',Gallery1.Selected,{Request:"Complete"})
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
@@ -496,6 +499,9 @@
                     DisplayMode: =Parent.DisplayMode
                     IsSearchable: =false
                     Items: =Choices('Project Type')
+                    OnChange: |-
+                        =
+                        Patch('Project Detailss',Gallery1.Selected,{Request:"Complete"})
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
                     SearchItems: =[]
@@ -563,6 +569,8 @@
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     MaxLength: =Parent.MaxLength
+                    OnChange: |-
+                        =Patch('Project Detailss',Gallery1.Selected,{Request:"Complete"})
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
@@ -631,6 +639,8 @@
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     MaxLength: =Parent.MaxLength
+                    OnChange: |-
+                        =Patch('Project Detailss',Gallery1.Selected,{Request:"Complete"})
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
@@ -698,6 +708,8 @@
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
                     IsEditable: =true
+                    OnChange: |-
+                        =Patch('Project Detailss',Gallery1.Selected,{Request:"Complete"})
                     PaddingBottom: =0
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
@@ -811,6 +823,8 @@
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
                     IsEditable: =true
+                    OnChange: |-
+                        =Patch('Project Detailss',Gallery1.Selected,{Request:"Complete"})
                     PaddingBottom: =0
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
@@ -915,7 +929,7 @@
                     Width: =Parent.Width - 60
                     Wrap: =false
                     X: =30
-                    Y: =10
+                    Y: =15
                     ZIndex: =1
 
                 DataCardValue7 As text:
@@ -924,6 +938,8 @@
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Format: =TextFormat.Number
+                    OnChange: |-
+                        =Patch('Project Detailss',Gallery1.Selected,{Request:"Complete"})
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
@@ -932,7 +948,7 @@
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey19.Y + DataCardKey19.Height + 5
+                    Y: =49
                     ZIndex: =2
 
                 ErrorMessage19 As label:
@@ -992,6 +1008,8 @@
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     MaxLength: =Parent.MaxLength
+                    OnChange: |-
+                        =Patch('Project Detailss',Gallery1.Selected,{Request:"Complete"})
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
@@ -1059,6 +1077,8 @@
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Format: =TextFormat.Number
+                    OnChange: |-
+                        =Patch('Project Detailss',Gallery1.Selected,{Request:"Complete"})
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
@@ -1094,6 +1114,12 @@
                     Wrap: =false
                     Y: =DataCardKey38.Y
                     ZIndex: =4
+
+    Label21 As label:
+        Text: =""
+        X: =353
+        Y: =490
+        ZIndex: =41
 
     Deletepopup As group:
         Height: =5
