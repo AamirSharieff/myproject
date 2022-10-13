@@ -6,10 +6,12 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cre9a_newuser",
+    "MaxGetRowsCount": 500,
     "Name": "New users",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
       "cre9a_emailaddress": "Email Address",
+      "cre9a_name": "Name",
       "cre9a_newuser_AsyncOperations": "System Jobs",
       "cre9a_newuser_BulkDeleteFailures": "Bulk Delete Failures",
       "cre9a_newuser_DuplicateBaseRecord": "Duplicate Records (cre9a_newuser_DuplicateBaseRecord)",
