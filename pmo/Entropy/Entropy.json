@@ -464,7 +464,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/13/2022 11:52:54",
+  "HeaderLastSavedDateTimeUTC": "10/13/2022 12:44:16",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "186507c4-88e5-4ec1-90a1-70ada9bf46fa": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/274603e457194c07acb70bb5cad60f07-ad701a3ae7bf5750\"",
@@ -1120,7 +1120,7 @@
     "MinuteValue4": 205,
     "MinuteValue5": 115,
     "MinuteValue6": 107,
-    "New password popup_3": 404,
+    "New password popup_3": 405,
     "OTP": 243,
     "OTP_1": 254,
     "Password_DataCard1": 428,
@@ -1151,7 +1151,7 @@
     "Rectangle12": 65,
     "Rectangle13": 42,
     "Rectangle14": 140,
-    "Rectangle15_3": 405,
+    "Rectangle15_3": 404,
     "Rectangle2": 7,
     "Rectangle2_10": 323,
     "Rectangle2_11": 258,
@@ -1304,7 +1304,7 @@
       "typedDataCard": 25
     },
     "DeserializationLoadTime": 4.2912834,
-    "ErrorCount": 2
+    "ErrorCount": 4
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
