@@ -40,7 +40,7 @@
         OnSelect: |-
             =If(Text(OTPGenerator)=TextInput6_1.Text,
             
-            Navigate('Reset Password_1(Admin)',ScreenTransition.Fade);
+            Navigate('Reset Password(PM)',ScreenTransition.Fade);
             
             Notify("Invalid OTP or Email",NotificationType.Error,30000);
             
