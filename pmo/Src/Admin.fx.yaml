@@ -11,11 +11,24 @@
             //Filter('Project Detailss',(StartsWith ('Project Name',TextInput14_5)) || (StartsWith('Project Manager',TextInput14_5)))
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =45
+        TemplateSize: =55
         Width: =1139
         X: =213
         Y: =176
         ZIndex: =1
+
+        Label25 As label:
+            Color: =RGBA(168, 0, 0, 1)
+            Fill: =RGBA(251, 188, 159, 1)
+            Height: =50
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =
+            Visible: =If(ThisItem.Request="Pending",true,false)
+            Width: =1131
+            X: =8
+            Y: =5
+            ZIndex: =1
 
         Title6 As label:
             FontWeight: =FontWeight.Normal
@@ -29,9 +42,9 @@
             Text: =ThisItem.'Project Name'
             VerticalAlign: =VerticalAlign.Top
             Width: =173
-            X: =35
-            Y: =12
-            ZIndex: =1
+            X: =30
+            Y: =22
+            ZIndex: =2
 
         Subtitle6 As label:
             Height: =34
@@ -46,7 +59,7 @@
             Width: =115
             X: =243
             Y: =12
-            ZIndex: =2
+            ZIndex: =3
 
         Body2 As label:
             Height: =26
@@ -61,7 +74,7 @@
             Width: =141
             X: =367
             Y: =8
-            ZIndex: =3
+            ZIndex: =4
 
         Separator6 As rectangle:
             Height: =1
@@ -117,22 +130,6 @@
             X: =836
             Y: =3
             ZIndex: =10
-
-        Icon4 As icon.Bell:
-            Color: =RGBA(168, 0, 0, 1)
-            DisabledBorderColor: =RGBA(168, 0, 0, 1)
-            DisabledColor: =Red
-            DisabledFill: =Red
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =20
-            HoverBorderColor: =Red
-            Icon: =Icon.Bell
-            OnSelect: =Select(Parent)
-            Visible: =If(ThisItem.Request="Pending",true,false)
-            Width: =20
-            X: =8
-            Y: =3
-            ZIndex: =11
 
     Rectangle7 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
