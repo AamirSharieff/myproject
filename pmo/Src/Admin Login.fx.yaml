@@ -81,8 +81,10 @@
         ZIndex: =11
 
     Button12 As button:
-        OnSelect: |-
-            =If(!IsBlank(LookUp('Admin Credentials','Email Address'=TextInput3_4.Text And Password=TextInput3_1.Text).'Email Address'),
+        OnSelect: |+
+            =Navigate(Admin,ScreenTransition.Fade);
+            
+            If(!IsBlank(LookUp('Admin Credentials','Email Address'=TextInput3_4.Text And Password=TextInput3_1.Text).'Email Address'),
             
             If(!IsBlank(LookUp('New users','Email Address'=DataCardValue14.Text And Password=DataCardValue17.Text).'Email Address'),
             
@@ -91,7 +93,6 @@
             Reset(TextInput3_4);
             Reset(TextInput3_1);
             
-            Navigate(Admin,ScreenTransition.Fade)
         Size: =20
         Text: ="Login"
         X: =1146
