@@ -1,4 +1,4 @@
-OTP_1 As screen:
+"'OTP_1(PM)' As screen":
 
     TextInput3_3 As text:
         Default: =""
@@ -40,7 +40,7 @@ OTP_1 As screen:
         OnSelect: |-
             =If(Text(OTPGenerator)=TextInput6_1.Text,
             
-            Navigate('Reset Password_1',Fade),
+            Navigate('Reset Password_1(Admin)',Fade),
             
             Notify("Invalid OTP or Email",NotificationType.Error,30000);
             

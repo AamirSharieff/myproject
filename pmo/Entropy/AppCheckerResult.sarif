@@ -514,19 +514,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Reset Password_1'.TextInput5_6.AccessibleLabel"
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.TextInput5_6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Reset Password_1'.TextInput5_6.AccessibleLabel",
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.TextInput5_6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Reset Password_1",
-                "type": "'Reset Password_1'.TextInput5_6"
+                "module": "Reset Password_1(Admin)",
+                "type": "'Reset Password_1(Admin)'.TextInput5_6"
               }
             }
           ],
@@ -544,19 +544,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Reset Password_1'.Icon4_4.AccessibleLabel"
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.Icon4_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Reset Password_1'.Icon4_4.AccessibleLabel",
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.Icon4_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Reset Password_1",
-                "type": "'Reset Password_1'.Icon4_4"
+                "module": "Reset Password_1(Admin)",
+                "type": "'Reset Password_1(Admin)'.Icon4_4"
               }
             }
           ],
@@ -574,19 +574,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Reset Password_1'.Icon4_4.TabIndex"
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.Icon4_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Reset Password_1'.Icon4_4.TabIndex",
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.Icon4_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Reset Password_1",
-                "type": "'Reset Password_1'.Icon4_4"
+                "module": "Reset Password_1(Admin)",
+                "type": "'Reset Password_1(Admin)'.Icon4_4"
               }
             }
           ],
@@ -604,19 +604,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Reset Password_1'.TextInput5_7.AccessibleLabel"
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.TextInput5_7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Reset Password_1'.TextInput5_7.AccessibleLabel",
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.TextInput5_7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Reset Password_1",
-                "type": "'Reset Password_1'.TextInput5_7"
+                "module": "Reset Password_1(Admin)",
+                "type": "'Reset Password_1(Admin)'.TextInput5_7"
               }
             }
           ],
@@ -634,19 +634,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Reset Password_1'.Icon4_5.AccessibleLabel"
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.Icon4_5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Reset Password_1'.Icon4_5.AccessibleLabel",
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.Icon4_5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Reset Password_1",
-                "type": "'Reset Password_1'.Icon4_5"
+                "module": "Reset Password_1(Admin)",
+                "type": "'Reset Password_1(Admin)'.Icon4_5"
               }
             }
           ],
@@ -664,19 +664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Reset Password_1'.Icon4_5.TabIndex"
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.Icon4_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Reset Password_1'.Icon4_5.TabIndex",
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.Icon4_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Reset Password_1",
-                "type": "'Reset Password_1'.Icon4_5"
+                "module": "Reset Password_1(Admin)",
+                "type": "'Reset Password_1(Admin)'.Icon4_5"
               }
             }
           ],
@@ -694,19 +694,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Reset Password_1'.Label25_3.FocusedBorderThickness"
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.Label25_3.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Reset Password_1'.Label25_3.FocusedBorderThickness",
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.Label25_3.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "Reset Password_1",
-                "type": "'Reset Password_1'.Label25_3"
+                "module": "Reset Password_1(Admin)",
+                "type": "'Reset Password_1(Admin)'.Label25_3"
               }
             }
           ],
@@ -724,19 +724,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Reset Password_1'.Label25_3.TabIndex"
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.Label25_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Reset Password_1'.Label25_3.TabIndex",
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.Label25_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Reset Password_1",
-                "type": "'Reset Password_1'.Label25_3"
+                "module": "Reset Password_1(Admin)",
+                "type": "'Reset Password_1(Admin)'.Label25_3"
               }
             }
           ],
@@ -4383,19 +4383,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OTP_1.TextInput3_3.AccessibleLabel"
+                  "fullyQualifiedName": "'OTP_1(PM)'.TextInput3_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "OTP_1.TextInput3_3.AccessibleLabel",
+                  "fullyQualifiedName": "'OTP_1(PM)'.TextInput3_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "OTP_1",
-                "type": "OTP_1.TextInput3_3"
+                "module": "OTP_1(PM)",
+                "type": "'OTP_1(PM)'.TextInput3_3"
               }
             }
           ],
@@ -4413,19 +4413,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OTP_1.TextInput6_1.AccessibleLabel"
+                  "fullyQualifiedName": "'OTP_1(PM)'.TextInput6_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "OTP_1.TextInput6_1.AccessibleLabel",
+                  "fullyQualifiedName": "'OTP_1(PM)'.TextInput6_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "OTP_1",
-                "type": "OTP_1.TextInput6_1"
+                "module": "OTP_1(PM)",
+                "type": "'OTP_1(PM)'.TextInput6_1"
               }
             }
           ],
@@ -4443,19 +4443,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OTP_1.Label22_4.FocusedBorderThickness"
+                  "fullyQualifiedName": "'OTP_1(PM)'.Label22_4.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "OTP_1.Label22_4.FocusedBorderThickness",
+                  "fullyQualifiedName": "'OTP_1(PM)'.Label22_4.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "OTP_1",
-                "type": "OTP_1.Label22_4"
+                "module": "OTP_1(PM)",
+                "type": "'OTP_1(PM)'.Label22_4"
               }
             }
           ],
@@ -4473,19 +4473,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OTP_1.Label22_4.TabIndex"
+                  "fullyQualifiedName": "'OTP_1(PM)'.Label22_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "OTP_1.Label22_4.TabIndex",
+                  "fullyQualifiedName": "'OTP_1(PM)'.Label22_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "OTP_1",
-                "type": "OTP_1.Label22_4"
+                "module": "OTP_1(PM)",
+                "type": "'OTP_1(PM)'.Label22_4"
               }
             }
           ],
@@ -4953,19 +4953,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Reset Password_1'.popupvisible"
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.popupvisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Reset Password_1'.popupvisible",
+                  "fullyQualifiedName": "'Reset Password_1(Admin)'.popupvisible",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "popupvisible",
-                "module": "Reset Password_1",
-                "type": "'Reset Password_1'"
+                "module": "Reset Password_1(Admin)",
+                "type": "'Reset Password_1(Admin)'"
               }
             }
           ],
@@ -5073,19 +5073,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OTP_1.popupvisible"
+                  "fullyQualifiedName": "'OTP_1(PM)'.popupvisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "OTP_1.popupvisible",
+                  "fullyQualifiedName": "'OTP_1(PM)'.popupvisible",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "popupvisible",
-                "module": "OTP_1",
-                "type": "OTP_1"
+                "module": "OTP_1(PM)",
+                "type": "'OTP_1(PM)'"
               }
             }
           ],
