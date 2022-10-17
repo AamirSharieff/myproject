@@ -29,7 +29,7 @@
             Text: =ThisItem.'Project Name'
             VerticalAlign: =VerticalAlign.Top
             Width: =173
-            X: =19
+            X: =35
             Y: =12
             ZIndex: =1
 
@@ -117,6 +117,22 @@
             X: =836
             Y: =3
             ZIndex: =10
+
+        Icon4 As icon.Bell:
+            Color: =RGBA(168, 0, 0, 1)
+            DisabledBorderColor: =RGBA(168, 0, 0, 1)
+            DisabledColor: =Red
+            DisabledFill: =Red
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =20
+            HoverBorderColor: =Red
+            Icon: =Icon.Bell
+            OnSelect: =Select(Parent)
+            Visible: =If(ThisItem.Request="Pending",true,false)
+            Width: =20
+            X: =8
+            Y: =3
+            ZIndex: =11
 
     Rectangle7 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
