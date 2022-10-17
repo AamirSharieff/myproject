@@ -135,7 +135,7 @@
             ZIndex: =13
 
         TextInput1 As text:
-            Default: =ThisItem.Comments
+            Default: =ThisItem.'Project Comments'
             Height: =33
             OnChange: |-
                 =Patch('Project Detailss',

@@ -307,7 +307,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =10
-            Text: =ThisItem.Comments
+            Text: =ThisItem.'Project Comments'
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32

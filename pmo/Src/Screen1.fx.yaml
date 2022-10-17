@@ -11,7 +11,8 @@ Screen1 As screen:
         OnSelect: |-
             =SubmitForm(Form4);
             
-            NewForm(Form4)
+            NewForm(Form4);
+            Navigate(ProjectManager)
         Text: ="Register"
         X: =1088
         Y: =562
