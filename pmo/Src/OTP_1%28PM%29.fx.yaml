@@ -42,14 +42,13 @@
             
             Navigate('Reset Password(PM)',ScreenTransition.Fade);
             
-            Notify("Invalid OTP or Email",NotificationType.Error,30000);
             
             Reset(TextInput6_1))
         Text: ="Next"
         Visible: |
             =varvisible
         Width: =167
-        X: =758
+        X: =771
         Y: =642
         ZIndex: =4
 
@@ -92,8 +91,7 @@
     Label22_4 As label:
         Color: =RGBA(0, 121, 187, 1)
         Height: =42
-        OnSelect: |-
-            =UpdateContext({popupvisible:false})
+        OnSelect: =Navigate('PM Login')
         Size: =20
         Text: ="Back to login"
         Visible: =varvisible
