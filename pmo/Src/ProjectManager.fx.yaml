@@ -1043,10 +1043,9 @@
             Height: =35
             OnSelect: |+
                 =//Office365Outlook.SendEmail("gopika.sucharitha@datasemantics.co","Requset Email","Project Name :" & DataCardValue9.Text & "   Project Type :" & DataCardValue1.Text & "   Start Date :" & DateValue3.SelectedDate & "    End Date :" & DateValue4.SelectedDate & "Comments : "& TextInput2.Text);
-                
+                SubmitForm(Form5);
                 PMOapp.Run(DataCardValue9.Text , DataCardValue8.Selected.Value , DataCardValue33.Text ,DateValue3.SelectedDate,DateValue4.SelectedDate, DataCardValue15.Text,Gallery6_1.Selected.'Project Details');
-                UpdateContext({popupvisible1: false});
-                UpdateContext({popupvisible: false});
+                UpdateContext({popupvisible1: false});UpdateContext({popupvisible: false});
                 
                 
             Text: ="OK"

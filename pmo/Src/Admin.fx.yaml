@@ -300,7 +300,7 @@
             ZIndex: =2
 
         Subtitle2 As label:
-            Height: =Self.Size * 1.8
+            Height: =34
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -309,7 +309,7 @@
             Size: =10
             Text: =ThisItem.'Request Comments'
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
+            Width: =288
             X: =32
             Y: =Title2.Y + Title2.Height + 4
             ZIndex: =3
