@@ -111,13 +111,6 @@
             Y: =7
             ZIndex: =9
 
-        Label13 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.cre9a_billingcycle
-            X: =836
-            Y: =3
-            ZIndex: =10
-
     Rectangle7 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
         Height: =45
@@ -225,17 +218,6 @@
         X: =1135
         Y: =82
         ZIndex: =11
-
-    Label30_27 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =22
-        Size: =14
-        Text: ="Billing Cycle"
-        Width: =129
-        X: =1038
-        Y: =143
-        ZIndex: =29
 
     Icon1 As icon.Bell:
         Color: =RGBA(0, 0, 0, 1)
@@ -542,12 +524,12 @@
                 DataField: ="cre9a_projectmanager"
                 Default: =ThisItem.'Project Manager'
                 DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_projectmanager")
+                DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_projectmanager")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
-                MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_projectmanager")
+                MaxLength: =DataSourceInfo([@'Project Detailss'], DataSourceInfo.MaxLength, "cre9a_projectmanager")
                 Required: =false
-                Update: =DataCardValue12.Text
+                Update: =DataCardValue1.Text
                 Width: =357
                 X: =2
                 Y: =0
@@ -563,14 +545,12 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue12 As text:
+                DataCardValue1 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     MaxLength: =Parent.MaxLength
-                    OnChange: |-
-                        =Patch('Project Detailss',Gallery1.Selected,{Request:"Complete"})
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
@@ -582,7 +562,7 @@
                     Y: =DataCardKey16.Y + DataCardKey16.Height + 5
                     ZIndex: =2
 
-                ErrorMessage17 As label:
+                ErrorMessage16 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -594,10 +574,10 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue12.Y + DataCardValue12.Height
+                    Y: =DataCardValue1.Y + DataCardValue1.Height
                     ZIndex: =3
 
-                StarVisible17 As label:
+                StarVisible16 As label:
                     Align: =Align.Center
                     Height: =DataCardKey16.Height
                     Text: ="*"
@@ -605,76 +585,6 @@
                     Width: =30
                     Wrap: =false
                     Y: =DataCardKey16.Y
-                    ZIndex: =4
-
-            "'PO Number_DataCard3' As typedDataCard.textualEditCard":
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="cre9a_ponumber"
-                Default: =ThisItem.'PO Number'
-                DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_ponumber")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
-                MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_ponumber")
-                Required: =false
-                Update: =DataCardValue13.Text
-                Width: =357
-                X: =0
-                Y: =1
-                ZIndex: =1
-
-                DataCardKey17 As label:
-                    AutoHeight: =true
-                    Height: =34
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue13 As text:
-                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
-                    DelayOutput: =true
-                    DisplayMode: =Parent.DisplayMode
-                    MaxLength: =Parent.MaxLength
-                    OnChange: |-
-                        =Patch('Project Detailss',Gallery1.Selected,{Request:"Complete"})
-                    PaddingLeft: =5
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
-                    Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey17.Y + DataCardKey17.Height + 5
-                    ZIndex: =2
-
-                ErrorMessage18 As label:
-                    AutoHeight: =true
-                    Height: =10
-                    Live: =Live.Assertive
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =Parent.Error
-                    Visible: =Parent.DisplayMode=DisplayMode.Edit
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardValue13.Y + DataCardValue13.Height
-                    ZIndex: =3
-
-                StarVisible18 As label:
-                    Align: =Align.Center
-                    Height: =DataCardKey17.Height
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    Wrap: =false
-                    Y: =DataCardKey17.Y
                     ZIndex: =4
 
             "'Start Date_DataCard3' As typedDataCard.dateTimeEditCard":
@@ -1043,6 +953,76 @@
                     Width: =30
                     Wrap: =false
                     Y: =DataCardKey38.Y
+                    ZIndex: =4
+
+            "'PO Number_DataCard3' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_ponumber"
+                Default: =ThisItem.'PO Number'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_ponumber")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_ponumber")
+                Required: =false
+                Update: =DataCardValue13.Text
+                Width: =357
+                X: =0
+                Y: =1
+                ZIndex: =1
+
+                DataCardKey17 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue13 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    OnChange: |-
+                        =Patch('Project Detailss',Gallery1.Selected,{Request:"Complete"})
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey17.Y + DataCardKey17.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage18 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue13.Y + DataCardValue13.Height
+                    ZIndex: =3
+
+                StarVisible18 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey17.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey17.Y
                     ZIndex: =4
 
     Label21 As label:
