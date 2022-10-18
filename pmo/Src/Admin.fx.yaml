@@ -1,6 +1,6 @@
 "Admin As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =
-    OnVisible: =
+    OnVisible: =Refresh('Project Detailss');
 
     "Gallery6 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
