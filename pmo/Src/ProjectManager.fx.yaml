@@ -1013,7 +1013,7 @@
         Button8 As button:
             Height: =35
             OnSelect: |-
-                =Reset(TextInput2);
+                =Reset(DataCardValue15);
                 UpdateContext({popupvisible1: true})
             Size: =13
             Text: ="Edit"
@@ -1023,12 +1023,12 @@
             Y: =531
             ZIndex: =37
 
-    DateEdit As group:
+    Group4 As group:
         Height: =5
         Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =42
+        X: =80
+        Y: =80
+        ZIndex: =43
 
         Rectangle5 As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
@@ -1039,31 +1039,12 @@
             Y: =404
             ZIndex: =38
 
-        Label16 As label:
-            Color: =RGBA(0, 130, 204, 1)
-            Height: =28
-            Text: ="Comments"
-            Visible: =popupvisible1
-            Width: =316
-            X: =244
-            Y: =409
-            ZIndex: =39
-
-        TextInput2 As text:
-            Default: =
-            Height: =82
-            Visible: =popupvisible1
-            Width: =439
-            X: =254
-            Y: =446
-            ZIndex: =40
-
         Button9 As button:
             Height: =35
             OnSelect: |+
                 =//Office365Outlook.SendEmail("gopika.sucharitha@datasemantics.co","Requset Email","Project Name :" & DataCardValue9.Text & "   Project Type :" & DataCardValue1.Text & "   Start Date :" & DateValue3.SelectedDate & "    End Date :" & DateValue4.SelectedDate & "Comments : "& TextInput2.Text);
                 
-                PMOapp.Run(DataCardValue9.Text , DataCardValue8.Selected.Value , DataCardValue33.Text ,DateValue3.SelectedDate,DateValue4.SelectedDate, TextInput2.Text,Gallery6_1.Selected.'Project Details');
+                PMOapp.Run(DataCardValue9.Text , DataCardValue8.Selected.Value , DataCardValue33.Text ,DateValue3.SelectedDate,DateValue4.SelectedDate, DataCardValue15.Text,Gallery6_1.Selected.'Project Details');
                 UpdateContext({popupvisible1: false});
                 UpdateContext({popupvisible: false});
                 
@@ -1074,6 +1055,84 @@
             X: =606
             Y: =537
             ZIndex: =41
+
+        Form5 As form:
+            DataSource: ='Project Detailss'
+            Height: =122
+            NumberOfColumns: =1
+            Visible: =popupvisible1
+            Width: =458
+            X: =242
+            Y: =409
+            ZIndex: =42
+
+            "'Request Comments_DataCard1' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_requestcomments"
+                Default: =ThisItem.'Request Comments'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_requestcomments")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Project Detailss'], DataSourceInfo.MaxLength, "cre9a_requestcomments")
+                Required: =false
+                Update: =DataCardValue15.Text
+                Width: =458
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey25 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue15 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey25.Y + DataCardKey25.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage21 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue15.Y + DataCardValue15.Height
+                    ZIndex: =3
+
+                StarVisible21 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey25.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey25.Y
+                    ZIndex: =4
 
     Group2_2 As group:
         Height: =5
