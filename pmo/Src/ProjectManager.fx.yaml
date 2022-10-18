@@ -1013,7 +1013,7 @@
         Button8 As button:
             Height: =35
             OnSelect: |-
-                =Reset(DataCardValue15);
+                =NewForm(Form5);
                 UpdateContext({popupvisible1: true})
             Size: =13
             Text: ="Edit"

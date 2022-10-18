@@ -17,19 +17,6 @@
         Y: =176
         ZIndex: =1
 
-        Label25 As label:
-            Color: =RGBA(168, 0, 0, 1)
-            Fill: =RGBA(251, 188, 159, 1)
-            Height: =50
-            OnSelect: =Select(Parent)
-            Size: =10
-            Text: =
-            Visible: =//If(ThisItem.Request="Pending",true,false)
-            Width: =1131
-            X: =8
-            Y: =5
-            ZIndex: =1
-
         Title6 As label:
             FontWeight: =FontWeight.Normal
             Height: =22
