@@ -82,13 +82,14 @@
 
     Button12_1 As button:
         OnSelect: |-
-            =If(!IsBlank(LookUp('PM Credentials','Email Address'=TextInput3_5.Text And Password=TextInput3_2.Text).'Email Address'), Navigate(ProjectManager),
+            =If(!IsBlank(LookUp('PM Credentials','Email Address'=TextInput3_5.Text And Password=TextInput3_2.Text).'Email Address'), Navigate(ProjectManager)) 
+            ||
             
-            If(!IsBlank(LookUp('New users','Email Address'=DataCardValue14.Text And Password=DataCardValue17.Text).'Email Address'),
+            If(!IsBlank(LookUp('New users','Email Address'=DataCardValue14.Text And Password=DataCardValue17.Text).'Email Address'), Navigate(ProjectManager));
             
             
             
-            Notify("enter valid user name and password",NotificationType.Error)));
+            Notify("enter valid user name and password",NotificationType.Error);
             
             Reset(TextInput3_5);
             Reset(TextInput3_2);
