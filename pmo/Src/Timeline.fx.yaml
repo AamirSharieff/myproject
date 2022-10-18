@@ -43,12 +43,12 @@
             Text: =ThisItem.ID
             VerticalAlign: =VerticalAlign.Top
             Width: =63
-            X: =182
+            X: =200
             Y: =9
             ZIndex: =2
 
         Body2_2 As label:
-            Height: =26
+            Height: =35
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -57,8 +57,8 @@
             Size: =13
             Text: =ThisItem.'Project Type'
             VerticalAlign: =VerticalAlign.Top
-            Width: =88
-            X: =277
+            Width: =112
+            X: =297
             Y: =10
             ZIndex: =3
 
@@ -73,7 +73,8 @@
             Height: =44
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Project Manager'
-            X: =414
+            Width: =218
+            X: =444
             ZIndex: =6
 
         Label14_2 As label:
@@ -139,7 +140,7 @@
             Height: =33
             OnChange: |-
                 =Patch('Project Detailss',
-                LookUp('Project Detailss',ID = ThisItem.ID),{Comments:TextInput1.Text});
+                LookUp('Project Detailss',ID = ThisItem.ID),{'Project Comments':TextInput1.Text});
                     UpdateContext({status:false})
             OnSelect: =Select(Parent)
             Visible: =status && ThisItem.IsSelected
@@ -174,7 +175,7 @@
         Size: =14
         Text: ="Project ID"
         Width: =100
-        X: =372
+        X: =397
         Y: =203
         ZIndex: =10
 
@@ -189,17 +190,6 @@
         Y: =203
         ZIndex: =11
 
-    Label30_17 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =20
-        Size: =14
-        Text: ="Amount"
-        Width: =110
-        X: =774
-        Y: =203
-        ZIndex: =12
-
     Label30_20 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -207,7 +197,7 @@
         Size: =14
         Text: ="Project Manager"
         Width: =163
-        X: =614
+        X: =656
         Y: =203
         ZIndex: =13
 
@@ -218,7 +208,7 @@
         Size: =14
         Text: ="Project Type"
         Width: =120
-        X: =479
+        X: =504
         Y: =203
         ZIndex: =14
 

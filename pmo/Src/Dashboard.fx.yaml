@@ -121,8 +121,8 @@ Dashboard As screen:
             Color: =RGBA(128, 128, 128, 1)
             Height: =23
             OnSelect: |-
-                =If(CountRows(Filter('Project Summarys','Project Manager'= User().FullName))>1,Navigate(ProjectManager),
-                If(User().Email="namratha.n@datasemantics.co",Navigate(Admin),Navigate(ProjectManager)))
+                =//If(CountRows(Filter('Project Summarys','Project Manager'= User().FullName))>1,Navigate(ProjectManager),
+                //If(User().Email="namratha.n@datasemantics.co",Navigate(Admin),Navigate(ProjectManager)))
             Size: =10
             Text: ="Project master"
             Width: =118

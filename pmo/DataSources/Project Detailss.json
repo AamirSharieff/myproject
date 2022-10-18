@@ -67,30 +67,6 @@
     }
   },
   {
-    "DisplayName": "Billing Cycle",
-    "Name": "cre9a_billingcycle",
-    "OptionSetInfoNameMapping": {
-      "235190000": "Monthly",
-      "235190001": "Mile stone"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": true,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "cre9a_billingcycle",
-        "OptionSetReferenceEntityName": "Project Detailss"
-      },
-      "OptionSetReferenceItem1": {
-        "OptionSetReferenceColumnName": "cre9a_billingcycle",
-        "OptionSetReferenceEntityName": "project masters"
-      }
-    },
-    "OptionSetTypeKey": "PicklistType",
-    "RelatedColumnInvariantName": "cre9a_billingcycle",
-    "RelatedEntityName": "Project Detailss",
-    "Type": "OptionSetInfo"
-  },
-  {
     "DisplayName": "Status (Project Detailss)",
     "Name": "cre9a_projectdetails_statecode",
     "OptionSetInfoNameMapping": {
