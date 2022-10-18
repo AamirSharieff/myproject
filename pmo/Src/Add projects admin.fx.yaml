@@ -637,7 +637,7 @@
         InputTextPlaceholder: =""
         IsSearchable: =false
         Items: |-
-            = (Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName)
+            = Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName
         SearchFields: =["DisplayName"]
         SearchItems: =[]
         Width: =313
