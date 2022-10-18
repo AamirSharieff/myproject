@@ -867,14 +867,15 @@
 
         TextInput2 As text:
             Default: =""
-            Height: =72
+            Height: =74
+            Mode: =TextMode.MultiLine
             OnChange: |
                 =Patch('Project Detailss',
                 LookUp('Project Detailss',ID = Gallery6_1.Selected.ID),{'Request Comments':TextInput2.Text});
             Visible: =popupvisible1
-            Width: =322
-            X: =248
-            Y: =461
+            Width: =422
+            X: =242
+            Y: =448
             ZIndex: =44
 
     Group2_2 As group:

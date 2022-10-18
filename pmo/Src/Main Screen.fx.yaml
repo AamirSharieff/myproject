@@ -149,7 +149,7 @@
             Color: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(215, 223, 240, 1)
             OnSelect: |-
-                =Navigate('PM Login',ScreenTransition.Fade);UpdateContext({popupvisible:false})
+                =Navigate(ProjectManager,ScreenTransition.Fade);UpdateContext({popupvisible:false})
             Text: ="PM"
             Visible: =popupvisible
             Width: =124
@@ -161,11 +161,11 @@
             Color: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(215, 223, 240, 1)
             OnSelect: |-
-                =Navigate('Admin Login',ScreenTransition.Fade);UpdateContext({popupvisible:false})
+                =Navigate('Admin',ScreenTransition.Fade);UpdateContext({popupvisible:false})
             Text: ="Admin"
             Visible: =popupvisible
             Width: =124
-            X: =1076
+            X: =1085
             Y: =84
             ZIndex: =22
 
