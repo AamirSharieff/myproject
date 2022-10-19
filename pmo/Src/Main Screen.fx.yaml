@@ -149,7 +149,8 @@
             Color: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(215, 223, 240, 1)
             OnSelect: |-
-                =Navigate(ProjectManager,ScreenTransition.Fade);UpdateContext({popupvisible:false})
+                =If(CountRows(Filter('Login users',Name=User().FullName And login_as="Project Manager"))>1,Navigate(ProjectManager));
+                UpdateContext({popupvisible:false})
             Text: ="PM"
             Visible: =popupvisible
             Width: =124
@@ -161,7 +162,7 @@
             Color: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(215, 223, 240, 1)
             OnSelect: |-
-                =If(Filter('Login users',Name=User().FullName And login_as="Admin"),Navigate(Admin));
+                =If(CountRows(Filter('Login users',Name=User().FullName And login_as="Admin"))>1,Navigate(Admin));
                 UpdateContext({popupvisible:false})
             Text: ="Admin"
             Visible: =popupvisible
