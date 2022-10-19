@@ -58,8 +58,8 @@
         Y: =402
         ZIndex: =8
 
-    TextInput3_1 As text:
-        Default: =""
+    TextPassword As text:
+        Default: =
         Height: =55
         Mode: =TextMode.Password
         Width: =572
@@ -81,26 +81,27 @@
         ZIndex: =11
 
     Button12 As button:
-        OnSelect: |+
-            =Navigate(Admin,ScreenTransition.Fade);
+        OnSelect: |
+            =//Navigate(Admin,ScreenTransition.Fade);
             
-            If(!IsBlank(LookUp('Admin Credentials','Email Address'=TextInput3_4.Text And Password=TextInput3_1.Text).'Email Address'),
+            //If(!IsBlank(LookUp('Admin Credentials','Email Address'=TextInput3_4.Text And Password=TextInput3_1.Text).'Email Address'),
             
-            If(!IsBlank(LookUp('New users','Email Address'=DataCardValue14.Text And Password=DataCardValue17.Text).'Email Address'),
+            //If(!IsBlank(LookUp('New users','Email Address'=DataCardValue14.Text And Password=DataCardValue17.Text).'Email Address'),
             
-            Notify("enter valid user name and password",NotificationType.Error)));
+            //Notify("enter valid user name and password",NotificationType.Error)));
             
-            Reset(TextInput3_4);
-            Reset(TextInput3_1);
+            //Reset(TextInput3_4);
+            //Reset(TextInput3_1);
             
+            If(TextPassword.Text="TSInfo",Navigate(Admin,ScreenTransition.Fade),Notify("Invalid password please inter a valid password!",NotificationType.Error))
         Size: =20
         Text: ="Login"
         X: =1146
         Y: =579
         ZIndex: =12
 
-    TextInput3_4 As text:
-        Default: =""
+    TextEmail As text:
+        Default: =
         Height: =55
         Width: =572
         X: =776
