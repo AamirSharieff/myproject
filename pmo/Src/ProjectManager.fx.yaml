@@ -789,6 +789,43 @@
                     Y: =DataCardKey13.Y
                     ZIndex: =7
 
+            ID_DataCard1 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_id"
+                Default: =ThisItem.ID
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_id")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =244
+                X: =2
+                Y: =1
+                ZIndex: =1
+
+                DataCardKey10 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue12 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                    ZIndex: =2
+
         Label10 As label:
             Color: =RGBA(0, 130, 204, 1)
             Height: =25
@@ -825,6 +862,16 @@
             Y: =531
             ZIndex: =37
 
+    Label15 As label:
+        Height: =38
+        Text: |-
+            =First(Office365Users.SearchUser({searchTerm:DataCardValue33.Text})).UserPrincipalName
+        Visible: =false
+        Width: =356
+        X: =704
+        Y: =255
+        ZIndex: =45
+
     Group4 As group:
         Height: =5
         Width: =5
@@ -846,7 +893,7 @@
             OnSelect: |+
                 =//Office365Outlook.SendEmail("gopika.sucharitha@datasemantics.co","Requset Email","Project Name :" & DataCardValue9.Text & "   Project Type :" & DataCardValue1.Text & "   Start Date :" & DateValue3.SelectedDate & "    End Date :" & DateValue4.SelectedDate & "Comments : "& TextInput2.Text);
                 
-                PMOapp.Run(DataCardValue9.Text , DataCardValue8.Selected.Value , DataCardValue33.Text ,DateValue3.SelectedDate,DateValue4.SelectedDate, TextInput2.Text,Gallery6_1.Selected.'Project Details',DataCardValue33.Text);
+                PMOapp.Run(DataCardValue9.Text , DataCardValue8.Selected.Value , DataCardValue33.Text ,DateValue3.SelectedDate,DateValue4.SelectedDate, TextInput2.Text,Gallery6_1.Selected.'Project Details',Label15.Text,DataCardValue12.Text);
                 UpdateContext({popupvisible1: false});UpdateContext({popupvisible: false});
                 
                 
