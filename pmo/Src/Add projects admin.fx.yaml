@@ -635,11 +635,11 @@
         DisplayFields: =["DisplayName"]
         Height: =50
         InputTextPlaceholder: =""
-        IsSearchable: =false
         Items: |-
             = Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName
         SearchFields: =["DisplayName"]
-        SearchItems: =[]
+        SearchItems: |-
+            =Search( Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName,ComboBox2.SearchText,"DisplayName")
         Width: =313
         X: =244
         Y: =409
