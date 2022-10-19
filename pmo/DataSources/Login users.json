@@ -10,6 +10,7 @@
     "Name": "Login users",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cre9a_login_as": "login_as",
       "cre9a_loginuser_AsyncOperations": "System Jobs",
       "cre9a_loginuser_BulkDeleteFailures": "Bulk Delete Failures",
       "cre9a_loginuser_DuplicateBaseRecord": "Duplicate Records (cre9a_loginuser_DuplicateBaseRecord)",
@@ -20,7 +21,6 @@
       "cre9a_loginuser_SyncErrors": "Sync Errors",
       "cre9a_loginuserid": "Login user",
       "cre9a_name": "Name",
-      "cre9a_userid": "User ID",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
