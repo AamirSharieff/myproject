@@ -81,7 +81,7 @@
         ZIndex: =11
 
     Button12 As button:
-        OnSelect: |
+        OnSelect: |-
             =//Navigate(Admin,ScreenTransition.Fade);
             
             //If(!IsBlank(LookUp('Admin Credentials','Email Address'=TextInput3_4.Text And Password=TextInput3_1.Text).'Email Address'),
@@ -93,7 +93,10 @@
             //Reset(TextInput3_4);
             //Reset(TextInput3_1);
             
-            If(TextPassword.Text="Admin",Navigate(Admin,ScreenTransition.Fade),Notify("Invalid password please inter a valid password!",NotificationType.Error))
+            If(TextPassword.Text="Admin",Navigate(Admin,ScreenTransition.Fade),Notify("Invalid password please inter a valid password!",NotificationType.Error));
+            
+            Reset(TextEmail);
+            Reset(TextPassword);
         Size: =20
         Text: ="Login"
         X: =1146
