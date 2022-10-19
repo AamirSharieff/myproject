@@ -93,7 +93,7 @@
             //Reset(TextInput3_4);
             //Reset(TextInput3_1);
             
-            If(TextPassword.Text="TSInfo",Navigate(Admin,ScreenTransition.Fade),Notify("Invalid password please inter a valid password!",NotificationType.Error))
+            If(TextPassword.Text="Admin",Navigate(Admin,ScreenTransition.Fade),Notify("Invalid password please inter a valid password!",NotificationType.Error))
         Size: =20
         Text: ="Login"
         X: =1146
