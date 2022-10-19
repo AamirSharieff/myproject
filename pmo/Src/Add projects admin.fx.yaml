@@ -612,7 +612,10 @@
             Office365Outlook.SendEmail(First(
                 Office365Users.SearchUser({searchTerm:ComboBox2.Selected.DisplayName})).UserPrincipalName,
                 "New Project Added",
-                "Project Name :"& DataCardValue2.Text & "   Project Type :" & DataCardValue5.Selected.Value & "   Start Date :" &DateValue1.SelectedDate & "    End Date :" & DateValue2.SelectedDate);
+                "Project Name :"& DataCardValue2.Text & 
+                "Project Type :" & DataCardValue5.Selected.Value & 
+                "Start Date :" &DateValue1.SelectedDate & 
+                "End Date :" & DateValue2.SelectedDate);
             SubmitForm(Form1);
             
             
