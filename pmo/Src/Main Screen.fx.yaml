@@ -162,8 +162,8 @@
             Color: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(215, 223, 240, 1)
             OnSelect: |-
-                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
-                UpdateContext({popupvisible:false})
+                =//If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+                //UpdateContext({popupvisible:false})
             Text: ="Admin"
             Visible: =popupvisible
             Width: =124
@@ -174,7 +174,8 @@
     Button10_2 As button:
         Height: =33
         OnSelect: |-
-            =UpdateContext({popupvisible:true})
+            =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+            //UpdateContext({popupvisible:true})
         Text: ="Sign in"
         Width: =119
         X: =1223
