@@ -80,7 +80,7 @@
         Label14_2 As label:
             Height: =28
             OnSelect: =Select(Parent)
-            Text: =ThisItem.'Contract Amount'
+            Text: =
             Width: =117
             X: =588
             Y: =7
