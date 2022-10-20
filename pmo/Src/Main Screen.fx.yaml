@@ -129,48 +129,6 @@
         Y: =27
         ZIndex: =23
 
-    Group3 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =23
-
-        Rectangle2 As rectangle:
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =48
-            Visible: =popupvisible
-            Width: =275
-            X: =1023
-            Y: =80
-            ZIndex: =20
-
-        Button5 As button:
-            Color: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(215, 223, 240, 1)
-            OnSelect: |-
-                =If(CountRows(Filter('Login users',Name=User().FullName And login_as="Project Manager"))>1,Navigate(ProjectManager));
-                UpdateContext({popupvisible:false})
-            Text: ="PM"
-            Visible: =popupvisible
-            Width: =124
-            X: =1223
-            Y: =82
-            ZIndex: =21
-
-        Button7 As button:
-            Color: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(215, 223, 240, 1)
-            OnSelect: |-
-                =//If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
-                //UpdateContext({popupvisible:false})
-            Text: ="Admin"
-            Visible: =popupvisible
-            Width: =124
-            X: =1085
-            Y: =84
-            ZIndex: =22
-
     Button10_2 As button:
         Height: =33
         OnSelect: |-
