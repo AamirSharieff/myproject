@@ -91,7 +91,8 @@
             Height: =28
             Icon: =Icon.Edit
             OnSelect: |
-                =UpdateContext({status:true})
+                =
+                UpdateContext({status:true})
             Width: =30
             X: =1035
             Y: =5
@@ -116,10 +117,19 @@
             Height: =36
             Items: =["Completed","Pending"]
             OnChange: |-
+                =//Patch('Project Detailss',
+                //LookUp('Project Detailss',ID = ThisItem.ID),
+                //{'Project Status':If(Dropdown1.SelectedText.Value="Pending","Pending",If(Dropdown1.SelectedText.Value="Completed","Completed"))});
+                    
+                    
+                UpdateContext({status:false})
+            OnSelect: |-
                 =Patch('Project Detailss',
-                LookUp('Project Detailss',ID = ThisItem.ID),{'Project Status':Dropdown1.SelectedText.Value});
-                    UpdateContext({status:false})
-            OnSelect: =Select(Parent)
+                LookUp('Project Detailss','Project Name' = ThisItem.'Project Name'),
+                {'Project Status':Dropdown1.SelectedText.Value});
+                    
+                    
+                UpdateContext({status:false})
             Visible: =status && ThisItem.IsSelected
             Width: =152
             X: =680

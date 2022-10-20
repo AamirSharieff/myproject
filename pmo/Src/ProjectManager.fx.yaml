@@ -232,7 +232,8 @@
                     "New Project Added",
                     "Project Name :" & DataCardValue9.Text & "   Project Type :" & DataCardValue8.Selected.Value & "   Start Date :" & DateValue3.SelectedDate & "    End Date :" & DateValue4.SelectedDate
                 );
-                UpdateContext({popupvisible: false})
+                UpdateContext({popupvisible: false});
+                UpdateContext({popupvisible1: false});
             Size: =13
             Text: ="Update"
             Visible: =popupvisible

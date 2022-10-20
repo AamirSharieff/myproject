@@ -10,6 +10,7 @@
     "Name": "Login users",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cre9a_emailid": "Email ID",
       "cre9a_login_as": "login_as",
       "cre9a_loginuser_AsyncOperations": "System Jobs",
       "cre9a_loginuser_BulkDeleteFailures": "Bulk Delete Failures",
