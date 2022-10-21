@@ -48,7 +48,7 @@
             ZIndex: =2
 
         Body2_2 As label:
-            Height: =35
+            Height: =25
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -57,7 +57,7 @@
             Size: =13
             Text: =ThisItem.'Project Type'
             VerticalAlign: =VerticalAlign.Top
-            Width: =112
+            Width: =135
             X: =297
             Y: =10
             ZIndex: =3
@@ -74,7 +74,7 @@
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Project Manager'
             Width: =218
-            X: =444
+            X: =476
             ZIndex: =6
 
         Label14_2 As label:
@@ -207,7 +207,7 @@
         Size: =14
         Text: ="Project Manager"
         Width: =163
-        X: =656
+        X: =670
         Y: =203
         ZIndex: =13
 

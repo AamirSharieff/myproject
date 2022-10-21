@@ -10,11 +10,18 @@
     "Name": "Project Detailss",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cre9a_billingcycle": "Billing Cycle",
       "cre9a_comments": "Project Comments",
       "cre9a_contractamount": "Contract Amount",
       "cre9a_currentactiveteamsize": "Current Active Team Size",
-      "cre9a_enddate": "End Date",
+      "cre9a_enddate": "Project End Date",
       "cre9a_id": "ID",
+      "cre9a_milestoneactualdate": "Milestone Actual date",
+      "cre9a_milestoneamount": "Milestone Amount",
+      "cre9a_milestoneenddate": "Milestone End Date",
+      "cre9a_milestonename": "Mile stone name",
+      "cre9a_milestoneplanneddate": "Milestone Planned Date",
+      "cre9a_milestonestartdate": "Milestone Start Date",
       "cre9a_ponumber": "PO Number",
       "cre9a_projectdetails_AsyncOperations": "System Jobs",
       "cre9a_projectdetails_BulkDeleteFailures": "Bulk Delete Failures",
@@ -23,13 +30,14 @@
       "cre9a_projectdetails_ProcessSession": "Process Sessions",
       "cre9a_projectdetails_SyncErrors": "Sync Errors",
       "cre9a_projectdetailsid": "Project Details",
+      "cre9a_projectdivision": "Project Division",
       "cre9a_projectmanager": "Project Manager",
       "cre9a_projectname": "Project Name",
       "cre9a_projectstatus": "Project Status",
       "cre9a_projecttype": "Project Type",
       "cre9a_request": "Request",
       "cre9a_requestcomments": "Request Comments",
-      "cre9a_startdate": "Start Date",
+      "cre9a_startdate": "Project Start Date",
       "cre9a_teamsize": "Team Size",
       "cre9a_totalbilledamount": "Total Billed Amount",
       "createdby": "Created By",
@@ -65,6 +73,26 @@
       "b17a9a6e-b7d7-4dcb-b120-c47c197eba97": "Project Details Associated View",
       "f013e817-f6c0-4200-a678-b0b012e21e73": "Active Project Detailss"
     }
+  },
+  {
+    "DisplayName": "Billing Cycle PMO",
+    "Name": "cre9a_billingcyclepmo",
+    "OptionSetInfoNameMapping": {
+      "235190000": "Monthly",
+      "235190001": "Mile Stone"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cre9a_billingcycle",
+        "OptionSetReferenceEntityName": "Project Detailss"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cre9a_billingcycle",
+    "RelatedEntityName": "Project Detailss",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Status (Project Detailss)",
@@ -103,6 +131,27 @@
     },
     "OptionSetTypeKey": "StatusType",
     "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Project Detailss",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Project Division",
+    "Name": "cre9a_projectdivision",
+    "OptionSetInfoNameMapping": {
+      "235190000": "BI ",
+      "235190001": "Non BI",
+      "235190002": "Product"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cre9a_projectdivision",
+        "OptionSetReferenceEntityName": "Project Detailss"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cre9a_projectdivision",
     "RelatedEntityName": "Project Detailss",
     "Type": "OptionSetInfo"
   },
