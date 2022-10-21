@@ -1093,15 +1093,6 @@
         Y: =490
         ZIndex: =41
 
-    Label16 As label:
-        Height: =36
-        Size: =15
-        Text: ="Are you sure want to delete this record ?"
-        Width: =404
-        X: =474
-        Y: =436
-        ZIndex: =48
-
     Deletepopup As group:
         Height: =5
         Width: =5
@@ -1119,11 +1110,11 @@
 
         Rectangle14 As rectangle:
             Fill: =RGBA(202, 202, 202, 1)
-            Height: =152
+            Height: =140
             Visible: |
                 =varShowPopup
-            Width: =433
-            X: =456
+            Width: =369
+            X: =519
             Y: =378
             ZIndex: =43
 
@@ -1136,8 +1127,8 @@
             Text: ="Delete Record"
             Visible: |
                 =varShowPopup
-            Width: =433
-            X: =456
+            Width: =370
+            X: =519
             Y: =378
             ZIndex: =44
 
@@ -1159,8 +1150,8 @@
             Visible: |
                 =varShowPopup
             Width: =116
-            X: =762
-            Y: =490
+            X: =712
+            Y: =456
             ZIndex: =46
 
         Button10_1 As button:
@@ -1172,8 +1163,8 @@
             Visible: |
                 =varShowPopup
             Width: =100
-            X: =630
-            Y: =490
+            X: =567
+            Y: =456
             ZIndex: =47
 
     Group2_3 As group:
