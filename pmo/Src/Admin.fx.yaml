@@ -1366,6 +1366,7 @@
             Italic: =true
             OnSelect: |-
                 =UpdateContext({popupvisible:false});
+                UpdateContext({billing:false});
             Text: ="Back"
             Visible: =popupvisible
             Width: =77
@@ -1378,10 +1379,16 @@
             Italic: =true
             OnSelect: |-
                 =SubmitForm(Form6);
+                NewForm(Form5);
                 SubmitForm(Form5);
+                NewForm(Form6);
+                UpdateContext({billing:false});
                 SubmitForm(Form3);
                 UpdateContext({popupvisible:false});
-                UpdateContext({billing:false});
+                
+                
+                
+                
                 Navigate(Admin,ScreenTransition.Fade);
             Size: =13
             Text: ="Save"

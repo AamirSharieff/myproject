@@ -21762,7 +21762,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "FormMode.Edit",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "DefaultMode",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -21882,7 +21882,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "FormMode.Edit",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "DefaultMode",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
