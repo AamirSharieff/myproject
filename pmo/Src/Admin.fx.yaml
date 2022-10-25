@@ -1381,7 +1381,9 @@
             DataSource: ='Project Summarys'
             DefaultMode: =FormMode.New
             Height: =125
-            Visible: =If(DataCardValue18.Selected.Value = "Monthly",true,false) 
+            Visible: |-
+                =If(DataCardValue18.Selected.Value = "Monthly",true,false) &&
+                popupvisible 
             Width: =1029
             X: =148
             Y: =488
@@ -1708,7 +1710,7 @@
             DataSource: ='Project Summarys'
             DefaultMode: =FormMode.New
             Height: =210
-            Visible: =If(DataCardValue18.Selected.Value = "Mile Stone",true,false) 
+            Visible: =If(DataCardValue18.Selected.Value = "Mile Stone",true,false) && popupvisible
             Width: =1036
             X: =152
             Y: =486
