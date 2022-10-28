@@ -1438,7 +1438,7 @@
             "'Milestone Amount_DataCard1_2' As typedDataCard.numberEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_milestoneamount"
-                Default: =ThisItem.'Milestone Amount'
+                Default: =ThisItem.'Milestone Actual Amount'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_milestoneamount")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -1505,7 +1505,7 @@
             "'Milestone Start Date_DataCard1_2' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_milestonestartdate"
-                Default: =ThisItem.'Milestone Start Date'
+                Default: =ThisItem.'Milestone Planned Start Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_milestonestartdate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -1619,7 +1619,7 @@
             "'Milestone End Date_DataCard1_2' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_milestoneenddate"
-                Default: =ThisItem.'Milestone End Date'
+                Default: =ThisItem.'Milestone Planned End Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_milestoneenddate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -1734,7 +1734,7 @@
             "'Milestone Planned Date_DataCard1_2' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_milestoneplanneddate"
-                Default: =ThisItem.'Milestone Planned Date'
+                Default: =ThisItem.'Milestone Actual End Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_milestoneplanneddate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -1849,7 +1849,7 @@
             "'Milestone Actual Date_DataCard1_2' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_milestoneactualdate"
-                Default: =ThisItem.'Milestone Actual Date'
+                Default: =ThisItem.'Milestone Actual Start Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_milestoneactualdate")
                 Fill: =RGBA(0, 0, 0, 0)
