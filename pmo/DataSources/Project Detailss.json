@@ -89,6 +89,26 @@
     "Type": "OptionSetInfo"
   },
   {
+    "DisplayName": "Billing Cycle (Project Detailss)",
+    "Name": "cre9a_projectdetails_cre9a_billingcycle",
+    "OptionSetInfoNameMapping": {
+      "235190000": "Monthly",
+      "235190001": "Milestone"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cre9a_billingcycle",
+        "OptionSetReferenceEntityName": "Project Detailss"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cre9a_billingcycle",
+    "RelatedEntityName": "Project Detailss",
+    "Type": "OptionSetInfo"
+  },
+  {
     "DisplayName": "Status (Project Detailss)",
     "Name": "cre9a_projectdetails_statecode",
     "OptionSetInfoNameMapping": {
