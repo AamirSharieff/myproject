@@ -19,10 +19,10 @@
       "cre9a_ponumber": "PO Number",
       "cre9a_projectdetails_AsyncOperations": "System Jobs",
       "cre9a_projectdetails_BulkDeleteFailures": "Bulk Delete Failures",
-      "cre9a_projectdetails_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cre9a_projectdetails_MailboxTrackingFolders": "mailboxtrackingfolder",
       "cre9a_projectdetails_PrincipalObjectAttributeAccesses": "Field Sharing",
       "cre9a_projectdetails_ProcessSession": "Process Sessions",
-      "cre9a_projectdetails_SyncErrors": "Sync Errors",
+      "cre9a_projectdetails_SyncErrors": "syncerror",
       "cre9a_projectdetailsid": "Project Details",
       "cre9a_projectdivision": "Project Division",
       "cre9a_projectmanager": "Project Manager",
@@ -67,26 +67,6 @@
       "b17a9a6e-b7d7-4dcb-b120-c47c197eba97": "Project Details Associated View",
       "f013e817-f6c0-4200-a678-b0b012e21e73": "Active Project Detailss"
     }
-  },
-  {
-    "DisplayName": "Billing Cycle PMO",
-    "Name": "cre9a_billingcyclepmo",
-    "OptionSetInfoNameMapping": {
-      "235190000": "Monthly",
-      "235190001": "Mile Stone"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": true,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "cre9a_billingcycle",
-        "OptionSetReferenceEntityName": "Project Detailss"
-      }
-    },
-    "OptionSetTypeKey": "PicklistType",
-    "RelatedColumnInvariantName": "cre9a_billingcycle",
-    "RelatedEntityName": "Project Detailss",
-    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Billing Cycle (Project Detailss)",

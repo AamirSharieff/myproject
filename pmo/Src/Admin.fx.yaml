@@ -862,6 +862,26 @@
             X: =3
             ZIndex: =28
 
+    Rectangle2_1 As rectangle:
+        Height: =61
+        Visible: =billing
+        Width: =1058
+        X: =267
+        Y: =286
+        ZIndex: =64
+
+    Label25_7 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =60
+        Text: ="PO Number"
+        Visible: =billing
+        Width: =131
+        X: =313
+        Y: =287
+        ZIndex: =65
+
     Group1_3 As group:
         Height: =5
         Width: =5
@@ -955,6 +975,18 @@
             X: =11
             Y: =160
             ZIndex: =27
+
+    Label25_8 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =63
+        Text: ="Billed Date"
+        Visible: =billing
+        Width: =151
+        X: =558
+        Y: =284
+        ZIndex: =66
 
     "'Billing Milestone' As group":
         Height: =5
@@ -1933,13 +1965,14 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =false
-                Update: =
+                Update: =ThisItem.'Billing Cycle'
+                Visible: =popupvisible
                 Width: =338
                 X: =0
                 Y: =3
                 ZIndex: =1
 
-                DataCardKey24 As label:
+                DataCardKey6 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -1949,13 +1982,13 @@
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue18 As combobox:
+                DataCardValue6 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =[Parent.Default]
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     IsSearchable: =false
-                    Items: =["","Monthly","Milestone"]
+                    Items: =["Monthly","Milestone"]
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
                     SearchItems: =[]
@@ -1963,10 +1996,10 @@
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey24.Y + DataCardKey24.Height + 5
+                    Y: =DataCardKey6.Y + DataCardKey6.Height + 5
                     ZIndex: =2
 
-                ErrorMessage23 As label:
+                ErrorMessage3 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -1978,17 +2011,17 @@
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue18.Y + DataCardValue18.Height
+                    Y: =DataCardValue6.Y + DataCardValue6.Height
                     ZIndex: =3
 
-                StarVisible24 As label:
+                StarVisible3 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey24.Height
+                    Height: =DataCardKey6.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey24.Y
+                    Y: =DataCardKey6.Y
                     ZIndex: =4
 
             "'Request Comments_DataCard1' As typedDataCard.textualEditCard":
@@ -2067,7 +2100,7 @@
             Height: =34
             Italic: =true
             OnSelect: |-
-                =If(DataCardValue18.Selected.Value ="Milestone",UpdateContext({billing:true}),UpdateContext({billing:false}))
+                =If(DataCardValue6.Selected.Value ="Milestone",UpdateContext({billing:true}),UpdateContext({billing:false}))
             Size: =18
             Text: ="Update Billing Details"
             Visible: =popupvisible
@@ -3066,4 +3099,211 @@
             X: =1061
             Y: =572
             ZIndex: =61
+
+    Label25_9 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Text: ="Monthly Planned Amount"
+        Visible: =billing
+        Width: =194
+        X: =828
+        Y: =297
+        ZIndex: =67
+
+    Label25_10 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =42
+        Text: ="Monthly Achieved Amount"
+        Visible: =billing
+        Width: =161
+        X: =1088
+        Y: =299
+        ZIndex: =68
+
+    "'Billing 1' As group":
+        Height: =5
+        Width: =5
+        X: =80
+        Y: =80
+        ZIndex: =72
+
+        Rectangle12_3 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =569
+            Visible: =billing
+            Width: =1111
+            X: =245
+            Y: =162
+            ZIndex: =62
+
+        "Gallery2_1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+            BorderThickness: =2
+            Height: =269
+            Items: =Filter('Project Summarys',ProjectsID = DataCardValue22_1.Text)
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =54
+            Visible: =billing
+            Width: =1057
+            X: =267
+            Y: =341
+            ZIndex: =63
+
+            Title4_1 As label:
+                Height: =42
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =15
+                Text: =ThisItem.'PO Number'
+                VerticalAlign: =VerticalAlign.Top
+                Width: =209
+                X: =10
+                Y: =12
+                ZIndex: =1
+
+            Subtitle4_1 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Semibold
+                Height: =42
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =15
+                Text: =ThisItem.'Billing Date'
+                VerticalAlign: =VerticalAlign.Top
+                Width: =196
+                X: =276
+                Y: =8
+                ZIndex: =2
+
+            Separator10_3 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =4
+
+            Label16_1 As label:
+                Height: =42
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.'Monthly Billing Amount'
+                Width: =118
+                X: =472
+                Y: =11
+                ZIndex: =5
+
+            Label24_3 As label:
+                Height: =49
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.'Achived Billing'
+                Width: =199
+                X: =624
+                Y: =5
+                ZIndex: =7
+
+        Button19_3 As button:
+            Height: =39
+            OnSelect: |-
+                =UpdateContext({add:true});NewForm(Form5_1);
+            Text: ="ADD"
+            Visible: =billing
+            Width: =119
+            X: =1208
+            Y: =654
+            ZIndex: =70
+
+        FormViewer1_1 As formViewer:
+            DataSource: ='Project Detailss'
+            Height: =60
+            Item: =Gallery6.Selected
+            NumberOfColumns: =1
+            Visible: =billing
+            Width: =642
+            X: =278
+            Y: =226
+            ZIndex: =71
+
+            "'Project Name_DataCard4_1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_projectname"
+                Default: =ThisItem.'Project Name'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_projectname")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =642
+                X: =0
+                Y: =1
+                ZIndex: =1
+
+                DataCardKey31_3 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =(Parent.Width - 60) * 0.4
+                    Wrap: =false
+                    X: =30
+                    Y: =10 + (DataCardValue25_3.Height / 2) - (Self.Height / 2)
+                    ZIndex: =1
+
+                DataCardValue25_3 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Default
+                    Width: =(Parent.Width - 60) * 0.6
+                    X: =DataCardKey31_3.X + DataCardKey31_3.Width
+                    Y: =10
+                    ZIndex: =2
+
+            ID_DataCard2_1 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_id"
+                Default: =ThisItem.ID
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_id")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Visible: =false
+                Width: =642
+                X: =0
+                Y: =0
+                ZIndex: =66
+
+                DataCardKey28_1 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =(Parent.Width - 60) * 0.4
+                    Wrap: =false
+                    X: =30
+                    Y: =10 + (DataCardValue22_1.Height / 2) - (Self.Height / 2)
+                    ZIndex: =1
+
+                DataCardValue22_1 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Default
+                    Width: =(Parent.Width - 60) * 0.6
+                    X: =DataCardKey28_1.X + DataCardKey28_1.Width
+                    Y: =10
+                    ZIndex: =2
 
