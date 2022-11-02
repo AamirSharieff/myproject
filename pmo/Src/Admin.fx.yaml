@@ -1001,11 +1001,11 @@
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =15
-                Text: =ThisItem.'Milestone Name'
+                Text: =ThisItem.'Project Name'
                 VerticalAlign: =VerticalAlign.Top
                 Width: =209
-                X: =10
-                Y: =12
+                X: =42
+                Y: =8
                 ZIndex: =1
 
             Subtitle4_1 As label:
@@ -1018,10 +1018,10 @@
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =15
-                Text: =ThisItem.'Milestone Planned Amount'
+                Text: =ThisItem.'Billing Date'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =196
-                X: =215
+                Width: =220
+                X: =251
                 Y: =12
                 ZIndex: =2
 
@@ -1037,27 +1037,18 @@
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.'Milestone Actual Amount'
                 Width: =118
-                X: =472
-                Y: =11
+                X: =598
+                Y: =12
                 ZIndex: =5
 
             Label24_3 As label:
                 Height: =49
                 OnSelect: =Select(Parent)
-                Text: =ThisItem.'Milestone Actual Start Date'
+                Text: =ThisItem.'Achived Billing'
                 Width: =199
-                X: =624
+                X: =846
                 Y: =5
                 ZIndex: =7
-
-            Label24_4 As label:
-                Height: =49
-                OnSelect: =Select(Parent)
-                Text: =ThisItem.'Milestone Actual End Date'
-                Width: =202
-                X: =835
-                Y: =5
-                ZIndex: =8
 
         Button19_3 As button:
             OnSelect: |-
