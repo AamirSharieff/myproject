@@ -2986,7 +2986,6 @@
         OnSelect: |-
             =UpdateContext({add:true});NewForm(Form5_1);
         Text: ="Back"
-        Visible: =billing
         Width: =119
         X: =989
         Y: =572
