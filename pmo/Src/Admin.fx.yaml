@@ -897,7 +897,7 @@
             ZIndex: =45
 
             Title4 As label:
-                Height: =42
+                Height: =41
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -906,7 +906,7 @@
                 Size: =15
                 Text: =ThisItem.'Milestone Name'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =209
+                Width: =237
                 X: =10
                 Y: =12
                 ZIndex: =1
@@ -1863,7 +1863,7 @@
 
                 DataCardValue6 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultSelectedItems: =[Parent.Default]
+                    DefaultSelectedItems: =
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     IsSearchable: =false
