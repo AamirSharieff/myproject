@@ -1,6 +1,6 @@
 "ProjectManager As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(230, 230, 230, 1)
-    OnVisible: =
+    OnVisible: =Reset(Gallery2_2);
 
     Rectangle7_1 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
@@ -210,6 +210,7 @@
         Color: =RGBA(4, 127, 194, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Text: ="Plan a project"
+        Visible: =popupvisible
         X: =208
         Y: =82
         ZIndex: =41
@@ -221,6 +222,7 @@
             =If(DataCardValue20.Selected.Value ="Mile Stone",UpdateContext({billingpm:true}),UpdateContext({billingpm:false}));
             If(DataCardValue20.Selected.Value ="Monthly",UpdateContext({billing1pm:true}),UpdateContext({billing1pm:false}))
         Text: ="Billing"
+        Visible: =popupvisible
         X: =393
         Y: =83
         ZIndex: =42
@@ -1060,11 +1062,11 @@
             DataSource: ='Project Summarys'
             DefaultMode: =FormMode.New
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =125
+            Height: =133
             Visible: = add1pm
             Width: =1014
             X: =213
-            Y: =520
+            Y: =512
             ZIndex: =52
 
             "'Billing Date_DataCard2_2' As typedDataCard.dateTimeEditCard":
@@ -1384,6 +1386,75 @@
                     Y: =DataCardKey47_2.Y
                     ZIndex: =4
 
+            "'Project Name_DataCard7' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_projectname"
+                Default: =ThisItem.'Project Name'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_projectname")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_projectname")
+                Required: =false
+                Update: =DataCardValue28.Text
+                Visible: =false
+                Width: =338
+                X: =1
+                Y: =1
+                ZIndex: =1
+
+                DataCardKey34 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue28 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Gallery6_1.Selected.'Project Name'
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey34.Y + DataCardKey34.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage36 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue28.Y + DataCardValue28.Height
+                    ZIndex: =3
+
+                StarVisible37 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey34.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey34.Y
+                    ZIndex: =4
+
         Form5_2 As form:
             DataSource: ='Project Summarys'
             DefaultMode: =FormMode.New
@@ -1395,7 +1466,7 @@
             Width: =1046
             X: =194
             Y: =472
-            ZIndex: =67
+            ZIndex: =66
 
             "'Milestone Name_DataCard1_2' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -2110,12 +2181,12 @@
         Button19_6 As button:
             Height: =46
             OnSelect: |-
-                =UpdateContext({add1pm:true});
+                =UpdateContext({add1pm:true});NewForm(Form6_2)
             Text: ="ADD"
             Visible: =billing1pm
             Width: =115
             X: =1082
-            Y: =537
+            Y: =533
             ZIndex: =45
 
         FormViewer1_2 As formViewer:
@@ -2225,16 +2296,13 @@
         Y: =656
         ZIndex: =54
 
-    Button19_9 As button:
-        Height: =46
-        OnSelect: |-
-            =UpdateContext({billing1pm:false});
-        Text: ="Back"
-        Visible: =billing1pm
-        Width: =115
-        X: =950
-        Y: =537
-        ZIndex: =55
+    Rectangle2_3 As rectangle:
+        Height: =67
+        Visible: =billingpm
+        Width: =1043
+        X: =197
+        Y: =128
+        ZIndex: =57
 
     Group2_2 As group:
         Height: =5
@@ -2309,14 +2377,6 @@
             X: =3
             ZIndex: =28
 
-    Rectangle2_3 As rectangle:
-        Height: =67
-        Visible: =billingpm
-        Width: =1043
-        X: =197
-        Y: =128
-        ZIndex: =58
-
     Label25_15 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -2327,7 +2387,7 @@
         Width: =129
         X: =243
         Y: =129
-        ZIndex: =59
+        ZIndex: =58
 
     Label25_16 As label:
         Align: =Align.Center
@@ -2339,7 +2399,7 @@
         Width: =148
         X: =435
         Y: =126
-        ZIndex: =60
+        ZIndex: =59
 
     Label25_17 As label:
         Align: =Align.Center
@@ -2351,7 +2411,7 @@
         Width: =145
         X: =638
         Y: =141
-        ZIndex: =61
+        ZIndex: =60
 
     Label25_18 As label:
         Align: =Align.Center
@@ -2363,7 +2423,7 @@
         Width: =158
         X: =827
         Y: =141
-        ZIndex: =62
+        ZIndex: =61
 
     Label25_19 As label:
         Align: =Align.Center
@@ -2375,7 +2435,7 @@
         Width: =158
         X: =1032
         Y: =146
-        ZIndex: =63
+        ZIndex: =62
 
     Button19_11 As button:
         Height: =43
@@ -2386,7 +2446,18 @@
         Width: =117
         X: =980
         Y: =512
-        ZIndex: =66
+        ZIndex: =65
+
+    Button19_12 As button:
+        Height: =41
+        OnSelect: |-
+            =UpdateContext({addpm:false})
+        Text: ="Back"
+        Visible: =addpm
+        Width: =142
+        X: =888
+        Y: =641
+        ZIndex: =67
 
     Group1_2 As group:
         Height: =5
@@ -2482,15 +2553,16 @@
             Y: =160
             ZIndex: =27
 
-    Button19_12 As button:
-        Height: =41
+    Button19_9 As button:
+        Height: =36
         OnSelect: |-
-            =UpdateContext({addpm:false})
+            =UpdateContext({billing1pm:false});
+            UpdateContext({add1pm:false})
         Text: ="Back"
-        Visible: =addpm
-        Width: =142
-        X: =888
-        Y: =641
+        Visible: =billing1pm
+        Width: =77
+        X: =1169
+        Y: =71
         ZIndex: =68
 
     "'Billing Milestone_1' As group":
@@ -2507,7 +2579,7 @@
             Width: =1096
             X: =169
             Y: =62
-            ZIndex: =56
+            ZIndex: =55
 
         "Gallery2_3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             BorderThickness: =2
@@ -2520,7 +2592,7 @@
             Width: =1043
             X: =197
             Y: =191
-            ZIndex: =57
+            ZIndex: =56
 
             Title4_3 As label:
                 Height: =42
@@ -2597,7 +2669,7 @@
             Width: =117
             X: =1110
             Y: =512
-            ZIndex: =64
+            ZIndex: =63
 
         FormViewer1_3 As formViewer:
             DataSource: ='Project Detailss'
@@ -2608,7 +2680,7 @@
             Width: =633
             X: =170
             Y: =65
-            ZIndex: =65
+            ZIndex: =64
 
             "'Project Name_DataCard4_3' As typedDataCard.textualViewCard":
                 BorderStyle: =BorderStyle.Solid

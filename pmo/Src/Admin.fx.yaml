@@ -773,7 +773,7 @@
 
         Button19_3 As button:
             OnSelect: |-
-                =UpdateContext({add1:true});
+                =UpdateContext({add1:true});NewForm(Form5_3)
             Text: ="ADD"
             Visible: =billing1
             Width: =121
