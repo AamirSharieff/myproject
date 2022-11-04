@@ -2984,11 +2984,12 @@
     Button19_14 As button:
         Height: =39
         OnSelect: |-
-            =UpdateContext({add:true});NewForm(Form5_1);
+            =UpdateContext({add:false});NewForm(Form5_1);
         Text: ="Back"
+        Visible: =billing1
         Width: =119
-        X: =989
-        Y: =572
+        X: =991
+        Y: =580
         ZIndex: =74
 
     "'ADD Monthly' As group":
