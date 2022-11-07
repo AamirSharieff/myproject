@@ -2022,7 +2022,7 @@
             Width: =1148
             X: =128
             Y: =82
-            ZIndex: =70
+            ZIndex: =66
 
         Button19_2 As button:
             Height: =41
@@ -2033,7 +2033,7 @@
             Width: =142
             X: =895
             Y: =572
-            ZIndex: =71
+            ZIndex: =67
 
         Form5_1 As form:
             DataSource: ='Project Summarys'
@@ -2045,7 +2045,7 @@
             Width: =1032
             X: =187
             Y: =104
-            ZIndex: =72
+            ZIndex: =68
 
             "'Billing Date_DataCard1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -2979,7 +2979,7 @@
             Width: =142
             X: =1061
             Y: =572
-            ZIndex: =73
+            ZIndex: =69
 
     Button19_14 As button:
         Height: =39
@@ -2990,7 +2990,7 @@
         Width: =119
         X: =997
         Y: =583
-        ZIndex: =74
+        ZIndex: =70
 
     "'ADD Monthly' As group":
         Height: =5
@@ -3007,17 +3007,7 @@
             Width: =1124
             X: =165
             Y: =82
-            ZIndex: =66
-
-        Button19_4 As button:
-            OnSelect: |-
-                =UpdateContext({add1:false})
-            Text: ="Back"
-            Visible: =add1
-            Width: =142
-            X: =932
-            Y: =556
-            ZIndex: =67
+            ZIndex: =71
 
         Form5_3 As form:
             DataSource: ='Project Summarys'
@@ -3029,7 +3019,7 @@
             Width: =598
             X: =365
             Y: =156
-            ZIndex: =68
+            ZIndex: =72
 
             "'Billing Date_DataCard1_1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -3428,5 +3418,15 @@
             Width: =142
             X: =1098
             Y: =556
-            ZIndex: =69
+            ZIndex: =73
+
+        Button19_4 As button:
+            OnSelect: |-
+                =UpdateContext({add1:false})
+            Text: ="Back"
+            Visible: =add1
+            Width: =142
+            X: =932
+            Y: =556
+            ZIndex: =74
 
