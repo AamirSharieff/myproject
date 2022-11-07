@@ -2992,6 +2992,17 @@
         Y: =583
         ZIndex: =70
 
+    Button19_15 As button:
+        Height: =39
+        OnSelect: |-
+            =UpdateContext({billing:false})
+        Text: ="Back"
+        Visible: =billing
+        Width: =119
+        X: =978
+        Y: =574
+        ZIndex: =75
+
     "'ADD Monthly' As group":
         Height: =5
         Width: =5
