@@ -983,7 +983,7 @@
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingcycle"
                 Default: =ThisItem.'Billing Cycle'
-                DisplayMode: =DisplayMode.View
+                DisplayMode: =DisplayMode.Edit
                 DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_billingcycle")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
@@ -2992,15 +2992,18 @@
             Y: =160
             ZIndex: =27
 
-    Button19_9 As button:
-        Height: =46
-        OnSelect: |-
-            =UpdateContext({billing1pm:false});
-        Text: ="Back"
-        Visible: =billing1pm
-        Width: =115
-        X: =938
-        Y: =533
+    Button2_1 As button:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =32
+        OnSelect: |
+            =Navigate('Add projects admin',ScreenTransition.Fade);
+            ResetForm(Form1)
+        Size: =13
+        Text: ="Create  New  Project"
+        Visible: =popupvisible=false
+        Width: =183
+        X: =1129
+        Y: =80
         ZIndex: =68
 
     "'Billing Milestone_1' As group":
@@ -3195,6 +3198,17 @@
                     Y: =10
                     ZIndex: =2
 
+    Button19_9 As button:
+        Height: =46
+        OnSelect: |-
+            =UpdateContext({billing1pm:false});
+        Text: ="Back"
+        Visible: =billing1pm
+        Width: =115
+        X: =938
+        Y: =533
+        ZIndex: =69
+
     Button19_7 As button:
         Height: =53
         OnSelect: |-
@@ -3204,18 +3218,5 @@
         Width: =142
         X: =917
         Y: =531
-        ZIndex: =69
-
-    Button2_1 As button:
-        Fill: =RGBA(0, 130, 204, 1)
-        Height: =32
-        OnSelect: |
-            =Navigate('Add projects admin',ScreenTransition.Fade);
-            ResetForm(Form1)
-        Size: =13
-        Text: ="Create  New  Project"
-        Width: =183
-        X: =1129
-        Y: =80
         ZIndex: =70
 
