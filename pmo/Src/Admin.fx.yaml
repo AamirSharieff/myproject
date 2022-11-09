@@ -4386,7 +4386,7 @@
                 Height: =50
                 Required: =false
                 Update: =DateValue14.SelectedDate + Time(Value(HourValue14.Selected.Value), Value(MinuteValue14.Selected.Value), 0)
-                Width: =767
+                Width: =300
                 X: =0
                 Y: =0
                 ZIndex: =1
@@ -4499,7 +4499,7 @@
                 Height: =50
                 Required: =false
                 Update: =Value(DataCardValue45.Text)
-                Width: =767
+                Width: =450
                 X: =0
                 Y: =1
                 ZIndex: =1
@@ -4566,7 +4566,7 @@
                 Height: =50
                 Required: =false
                 Update: =Value(DataCardValue46.Text)
-                Width: =767
+                Width: =450
                 X: =0
                 Y: =2
                 ZIndex: =1
