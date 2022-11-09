@@ -330,23 +330,25 @@
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =60
+        Size: =11
         Text: ="Milestone Name"
         Visible: =billing
         Width: =131
-        X: =187
-        Y: =209
+        X: =191
+        Y: =203
         ZIndex: =47
 
     Label25_2 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =63
+        Height: =56
+        Size: =11
         Text: ="Milestone Planned Amount"
         Visible: =billing
         Width: =151
-        X: =588
-        Y: =201
+        X: =608
+        Y: =213
         ZIndex: =48
 
     Deletepopup As group:
@@ -416,10 +418,12 @@
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
+        Height: =57
+        Size: =11
         Text: ="Milestone Actual Amount"
         Visible: =billing
-        Width: =147
-        X: =751
+        Width: =134
+        X: =761
         Y: =212
         ZIndex: =49
 
@@ -428,6 +432,7 @@
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =42
+        Size: =11
         Text: ="Milestone Actual Start Date"
         Visible: =billing
         Width: =161
@@ -440,6 +445,7 @@
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =42
+        Size: =11
         Text: ="Milestone Actual End Date"
         Visible: =billing
         Width: =161
@@ -953,30 +959,30 @@
                 ZIndex: =4
 
             Label16 As label:
-                Height: =42
+                Height: =33
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.'Milestone Actual Amount'
                 Width: =118
-                X: =472
-                Y: =11
+                X: =613
+                Y: =20
                 ZIndex: =5
 
             Label24_1 As label:
-                Height: =49
+                Height: =33
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.'Milestone Actual Start Date'
-                Width: =199
-                X: =624
-                Y: =5
+                Width: =107
+                X: =761
+                Y: =25
                 ZIndex: =7
 
             Label24_2 As label:
-                Height: =49
+                Height: =33
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.'Milestone Actual End Date'
-                Width: =202
-                X: =835
-                Y: =5
+                Width: =148
+                X: =909
+                Y: =25
                 ZIndex: =8
 
             Subtitle4_4 As label:
@@ -3031,11 +3037,12 @@
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =63
+        Size: =11
         Text: ="Milestone Planned End Date"
         Visible: =billing
         Width: =151
-        X: =439
-        Y: =205
+        X: =462
+        Y: =207
         ZIndex: =72
 
     Label25_21 As label:
@@ -3043,11 +3050,12 @@
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =63
+        Size: =11
         Text: ="Milestone Planned Start Date"
         Visible: =billing
         Width: =151
-        X: =297
-        Y: =201
+        X: =321
+        Y: =205
         ZIndex: =73
 
     "'ADD Monthly' As group":
