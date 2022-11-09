@@ -4624,7 +4624,9 @@
                     ZIndex: =4
 
         Button22 As button:
-            OnSelect: =SubmitForm(Form7)
+            OnSelect: |-
+                =SubmitForm(Form7);
+                UpdateContext({monthlyupdate:false})
             Text: ="Update"
             Visible: =monthlyupdate
             X: =874
