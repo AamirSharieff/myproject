@@ -770,7 +770,7 @@
             Label16_1 As label:
                 Height: =42
                 OnSelect: =Select(Parent)
-                Text: =ThisItem.'Milestone Actual Amount'
+                Text: =ThisItem.'Monthly Billing Amount'
                 Width: =118
                 X: =598
                 Y: =12
