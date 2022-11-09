@@ -3519,16 +3519,6 @@
             Y: =556
             ZIndex: =71
 
-    Button22 As button:
-        OnSelect: |-
-            =//Patch('Project Summarys',Filter('Project Summarys','Milestone Name_DataCard1'="")),{Billing Date: Billing Date.date,Milestone Name: Milestonename.text}
-            
-            SubmitForm(Form5)
-        Text: ="Update"
-        X: =867
-        Y: =469
-        ZIndex: =82
-
     Group3 As group:
         Height: =5
         Width: =5
@@ -3538,7 +3528,7 @@
 
         Rectangle17 As rectangle:
             Fill: =RGBA(179, 179, 179, 1)
-            Height: =571
+            Height: =585
             Visible: =milestoneupdate
             Width: =1135
             X: =161
@@ -3548,12 +3538,12 @@
         Form5 As form:
             DataSource: ='Project Summarys'
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =450
+            Height: =461
             Item: =Gallery2.Selected
             Visible: =milestoneupdate
             Width: =1052
             X: =192
-            Y: =112
+            Y: =113
             ZIndex: =79
 
             "'Billing Date_DataCard3' As typedDataCard.dateTimeEditCard":
@@ -4328,18 +4318,23 @@
                     ZIndex: =7
 
         Button20 As button:
+            Height: =41
             OnSelect: |-
                 =UpdateContext({milestoneupdate:false})
             Text: ="Back"
             Visible: =milestoneupdate
-            X: =886
-            Y: =583
+            X: =858
+            Y: =493
             ZIndex: =80
 
         Button21 As button:
-            Text: ="Button"
+            Height: =41
+            OnSelect: |-
+                =SubmitForm(Form5);
+                UpdateContext({milestoneupdate:false})
+            Text: ="Update"
             Visible: =milestoneupdate
-            X: =1074
-            Y: =580
+            X: =1043
+            Y: =493
             ZIndex: =81
 
