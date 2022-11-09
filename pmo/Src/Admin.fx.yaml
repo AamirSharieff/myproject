@@ -1,9 +1,6 @@
 "Admin As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(102, 182, 227, 1)
-    OnVisible: |-
-        =Refresh('Project Detailss');
-        NewForm(Form5_1);
-        NewForm(Form5_3);
+    OnVisible: =Refresh('Project Detailss');
 
     "Gallery6 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
