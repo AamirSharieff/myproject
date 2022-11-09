@@ -1,5 +1,5 @@
 "Admin As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
-    Fill: =
+    Fill: =RGBA(102, 182, 227, 1)
     OnVisible: |-
         =Refresh('Project Detailss');
         NewForm(Form5_1);
@@ -329,26 +329,26 @@
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =60
+        Height: =42
         Size: =11
         Text: ="Milestone Name"
         Visible: =billing
         Width: =131
         X: =191
-        Y: =203
+        Y: =213
         ZIndex: =47
 
     Label25_2 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =56
+        Height: =42
         Size: =11
         Text: ="Milestone Planned Amount"
         Visible: =billing
         Width: =151
         X: =638
-        Y: =213
+        Y: =219
         ZIndex: =48
 
     Deletepopup As group:
@@ -418,13 +418,13 @@
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =57
+        Height: =42
         Size: =11
         Text: ="Milestone Actual Amount"
         Visible: =billing
         Width: =134
         X: =791
-        Y: =212
+        Y: =219
         ZIndex: =49
 
     Label25_5 As label:
@@ -448,9 +448,9 @@
         Size: =11
         Text: ="Milestone Actual End Date"
         Visible: =billing
-        Width: =161
-        X: =1086
-        Y: =218
+        Width: =151
+        X: =1066
+        Y: =219
         ZIndex: =51
 
     Label5_1 As label:
@@ -910,9 +910,12 @@
 
         "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             BorderThickness: =2
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =269
             Items: =Filter('Project Summarys',ProjectsID = DataCardValue22.Text)
             Layout: =Layout.Vertical
+            OnSelect: =
+            TemplateFill: =If(ThisItem.IsSelected,ColorFade(RGBA(153,207,236,1),0),RGBA(0,0,0,0)
             TemplatePadding: =0
             TemplateSize: =84
             Visible: =billing
@@ -960,29 +963,32 @@
                 ZIndex: =4
 
             Label16 As label:
+                FontWeight: =FontWeight.Semibold
                 Height: =33
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.'Milestone Actual Amount'
-                Width: =118
-                X: =613
+                Width: =116
+                X: =623
                 Y: =20
                 ZIndex: =5
 
             Label24_1 As label:
+                FontWeight: =FontWeight.Semibold
                 Height: =33
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.'Milestone Actual Start Date'
-                Width: =107
+                Width: =105
                 X: =761
                 Y: =25
                 ZIndex: =7
 
             Label24_2 As label:
+                FontWeight: =FontWeight.Semibold
                 Height: =33
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.'Milestone Actual End Date'
-                Width: =148
-                X: =909
+                Width: =110
+                X: =899
                 Y: =25
                 ZIndex: =8
 
@@ -1004,11 +1010,24 @@
                 ZIndex: =9
 
             Label10 As label:
+                FontWeight: =FontWeight.Semibold
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.'Milestone Planned Amount'
-                X: =449
+                Width: =149
+                X: =459
                 Y: =20
                 ZIndex: =10
+
+            Icon4 As icon.ChevronRight:
+                Color: =RGBA(0, 0, 0, 1)
+                Height: =33
+                Icon: =Icon.ChevronRight
+                OnSelect: |-
+                    =UpdateContext({add:true})
+                Width: =33
+                X: =1004
+                Y: =23
+                ZIndex: =11
 
         Button19 As button:
             Height: =39
@@ -2073,10 +2092,10 @@
             ZIndex: =74
 
         Form5_1 As form:
-            DataSource: ='Project Summarys'
-            DefaultMode: =FormMode.New
+            DataSource: ='Project Summarys' 
             Fill: =RGBA(255, 255, 255, 1)
             Height: =426
+            Item: =Gallery2.Selected
             NumberOfColumns: =2
             Visible: =add
             Width: =1032
@@ -3044,13 +3063,13 @@
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =63
+        Height: =42
         Size: =11
         Text: ="Milestone Planned End Date"
         Visible: =billing
         Width: =151
         X: =482
-        Y: =207
+        Y: =219
         ZIndex: =72
 
     Label25_21 As label:
@@ -3063,7 +3082,7 @@
         Visible: =billing
         Width: =151
         X: =331
-        Y: =215
+        Y: =219
         ZIndex: =73
 
     "'ADD Monthly' As group":
