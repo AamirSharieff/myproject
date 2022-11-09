@@ -333,8 +333,8 @@
         Text: ="Milestone Name"
         Visible: =billing
         Width: =131
-        X: =233
-        Y: =207
+        X: =187
+        Y: =209
         ZIndex: =47
 
     Label25_2 As label:
@@ -345,8 +345,8 @@
         Text: ="Milestone Planned Amount"
         Visible: =billing
         Width: =151
-        X: =425
-        Y: =204
+        X: =588
+        Y: =201
         ZIndex: =48
 
     Deletepopup As group:
@@ -419,8 +419,8 @@
         Text: ="Milestone Actual Amount"
         Visible: =billing
         Width: =147
-        X: =628
-        Y: =219
+        X: =751
+        Y: =212
         ZIndex: =49
 
     Label25_5 As label:
@@ -431,7 +431,7 @@
         Text: ="Milestone Actual Start Date"
         Visible: =billing
         Width: =161
-        X: =817
+        X: =919
         Y: =219
         ZIndex: =50
 
@@ -443,8 +443,8 @@
         Text: ="Milestone Actual End Date"
         Visible: =billing
         Width: =161
-        X: =1022
-        Y: =224
+        X: =1086
+        Y: =218
         ZIndex: =51
 
     Label5_1 As label:
@@ -685,6 +685,17 @@
             Y: =160
             ZIndex: =27
 
+    Button19_14 As button:
+        Height: =39
+        OnSelect: |-
+            =UpdateContext({billing1:false});NewForm(Form5_1);
+        Text: ="Back"
+        Visible: =billing1
+        Width: =119
+        X: =997
+        Y: =583
+        ZIndex: =66
+
     "'Billing Monthly' As group":
         Height: =5
         Width: =5
@@ -770,6 +781,13 @@
                 X: =846
                 Y: =5
                 ZIndex: =7
+
+            Label5 As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.'Achieved Billing (Milestone)'
+                X: =168
+                Y: =14
+                ZIndex: =8
 
         Button19_3 As button:
             OnSelect: |-
@@ -889,7 +907,7 @@
             Items: =Filter('Project Summarys',ProjectsID = DataCardValue22.Text)
             Layout: =Layout.Vertical
             TemplatePadding: =0
-            TemplateSize: =54
+            TemplateSize: =84
             Visible: =billing
             Width: =1057
             X: =187
@@ -897,7 +915,7 @@
             ZIndex: =45
 
             Title4 As label:
-                Height: =41
+                Height: =59
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -906,15 +924,14 @@
                 Size: =15
                 Text: =ThisItem.'Milestone Name'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =237
-                X: =10
+                Width: =123
                 Y: =12
                 ZIndex: =1
 
             Subtitle4 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
-                Height: =42
+                Height: =51
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -923,9 +940,9 @@
                 Size: =15
                 Text: =ThisItem.'Milestone Planned Amount'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =196
-                X: =215
-                Y: =12
+                Width: =138
+                X: =123
+                Y: =20
                 ZIndex: =2
 
             Separator10 As rectangle:
@@ -961,6 +978,23 @@
                 X: =835
                 Y: =5
                 ZIndex: =8
+
+            Subtitle4_4 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Semibold
+                Height: =51
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =15
+                Text: =ThisItem.'Milestone Planned Amount'
+                VerticalAlign: =VerticalAlign.Top
+                Width: =138
+                X: =297
+                Y: =20
+                ZIndex: =9
 
         Button19 As button:
             Height: =39
@@ -2022,18 +2056,7 @@
             Width: =1148
             X: =128
             Y: =82
-            ZIndex: =66
-
-        Button19_2 As button:
-            Height: =41
-            OnSelect: |-
-                =UpdateContext({add:false})
-            Text: ="Back"
-            Visible: =add
-            Width: =142
-            X: =895
-            Y: =572
-            ZIndex: =67
+            ZIndex: =74
 
         Form5_1 As form:
             DataSource: ='Project Summarys'
@@ -2045,7 +2068,7 @@
             Width: =1032
             X: =187
             Y: =104
-            ZIndex: =68
+            ZIndex: =75
 
             "'Billing Date_DataCard1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -2979,18 +3002,18 @@
             Width: =142
             X: =1061
             Y: =572
-            ZIndex: =69
+            ZIndex: =76
 
-    Button19_14 As button:
-        Height: =39
-        OnSelect: |-
-            =UpdateContext({billing1:false});NewForm(Form5_1);
-        Text: ="Back"
-        Visible: =billing1
-        Width: =119
-        X: =997
-        Y: =583
-        ZIndex: =70
+        Button19_2 As button:
+            Height: =41
+            OnSelect: |-
+                =UpdateContext({add:false})
+            Text: ="Back"
+            Visible: =add
+            Width: =142
+            X: =895
+            Y: =572
+            ZIndex: =77
 
     Button19_15 As button:
         Height: =39
@@ -3001,7 +3024,31 @@
         Width: =119
         X: =978
         Y: =574
-        ZIndex: =75
+        ZIndex: =69
+
+    Label25_20 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =63
+        Text: ="Milestone Planned End Date"
+        Visible: =billing
+        Width: =151
+        X: =439
+        Y: =205
+        ZIndex: =72
+
+    Label25_21 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =63
+        Text: ="Milestone Planned Start Date"
+        Visible: =billing
+        Width: =151
+        X: =297
+        Y: =201
+        ZIndex: =73
 
     "'ADD Monthly' As group":
         Height: =5
@@ -3018,7 +3065,7 @@
             Width: =1124
             X: =165
             Y: =82
-            ZIndex: =71
+            ZIndex: =67
 
         Form5_3 As form:
             DataSource: ='Project Summarys'
@@ -3030,7 +3077,7 @@
             Width: =598
             X: =365
             Y: =156
-            ZIndex: =72
+            ZIndex: =68
 
             "'Billing Date_DataCard1_1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -3429,7 +3476,7 @@
             Width: =142
             X: =1098
             Y: =556
-            ZIndex: =73
+            ZIndex: =70
 
         Button19_4 As button:
             OnSelect: |-
@@ -3439,5 +3486,5 @@
             Width: =142
             X: =932
             Y: =556
-            ZIndex: =74
+            ZIndex: =71
 
