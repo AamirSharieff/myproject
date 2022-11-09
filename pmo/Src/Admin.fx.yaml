@@ -347,7 +347,7 @@
         Text: ="Milestone Planned Amount"
         Visible: =billing
         Width: =151
-        X: =608
+        X: =638
         Y: =213
         ZIndex: =48
 
@@ -423,7 +423,7 @@
         Text: ="Milestone Actual Amount"
         Visible: =billing
         Width: =134
-        X: =761
+        X: =791
         Y: =212
         ZIndex: =49
 
@@ -436,7 +436,7 @@
         Text: ="Milestone Actual Start Date"
         Visible: =billing
         Width: =161
-        X: =919
+        X: =929
         Y: =219
         ZIndex: =50
 
@@ -922,33 +922,33 @@
             ZIndex: =45
 
             Title4 As label:
-                Height: =59
+                Height: =55
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
+                Size: =13
                 Text: =ThisItem.'Milestone Name'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =123
-                Y: =12
+                Width: =151
+                X: =10
+                Y: =25
                 ZIndex: =1
 
             Subtitle4 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
-                Height: =51
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
-                Text: =ThisItem.'Milestone Planned Amount'
+                Size: =13
+                Text: =ThisItem.'Milestone Planned Start Date'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =138
-                X: =123
+                Width: =118
+                X: =163
                 Y: =20
                 ZIndex: =2
 
@@ -989,19 +989,26 @@
             Subtitle4_4 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
-                Height: =51
+                Height: =38
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =15
-                Text: =ThisItem.'Milestone Planned Amount'
+                Size: =13
+                Text: =ThisItem.'Milestone Planned End Date'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =138
-                X: =297
+                Width: =108
+                X: =327
                 Y: =20
                 ZIndex: =9
+
+            Label10 As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.'Milestone Planned Amount'
+                X: =449
+                Y: =20
+                ZIndex: =10
 
         Button19 As button:
             Height: =39
@@ -3042,7 +3049,7 @@
         Text: ="Milestone Planned End Date"
         Visible: =billing
         Width: =151
-        X: =462
+        X: =482
         Y: =207
         ZIndex: =72
 
@@ -3050,13 +3057,13 @@
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =63
+        Height: =42
         Size: =11
         Text: ="Milestone Planned Start Date"
         Visible: =billing
         Width: =151
-        X: =321
-        Y: =205
+        X: =331
+        Y: =215
         ZIndex: =73
 
     "'ADD Monthly' As group":
