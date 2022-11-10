@@ -4434,6 +4434,7 @@
     Rectangle15 As rectangle:
         Fill: =RGBA(179, 173, 173, 0.52)
         Height: =768
+        Visible: =projectupdate
         Width: =1366
         ZIndex: =86
 
@@ -4733,6 +4734,7 @@
     Rectangle18 As rectangle:
         Fill: =RGBA(255, 255, 255, 0.98)
         Height: =555
+        Visible: =projectupdate
         Width: =1104
         X: =172
         Y: =114
@@ -4741,10 +4743,11 @@
     "Gallery4 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderThickness: =2
         Height: =412
-        Items: ='Project Detailss'
+        Items: =Gallery6.Selected
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =60
+        Visible: =projectupdate
         Width: =1065
         X: =192
         Y: =239
@@ -4752,18 +4755,18 @@
 
         Title5 As label:
             FontWeight: =FontWeight.Normal
-            Height: =34
+            Height: =48
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
             Size: =13
-            Text: =ThisItem.ID
+            Text: =ThisItem.'Project Name'
             VerticalAlign: =VerticalAlign.Top
-            Width: =61
-            X: =32
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            Width: =115
+            X: =12
+            Y: =11
             ZIndex: =1
 
         Separator19 As rectangle:
@@ -4773,16 +4776,166 @@
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
 
+        Title5_1 As label:
+            FontWeight: =FontWeight.Normal
+            Height: =48
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.'Project Division'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =115
+            X: =162
+            Y: =12
+            ZIndex: =4
+
+        Title5_2 As label:
+            FontWeight: =FontWeight.Normal
+            Height: =48
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.'PO Number'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =115
+            X: =495
+            Y: =11
+            ZIndex: =5
+
+        Title5_3 As label:
+            FontWeight: =FontWeight.Normal
+            Height: =48
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.'Project Type'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =133
+            X: =318
+            Y: =11
+            ZIndex: =6
+
+        Title5_4 As label:
+            FontWeight: =FontWeight.Normal
+            Height: =47
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.'Project Start Date'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =181
+            X: =634
+            Y: =12
+            ZIndex: =7
+
+        Title5_5 As label:
+            FontWeight: =FontWeight.Normal
+            Height: =47
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.'Project End Date'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =181
+            X: =844
+            Y: =11
+            ZIndex: =8
+
     Rectangle19 As rectangle:
         Height: =63
+        Visible: =projectupdate
         Width: =1064
         X: =193
         Y: =178
         ZIndex: =89
 
     Label32 As label:
-        Text: ="Text"
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="Project Name"
+        Visible: =projectupdate
         X: =198
         Y: =186
         ZIndex: =90
+
+    Label32_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="Project Division"
+        Visible: =projectupdate
+        X: =348
+        Y: =186
+        ZIndex: =91
+
+    Label32_2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="Project Type"
+        Visible: =projectupdate
+        Width: =139
+        X: =519
+        Y: =186
+        ZIndex: =92
+
+    Label32_3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="PO Number"
+        Visible: =projectupdate
+        Width: =139
+        X: =679
+        Y: =186
+        ZIndex: =93
+
+    Label32_4 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="Project Start Date"
+        Visible: =projectupdate
+        Width: =156
+        X: =837
+        Y: =186
+        ZIndex: =94
+
+    Label32_5 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Text: ="Project End Date"
+        Visible: =projectupdate
+        Width: =156
+        X: =1037
+        Y: =187
+        ZIndex: =95
+
+    Label32_6 As label:
+        Color: =RGBA(0, 94, 146, 1)
+        Height: =38
+        Size: =16
+        Text: ="Updated Project Details"
+        Visible: =projectupdate
+        Width: =281
+        X: =201
+        Y: =126
+        ZIndex: =96
+
+    Icon11 As icon.CancelBadge:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =40
+        Icon: =Icon.CancelBadge
+        OnSelect: |-
+            =UpdateContext({projectupdate:false})
+        Visible: =projectupdate
+        Width: =40
+        X: =1224
+        Y: =118
+        ZIndex: =97
 
