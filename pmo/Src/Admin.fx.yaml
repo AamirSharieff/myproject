@@ -41,7 +41,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =13
-            Text: =ThisItem.'Project Division'
+            Text: =ThisItem.ID
             VerticalAlign: =VerticalAlign.Top
             Width: =115
             X: =243
@@ -91,10 +91,10 @@
             Color: =RGBA(0, 0, 0, 1)
             Height: =25
             Icon: =Icon.Edit
-            OnSelect: |-
+            OnSelect: |
                 =Select(Parent);
                 UpdateContext({popupvisible:true});
-                EditForm(Form3)
+                NewForm(Form3);
             Width: =30
             X: =1001
             Y: =13
@@ -112,7 +112,7 @@
 
         Icon10 As icon.Note:
             Color: =RGBA(0, 0, 0, 1)
-            Height: =25
+            Height: =28
             Icon: =Icon.Note
             OnSelect: |-
                 =UpdateContext({projectupdate:true})
@@ -1204,6 +1204,7 @@
 
         Form3 As form:
             DataSource: ='Project Detailss'
+            DefaultMode: =FormMode.New
             Height: =395
             Item: =Gallery6.Selected
             Visible: =popupvisible
@@ -1962,7 +1963,7 @@
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                    Y: =58
                     ZIndex: =2
 
                 ErrorMessage3 As label:
@@ -2126,6 +2127,43 @@
                     Wrap: =false
                     Y: =DataCardKey45.Y
                     ZIndex: =4
+
+            ID_DataCard3 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_id"
+                Default: =ThisItem.ID
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_id")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =339
+                X: =0
+                Y: =4
+                ZIndex: =1
+
+                DataCardKey61 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue47 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =27
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Gallery6.Selected.ID
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey61.Y + DataCardKey61.Height + 5
+                    ZIndex: =2
 
         Button5 As button:
             BorderColor: =Blue
@@ -4743,7 +4781,7 @@
     "Gallery4 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderThickness: =2
         Height: =412
-        Items: =Gallery6.Selected
+        Items: =SortByColumns(Filter('Project Detailss',ID= Gallery6.Selected.ID),"modifiedon",Descending)
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =60
@@ -4785,7 +4823,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =13
-            Text: =ThisItem.'Project Division'
+            Text: =ThisItem.ID
             VerticalAlign: =VerticalAlign.Top
             Width: =115
             X: =162
@@ -4874,7 +4912,7 @@
 
     Label32_1 As label:
         Color: =RGBA(255, 255, 255, 1)
-        Text: ="Project Division"
+        Text: ="Project ID"
         Visible: =projectupdate
         X: =348
         Y: =186
