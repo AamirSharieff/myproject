@@ -13,7 +13,7 @@
         TemplatePadding: =0
         TemplateSize: =55
         Width: =1139
-        X: =217
+        X: =211
         Y: =176
         ZIndex: =1
 
@@ -41,7 +41,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =13
-            Text: =ThisItem.ID
+            Text: =ThisItem.'Project Division'
             VerticalAlign: =VerticalAlign.Top
             Width: =115
             X: =243
@@ -59,7 +59,7 @@
             Text: =ThisItem.'Project Type'
             VerticalAlign: =VerticalAlign.Top
             Width: =141
-            X: =376
+            X: =426
             Y: =8
             ZIndex: =4
 
@@ -71,12 +71,11 @@
             ZIndex: =5
 
         Label4 As label:
-            Height: =31
+            Height: =50
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Project Manager'
-            Width: =236
-            X: =555
-            Y: =7
+            Width: =232
+            X: =605
             ZIndex: =6
 
         Label14 As label:
@@ -135,9 +134,9 @@
         Color: =RGBA(255, 255, 255, 1)
         Height: =20
         Size: =14
-        Text: ="Project ID"
+        Text: ="Project Division"
         Width: =149
-        X: =424
+        X: =414
         Y: =144
         ZIndex: =4
 
@@ -170,7 +169,7 @@
         Size: =14
         Text: ="Project Manager"
         Width: =195
-        X: =760
+        X: =800
         Y: =143
         ZIndex: =7
 
@@ -181,7 +180,7 @@
         Size: =14
         Text: ="Project Type"
         Width: =149
-        X: =574
+        X: =614
         Y: =143
         ZIndex: =8
 
@@ -1144,14 +1143,14 @@
             Fill: =RGBA(0, 0, 0, 0.4)
             Height: =768
             Visible: =popupvisible
-            Width: =1363
+            Width: =1366
             ZIndex: =33
 
         Rectangle12 As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =563
             Visible: =popupvisible
-            Width: =1111
+            Width: =1113
             X: =165
             Y: =88
             ZIndex: =34
@@ -1165,7 +1164,7 @@
             Text: ="Back"
             Visible: =popupvisible
             Width: =77
-            X: =1006
+            X: =1008
             Y: =587
             ZIndex: =35
 
@@ -1188,7 +1187,7 @@
             Text: ="Save"
             Visible: =popupvisible
             Width: =77
-            X: =1130
+            X: =1132
             Y: =587
             ZIndex: =36
 
@@ -1197,7 +1196,7 @@
             Height: =395
             Item: =Gallery6.Selected
             Visible: =popupvisible
-            Width: =1015
+            Width: =1017
             X: =204
             Y: =164
             ZIndex: =37
@@ -1230,7 +1229,7 @@
 
                 DataCardValue21 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
+                    Default: =Gallery6.Selected.'Project Name'
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     MaxLength: =Parent.MaxLength
@@ -2058,8 +2057,8 @@
             Size: =18
             Text: ="Update Billing Details"
             Visible: =popupvisible
-            Width: =287
-            X: =519
+            Width: =288
+            X: =520
             Y: =104
             ZIndex: =59
 
@@ -2076,7 +2075,7 @@
             Size: =18
             Text: ="Update project Details"
             Visible: =popupvisible
-            Width: =287
+            Width: =288
             X: =205
             Y: =104
             ZIndex: =60
