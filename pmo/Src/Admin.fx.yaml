@@ -786,7 +786,7 @@
             Label24_3 As label:
                 Height: =49
                 OnSelect: =Select(Parent)
-                Text: =ThisItem.'Achived Billing'
+                Text: =ThisItem.'Achieved Billing'
                 Width: =199
                 X: =846
                 Y: =5
@@ -3377,7 +3377,7 @@
             "'Achived Billing_DataCard1' As typedDataCard.numberEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_achivedbilling"
-                Default: =ThisItem.'Achived Billing'
+                Default: =ThisItem.'Achieved Billing'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_achivedbilling")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -4402,7 +4402,7 @@
 
                 DateValue14 As datepicker:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultDate: =Parent.Default
+                    DefaultDate: =Gallery2_1.Selected.'Billing Date'
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
                     IsEditable: =true
@@ -4491,7 +4491,7 @@
             "'Achived Billing_DataCard2' As typedDataCard.numberEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_achivedbilling"
-                Default: =Gallery2_1.Selected.'Achived Billing'
+                Default: =Gallery2_1.Selected.'Achieved Billing'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_achivedbilling")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -4515,7 +4515,7 @@
 
                 DataCardValue45 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
+                    Default: =Gallery2_1.Selected.'Achieved Billing'
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Format: =TextFormat.Number
@@ -4582,7 +4582,7 @@
 
                 DataCardValue46 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
+                    Default: =Gallery2_1.Selected.'Monthly Billing Amount'
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Format: =TextFormat.Number
