@@ -143,6 +143,10 @@
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "cre9a_projectdivision",
         "OptionSetReferenceEntityName": "Project Detailss"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "cre9a_projectdivision",
+        "OptionSetReferenceEntityName": "Project Updates"
       }
     },
     "OptionSetTypeKey": "PicklistType",
@@ -163,6 +167,10 @@
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "cre9a_projecttype",
         "OptionSetReferenceEntityName": "Project Detailss"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "cre9a_projecttype",
+        "OptionSetReferenceEntityName": "Project Updates"
       }
     },
     "OptionSetTypeKey": "PicklistType",

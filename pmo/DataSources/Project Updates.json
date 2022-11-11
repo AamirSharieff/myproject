@@ -1,0 +1,127 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cre9a_projectupdateses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cre9a_projectupdates",
+    "Name": "Project Updates",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cre9a_billingcycle": "Billing Cycle",
+      "cre9a_contractamount": "Contract Amount",
+      "cre9a_ponumber": "PO Number",
+      "cre9a_projectdivision": "project division",
+      "cre9a_projectenddate": "Project End Date",
+      "cre9a_projectid": "project ID",
+      "cre9a_projectmanager": "Project Manager",
+      "cre9a_projectname": "Project Name",
+      "cre9a_projectstartdate": "Project Start Date ",
+      "cre9a_projecttype": "project type",
+      "cre9a_projectupdates_AsyncOperations": "System Jobs",
+      "cre9a_projectupdates_BulkDeleteFailures": "Bulk Delete Failures",
+      "cre9a_projectupdates_DuplicateBaseRecord": "Duplicate Records (cre9a_projectupdates_DuplicateBaseRecord)",
+      "cre9a_projectupdates_DuplicateMatchingRecord": "Duplicate Records (cre9a_projectupdates_DuplicateMatchingRecord)",
+      "cre9a_projectupdates_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cre9a_projectupdates_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cre9a_projectupdates_ProcessSession": "Process Sessions",
+      "cre9a_projectupdates_SyncErrors": "Sync Errors",
+      "cre9a_projectupdatesid": "Project Updates",
+      "cre9a_totalbilledamount": "Total Billed Amount",
+      "cre9a_updateid": "UpdateId",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Project Updates",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Project Updates (Views)",
+    "Name": "_cre9a_projectupdates_views",
+    "RelatedEntityName": "Project Updates",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "19e4936e-214a-4d5b-a352-8f67df061f0a": "Project Updates Lookup View",
+      "5233723c-5fe3-4896-a3a3-f32920e7ee68": "Inactive Project Updates",
+      "61297cf2-5c70-406a-82a6-0d8f00342460": "Active Project Updates",
+      "7c852015-b014-462e-a53d-c8a21764de4b": "Project Updates Associated View",
+      "e80346fe-1386-4889-a039-63838402e082": "Project Updates Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Billing Cycle PMO",
+    "Name": "cre9a_billingcyclepmo",
+    "OptionSetInfoNameMapping": {
+      "235190000": "Monthly",
+      "235190001": "Milestone"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cre9a_billingcycle",
+        "OptionSetReferenceEntityName": "Project Updates"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cre9a_billingcycle",
+    "RelatedEntityName": "Project Updates",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Project Updates)",
+    "Name": "cre9a_projectupdates_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Project Updates"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Project Updates",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Project Updates)",
+    "Name": "cre9a_projectupdates_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Project Updates"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Project Updates",
+    "Type": "OptionSetInfo"
+  }
+]
