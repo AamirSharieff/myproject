@@ -1044,7 +1044,6 @@
         DataSource: ='Project Updates'
         DefaultMode: =FormMode.New
         Fill: =RGBA(255, 255, 255, 1)
-        Visible: =false
         X: =166
         Y: =268
         ZIndex: =34
@@ -1145,7 +1144,7 @@
 
             DataCardValue49 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =ThisItem.'Project Name'=DataCardValue2.Text
+                Default: =DataCardValue2.Text
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
