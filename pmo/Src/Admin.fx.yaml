@@ -1183,7 +1183,7 @@
             Height: =26
             Italic: =true
             OnSelect: |-
-                =Patch('project updatings',Defaults('project updatings'),{'Project ID':DataCardValue47.Text},{'Project Name':DataCardValue21.Text,'project division':DataCardValue12.Selected.Value,'Project Type':DataCardValue3.Selected.Value,'PO Number':DataCardValue13.Text,'project start date':DateValue6.SelectedDate,'project end date':DateValue5.SelectedDate,'Contract Amount':DataCardValue7.Text,'Project Manager':DataCardValue32.Text});
+                =Patch('project updatings',Defaults('project updatings'),{'Project ID':DataCardValue47.Text},{'Project Name':DataCardValue21.Text,'project division':DataCardValue12.Selected.Value,'Project Type':DataCardValue3.Selected.Value,'PO Number':DataCardValue13.Text,'project start date':DateValue6.SelectedDate,'project end date':DateValue5.SelectedDate,'Contract Amount':DataCardValue7.Text,'Project Manager':DataCardValue1.Text,'Total Billied Amount':DataCardValue32.Text});
                 SubmitForm(Form5_1);
                 NewForm(Form5_1);
                 SubmitForm(Form5_3);
@@ -4713,7 +4713,7 @@
     "Gallery4 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderThickness: =2
         Height: =412
-        Items: =SortByColumns(Filter('Project Detailss',ID= Gallery6.Selected.ID),"modifiedon",Descending)
+        Items: =SortByColumns(Filter('project updatings','Project Name'= Gallery6.Selected.'Project Name'),"modifiedon",Descending)
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =60
@@ -4755,7 +4755,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =13
-            Text: =ThisItem.ID
+            Text: =ThisItem.'project division'
             VerticalAlign: =VerticalAlign.Top
             Width: =115
             X: =162
@@ -4803,7 +4803,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =13
-            Text: =ThisItem.'Project Start Date'
+            Text: =ThisItem.'project start date'
             VerticalAlign: =VerticalAlign.Top
             Width: =181
             X: =634
@@ -4819,7 +4819,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =13
-            Text: =ThisItem.'Project End Date'
+            Text: =ThisItem.'project end date'
             VerticalAlign: =VerticalAlign.Top
             Width: =181
             X: =844
@@ -4844,7 +4844,7 @@
 
     Label32_1 As label:
         Color: =RGBA(255, 255, 255, 1)
-        Text: ="Project ID"
+        Text: ="Project Division"
         Visible: =projectupdate
         X: =348
         Y: =186
