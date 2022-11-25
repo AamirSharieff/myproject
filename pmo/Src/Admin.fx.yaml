@@ -5,10 +5,7 @@
     "Gallery6 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
         Height: =592
-        Items: |-
-            =Filter('Project Detailss',(StartsWith('Project Name',TextInput14_5.Text)||StartsWith('Project Manager',TextInput14_5.Text)))
-            
-            //Filter('Project Detailss',(StartsWith ('Project Name',TextInput14_5)) || (StartsWith('Project Manager',TextInput14_5)))
+        Items: =Filter('Project Detailss',(StartsWith ('Project Name',TextInput14_5.Text) || (StartsWith('Project Manager',TextInput14_5.Text))))
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =55
@@ -41,7 +38,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =13
-            Text: =ThisItem.ID
+            Text: =ThisItem.'Project Division'
             VerticalAlign: =VerticalAlign.Top
             Width: =115
             X: =243
@@ -1183,10 +1180,10 @@
             Height: =26
             Italic: =true
             OnSelect: |-
-                =Patch('project updatings',Defaults('project updatings'),{'Project ID':DataCardValue47.Text},{'Project Name':DataCardValue21.Text,'project division':DataCardValue12.Selected.Value,'Project Type':DataCardValue3.Selected.Value,'PO Number':DataCardValue13.Text,'project start date':DateValue6.SelectedDate,'project end date':DateValue5.SelectedDate,'Project Manager':DataCardValue1.Text});
+                =Patch('project updatings',Defaults('project updatings'),{'Project ID':DataCardValue47.Text},{'Project Name':DataCardValue21.Text,'project division':DataCardValue12.Selected.Value,'Project Type':DataCardValue3.Selected.Value,'PO Number':DataCardValue13.Text,'project start date':DateValue6.SelectedDate,'project end date':DateValue5.SelectedDate,'Project Manager':DataCardValue1.Text,'contract Amount':Value(DataCardValue7.Text),'Total Billed Amount':Value(DataCardValue32.Text)});
                 
                 
-                Patch('Project Detailss',Defaults('Project Detailss'),{'Project Name':DataCardValue21.Text,'Project Division':DataCardValue12.Selected.Value,'Project Type':DataCardValue3.Selected.Value,'PO Number':DataCardValue13.Text,'Project Start Date':DateValue6.SelectedDate,'Project End Date':DateValue5.SelectedDate,'Contract Amount':DataCardValue7,'Total Billed Amount':DataCardValue32});
+                Patch('Project Detailss',Defaults('Project Detailss'),{'Project Name':DataCardValue21.Text,'Project Division':DataCardValue12.Selected.Value,'Project Type':DataCardValue3.Selected.Value,'PO Number':DataCardValue13.Text,'Project Start Date':DateValue6.SelectedDate,'Project End Date':DateValue5.SelectedDate,'Contract Amount':Value(DataCardValue7.Text),'Total Billed Amount':Value(DataCardValue32.Text)});
                 
                 
                 
