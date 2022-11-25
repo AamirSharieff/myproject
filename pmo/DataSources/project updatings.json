@@ -85,7 +85,7 @@
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
       "cre9a_billingcycle": "Billing Cycle",
-      "cre9a_contractamount": "Contract Amount",
+      "cre9a_contractamount": "contract Amount",
       "cre9a_ponumber": "PO Number",
       "cre9a_projectdivision": "project division",
       "cre9a_projectenddate": "project end date",
@@ -103,7 +103,7 @@
       "cre9a_projectupdating_ProcessSession": "Process Sessions",
       "cre9a_projectupdating_SyncErrors": "Sync Errors",
       "cre9a_projectupdatingid": "project updating",
-      "cre9a_totalbilliedamount": "Total Billied Amount",
+      "cre9a_totalbilledamount": "Total Billed Amount",
       "cre9a_updatingid": "updatingID",
       "createdby": "Created By",
       "createdon": "Created On",
