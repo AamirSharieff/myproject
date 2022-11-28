@@ -41,7 +41,7 @@
             Text: =ThisItem.'Project Division'
             VerticalAlign: =VerticalAlign.Top
             Width: =115
-            X: =243
+            X: =233
             Y: =12
             ZIndex: =3
 
@@ -56,7 +56,7 @@
             Text: =ThisItem.'Project Type'
             VerticalAlign: =VerticalAlign.Top
             Width: =141
-            X: =426
+            X: =406
             Y: =8
             ZIndex: =4
 
@@ -166,7 +166,7 @@
         Size: =14
         Text: ="PO number"
         Width: =129
-        X: =1031
+        X: =1021
         Y: =143
         ZIndex: =6
 
@@ -177,7 +177,7 @@
         Size: =14
         Text: ="Project Manager"
         Width: =195
-        X: =800
+        X: =790
         Y: =143
         ZIndex: =7
 
@@ -188,7 +188,7 @@
         Size: =14
         Text: ="Project Type"
         Width: =149
-        X: =614
+        X: =594
         Y: =143
         ZIndex: =8
 
