@@ -780,7 +780,7 @@
     Button16 As button:
         Height: =39
         OnSelect: |+
-            =Patch('project updatings',Defaults('project updatings'),{'Project ID':DataCardValue35.Text,'Project Name':DataCardValue2.Text,'project division':DataCardValue15.Selected.Value,'Project Type':DataCardValue5.Selected.Value,'PO Number':DataCardValue37.Text,'project start date':DateValue1.SelectedDate,'project end date':DateValue2.SelectedDate,'Contract Amount':DataCardValue24.Text,'Project Manager':DataCardValue11.Text});
+            =Patch('project updatings',Defaults('project updatings'),{'Project ID':DataCardValue35.Text,'Project Name':DataCardValue2.Text,'project division':DataCardValue15.Selected.Value,'Project Type':DataCardValue5.Selected.Value,'PO Number':DataCardValue37.Text,'project start date':DateValue1.SelectedDate,'project end date':DateValue2.SelectedDate,'contract Amount':Value(DataCardValue24.Text),'Project Manager':DataCardValue11.Text});
             
             
             Office365Outlook.SendEmail(First(
