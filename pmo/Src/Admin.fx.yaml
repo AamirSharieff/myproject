@@ -1,6 +1,8 @@
 "Admin As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(255, 255, 255, 1)
-    OnVisible: =Refresh('Project Detailss');
+    OnVisible: |-
+        =Refresh('Project Detailss');
+        Reset(TextInput14_5);
 
     "Gallery6 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
@@ -1939,7 +1941,7 @@
             "'Billing Cycle_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingcycle"
-                Default: =ThisItem.'Billing Cycle'
+                Default: =Gallery6.Selected.'Billing Cycle'
                 DisplayMode: =DisplayMode.View
                 DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_billingcycle")
                 Fill: =RGBA(0, 0, 0, 0)

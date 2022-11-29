@@ -96,7 +96,7 @@ Dashboard As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =50
             OnSelect: |-
-                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin))||
                 If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager));
             Width: =198
             Y: =96
@@ -124,7 +124,7 @@ Dashboard As screen:
             Color: =RGBA(128, 128, 128, 1)
             Height: =23
             OnSelect: |-
-                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin))||
                 If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager));
             Size: =10
             Text: ="Project master"
@@ -156,7 +156,7 @@ Dashboard As screen:
             Height: =23
             Image: ='Group 325_1'
             OnSelect: |-
-                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin))||
                 If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager));
             Width: =23
             X: =11
