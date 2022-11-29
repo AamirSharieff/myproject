@@ -4,7 +4,7 @@ Dashboard As screen:
     PowerBI2 As powerbi:
         Height: =718
         TileUrl: |-
-            ="https://app.powerbi.com/reportEmbed?reportId=ebb54105-7f43-4f25-b398-e6e181c36e05&autoAuth=true&ctid=86fb359e-1360-4ab3-b90d-2a68e8c007b9"
+            ="https://app.powerbi.com/reportEmbed?reportId=9e387010-ba80-463e-8dd8-40d43937fc18&autoAuth=true&ctid=86fb359e-1360-4ab3-b90d-2a68e8c007b9"
         Width: =1164
         X: =198
         Y: =50
@@ -95,7 +95,9 @@ Dashboard As screen:
             BorderThickness: =0.2
             Fill: =RGBA(255, 255, 255, 1)
             Height: =50
-            OnSelect: =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+            OnSelect: |-
+                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+                If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager));
             Width: =198
             Y: =96
             ZIndex: =18
@@ -121,7 +123,9 @@ Dashboard As screen:
         Label9_41 As label:
             Color: =RGBA(128, 128, 128, 1)
             Height: =23
-            OnSelect: =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+            OnSelect: |-
+                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+                If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager));
             Size: =10
             Text: ="Project master"
             Width: =118
@@ -151,7 +155,9 @@ Dashboard As screen:
         Image11_5 As image:
             Height: =23
             Image: ='Group 325_1'
-            OnSelect: =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+            OnSelect: |-
+                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+                If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager));
             Width: =23
             X: =11
             Y: =109

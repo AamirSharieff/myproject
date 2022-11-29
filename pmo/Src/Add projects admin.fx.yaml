@@ -770,7 +770,9 @@
         Color: =RGBA(0, 130, 204, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Height: =38
-        OnSelect: =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+        OnSelect: |-
+            =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+            If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager));
         Text: ="Back"
         Width: =125
         X: =1059

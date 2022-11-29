@@ -133,6 +133,7 @@
         Height: =33
         OnSelect: |-
             =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin));
+            If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager));
             //UpdateContext({popupvisible:true})
         Text: ="Sign in"
         Width: =119
