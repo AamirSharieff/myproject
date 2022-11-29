@@ -93,6 +93,8 @@
             OnSelect: |
                 =Select(Parent);
                 UpdateContext({popupvisible:true});
+                Set(lblpt,true);
+                Set(lblpd,true);
                 NewForm(Form3);
             Width: =30
             X: =1001
@@ -1331,6 +1333,7 @@
                     DisplayMode: =Parent.DisplayMode
                     IsSearchable: =false
                     Items: =Choices('Project Division')
+                    OnChange: =Set(lblpd,false)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
                     SearchItems: =[]
@@ -1399,7 +1402,7 @@
                     DisplayMode: =Parent.DisplayMode
                     IsSearchable: =false
                     Items: =Choices('Project Type')
-                    OnChange: =
+                    OnChange: =Set(lblpt,false);
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
                     SearchItems: =[]
@@ -1938,76 +1941,6 @@
                     Y: =DataCardKey38.Y
                     ZIndex: =4
 
-            "'Billing Cycle_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="cre9a_billingcycle"
-                Default: =
-                DisplayMode: =DisplayMode.Edit
-                DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_billingcycle")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
-                Required: =false
-                Update: =ThisItem.'Billing Cycle'
-                Visible: =popupvisible
-                Width: =338
-                X: =0
-                Y: =3
-                ZIndex: =1
-
-                DataCardKey6 As label:
-                    AutoHeight: =true
-                    Height: =34
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue6 As combobox:
-                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultSelectedItems: =
-                    DisplayFields: =["Value"]
-                    DisplayMode: =Parent.DisplayMode
-                    IsSearchable: =false
-                    Items: |-
-                        =//["Monthly","Milesto
-                        Choices('Billing Cycle (Project Detailss)')
-                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                    SearchFields: =["Value"]
-                    SearchItems: =[]
-                    SelectMultiple: =false
-                    Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =58
-                    ZIndex: =2
-
-                ErrorMessage3 As label:
-                    AutoHeight: =true
-                    Height: =10
-                    Live: =Live.Assertive
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =Parent.Error
-                    Visible: =Parent.DisplayMode=DisplayMode.Edit
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardValue6.Y + DataCardValue6.Height
-                    ZIndex: =3
-
-                StarVisible3 As label:
-                    Align: =Align.Center
-                    Height: =DataCardKey6.Height
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    Wrap: =false
-                    Y: =DataCardKey6.Y
-                    ZIndex: =4
-
             "'Request Comments_DataCard1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_requestcomments"
@@ -2020,7 +1953,7 @@
                 Required: =false
                 Update: =DataCardValue4.Text
                 Width: =338
-                X: =1
+                X: =0
                 Y: =3
                 ZIndex: =1
 
@@ -2086,7 +2019,7 @@
                 Height: =40
                 Required: =false
                 Width: =339
-                X: =2
+                X: =1
                 Y: =3
                 ZIndex: =1
 
@@ -2113,6 +2046,82 @@
                     Y: =DataCardKey61.Y + DataCardKey61.Height + 5
                     ZIndex: =2
 
+            "'Billing Cycle_DataCard5' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_billingcycle"
+                Default: =ThisItem.'Billing Cycle'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_billingcycle")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =true
+                Update: =DataCardValue41.Selected.Value
+                Width: =339
+                X: =2
+                Y: =3
+                ZIndex: =1
+
+                DataCardKey49 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue41 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Gallery6.Selected
+                    DefaultSelectedItems: =[Parent.Default]
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    IsSearchable: =false
+                    Items: =Choices('Billing Cycle (Project Detailss)')
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =[]
+                    SelectMultiple: =false
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey49.Y + DataCardKey49.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage22 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue41.Y + DataCardValue41.Height
+                    ZIndex: =3
+
+                StarVisible22 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey49.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey49.Y
+                    ZIndex: =4
+
+                Label8 As label:
+                    Text: =Gallery6.Selected.'Billing Cycle'
+                    Visible: =popupvisible
+                    Width: =206
+                    X: =30
+                    Y: =43
+                    ZIndex: =5
+
         Button5 As button:
             BorderColor: =Blue
             Color: =RGBA(0, 121, 187, 1)
@@ -2121,8 +2130,8 @@
             Height: =34
             Italic: =true
             OnSelect: |-
-                =If(DataCardValue6.Selected.Value ="Milestone",UpdateContext({billing:true}),UpdateContext({billing:false}));
-                If(DataCardValue6.Selected.Value ="Monthly",UpdateContext({billing1:true}),UpdateContext({billing1:false}))
+                =If(Gallery6.Selected.'Billing Cycle'= 'Billing Cycle (Project Detailss)'.Milestone,UpdateContext({billing:true}),UpdateContext({billing:false}));
+                If(Gallery6.Selected.'Billing Cycle' ='Billing Cycle (Project Detailss)'.Monthly,UpdateContext({billing1:true}),UpdateContext({billing1:false}))
             Size: =18
             Text: ="Update Billing Details"
             Visible: =popupvisible
@@ -4925,14 +4934,21 @@
         Y: =118
         ZIndex: =97
 
-    ComboBox3 As combobox:
-        Default: =If(Gallery6.Selected.'Billing Cycle'="Monthly",'Billing Cycle (Project Detailss)'.Monthly)
-        DisplayFields: =["cre9a_billingcycle"]
-        IsSearchable: =false
-        Items: ='Project Detailss'
-        SearchFields: =["cre9a_id"]
-        SearchItems: =[]
-        X: =239
-        Y: =572
+    Label17 As label:
+        Height: =44
+        Text: =Gallery6.Selected.'Project Type'
+        Visible: =popupvisible && lblpt
+        Width: =238
+        X: =912
+        Y: =211
         ZIndex: =98
+
+    Label18 As label:
+        Height: =42
+        Text: =Gallery6.Selected.'Project Division'
+        Visible: =popupvisible && lblpd
+        Width: =244
+        X: =574
+        Y: =213
+        ZIndex: =99
 
