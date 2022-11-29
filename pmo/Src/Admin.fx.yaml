@@ -1941,8 +1941,8 @@
             "'Billing Cycle_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingcycle"
-                Default: =Gallery6.Selected.'Billing Cycle'
-                DisplayMode: =DisplayMode.View
+                Default: =
+                DisplayMode: =DisplayMode.Edit
                 DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_billingcycle")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
@@ -1966,12 +1966,13 @@
 
                 DataCardValue6 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Gallery6.Selected
                     DefaultSelectedItems: =
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
                     IsSearchable: =false
-                    Items: =["Monthly","Milestone"]
+                    Items: |-
+                        =//["Monthly","Milesto
+                        Choices('Billing Cycle (Project Detailss)')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
                     SearchItems: =[]
@@ -4923,4 +4924,15 @@
         X: =1224
         Y: =118
         ZIndex: =97
+
+    ComboBox3 As combobox:
+        Default: =If(Gallery6.Selected.'Billing Cycle'="Monthly",'Billing Cycle (Project Detailss)'.Monthly)
+        DisplayFields: =["cre9a_billingcycle"]
+        IsSearchable: =false
+        Items: ='Project Detailss'
+        SearchFields: =["cre9a_id"]
+        SearchItems: =[]
+        X: =239
+        Y: =572
+        ZIndex: =98
 
