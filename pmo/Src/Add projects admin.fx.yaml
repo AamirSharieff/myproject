@@ -20,7 +20,7 @@
         Width: =1160
         X: =206
         Y: =58
-        ZIndex: =5
+        ZIndex: =2
 
     Label30_7 As label:
         Color: =RGBA(0, 134, 208, 1)
@@ -31,7 +31,7 @@
         Width: =178
         X: =244
         Y: =86
-        ZIndex: =6
+        ZIndex: =3
 
     Form1 As form:
         DataSource: ='Project Detailss'
@@ -40,7 +40,7 @@
         Width: =1113
         X: =220
         Y: =133
-        ZIndex: =7
+        ZIndex: =4
 
         "'Project Name_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -777,7 +777,7 @@
         Width: =125
         X: =1059
         Y: =715
-        ZIndex: =8
+        ZIndex: =5
 
     Button16 As button:
         Height: =39
@@ -809,13 +809,13 @@
         Width: =110
         X: =1203
         Y: =715
-        ZIndex: =9
+        ZIndex: =6
 
     Label1 As label:
         Text: ="Project Manager"
         X: =244
         Y: =429
-        ZIndex: =10
+        ZIndex: =7
 
     ComboBox2 As combobox:
         DisplayFields: =["DisplayName"]
@@ -829,14 +829,14 @@
         Width: =313
         X: =244
         Y: =498
-        ZIndex: =13
+        ZIndex: =8
 
     Form6 As form:
         DataSource: ='Project Summarys'
         Visible: =false
         X: =248
         Y: =109
-        ZIndex: =33
+        ZIndex: =25
 
         "'Project Name_DataCard5' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -980,24 +980,6 @@
         Y: =20
         ZIndex: =33
 
-        Rectangle5_4 As rectangle:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =50
-            Width: =1366
-            ZIndex: =26
-
-        Label3_8 As label:
-            Align: =Align.Right
-            FontWeight: =FontWeight.Semibold
-            Height: =20
-            Size: =8
-            Text: =User().FullName
-            Width: =161
-            X: =1135
-            Y: =4
-            ZIndex: =27
-
         Label3_9 As label:
             Align: =Align.Center
             Height: =20
@@ -1010,7 +992,25 @@
             Width: =45
             X: =1244
             Y: =24
-            ZIndex: =28
+            ZIndex: =1
+
+        Rectangle5_4 As rectangle:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =50
+            Width: =1366
+            ZIndex: =19
+
+        Label3_8 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =20
+            Size: =8
+            Text: =User().FullName
+            Width: =161
+            X: =1135
+            Y: =4
+            ZIndex: =20
 
         Image6_4 As image:
             Height: =41
@@ -1018,7 +1018,7 @@
             ImagePosition: =ImagePosition.Stretch
             Width: =195
             X: =3
-            ZIndex: =29
+            ZIndex: =21
 
         TextInput14_3 As text:
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -1028,7 +1028,7 @@
             Width: =312
             X: =823
             Y: =6
-            ZIndex: =30
+            ZIndex: =22
 
         Image13_1 As image:
             Height: =46
@@ -1036,7 +1036,7 @@
             ImagePosition: =ImagePosition.Stretch
             Width: =50
             X: =1312
-            ZIndex: =31
+            ZIndex: =23
 
         Circle1_1 As circle:
             BorderThickness: =0.2
@@ -1044,7 +1044,7 @@
             Height: =46
             Width: =50
             X: =1312
-            ZIndex: =32
+            ZIndex: =24
 
     Group1_1 As group:
         Height: =5
@@ -1058,7 +1058,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =768
             Width: =198
-            ZIndex: =16
+            ZIndex: =9
 
         Rectangle2_11 As rectangle:
             BorderThickness: =0.2
@@ -1066,7 +1066,7 @@
             Height: =46
             Width: =198
             Y: =50
-            ZIndex: =17
+            ZIndex: =10
 
         Rectangle2_12 As rectangle:
             BorderThickness: =0.2
@@ -1074,7 +1074,7 @@
             Height: =50
             Width: =198
             Y: =96
-            ZIndex: =18
+            ZIndex: =11
 
         Rectangle2_13 As rectangle:
             BorderThickness: =0.2
@@ -1082,7 +1082,7 @@
             Height: =50
             Width: =198
             Y: =146
-            ZIndex: =19
+            ZIndex: =12
 
         Label9_31 As label:
             Color: =RGBA(166, 166, 166, 1)
@@ -1093,7 +1093,7 @@
             Width: =80
             X: =43
             Y: =60
-            ZIndex: =20
+            ZIndex: =13
 
         Label9_32 As label:
             FontWeight: =FontWeight.Semibold
@@ -1104,7 +1104,7 @@
             Width: =118
             X: =43
             Y: =110
-            ZIndex: =21
+            ZIndex: =14
 
         Label9_33 As label:
             Color: =RGBA(166, 166, 166, 1)
@@ -1115,7 +1115,7 @@
             Width: =68
             X: =43
             Y: =160
-            ZIndex: =22
+            ZIndex: =15
 
         Image8_2 As image:
             Height: =23
@@ -1123,7 +1123,7 @@
             Width: =23
             X: =11
             Y: =60
-            ZIndex: =23
+            ZIndex: =16
 
         Image11_2 As image:
             Height: =23
@@ -1131,7 +1131,7 @@
             Width: =23
             X: =11
             Y: =109
-            ZIndex: =24
+            ZIndex: =17
 
         Image14_2 As image:
             Height: =23
@@ -1139,5 +1139,5 @@
             Width: =23
             X: =11
             Y: =160
-            ZIndex: =25
+            ZIndex: =18
 

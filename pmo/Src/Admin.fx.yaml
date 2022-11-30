@@ -224,7 +224,7 @@
             =Navigate('Add projects admin',ScreenTransition.Fade);
             ResetForm(Form1)
         Size: =13
-        Text: ="Create  New  Project"
+        Text: ="Create New Project"
         Width: =183
         X: =1135
         Y: =82
@@ -537,7 +537,7 @@
             Height: =46
             Width: =50
             X: =1312
-            ZIndex: =17
+            ZIndex: =27
 
         Image6_6 As image:
             Height: =41
@@ -617,7 +617,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =768
             Width: =198
-            ZIndex: =18
+            ZIndex: =17
 
         Rectangle2_17 As rectangle:
             BorderThickness: =0.2
@@ -625,7 +625,7 @@
             Height: =46
             Width: =198
             Y: =50
-            ZIndex: =19
+            ZIndex: =18
 
         Rectangle2_18 As rectangle:
             BorderThickness: =0.2
@@ -633,7 +633,7 @@
             Height: =50
             Width: =198
             Y: =96
-            ZIndex: =20
+            ZIndex: =19
 
         Rectangle2_19 As rectangle:
             BorderThickness: =0.2
@@ -641,7 +641,7 @@
             Height: =50
             Width: =198
             Y: =146
-            ZIndex: =21
+            ZIndex: =20
 
         Label9_37 As label:
             Color: =RGBA(166, 166, 166, 1)
@@ -652,7 +652,7 @@
             Width: =80
             X: =43
             Y: =60
-            ZIndex: =22
+            ZIndex: =21
 
         Label9_38 As label:
             FontWeight: =FontWeight.Semibold
@@ -662,7 +662,7 @@
             Width: =118
             X: =43
             Y: =110
-            ZIndex: =23
+            ZIndex: =22
 
         Label9_39 As label:
             Color: =RGBA(166, 166, 166, 1)
@@ -673,7 +673,7 @@
             Width: =68
             X: =43
             Y: =160
-            ZIndex: =24
+            ZIndex: =23
 
         Image8_4 As image:
             Height: =23
@@ -681,7 +681,7 @@
             Width: =23
             X: =11
             Y: =60
-            ZIndex: =25
+            ZIndex: =24
 
         Image11_4 As image:
             Height: =23
@@ -689,7 +689,7 @@
             Width: =23
             X: =11
             Y: =109
-            ZIndex: =26
+            ZIndex: =25
 
         Image14_4 As image:
             Height: =23
@@ -697,7 +697,7 @@
             Width: =23
             X: =11
             Y: =160
-            ZIndex: =27
+            ZIndex: =26
 
     Button19_14 As button:
         Height: =39
@@ -1368,6 +1368,16 @@
                     Y: =DataCardKey10.Y
                     ZIndex: =4
 
+                Label18_1 As label:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =36
+                    Text: =Gallery6.Selected.'Project Division'
+                    Visible: =popupvisible && lblpd
+                    Width: =240
+                    X: =34
+                    Y: =50
+                    ZIndex: =5
+
             "'Project Type_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_projecttype"
@@ -1435,6 +1445,16 @@
                     Wrap: =false
                     Y: =DataCardKey4.Y
                     ZIndex: =4
+
+                Label17 As label:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =36
+                    Text: =Gallery6.Selected.'Project Type'
+                    Visible: =popupvisible && lblpt
+                    Width: =238
+                    X: =31
+                    Y: =50
+                    ZIndex: =5
 
             "'PO Number_DataCard3' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -4424,13 +4444,6 @@
             Y: =493
             ZIndex: =81
 
-    Rectangle15 As rectangle:
-        Fill: =RGBA(179, 173, 173, 0.52)
-        Height: =768
-        Visible: =projectupdate
-        Width: =1366
-        ZIndex: =86
-
     Group5 As group:
         Height: =5
         Width: =5
@@ -4456,7 +4469,7 @@
             Width: =767
             X: =303
             Y: =114
-            ZIndex: =83
+            ZIndex: =84
 
             "'Billing Date_DataCard4' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -4713,7 +4726,7 @@
             Visible: =monthlyupdate
             X: =874
             Y: =547
-            ZIndex: =84
+            ZIndex: =85
 
         Button23 As button:
             OnSelect: |-
@@ -4722,7 +4735,14 @@
             Visible: =monthlyupdate
             X: =672
             Y: =547
-            ZIndex: =85
+            ZIndex: =86
+
+    Rectangle15 As rectangle:
+        Fill: =RGBA(179, 173, 173, 0.52)
+        Height: =768
+        Visible: =projectupdate
+        Width: =1366
+        ZIndex: =87
 
     Rectangle18 As rectangle:
         Fill: =RGBA(255, 255, 255, 0.98)
@@ -4731,7 +4751,7 @@
         Width: =1104
         X: =172
         Y: =114
-        ZIndex: =87
+        ZIndex: =88
 
     "Gallery4 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderThickness: =2
@@ -4744,7 +4764,7 @@
         Width: =1065
         X: =192
         Y: =239
-        ZIndex: =88
+        ZIndex: =89
 
         Title5 As label:
             FontWeight: =FontWeight.Normal
@@ -4855,7 +4875,7 @@
         Width: =1064
         X: =193
         Y: =178
-        ZIndex: =89
+        ZIndex: =90
 
     Label32 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -4863,7 +4883,7 @@
         Visible: =projectupdate
         X: =198
         Y: =186
-        ZIndex: =90
+        ZIndex: =91
 
     Label32_1 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -4871,7 +4891,7 @@
         Visible: =projectupdate
         X: =348
         Y: =186
-        ZIndex: =91
+        ZIndex: =92
 
     Label32_2 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -4880,7 +4900,7 @@
         Width: =139
         X: =519
         Y: =186
-        ZIndex: =92
+        ZIndex: =93
 
     Label32_3 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -4889,7 +4909,7 @@
         Width: =139
         X: =679
         Y: =186
-        ZIndex: =93
+        ZIndex: =94
 
     Label32_4 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -4898,7 +4918,7 @@
         Width: =156
         X: =837
         Y: =186
-        ZIndex: =94
+        ZIndex: =95
 
     Label32_5 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -4907,7 +4927,7 @@
         Width: =156
         X: =1037
         Y: =187
-        ZIndex: =95
+        ZIndex: =96
 
     Label32_6 As label:
         Color: =RGBA(0, 94, 146, 1)
@@ -4918,7 +4938,7 @@
         Width: =281
         X: =201
         Y: =126
-        ZIndex: =96
+        ZIndex: =97
 
     Icon11 As icon.CancelBadge:
         Color: =RGBA(0, 0, 0, 1)
@@ -4930,23 +4950,5 @@
         Width: =40
         X: =1224
         Y: =118
-        ZIndex: =97
-
-    Label17 As label:
-        Height: =44
-        Text: =Gallery6.Selected.'Project Type'
-        Visible: =popupvisible && lblpt
-        Width: =238
-        X: =912
-        Y: =211
         ZIndex: =98
-
-    Label18 As label:
-        Height: =42
-        Text: =Gallery6.Selected.'Project Division'
-        Visible: =popupvisible && lblpd
-        Width: =244
-        X: =574
-        Y: =213
-        ZIndex: =99
 

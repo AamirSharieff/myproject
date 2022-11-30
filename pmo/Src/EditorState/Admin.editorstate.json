@@ -320,7 +320,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ADD Milestone",
-      "ParentIndex": 105,
+      "ParentIndex": 103,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -371,7 +371,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ADD Monthly",
-      "ParentIndex": 106,
+      "ParentIndex": 104,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1252,7 +1252,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Billing Milestone",
-      "ParentIndex": 100,
+      "ParentIndex": 98,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1303,7 +1303,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Billing Monthly",
-      "ParentIndex": 99,
+      "ParentIndex": 97,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1646,7 +1646,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button10",
-      "ParentIndex": 83,
+      "ParentIndex": 81,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1910,7 +1910,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button10_1",
-      "ParentIndex": 82,
+      "ParentIndex": 80,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2439,7 +2439,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button19",
-      "ParentIndex": 94,
+      "ParentIndex": 92,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2703,7 +2703,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button19_1",
-      "ParentIndex": 92,
+      "ParentIndex": 90,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2974,7 +2974,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button19_14",
-      "ParentIndex": 95,
+      "ParentIndex": 93,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3238,7 +3238,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button19_15",
-      "ParentIndex": 93,
+      "ParentIndex": 91,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3502,7 +3502,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button19_2",
-      "ParentIndex": 91,
+      "ParentIndex": 89,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3766,7 +3766,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button19_3",
-      "ParentIndex": 96,
+      "ParentIndex": 94,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4030,7 +4030,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button19_4",
-      "ParentIndex": 89,
+      "ParentIndex": 87,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4294,7 +4294,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button19_5",
-      "ParentIndex": 90,
+      "ParentIndex": 88,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4858,7 +4858,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button20",
-      "ParentIndex": 85,
+      "ParentIndex": 83,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5129,7 +5129,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button21",
-      "ParentIndex": 86,
+      "ParentIndex": 84,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5393,7 +5393,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button22",
-      "ParentIndex": 88,
+      "ParentIndex": 86,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5657,7 +5657,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button23",
-      "ParentIndex": 87,
+      "ParentIndex": 85,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5949,7 +5949,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button4",
-      "ParentIndex": 97,
+      "ParentIndex": 95,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6255,7 +6255,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button4_1",
-      "ParentIndex": 98,
+      "ParentIndex": 96,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13994,7 +13994,7 @@
       "IsDataControl": false,
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
-      "IsLocked": true,
+      "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey4",
@@ -24003,7 +24003,7 @@
       "IsDataControl": false,
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
-      "IsLocked": true,
+      "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue3",
@@ -32453,7 +32453,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Deletepopup",
-      "ParentIndex": 103,
+      "ParentIndex": 101,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -32504,7 +32504,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Edit",
-      "ParentIndex": 104,
+      "ParentIndex": 102,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -33598,11 +33598,11 @@
       "IsDataControl": false,
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
-      "IsLocked": true,
+      "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage2",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -40908,7 +40908,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage5",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -44291,7 +44291,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery2",
-      "ParentIndex": 78,
+      "ParentIndex": 76,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -44490,7 +44490,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery2_1",
-      "ParentIndex": 79,
+      "ParentIndex": 77,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -44689,7 +44689,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery4",
-      "ParentIndex": 77,
+      "ParentIndex": 75,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -45220,7 +45220,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group1_3",
-      "ParentIndex": 102,
+      "ParentIndex": 100,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -45271,7 +45271,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group2_3",
-      "ParentIndex": 101,
+      "ParentIndex": 99,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -45322,7 +45322,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group3",
-      "ParentIndex": 107,
+      "ParentIndex": 105,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -45373,7 +45373,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group5",
-      "ParentIndex": 108,
+      "ParentIndex": 106,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -54156,7 +54156,14 @@
         "HoverBorderColor",
         "BorderStyle",
         "FocusedBorderColor",
-        "Fill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Fill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledFill",
         "PressedFill",
         "HoverFill",
@@ -54164,10 +54171,24 @@
         "FontWeight",
         "Align",
         "VerticalAlign",
-        "X",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "X",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Y",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "ZIndex",
         "LineHeight",
@@ -54200,7 +54221,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label17",
-      "ParentIndex": 67,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -54407,7 +54428,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "Label18": {
+    "Label18_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -54431,7 +54452,14 @@
         "HoverBorderColor",
         "BorderStyle",
         "FocusedBorderColor",
-        "Fill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Fill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledFill",
         "PressedFill",
         "HoverFill",
@@ -54439,10 +54467,31 @@
         "FontWeight",
         "Align",
         "VerticalAlign",
-        "X",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "X",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Y",
-        "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "ZIndex",
         "LineHeight",
@@ -54474,8 +54523,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Label18",
-      "ParentIndex": 69,
+      "Name": "Label18_1",
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -55088,7 +55137,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label20",
-      "ParentIndex": 81,
+      "ParentIndex": 79,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -55355,7 +55404,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label21",
-      "ParentIndex": 84,
+      "ParentIndex": 82,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -56499,7 +56548,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_1",
-      "ParentIndex": 68,
+      "ParentIndex": 67,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -56809,7 +56858,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_11",
-      "ParentIndex": 70,
+      "ParentIndex": 68,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -57133,7 +57182,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_2",
-      "ParentIndex": 73,
+      "ParentIndex": 71,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -57457,7 +57506,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_20",
-      "ParentIndex": 72,
+      "ParentIndex": 70,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -57781,7 +57830,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_21",
-      "ParentIndex": 71,
+      "ParentIndex": 69,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -58105,7 +58154,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_3",
-      "ParentIndex": 74,
+      "ParentIndex": 72,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -58422,7 +58471,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_5",
-      "ParentIndex": 75,
+      "ParentIndex": 73,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -58753,7 +58802,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_6",
-      "ParentIndex": 76,
+      "ParentIndex": 74,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -74971,7 +75020,7 @@
       "IsDataControl": false,
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
-      "IsLocked": true,
+      "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Project Type_DataCard1",
@@ -76666,7 +76715,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle14",
-      "ParentIndex": 80,
+      "ParentIndex": 78,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -84358,7 +84407,7 @@
       "IsDataControl": false,
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
-      "IsLocked": true,
+      "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible2",
