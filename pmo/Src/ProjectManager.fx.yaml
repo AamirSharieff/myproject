@@ -2931,6 +2931,7 @@
             BorderThickness: =0.2
             Fill: =RGBA(255, 255, 255, 1)
             Height: =46
+            OnSelect: =Navigate(Dashboard)
             Width: =198
             Y: =50
             ZIndex: =19
@@ -2947,6 +2948,7 @@
             BorderThickness: =0.2
             Fill: =RGBA(255, 255, 255, 1)
             Height: =50
+            OnSelect: =Navigate(Timeline)
             Width: =198
             Y: =146
             ZIndex: =21
@@ -2986,6 +2988,7 @@
         Image8_3 As image:
             Height: =23
             Image: ='Group 331_1'
+            OnSelect: =Navigate(Dashboard)
             Width: =23
             X: =11
             Y: =60
@@ -3002,6 +3005,7 @@
         Image14_3 As image:
             Height: =23
             Image: ='Group 329_1'
+            OnSelect: =Navigate(Timeline)
             Width: =23
             X: =11
             Y: =160

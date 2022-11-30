@@ -6,7 +6,7 @@
     "Gallery6_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
         Height: =532
-        Items: =SortByColumns(Filter(pmoapp,(StartsWith('Project Name',TextInput14_2.Text)||StartsWith('Project Manager',TextInput14_2.Text))),"cre9a_id")
+        Items: =SortByColumns(Filter(pmoapp,(StartsWith('Project Name',TextInput14_2.Text)||StartsWith('Project Manager',TextInput14_2.Text))),"cre9a_id",Descending)
         Layout: =Layout.Vertical
         OnSelect: =
         TemplatePadding: =0
@@ -18,7 +18,7 @@
 
         Title6_2 As label:
             FontWeight: =FontWeight.Normal
-            Height: =20
+            Height: =21
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -27,23 +27,23 @@
             Size: =13
             Text: =ThisItem.'Project Name'
             VerticalAlign: =VerticalAlign.Top
-            Width: =154
+            Width: =168
             X: =12
             Y: =12
             ZIndex: =1
 
         Subtitle6_2 As label:
-            Height: =35
+            Height: =26
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
             Size: =13
-            Text: =ThisItem.ID
+            Text: =ThisItem.'Project Division'
             VerticalAlign: =VerticalAlign.Top
-            Width: =63
-            X: =200
+            Width: =121
+            X: =206
             Y: =9
             ZIndex: =2
 
@@ -58,7 +58,7 @@
             Text: =ThisItem.'Project Type'
             VerticalAlign: =VerticalAlign.Top
             Width: =135
-            X: =297
+            X: =347
             Y: =10
             ZIndex: =3
 
@@ -74,7 +74,7 @@
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Project Manager'
             Width: =218
-            X: =476
+            X: =506
             ZIndex: =6
 
         Label14_2 As label:
@@ -94,7 +94,7 @@
                 =
                 UpdateContext({status:true})
             Width: =30
-            X: =1035
+            X: =1055
             Y: =5
             ZIndex: =8
 
@@ -109,7 +109,7 @@
             Text: =ThisItem.'Project Status'
             Visible: =If(IsBlank(ThisItem.'Project Status'),false,true)
             Width: =117
-            X: =694
+            X: =724
             Y: =7
             ZIndex: =10
 
@@ -132,7 +132,7 @@
                 UpdateContext({status:false})
             Visible: =status && ThisItem.IsSelected
             Width: =152
-            X: =680
+            X: =700
             Y: =8
             ZIndex: =11
 
@@ -142,7 +142,7 @@
             OnSelect: =Select(Parent)
             Text: =TextInput1.Text
             Width: =173
-            X: =850
+            X: =870
             ZIndex: =13
 
         TextInput1 As text:
@@ -155,7 +155,7 @@
             OnSelect: =Select(Parent)
             Visible: =status && ThisItem.IsSelected
             Width: =148
-            X: =850
+            X: =870
             Y: =12
             ZIndex: =14
 
@@ -183,9 +183,9 @@
         Color: =RGBA(255, 255, 255, 1)
         Height: =20
         Size: =14
-        Text: ="Project ID"
-        Width: =100
-        X: =397
+        Text: ="Project Division"
+        Width: =159
+        X: =395
         Y: =203
         ZIndex: =10
 
@@ -207,7 +207,7 @@
         Size: =14
         Text: ="Project Manager"
         Width: =163
-        X: =670
+        X: =710
         Y: =203
         ZIndex: =13
 
@@ -218,7 +218,7 @@
         Size: =14
         Text: ="Project Type"
         Width: =120
-        X: =504
+        X: =554
         Y: =203
         ZIndex: =14
 
@@ -250,7 +250,7 @@
         Size: =14
         Text: ="Status"
         Width: =115
-        X: =889
+        X: =909
         Y: =203
         ZIndex: =23
 
@@ -310,6 +310,7 @@
             BorderThickness: =0.2
             Fill: =RGBA(255, 255, 255, 1)
             Height: =46
+            OnSelect: =Navigate(Dashboard)
             Width: =198
             Y: =50
             ZIndex: =2
@@ -318,6 +319,8 @@
             BorderThickness: =0.2
             Fill: =RGBA(255, 255, 255, 1)
             Height: =50
+            OnSelect: |
+                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin)) || If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager)) 
             Width: =198
             Y: =96
             ZIndex: =18
@@ -344,7 +347,8 @@
         Label9_29 As label:
             Color: =RGBA(166, 166, 166, 1)
             Height: =23
-            OnSelect: =Navigate(ProjectManager)
+            OnSelect: |
+                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin)) || If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager)) 
             Size: =10
             Text: ="Project master"
             Width: =118
@@ -359,12 +363,13 @@
             Text: ="Timeline"
             Width: =68
             X: =43
-            Y: =160
+            Y: =157
             ZIndex: =22
 
         Image8_1 As image:
             Height: =23
             Image: ='Group 331_1'
+            OnSelect: =Navigate(Dashboard)
             Width: =23
             X: =11
             Y: =60
@@ -373,6 +378,8 @@
         Image11_1 As image:
             Height: =23
             Image: ='Group 325_1'
+            OnSelect: |
+                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin)) || If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager)) 
             Width: =23
             X: =11
             Y: =109
@@ -393,7 +400,7 @@
         Size: =14
         Text: ="Comment"
         Width: =115
-        X: =1054
+        X: =1074
         Y: =203
         ZIndex: =32
 
