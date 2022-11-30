@@ -129,7 +129,8 @@
                 {'Project Status':Dropdown1.SelectedText.Value});
                     
                     
-                UpdateContext({status:false})
+                UpdateContext({status:false});
+                Refresh('Project Detailss')
             Visible: =status && ThisItem.IsSelected
             Width: =152
             X: =700
