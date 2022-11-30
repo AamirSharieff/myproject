@@ -472,3 +472,14 @@
         Y: =10
         ZIndex: =33
 
+    Button12_4 As button:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =32
+        OnSelect: =Navigate('Main Screen')
+        Size: =13
+        Text: ="Sign Out"
+        Width: =120
+        X: =40
+        Y: =726
+        ZIndex: =34
+

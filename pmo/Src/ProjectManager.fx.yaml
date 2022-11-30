@@ -1010,7 +1010,7 @@
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode.Edit
                     IsSearchable: =false
-                    Items: =["","Monthly","Mile Stone"]
+                    Items: =["","Monthly","Milestone"]
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
                     SearchItems: =[]
@@ -1537,7 +1537,7 @@
             Width: =1064
             X: =178
             Y: =123
-            ZIndex: =65
+            ZIndex: =67
 
             "'Billing Date_DataCard2' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -2879,6 +2879,32 @@
         Y: =136
         ZIndex: =61
 
+    Label25_23 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =11
+        Text: ="Milestone Planned End Date"
+        Visible: =billingpm
+        Width: =145
+        X: =778
+        Y: =136
+        ZIndex: =63
+
+    Label25_22 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =11
+        Text: ="Milestone Planned Start Date"
+        Visible: =billingpm
+        Width: =145
+        X: =627
+        Y: =137
+        ZIndex: =64
+
     Button19_11 As button:
         Height: =43
         OnSelect: |-
@@ -2888,30 +2914,7 @@
         Width: =117
         X: =980
         Y: =512
-        ZIndex: =64
-
-    Button19_12 As button:
-        Height: =41
-        OnSelect: |-
-            =UpdateContext({addpm:false})
-        Text: ="Back"
-        Visible: =addpm
-        Width: =142
-        X: =888
-        Y: =641
         ZIndex: =66
-
-    Button19_13 As button:
-        Height: =41
-        OnSelect: |-
-            =SubmitForm(Form5_2);
-            UpdateContext({addpm:false})
-        Text: ="Save"
-        Visible: =addpm
-        Width: =142
-        X: =1054
-        Y: =641
-        ZIndex: =67
 
     Group1_2 As group:
         Height: =5
@@ -3011,18 +3014,15 @@
             Y: =160
             ZIndex: =27
 
-    Button2_1 As button:
-        Fill: =RGBA(0, 130, 204, 1)
-        Height: =32
-        OnSelect: |
-            =Navigate('Add projects admin',ScreenTransition.Fade);
-            ResetForm(Form1)
-        Size: =13
-        Text: ="Create  New  Project"
-        Visible: =popupvisible=false
-        Width: =183
-        X: =1129
-        Y: =80
+    Button19_12 As button:
+        Height: =41
+        OnSelect: |-
+            =UpdateContext({addpm:false})
+        Text: ="Back"
+        Visible: =addpm
+        Width: =142
+        X: =888
+        Y: =641
         ZIndex: =68
 
     "'Billing Milestone_1' As group":
@@ -3050,8 +3050,8 @@
             TemplateSize: =54
             Visible: =billingpm
             Width: =1043
-            X: =196
-            Y: =192
+            X: =193
+            Y: =228
             ZIndex: =55
 
             Title4_3 As label:
@@ -3164,14 +3164,14 @@
 
         FormViewer1_3 As formViewer:
             DataSource: ='Project Detailss'
-            Height: =70
+            Height: =54
             Item: =Gallery6.Selected
             NumberOfColumns: =1
             Visible: =billingpm
             Width: =633
             X: =170
-            Y: =65
-            ZIndex: =63
+            Y: =81
+            ZIndex: =65
 
             "'Project Name_DataCard4_3' As typedDataCard.textualViewCard":
                 BorderStyle: =BorderStyle.Solid
@@ -3226,27 +3226,51 @@
                 ZIndex: =66
 
                 DataCardKey28_3 As label:
-                    AutoHeight: =true
-                    Height: =34
+                    Height: =31
                     Text: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.4
+                    Width: =158
                     Wrap: =false
                     X: =30
                     Y: =10 + (DataCardValue22_3.Height / 2) - (Self.Height / 2)
                     ZIndex: =1
 
                 DataCardValue22_3 As label:
-                    AutoHeight: =true
                     DisplayMode: =Parent.DisplayMode
-                    Height: =27
+                    Height: =29
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
                     Text: =Gallery6_1.Selected.ID
-                    Width: =(Parent.Width - 60) * 0.6
+                    Width: =301
                     X: =DataCardKey28_3.X + DataCardKey28_3.Width
                     Y: =10
                     ZIndex: =2
+
+    Button19_13 As button:
+        Height: =41
+        OnSelect: |-
+            =SubmitForm(Form5_2);
+            UpdateContext({addpm:false})
+        Text: ="Save"
+        Visible: =addpm
+        Width: =142
+        X: =1054
+        Y: =641
+        ZIndex: =69
+
+    Button2_1 As button:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =32
+        OnSelect: |
+            =Navigate('Add projects admin',ScreenTransition.Fade);
+            ResetForm(Form1)
+        Size: =13
+        Text: ="Create  New  Project"
+        Visible: =popupvisible=false
+        Width: =183
+        X: =1129
+        Y: =80
+        ZIndex: =70
 
     Button19_9 As button:
         Height: =46
@@ -3257,7 +3281,7 @@
         Width: =115
         X: =938
         Y: =533
-        ZIndex: =69
+        ZIndex: =71
 
     Button19_7 As button:
         Height: =53
@@ -3268,20 +3292,7 @@
         Width: =142
         X: =917
         Y: =531
-        ZIndex: =70
-
-    Label25_22 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =44
-        Size: =11
-        Text: ="Milestone Planned Start Date"
-        Visible: =billingpm
-        Width: =145
-        X: =627
-        Y: =137
-        ZIndex: =75
+        ZIndex: =72
 
     Group5_1 As group:
         Height: =5
@@ -3297,7 +3308,7 @@
             Width: =1096
             X: =169
             Y: =60
-            ZIndex: =71
+            ZIndex: =73
 
         Form7_1 As form:
             DataSource: ='Project Summarys'
@@ -3309,7 +3320,7 @@
             Width: =748
             X: =304
             Y: =98
-            ZIndex: =72
+            ZIndex: =74
 
             "'Billing Date_DataCard4_1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -3568,7 +3579,7 @@
             Width: =156
             X: =839
             Y: =597
-            ZIndex: =73
+            ZIndex: =75
 
         Button23_1 As button:
             Height: =46
@@ -3579,20 +3590,18 @@
             Width: =156
             X: =663
             Y: =594
-            ZIndex: =74
+            ZIndex: =76
 
-    Label25_23 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =44
-        Size: =11
-        Text: ="Milestone Planned End Date"
-        Visible: =billingpm
-        Width: =145
-        X: =778
-        Y: =136
-        ZIndex: =76
+    Button12_2 As button:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =32
+        OnSelect: =Navigate('Main Screen')
+        Size: =13
+        Text: ="Sign Out"
+        Width: =120
+        X: =40
+        Y: =726
+        ZIndex: =81
 
     Group3_1 As group:
         Height: =5
@@ -4392,17 +4401,6 @@
                     Y: =DataCardKey55_1.Y
                     ZIndex: =7
 
-        Button20_1 As button:
-            Height: =46
-            OnSelect: |-
-                =UpdateContext({milestoneedit:false})
-            Text: ="Back"
-            Visible: =milestoneedit
-            Width: =155
-            X: =838
-            Y: =524
-            ZIndex: =79
-
         Button21_1 As button:
             Height: =46
             OnSelect: |-
@@ -4413,5 +4411,16 @@
             Width: =155
             X: =1033
             Y: =519
+            ZIndex: =79
+
+        Button20_1 As button:
+            Height: =46
+            OnSelect: |-
+                =UpdateContext({milestoneedit:false})
+            Text: ="Back"
+            Visible: =milestoneedit
+            Width: =155
+            X: =838
+            Y: =524
             ZIndex: =80
 
