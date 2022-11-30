@@ -1303,7 +1303,7 @@
             "'Project Division_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_projectdivision"
-                Default: =ThisItem.'Project Division'
+                Default: =
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Detailss'],DataSourceInfo.DisplayName,"cre9a_projectdivision")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -1327,7 +1327,6 @@
 
                 DataCardValue12 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Gallery6.Selected
                     DefaultSelectedItems: =[Parent.Default]
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
@@ -1396,7 +1395,6 @@
 
                 DataCardValue3 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Gallery6.Selected
                     DefaultSelectedItems: =[Parent.Default]
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode
