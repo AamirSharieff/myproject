@@ -14,10 +14,8 @@
         Fill: =RGBA(255, 255, 255, 1)
         Height: =592
         Items: |-
-            =SortByColumns(Filter('Project Detailss',
-                    (StartsWith ('Project Name',TextInput14_4.Text) || (StartsWith('Project Manager',TextInput14_4.Text)))
-                    && ( 'Project Manager' = User(). FullName )), "modifiedon")
-                    
+            =Filter('Project Detailss',
+                    (StartsWith ('Project Name',TextInput14_4.Text) || (StartsWith('Project Manager',TextInput14_4.Text))))
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =57
