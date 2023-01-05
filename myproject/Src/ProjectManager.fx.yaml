@@ -14,14 +14,15 @@
         Fill: =RGBA(255, 255, 255, 1)
         Height: =592
         Items: |-
-            =Filter('Project Detailss',
-                    (StartsWith ('Project Name',TextInput14_4.Text) || (StartsWith('Project Manager',TextInput14_4.Text))))
+            =SortByColumns(Filter('Project Detailss',
+                    (StartsWith ('Project Name',TextInput14_4.Text) || (StartsWith('Project Manager',TextInput14_4.Text)))
+                    && ('Project Manager' = User().FullName)),"modifiedon")
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =57
         Width: =1139
         X: =210
-        Y: =176
+        Y: =156
         ZIndex: =6
 
         Title6_1 As label:
@@ -198,7 +199,7 @@
         Color: =RGBA(4, 127, 194, 1)
         Fill: =RGBA(255, 255, 255, 1)
         OnSelect: |-
-            =If(DataCardValue20.Selected.Value ="Mile Stone",UpdateContext({billingpm:true}),UpdateContext({billingpm:false}));
+            =If(DataCardValue20.Selected.Value ="Milestone",UpdateContext({billingpm:true}),UpdateContext({billingpm:false}));
             If(DataCardValue20.Selected.Value ="Monthly",UpdateContext({billing1pm:true}),UpdateContext({billing1pm:false}))
         Text: ="Billing"
         Visible: =popupvisible
@@ -221,22 +222,6 @@
             X: =245
             Y: =556
             ZIndex: =37
-
-        Button9 As button:
-            Height: =35
-            OnSelect: |+
-                =//Office365Outlook.SendEmail("gopika.sucharitha@datasemantics.co","Requset Email","Project Name :" & DataCardValue9.Text & "   Project Type :" & DataCardValue1.Text & "   Start Date :" & DateValue3.SelectedDate & "    End Date :" & DateValue4.SelectedDate & "Comments : "& TextInput2.Text);
-                
-                PMOapp.Run(DataCardValue9.Text , DataCardValue8.Selected.Value , DataCardValue33.Text ,DateValue3.SelectedDate,DateValue4.SelectedDate, TextInput2.Text,Gallery6_1.Selected.'Project Details',First(Office365Users.SearchUser({searchTerm:DataCardValue33.Text})).UserPrincipalName,DataCardValue16.Selected.Value);
-                UpdateContext({popupvisible1: false});UpdateContext({popupvisible: false});
-                
-                
-            Text: ="OK"
-            Visible: =popupvisible1
-            Width: =99
-            X: =667
-            Y: =661
-            ZIndex: =38
 
         Label13 As label:
             Color: =RGBA(0, 121, 187, 1)
@@ -306,11 +291,11 @@
             ZIndex: =31
 
         Button1 As button:
-            Height: =99
+            Height: =35
             OnSelect: |-
                 =SubmitForm(Form2);
                 
-                Patch('Project Detailss',LookUp('Project Detailss',ID=Gallery6_1.Selected.ID),{'Project Manager':ComboBox1.Selected.DisplayName});
+                Patch('Project Detailss',LookUp('Project Detailss',ID=Gallery6_1.Selected.ID));
                 
                 
                 Office365Outlook.SendEmail(First(
@@ -329,9 +314,9 @@
             Size: =13
             Text: ="Update"
             Visible: =popupvisible
-            Width: =110
+            Width: =115
             X: =1097
-            Y: =597
+            Y: =661
             ZIndex: =32
 
         ComboBox1 As combobox:
@@ -981,7 +966,7 @@
                     DisplayFields: =["Value"]
                     DisplayMode: =Parent.DisplayMode.Edit
                     IsSearchable: =false
-                    Items: =["","Monthly","Milestone"]
+                    Items: =["Monthly","Milestone"]
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
                     SearchItems: =[]
@@ -1547,7 +1532,7 @@
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =310
+                    Width: =365
                     X: =30
                     Y: =DataCardKey48.Y + DataCardKey48.Height + 5
                     ZIndex: =2
@@ -1666,7 +1651,7 @@
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =365
                     X: =30
                     Y: =DataCardKey29_2.Y + DataCardKey29_2.Height + 5
                     ZIndex: =2
@@ -1733,7 +1718,7 @@
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =315
+                    Width: =365
                     X: =30
                     Y: =DataCardKey47.Y + DataCardKey47.Height + 5
                     ZIndex: =2
@@ -1800,7 +1785,7 @@
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =307
+                    Width: =365
                     X: =30
                     Y: =DataCardKey31_2.Y + DataCardKey31_2.Height + 5
                     ZIndex: =2
@@ -1865,7 +1850,7 @@
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =310
+                    Width: =365
                     X: =30
                     Y: =DataCardKey32_2.Y + DataCardKey32_2.Height + 5
                     ZIndex: =2
@@ -1975,13 +1960,12 @@
                     DefaultDate: =Parent.Default
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
-                    Height: =36
                     IsEditable: =true
                     PaddingBottom: =0
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =310
+                    Width: =365
                     X: =30
                     Y: =DataCardKey33_2.Y + DataCardKey33_2.Height + 5
                     ZIndex: =2
@@ -2096,7 +2080,7 @@
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =310
+                    Width: =365
                     X: =30
                     Y: =DataCardKey35_2.Y + DataCardKey35_2.Height + 5
                     ZIndex: =2
@@ -2207,13 +2191,12 @@
                     DefaultDate: =Parent.Default
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
-                    Height: =50
                     IsEditable: =true
                     PaddingBottom: =0
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =310
+                    Width: =365
                     X: =30
                     Y: =DataCardKey34_2.Y + DataCardKey34_2.Height + 5
                     ZIndex: =2
@@ -2674,6 +2657,7 @@
                 DataCardKey28_2 As label:
                     AutoHeight: =true
                     Height: =34
+                    Size: =15
                     Text: =Parent.DisplayName
                     Width: =(Parent.Width - 60) * 0.4
                     Wrap: =false
@@ -2688,6 +2672,7 @@
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    Size: =15
                     Text: =Gallery6_1.Selected.ID
                     Width: =(Parent.Width - 60) * 0.6
                     X: =DataCardKey28_2.X + DataCardKey28_2.Width
@@ -2891,7 +2876,7 @@
         ZIndex: =65
 
     Button19_11 As button:
-        Height: =43
+        Height: =45
         OnSelect: |-
             =UpdateContext({billingpm:false})
         Text: ="Back"
@@ -3024,8 +3009,8 @@
             TemplateSize: =54
             Visible: =billingpm
             Width: =1043
-            X: =193
-            Y: =228
+            X: =195
+            Y: =194
             ZIndex: =56
 
             Title4_3 As label:
@@ -3643,7 +3628,7 @@
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =303
+                    Width: =300
                     X: =30
                     Y: =DataCardKey50_1.Y + DataCardKey50_1.Height + 5
                     ZIndex: =2
@@ -3759,7 +3744,7 @@
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =301
                     X: =30
                     Y: =DataCardKey51_1.Y + DataCardKey51_1.Height + 5
                     ZIndex: =2
@@ -3826,7 +3811,7 @@
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =301
                     X: =30
                     Y: =DataCardKey52_1.Y + DataCardKey52_1.Height + 5
                     ZIndex: =2
@@ -3886,13 +3871,12 @@
                     DefaultDate: =Gallery2_3.Selected.'Milestone Planned Start Date'
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
-                    Height: =50
                     IsEditable: =true
                     PaddingBottom: =0
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =305
+                    Width: =300
                     X: =30
                     Y: =DataCardKey53_1.Y + DataCardKey53_1.Height + 5
                     ZIndex: =2
@@ -4000,13 +3984,12 @@
                     DefaultDate: =Gallery2_3.Selected.'Milestone Planned End Date'
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
-                    Height: =50
                     IsEditable: =true
                     PaddingBottom: =0
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =301
+                    Width: =300
                     X: =30
                     Y: =DataCardKey54_1.Y + DataCardKey54_1.Height + 5
                     ZIndex: =2
@@ -4121,7 +4104,7 @@
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =299
                     X: =30
                     Y: =DataCardKey56_1.Y + DataCardKey56_1.Height + 5
                     ZIndex: =2
@@ -4186,7 +4169,7 @@
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =304
+                    Width: =300
                     X: =30
                     Y: =DataCardKey57_1.Y + DataCardKey57_1.Height + 5
                     ZIndex: =2
@@ -4294,13 +4277,12 @@
                     DefaultDate: =Gallery2_3.Selected.'Milestone Actual End Date'
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
-                    Height: =50
                     IsEditable: =true
                     PaddingBottom: =0
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =306
+                    Width: =300
                     X: =30
                     Y: =DataCardKey55_1.Y + DataCardKey55_1.Height + 5
                     ZIndex: =2
@@ -4387,7 +4369,7 @@
             Visible: =milestoneedit
             Width: =155
             X: =1033
-            Y: =519
+            Y: =524
             ZIndex: =80
 
         Button20_1 As button:

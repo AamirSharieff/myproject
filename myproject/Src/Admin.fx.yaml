@@ -1221,7 +1221,7 @@
             Visible: =popupvisible
             Width: =77
             X: =1132
-            Y: =587
+            Y: =595
             ZIndex: =36
 
         Form3 As form:
@@ -1342,9 +1342,9 @@
                     SearchItems: =[]
                     SelectMultiple: =false
                     Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                    Width: =296
+                    X: =34
+                    Y: =50
                     ZIndex: =2
 
                 ErrorMessage5 As label:
@@ -1420,7 +1420,7 @@
                     SearchItems: =[]
                     SelectMultiple: =false
                     Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =297
                     X: =11
                     Y: =46
                     ZIndex: =2
@@ -1565,7 +1565,7 @@
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =278
+                    Width: =279
                     X: =30
                     Y: =DataCardKey9.Y + DataCardKey9.Height + 5
                     ZIndex: =2
@@ -1680,7 +1680,7 @@
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =278
+                    Width: =279
                     X: =30
                     Y: =DataCardKey3.Y + DataCardKey3.Height + 5
                     ZIndex: =2
@@ -4485,7 +4485,7 @@
                 Height: =50
                 Required: =false
                 Update: =DateValue14.SelectedDate + Time(Value(HourValue14.Selected.Value), Value(MinuteValue14.Selected.Value), 0)
-                Width: =300
+                Width: =767
                 X: =0
                 Y: =0
                 ZIndex: =1
@@ -4510,8 +4510,8 @@
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =246
-                    X: =54
+                    Width: =390
+                    X: =30
                     Y: =DataCardKey58.Y + DataCardKey58.Height + 5
                     ZIndex: =2
 
@@ -4526,6 +4526,7 @@
                     PaddingRight: =5
                     PaddingTop: =5
                     Tooltip: =Parent.DisplayName
+                    Visible: =false
                     Width: =DateValue14.Width / 2 - 10
                     X: =DateValue14.X + DateValue14.Width + 10
                     Y: =DateValue14.Y
@@ -4541,6 +4542,7 @@
                     PaddingTop: =0
                     Text: |-
                         =":"
+                    Visible: =false
                     Width: =10
                     Wrap: =false
                     X: =HourValue14.X + HourValue14.Width
@@ -4558,6 +4560,7 @@
                     PaddingRight: =5
                     PaddingTop: =5
                     Tooltip: =Parent.DisplayName
+                    Visible: =false
                     Width: =HourValue14.Width
                     X: =HourValue14.X + HourValue14.Width + Separator16.Width
                     Y: =HourValue14.Y
