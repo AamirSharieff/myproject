@@ -306,7 +306,7 @@
             ZIndex: =31
 
         Button1 As button:
-            Height: =35
+            Height: =99
             OnSelect: |-
                 =SubmitForm(Form2);
                 
@@ -316,7 +316,11 @@
                 Office365Outlook.SendEmail(First(
                     Office365Users.SearchUser({searchTerm:ComboBox1.Selected.DisplayName})).UserPrincipalName,
                     "New Project Added",
-                    "Project Name :" & DataCardValue9.Text & "   Project Division :" & DataCardValue16.Selected.Value &"   Project Type :" & DataCardValue8.Selected.Value & "   Start Date :" & DateValue3.SelectedDate & "    End Date :" & DateValue4.SelectedDate
+                    "Project Name :" & DataCardValue9.Text &
+                    "Project Division :" & DataCardValue16.Selected.Value &
+                    "Project Type :" & DataCardValue8.Selected.Value & 
+                    "Start Date :" & DateValue3.SelectedDate & 
+                    "End Date :" & DateValue4.SelectedDate
                 );
                 SubmitForm(Form5_2);
                 SubmitForm(Form6_2);
@@ -327,7 +331,7 @@
             Visible: =popupvisible
             Width: =110
             X: =1097
-            Y: =661
+            Y: =597
             ZIndex: =32
 
         ComboBox1 As combobox:
