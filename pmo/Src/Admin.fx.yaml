@@ -928,7 +928,7 @@
             Visible: =billing
             Width: =1111
             X: =165
-            Y: =82
+            Y: =102
             ZIndex: =44
 
         "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
@@ -944,7 +944,7 @@
             Visible: =billing
             Width: =1057
             X: =187
-            Y: =261
+            Y: =281
             ZIndex: =45
 
             Title4 As label:
@@ -1060,7 +1060,7 @@
             Visible: =billing
             Width: =119
             X: =1128
-            Y: =574
+            Y: =594
             ZIndex: =53
 
         FormViewer1 As formViewer:
@@ -1071,7 +1071,7 @@
             Visible: =billing
             Width: =642
             X: =198
-            Y: =146
+            Y: =166
             ZIndex: =54
 
             "'Project Name_DataCard4' As typedDataCard.textualViewCard":
@@ -1168,7 +1168,7 @@
             Visible: =popupvisible
             Width: =1113
             X: =165
-            Y: =88
+            Y: =96
             ZIndex: =34
 
         Button4 As button:
@@ -1181,7 +1181,7 @@
             Visible: =popupvisible
             Width: =77
             X: =1008
-            Y: =587
+            Y: =595
             ZIndex: =35
 
         Button4_1 As button:
@@ -1421,8 +1421,8 @@
                     SelectMultiple: =false
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                    X: =11
+                    Y: =46
                     ZIndex: =2
 
                 ErrorMessage2 As label:
@@ -2159,7 +2159,7 @@
             Visible: =popupvisible
             Width: =288
             X: =520
-            Y: =104
+            Y: =112
             ZIndex: =59
 
         Button5_1 As button:
@@ -2177,7 +2177,7 @@
             Visible: =popupvisible
             Width: =288
             X: =205
-            Y: =104
+            Y: =112
             ZIndex: =60
 
     "'ADD Milestone' As group":
@@ -3175,7 +3175,7 @@
         Visible: =billing
         Width: =151
         X: =482
-        Y: =219
+        Y: =211
         ZIndex: =72
 
     Label25_21 As label:
@@ -4460,8 +4460,8 @@
             Height: =581
             Visible: =monthlyupdate
             Width: =1124
-            X: =165
-            Y: =80
+            X: =192
+            Y: =69
             ZIndex: =82
 
         Form7 As form:

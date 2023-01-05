@@ -102,7 +102,7 @@
             Align: =Align.Center
             Color: =RGBA(225,225,225,1)
             Fill: |
-                =If(ThisItem.'Project Status' ="Pending",Red, If(ThisItem.'Project Status'="Completed",Green,AntiqueWhite))
+                =If(ThisItem.'Project Status' ="On-Hold",Red,If(ThisItem.'Project Status' ="Pending",Orange, If(ThisItem.'Project Status'="Completed",Green,AntiqueWhite)))
             FontWeight: =FontWeight.Semibold
             Height: =28
             OnSelect: =Select(Parent)
@@ -115,7 +115,7 @@
 
         Dropdown1 As dropdown:
             Height: =36
-            Items: =["Completed","Pending"]
+            Items: =["Completed","Pending","On-Hold"]
             OnChange: |-
                 =//Patch('Project Detailss',
                 //LookUp('Project Detailss',ID = ThisItem.ID),
