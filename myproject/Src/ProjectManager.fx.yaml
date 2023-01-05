@@ -175,26 +175,6 @@
         Y: =140
         ZIndex: =9
 
-    Rectangle8_1 As rectangle:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =68
-        Width: =1138
-        X: =210
-        Y: =61
-        ZIndex: =10
-
-    Label30_8 As label:
-        Color: =RGBA(0, 130, 204, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =21
-        Size: =20
-        Text: =" Projects"
-        Width: =138
-        X: =225
-        Y: =88
-        ZIndex: =11
-
     Label15 As label:
         Height: =38
         Text: |-
@@ -4422,4 +4402,38 @@
             X: =838
             Y: =524
             ZIndex: =80
+
+    Rectangle8_1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =70
+        Width: =1139
+        X: =210
+        Y: =58
+        ZIndex: =82
+
+    Label30_8 As label:
+        Align: =Align.Center
+        Color: =RGBA(0, 130, 204, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =21
+        Size: =18
+        Text: ="Recent Projects"
+        Width: =199
+        X: =225
+        Y: =86
+        ZIndex: =83
+
+    Button2_2 As button:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =32
+        OnSelect: |
+            =Navigate('Add projects admin',ScreenTransition.Fade);
+            ResetForm(Form1)
+        Size: =13
+        Text: ="Create New Project"
+        Width: =183
+        X: =1135
+        Y: =80
+        ZIndex: =84
 
