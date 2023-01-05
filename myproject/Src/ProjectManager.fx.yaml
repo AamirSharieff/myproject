@@ -22,7 +22,7 @@
         TemplateSize: =57
         Width: =1139
         X: =210
-        Y: =156
+        Y: =176
         ZIndex: =6
 
         Title6_1 As label:
@@ -103,6 +103,7 @@
             OnSelect: |+
                 =Select(Parent);
                 EditForm(Form2);
+                Reset(ComboBox1);
                 UpdateContext({popupvisible:true});
                 
             Width: =24
