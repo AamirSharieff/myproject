@@ -3547,7 +3547,10 @@
         Button22_1 As button:
             Height: =46
             OnSelect: |-
-                =SubmitForm(Form7_1);
+                =//SubmitForm(Form7_1);
+                //UpdateContext({monthlyedit:false})
+                
+                SubmitForm(Form7_1);
                 UpdateContext({monthlyedit:false})
             Text: ="Update"
             Visible: =monthlyedit
