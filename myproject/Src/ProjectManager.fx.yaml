@@ -2575,7 +2575,8 @@
                 Height: =33
                 Icon: =Icon.ChevronRight
                 OnSelect: |-
-                    =UpdateContext({monthlyedit:true})
+                    =UpdateContext({monthlyedit:true});
+                    NewForm(Form7)
                 Width: =33
                 X: =1012
                 Y: =8
