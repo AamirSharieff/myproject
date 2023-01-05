@@ -1,0 +1,53 @@
+{
+  "745ec69f-0b33-4b0a-9657-91f04bf38e96": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1593/1.0.1593.2980/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "745ec69f-0b33-4b0a-9657-91f04bf38e96"
+  },
+  "84820fbb-3827-4b05-a1f7-5c330d9fcf5d": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1596/1.0.1596.2995/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "84820fbb-3827-4b05-a1f7-5c330d9fcf5d"
+  },
+  "bc14a8f7-cb05-4414-9528-8fc8168cbc6c": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Power BI",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1596/1.0.1596.2995/powerbi/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_powerbi"
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerBI"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "bc14a8f7-cb05-4414-9528-8fc8168cbc6c"
+  }
+}

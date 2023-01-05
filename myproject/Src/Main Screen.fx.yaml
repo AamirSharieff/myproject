@@ -1,0 +1,145 @@
+"'Main Screen' As screen":
+    Fill: =
+
+    Rectangle9 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =695
+        Width: =1366
+        Y: =82
+        ZIndex: =1
+
+    Image1 As image:
+        Height: =503
+        Image: ='Mask Group 6'
+        Width: =175
+        X: =687
+        Y: =143
+        ZIndex: =2
+
+    Image4 As image:
+        Height: =503
+        Image: ='Mask Group 7'
+        Width: =175
+        X: =879
+        Y: =198
+        ZIndex: =3
+
+    Image5 As image:
+        Height: =503
+        Image: ='Mask Group 8'
+        Width: =175
+        X: =1071
+        Y: =143
+        ZIndex: =4
+
+    Image9 As image:
+        Height: =265
+        Image: ='blob@2x'
+        Width: =270
+        Y: =515
+        ZIndex: =5
+
+    Rectangle3 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =80
+        Width: =1366
+        ZIndex: =6
+
+    Image10 As image:
+        Height: =80
+        Image: ='Screenshot (51)'
+        Width: =170
+        ZIndex: =7
+
+    Label6 As label:
+        Height: =25
+        Text: ="Dashboard"
+        Visible: =false
+        Width: =108
+        X: =778
+        Y: =27
+        ZIndex: =9
+
+    Label7 As label:
+        Height: =25
+        OnSelect: =
+        Text: ="Project master"
+        Visible: =false
+        Width: =139
+        X: =932
+        Y: =27
+        ZIndex: =10
+
+    Label9 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =267
+        Size: =30
+        Text: |-
+            ="Manage your
+            and have greater control over your work by 
+            employing the"
+        Width: =581
+        X: =60
+        Y: =222
+        ZIndex: =12
+
+    Label9_1 As label:
+        Color: =RGBA(50, 86, 160, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =55
+        Size: =30
+        Text: ="project"
+        Width: =167
+        X: =328
+        Y: =255
+        ZIndex: =13
+
+    Label9_2 As label:
+        Color: =RGBA(50, 86, 160, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =55
+        Size: =30
+        Text: ="PMO tool"
+        Width: =197
+        X: =345
+        Y: =401
+        ZIndex: =14
+
+    Label8_1 As label:
+        Height: =25
+        OnSelect: |-
+            =UpdateContext({popupvisible:true});
+        Text: ="Timeline"
+        Visible: =false
+        Width: =109
+        X: =963
+        Y: =27
+        ZIndex: =19
+
+    Label8_2 As label:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =25
+        OnSelect: |-
+            =UpdateContext({popupvisible:true})
+        Text: =""
+        Width: =79
+        X: =1246
+        Y: =27
+        ZIndex: =23
+
+    Button10_2 As button:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =32
+        OnSelect: |-
+            =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin)) || If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager)) 
+            
+            //UpdateContext({popupvisible:true})
+        Size: =13
+        Text: ="Sign in"
+        Width: =120
+        X: =1223
+        Y: =19
+        ZIndex: =26
+

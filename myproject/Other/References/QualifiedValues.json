@@ -1,0 +1,102 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cre9a_admincredentials_forms",
+      "Namespace": "Admin Credentials (Forms)",
+      "Values": {
+        "Information": "864ccbb0-9a87-4357-a842-9a4b6649a40d"
+      }
+    },
+    {
+      "Kind": "default.cds_businessunit_forms",
+      "Namespace": "Business Units (Forms)",
+      "Values": {
+        "Business Unit Hierarchy Form": "405b16b6-126a-4117-a4e0-33f0caf0c7a2",
+        "Information": "ca8dfced-338c-43b2-b212-83745e257c28"
+      }
+    },
+    {
+      "Kind": "default.cds_cre9a_loginuser_forms",
+      "Namespace": "Login users (Forms)",
+      "Values": {
+        "Information": "dcfb3d86-85e2-423a-abbc-fd7c5de279b6"
+      }
+    },
+    {
+      "Kind": "default.cds_cre9a_newuser_forms",
+      "Namespace": "New users (Forms)",
+      "Values": {
+        "Information": "742e3255-664f-449a-8cdb-75e6f3ccc557"
+      }
+    },
+    {
+      "Kind": "default.cds_cre9a_plannedvsachieved_forms",
+      "Namespace": "Planned vs Achieveds (Forms)",
+      "Values": {
+        "Information": "00f81e21-8de7-410c-b26a-e2311734718e"
+      }
+    },
+    {
+      "Kind": "default.cds_cre9a_pmcredentials_forms",
+      "Namespace": "PM Credentials (Forms)",
+      "Values": {
+        "Information": "5d084fa3-cd89-4065-8da8-cb5394189142"
+      }
+    },
+    {
+      "Kind": "default.cds_cre9a_projectdetails_forms",
+      "Namespace": "Project Detailss (Forms)",
+      "Values": {
+        "Information": "be435f3c-dedf-4250-a002-d79b89c8aab1"
+      }
+    },
+    {
+      "Kind": "default.cds_cre9a_pmoapplication_forms",
+      "Namespace": "project masters (Forms)",
+      "Values": {
+        "Information": "5f2ac86b-49cc-4a1a-8f6c-de2fb1dcdf96"
+      }
+    },
+    {
+      "Kind": "default.cds_cre9a_projectsummary_forms",
+      "Namespace": "Project Summarys (Forms)",
+      "Values": {
+        "Information": "e6453501-42b9-4601-86a5-f2f5d79e1c01"
+      }
+    },
+    {
+      "Kind": "default.cds_team_forms",
+      "Namespace": "Teams (Forms)",
+      "Values": {
+        "Information": "f5cfab6a-d4c2-4519-b68f-6e7485432e29",
+        "Team": "7ba7fac1-1418-4335-935f-f7f8dfd73fcc",
+        "Team form – Business": "4aabf594-b30a-490d-bf97-89c67c6777fe"
+      }
+    },
+    {
+      "Kind": "default.cds_systemuser_forms",
+      "Namespace": "Users (Forms)",
+      "Values": {
+        "Application User": "d26924ef-4d80-46f7-ab1d-e6ae80a54ce8",
+        "Information": "094fb08a-77bb-49e0-b7ea-8dbddfd01294",
+        "User": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
+        "User form – Business": "c2413504-7eb2-4c59-a087-95d819866114",
+        "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452"
+      }
+    },
+    {
+      "Kind": "default.cds_cre9a_projectupdating_forms",
+      "Namespace": "project updatings (Forms)",
+      "Values": {
+        "Information": "fe331d8b-60b2-48ed-8818-8048a19ec85c"
+      }
+    },
+    {
+      "Kind": "default.cds_cre9a_projectupdates_forms",
+      "Namespace": "Project Updates (Forms)",
+      "Values": {
+        "Information": "15890286-86b7-4c83-b1b0-c17209663bb3"
+      }
+    }
+  ]
+}

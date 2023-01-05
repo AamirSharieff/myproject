@@ -1,0 +1,485 @@
+"Timeline As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+    Fill: =RGBA(230, 230, 230, 1)
+    OnVisible: |-
+        =UpdateContext({status:false})
+
+    "Gallery6_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =532
+        Items: =SortByColumns(Filter(pmoapp,(StartsWith('Project Name',TextInput14_2.Text)||StartsWith('Project Manager',TextInput14_2.Text))),"cre9a_id",Descending)
+        Layout: =Layout.Vertical
+        OnSelect: =
+        TemplatePadding: =0
+        TemplateSize: =45
+        Width: =1139
+        X: =210
+        Y: =236
+        ZIndex: =3
+
+        Title6_2 As label:
+            FontWeight: =FontWeight.Normal
+            Height: =21
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.'Project Name'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =168
+            X: =12
+            Y: =12
+            ZIndex: =1
+
+        Subtitle6_2 As label:
+            Height: =26
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.'Project Division'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =121
+            X: =206
+            Y: =9
+            ZIndex: =2
+
+        Body2_2 As label:
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.'Project Type'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =135
+            X: =347
+            Y: =10
+            ZIndex: =3
+
+        Separator6_2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Label4_2 As label:
+            Height: =44
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Project Manager'
+            Width: =218
+            X: =506
+            ZIndex: =6
+
+        Label14_2 As label:
+            Height: =28
+            OnSelect: =Select(Parent)
+            Text: =
+            Width: =117
+            X: =588
+            Y: =7
+            ZIndex: =7
+
+        Icon3_2 As icon.Edit:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =28
+            Icon: =Icon.Edit
+            OnSelect: |
+                =
+                UpdateContext({status:true})
+            Width: =30
+            X: =1055
+            Y: =5
+            ZIndex: =8
+
+        Label14_3 As label:
+            Align: =Align.Center
+            Color: =RGBA(225,225,225,1)
+            Fill: |
+                =If(ThisItem.'Project Status' ="On-Hold",Red,If(ThisItem.'Project Status' ="Pending",Orange, If(ThisItem.'Project Status'="Completed",Green,AntiqueWhite)))
+            FontWeight: =FontWeight.Semibold
+            Height: =28
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Project Status'
+            Visible: =If(IsBlank(ThisItem.'Project Status'),false,true)
+            Width: =117
+            X: =724
+            Y: =7
+            ZIndex: =10
+
+        Dropdown1 As dropdown:
+            Height: =36
+            Items: =["Completed","Pending","On-Hold"]
+            OnChange: |-
+                =//Patch('Project Detailss',
+                //LookUp('Project Detailss',ID = ThisItem.ID),
+                //{'Project Status':If(Dropdown1.SelectedText.Value="Pending","Pending",If(Dropdown1.SelectedText.Value="Completed","Completed"))});
+                    
+                    
+                UpdateContext({status:false})
+            OnSelect: |-
+                =Patch('Project Detailss',
+                LookUp('Project Detailss','Project Name' = ThisItem.'Project Name'),
+                {'Project Status':Dropdown1.SelectedText.Value});
+                    
+                    
+                UpdateContext({status:false});
+                Refresh('Project Detailss')
+            Visible: =status && ThisItem.IsSelected
+            Width: =152
+            X: =700
+            Y: =8
+            ZIndex: =11
+
+        Label3 As label:
+            Align: =Left
+            Height: =44
+            OnSelect: =Select(Parent)
+            Text: =TextInput1.Text
+            Width: =173
+            X: =870
+            ZIndex: =13
+
+        TextInput1 As text:
+            Default: =ThisItem.'Project Comments'
+            Height: =33
+            OnChange: |-
+                =Patch('Project Detailss',
+                LookUp('Project Detailss',ID = ThisItem.ID),{'Project Comments':TextInput1.Text});
+                    UpdateContext({status:false})
+            OnSelect: =Select(Parent)
+            Visible: =status && ThisItem.IsSelected
+            Width: =148
+            X: =870
+            Y: =12
+            ZIndex: =14
+
+    Rectangle7_2 As rectangle:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =45
+        Width: =1139
+        X: =210
+        Y: =191
+        ZIndex: =8
+
+    Label30_19 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Size: =14
+        Text: ="Project Name"
+        Width: =138
+        X: =219
+        Y: =203
+        ZIndex: =9
+
+    Label30_18 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Size: =14
+        Text: ="Project Division"
+        Width: =159
+        X: =395
+        Y: =203
+        ZIndex: =10
+
+    Label30_16 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Size: =14
+        Text: ="Action"
+        Width: =83
+        X: =1238
+        Y: =203
+        ZIndex: =11
+
+    Label30_20 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Size: =14
+        Text: ="Project Manager"
+        Width: =163
+        X: =710
+        Y: =203
+        ZIndex: =13
+
+    Label30_21 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Size: =14
+        Text: ="Project Type"
+        Width: =120
+        X: =554
+        Y: =203
+        ZIndex: =14
+
+    Rectangle8_2 As rectangle:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =130
+        Width: =1139
+        X: =210
+        Y: =60
+        ZIndex: =15
+
+    Label30_15 As label:
+        Align: =Align.Center
+        Color: =RGBA(0, 130, 204, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =22
+        Size: =18
+        Text: ="Projects"
+        Width: =106
+        X: =225
+        Y: =88
+        ZIndex: =16
+
+    Label30_22 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Size: =14
+        Text: ="Status"
+        Width: =115
+        X: =909
+        Y: =203
+        ZIndex: =23
+
+    Label30_23 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =18
+        OnSelect: |-
+            =Reset(Gallery6_2);Refresh('Project Detailss');
+            UpdateContext({pmoapp:'Project Detailss'})
+        Text: ="All Project"
+        Width: =106
+        X: =225
+        Y: =153
+        ZIndex: =24
+
+    Label30_24 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =21
+        OnSelect: |-
+            =UpdateContext({pmoapp:Filter('Project Detailss','Project Status'="Pending")})
+        Text: =" Pending"
+        Width: =84
+        X: =360
+        Y: =151
+        ZIndex: =25
+
+    Label30_25 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =22
+        OnSelect: |-
+            =UpdateContext({pmoapp:Filter('Project Detailss','Project Status'="Completed")})
+        Size: =14
+        Text: ="Completed"
+        Width: =117
+        X: =497
+        Y: =149
+        ZIndex: =26
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =31
+
+        Rectangle1_3 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            Width: =198
+            ZIndex: =1
+
+        Rectangle2_10 As rectangle:
+            BorderThickness: =0.2
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =46
+            OnSelect: =Navigate(Dashboard)
+            Width: =198
+            Y: =50
+            ZIndex: =2
+
+        Rectangle2_8 As rectangle:
+            BorderThickness: =0.2
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =50
+            OnSelect: |
+                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin)) || If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager)) 
+            Width: =198
+            Y: =96
+            ZIndex: =18
+
+        Rectangle2_9 As rectangle:
+            BorderThickness: =0.2
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =50
+            Width: =198
+            Y: =146
+            ZIndex: =19
+
+        Label9_28 As label:
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =23
+            OnSelect: =Navigate(Dashboard)
+            Size: =10
+            Text: ="Dashboard"
+            Width: =80
+            X: =43
+            Y: =60
+            ZIndex: =20
+
+        Label9_29 As label:
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =23
+            OnSelect: |
+                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin)) || If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager)) 
+            Size: =10
+            Text: ="Project master"
+            Width: =118
+            X: =43
+            Y: =110
+            ZIndex: =21
+
+        Label9_30 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =23
+            Size: =10
+            Text: ="Timeline"
+            Width: =68
+            X: =43
+            Y: =157
+            ZIndex: =22
+
+        Image8_1 As image:
+            Height: =23
+            Image: ='Group 331_1'
+            OnSelect: =Navigate(Dashboard)
+            Width: =23
+            X: =11
+            Y: =60
+            ZIndex: =28
+
+        Image11_1 As image:
+            Height: =23
+            Image: ='Group 325_1'
+            OnSelect: |
+                =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin)) || If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager)) 
+            Width: =23
+            X: =11
+            Y: =109
+            ZIndex: =29
+
+        Image14_1 As image:
+            Height: =23
+            Image: ='Group 329_1'
+            Width: =23
+            X: =11
+            Y: =160
+            ZIndex: =30
+
+    Label30_26 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Size: =14
+        Text: ="Comment"
+        Width: =115
+        X: =1074
+        Y: =203
+        ZIndex: =32
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =32
+
+        Rectangle5_3 As rectangle:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =50
+            Width: =1366
+            X: =3
+            ZIndex: =4
+
+        Label3_7 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =20
+            Size: =8
+            Text: =User().FullName
+            Width: =161
+            X: =1138
+            Y: =4
+            ZIndex: =5
+
+        Image6_3 As image:
+            Height: =41
+            Image: ='Screenshot (51)'
+            ImagePosition: =ImagePosition.Stretch
+            Width: =195
+            X: =3
+            ZIndex: =7
+
+        TextInput14_2 As text:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Default: =""
+            Height: =35
+            HintText: ="Search here"
+            Width: =312
+            X: =826
+            Y: =6
+            ZIndex: =17
+
+        Image13 As image:
+            Height: =46
+            Image: =Office365Users.UserPhotoV2(User().Email)
+            ImagePosition: =ImagePosition.Stretch
+            Width: =50
+            X: =1315
+            ZIndex: =27
+
+        Circle1 As circle:
+            BorderThickness: =0.2
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =46
+            Width: =50
+            X: =1315
+            ZIndex: =31
+
+    Label11 As label:
+        Size: =8
+        Text: =""
+        X: =1216
+        Y: =10
+        ZIndex: =33
+
+    Button12_4 As button:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =32
+        OnSelect: =Navigate('Main Screen')
+        Size: =13
+        Text: ="Sign Out"
+        Width: =120
+        X: =40
+        Y: =726
+        ZIndex: =34
+

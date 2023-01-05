@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cre9a_loginusers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cre9a_loginuser",
+    "MaxGetRowsCount": 500,
+    "Name": "Login users",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cre9a_emailid": "Email ID",
+      "cre9a_login_as": "login_as",
+      "cre9a_loginuser_AsyncOperations": "System Jobs",
+      "cre9a_loginuser_BulkDeleteFailures": "Bulk Delete Failures",
+      "cre9a_loginuser_DuplicateBaseRecord": "Duplicate Records (cre9a_loginuser_DuplicateBaseRecord)",
+      "cre9a_loginuser_DuplicateMatchingRecord": "Duplicate Records (cre9a_loginuser_DuplicateMatchingRecord)",
+      "cre9a_loginuser_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cre9a_loginuser_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cre9a_loginuser_ProcessSession": "Process Sessions",
+      "cre9a_loginuser_SyncErrors": "Sync Errors",
+      "cre9a_loginuserid": "Login user",
+      "cre9a_name": "Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Login users",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Login users (Views)",
+    "Name": "_cre9a_loginuser_views",
+    "RelatedEntityName": "Login users",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "48a8930f-b90d-4f3b-8b18-dbb551d1e6d7": "Login user Lookup View",
+      "49f42d83-a662-499c-b9de-8028f29ea256": "Login user Associated View",
+      "a38b7200-5838-4f35-838b-7038ce3401be": "Inactive Login users",
+      "bece53e0-1b7a-471e-acbd-ea0c1bf28c28": "Login user Advanced Find View",
+      "fb9a84d4-3543-4c50-a337-555097ce5980": "Active Login users"
+    }
+  },
+  {
+    "DisplayName": "Status (Login users)",
+    "Name": "cre9a_loginuser_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Login users"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Login users",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Login users)",
+    "Name": "cre9a_loginuser_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Login users"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Login users",
+    "Type": "OptionSetInfo"
+  }
+]

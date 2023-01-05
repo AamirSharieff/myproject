@@ -1,0 +1,73 @@
+LeftNavigation As CanvasComponent:
+    Fill: =RGBA(230, 230, 230, 1)
+    Height: =Max(App.Height, App.MinScreenWidth)
+    MenuWidth: =If(varOpenMenu,Max(App.Width, App.MinScreenWidth)/5,70)
+    Width: =LeftNavigation.MenuWidth
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    IcoHamburger As icon.Hamburger:
+        Height: =70
+        Icon: =Icon.Hamburger
+        OnSelect: =Set(varOpenMenu,!varOpenMenu)
+        PaddingBottom: =15
+        PaddingLeft: =15
+        PaddingRight: =15
+        PaddingTop: =15
+        Width: =70
+        ZIndex: =1
+
+    galNAvigation As gallery.galleryVertical:
+        Height: =Parent.Height-IcoHamburger.Height
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplateSize: =80
+        Width: =Parent.Width
+        Y: =IcoHamburger.Y+IcoHamburger.Height
+        ZIndex: =2
+
+        rectSelected As rectangle:
+            Height: =80
+            OnSelect: =Select(Parent)
+            Width: =7
+            ZIndex: =1
+
+        IcoNav As icon.Add:
+            Height: =Parent.TemplateHeight
+            Icon: =Icon.Add
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =50
+            ZIndex: =2
+
+        lblTitle As label:
+            FontWeight: =FontWeight.Bold
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            PaddingLeft: =70
+            Text: =ThisItem.SampleHeading
+            Width: =Parent.Width
+            ZIndex: =3
+
+        Gallery3 As gallery.galleryVertical:
+            Height: =80
+            Items: =CustomGallerySample
+            Layout: =Layout.Vertical
+            TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+            Visible: =If(ThisItem.IsSelected,true,false)
+            Width: =Parent.Width
+            X: =20
+            ZIndex: =4
+
+            Label2 As label:
+                Height: =20
+                OnSelect: =Select(Parent)
+                PaddingLeft: =80
+                Text: ="Menu 1"
+                Width: =60
+                ZIndex: =1
+
