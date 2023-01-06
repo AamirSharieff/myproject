@@ -230,26 +230,6 @@
         Y: =82
         ZIndex: =11
 
-    Icon1 As icon.Bell:
-        Color: =RGBA(0, 0, 0, 1)
-        Height: =20
-        Icon: =Icon.Bell
-        OnSelect: =Set(Notification,true)
-        Width: =25
-        X: =1147
-        Y: =15
-        ZIndex: =29
-
-    Label19 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =20
-        OnSelect: =Set(Notification,true)
-        Text: =CountRows(Filter('Project Detailss',Request="Pending"))
-        Width: =28
-        X: =1160
-        Y: =10
-        ZIndex: =30
-
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         Fill: =RGBA(227, 234, 243, 1)
         Height: =708
@@ -3162,7 +3142,7 @@
         Visible: =billing
         Width: =119
         X: =978
-        Y: =574
+        Y: =594
         ZIndex: =69
 
     Label25_20 As label:
