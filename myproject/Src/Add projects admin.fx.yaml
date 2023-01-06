@@ -794,9 +794,8 @@
                  Start Date        :" &DateValue1.SelectedDate & "
                  End Date          :" & DateValue2.SelectedDate);
             
-            SubmitForm(Form6);
+            //SubmitForm(Form6);
             SubmitForm(Form1);
-            
             
             If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin))||
             If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager)) ;
@@ -830,148 +829,6 @@
         X: =244
         Y: =498
         ZIndex: =8
-
-    Form6 As form:
-        DataSource: ='Project Summarys'
-        Visible: =false
-        X: =248
-        Y: =109
-        ZIndex: =25
-
-        "'Project Name_DataCard5' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cre9a_projectname"
-            Default: =ThisItem.'Project Name'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_projectname")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_projectname")
-            Required: =false
-            Update: =DataCardValue30.Text
-            Width: =266
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey36 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue30 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =ThisItem.'Project Name'=DataCardValue2.Text
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey36.Y + DataCardKey36.Height + 5
-                ZIndex: =2
-
-            ErrorMessage26 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue30.Y + DataCardValue30.Height
-                ZIndex: =3
-
-            StarVisible28 As label:
-                Align: =Align.Center
-                Height: =DataCardKey36.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey36.Y
-                ZIndex: =4
-
-        ProjectsID_DataCard2 As typedDataCard.numberEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cre9a_projectsid"
-            Default: =ThisItem.ProjectsID
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_projectsid")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =Value(DataCardValue34.Text)
-            Width: =266
-            X: =1
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey40 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue34 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =ThisItem.ProjectsID= DataCardValue35.Text
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Format: =TextFormat.Number
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey40.Y + DataCardKey40.Height + 5
-                ZIndex: =2
-
-            ErrorMessage29 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue34.Y + DataCardValue34.Height
-                ZIndex: =3
-
-            StarVisible31 As label:
-                Align: =Align.Center
-                Height: =DataCardKey40.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey40.Y
-                ZIndex: =4
 
     Button12_3 As button:
         Fill: =RGBA(0, 130, 204, 1)
