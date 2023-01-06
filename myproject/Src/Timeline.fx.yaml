@@ -6,7 +6,9 @@
     "Gallery6_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
         Height: =532
-        Items: =SortByColumns(Filter(pmoapp,(StartsWith('Project Name',TextInput14_2.Text)||StartsWith('Project Manager',TextInput14_2.Text))),"cre9a_id",Descending)
+        Items: |-
+            =SortByColumns(Filter(pmoapp,(StartsWith('Project Name',TextInput14_2.Text)||StartsWith('Project Manager',TextInput14_2.Text))
+            && ('Project Manager' =User().FullName),"modifiedon" ),"cre9a_id",Descending)
         Layout: =Layout.Vertical
         OnSelect: =
         TemplatePadding: =0

@@ -1378,8 +1378,8 @@
                     Text: =Gallery6.Selected.'Project Division'
                     Visible: =popupvisible && lblpd
                     Width: =240
-                    X: =34
-                    Y: =50
+                    X: =49
+                    Y: =54
                     ZIndex: =5
 
             "'Project Type_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
@@ -1452,7 +1452,7 @@
 
                 Label17 As label:
                     Fill: =RGBA(255, 255, 255, 1)
-                    Height: =36
+                    Height: =24
                     Text: =Gallery6.Selected.'Project Type'
                     Visible: =popupvisible && lblpt
                     Width: =238

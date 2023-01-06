@@ -8,7 +8,7 @@
         Width: =1139
         X: =210
         Y: =131
-        ZIndex: =4
+        ZIndex: =3
 
     "Gallery6_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 1)
@@ -23,7 +23,7 @@
         Width: =1139
         X: =210
         Y: =176
-        ZIndex: =6
+        ZIndex: =5
 
         Title6_1 As label:
             FontWeight: =FontWeight.Normal
@@ -120,7 +120,7 @@
         Width: =138
         X: =225
         Y: =143
-        ZIndex: =7
+        ZIndex: =6
 
     Label30_11 As label:
         Align: =Align.Center
@@ -131,7 +131,7 @@
         Width: =149
         X: =416
         Y: =143
-        ZIndex: =8
+        ZIndex: =7
 
     Label30_9 As label:
         Align: =Align.Center
@@ -142,7 +142,7 @@
         Width: =149
         X: =1157
         Y: =143
-        ZIndex: =9
+        ZIndex: =8
 
     Label30_10 As label:
         Align: =Align.Center
@@ -153,7 +153,7 @@
         Width: =149
         X: =1008
         Y: =143
-        ZIndex: =10
+        ZIndex: =9
 
     Label30_13 As label:
         Align: =Align.Center
@@ -164,7 +164,7 @@
         Width: =195
         X: =772
         Y: =143
-        ZIndex: =11
+        ZIndex: =10
 
     Label30_14 As label:
         Align: =Align.Center
@@ -175,7 +175,7 @@
         Width: =149
         X: =565
         Y: =140
-        ZIndex: =12
+        ZIndex: =11
 
     Label15 As label:
         Height: =38
@@ -185,7 +185,7 @@
         Width: =356
         X: =704
         Y: =255
-        ZIndex: =41
+        ZIndex: =39
 
     Button7 As button:
         Color: =RGBA(4, 127, 194, 1)
@@ -194,7 +194,7 @@
         Visible: =popupvisible
         X: =208
         Y: =82
-        ZIndex: =42
+        ZIndex: =40
 
     Button7_1 As button:
         Color: =RGBA(4, 127, 194, 1)
@@ -206,7 +206,7 @@
         Visible: =popupvisible
         X: =393
         Y: =83
-        ZIndex: =43
+        ZIndex: =41
 
     Group4 As group:
         Height: =5
@@ -222,7 +222,7 @@
             Width: =527
             X: =245
             Y: =556
-            ZIndex: =37
+            ZIndex: =36
 
         Label13 As label:
             Color: =RGBA(0, 121, 187, 1)
@@ -231,7 +231,7 @@
             Width: =175
             X: =241
             Y: =573
-            ZIndex: =39
+            ZIndex: =37
 
         TextInput2 As text:
             Default: =""
@@ -244,13 +244,37 @@
             Width: =412
             X: =238
             Y: =613
-            ZIndex: =40
+            ZIndex: =38
 
     Rectangle2_2 As rectangle:
         Height: =56
         Visible: =billing1pm
         Width: =1058
         X: =187
+        Y: =140
+        ZIndex: =46
+
+    Label25_10 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =30
+        Text: ="Billing Date"
+        Visible: =billing1pm
+        Width: =131
+        X: =482
+        Y: =154
+        ZIndex: =47
+
+    Label25_12 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =56
+        Text: ="Monthly Planned Amount"
+        Visible: =billing1pm
+        Width: =151
+        X: =753
         Y: =140
         ZIndex: =48
 
@@ -272,14 +296,14 @@
             Width: =115
             X: =795
             Y: =661
-            ZIndex: =5
+            ZIndex: =4
 
         Rectangle10 As rectangle:
             Fill: =RGBA(0, 0, 0, 0.4)
             Height: =768
             Visible: =popupvisible
             Width: =1366
-            ZIndex: =30
+            ZIndex: =29
 
         Rectangle4 As rectangle:
             DisplayMode: =
@@ -289,7 +313,7 @@
             Width: =1096
             X: =169
             Y: =61
-            ZIndex: =31
+            ZIndex: =30
 
         Button1 As button:
             Height: =35
@@ -318,7 +342,7 @@
             Width: =115
             X: =1097
             Y: =661
-            ZIndex: =32
+            ZIndex: =31
 
         ComboBox1 As combobox:
             DisplayFields: =["DisplayName"]
@@ -335,7 +359,7 @@
             Width: =836
             X: =248
             Y: =344
-            ZIndex: =33
+            ZIndex: =32
 
         Label12 As label:
             Color: =RGBA(0, 130, 204, 1)
@@ -345,7 +369,7 @@
             Width: =152
             X: =244
             Y: =316
-            ZIndex: =34
+            ZIndex: =33
 
         Form2 As form:
             DataSource: ='Project Detailss'
@@ -356,7 +380,7 @@
             Width: =976
             X: =220
             Y: =121
-            ZIndex: =35
+            ZIndex: =34
 
             "'Project Name_DataCard2' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -1014,7 +1038,7 @@
             Width: =115
             X: =944
             Y: =661
-            ZIndex: =36
+            ZIndex: =35
 
         Form6_2 As form:
             DataSource: ='Project Summarys'
@@ -1026,7 +1050,7 @@
             Width: =1064
             X: =183
             Y: =140
-            ZIndex: =53
+            ZIndex: =51
 
             "'Billing Date_DataCard2_2' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -1496,7 +1520,7 @@
             Width: =1064
             X: =178
             Y: =123
-            ZIndex: =68
+            ZIndex: =66
 
             "'Billing Date_DataCard2' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -2416,30 +2440,6 @@
                     Y: =DataCardKey46.Y
                     ZIndex: =4
 
-    Label25_10 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =30
-        Text: ="Billing Date"
-        Visible: =billing1pm
-        Width: =131
-        X: =482
-        Y: =154
-        ZIndex: =49
-
-    Label25_12 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =56
-        Text: ="Monthly Planned Amount"
-        Visible: =billing1pm
-        Width: =151
-        X: =753
-        Y: =140
-        ZIndex: =50
-
     Label25_13 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -2452,7 +2452,19 @@
         Width: =159
         X: =1010
         Y: =145
-        ZIndex: =51
+        ZIndex: =49
+
+    Label25_14 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        Text: ="Project Name"
+        Visible: =billing1pm
+        Width: =161
+        X: =215
+        Y: =154
+        ZIndex: =50
 
     "'Billing Monthly_1' As group":
         Height: =5
@@ -2468,7 +2480,7 @@
             Width: =1072
             X: =169
             Y: =62
-            ZIndex: =44
+            ZIndex: =42
 
         "Gallery2_2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             BorderThickness: =2
@@ -2512,7 +2524,7 @@
             Width: =1054
             X: =189
             Y: =200
-            ZIndex: =45
+            ZIndex: =43
 
             Title4_2 As label:
                 Height: =42
@@ -2567,16 +2579,17 @@
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.'Achieved Billing'
                 Width: =199
-                X: =846
+                X: =855
                 Y: =5
                 ZIndex: =7
 
             Icon5 As icon.ChevronRight:
                 Height: =33
                 Icon: =Icon.ChevronRight
-                OnSelect: |-
-                    =UpdateContext({monthlyedit:true});
-                    NewForm(Form7)
+                OnSelect: |
+                    =NewForm(Form7_1);
+                    UpdateContext({monthlyedit:true});
+                Visible: =false
                 Width: =33
                 X: =1012
                 Y: =8
@@ -2591,7 +2604,7 @@
             Width: =115
             X: =1075
             Y: =524
-            ZIndex: =46
+            ZIndex: =44
 
         FormViewer1_2 As formViewer:
             DataSource: ='Project Detailss'
@@ -2602,7 +2615,7 @@
             Width: =620
             X: =237
             Y: =75
-            ZIndex: =47
+            ZIndex: =45
 
             "'Project Name_DataCard4_2' As typedDataCard.textualViewCard":
                 BorderStyle: =BorderStyle.Solid
@@ -2681,18 +2694,6 @@
                     Y: =10
                     ZIndex: =2
 
-    Label25_14 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =26
-        Text: ="Project Name"
-        Visible: =billing1pm
-        Width: =161
-        X: =215
-        Y: =154
-        ZIndex: =52
-
     Button19_8 As button:
         Height: =53
         OnSelect: |-
@@ -2703,7 +2704,7 @@
         Width: =142
         X: =1068
         Y: =517
-        ZIndex: =54
+        ZIndex: =52
 
     Rectangle2_3 As rectangle:
         Height: =67
@@ -2711,6 +2712,32 @@
         Width: =1043
         X: =197
         Y: =128
+        ZIndex: =55
+
+    Label25_15 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =66
+        Size: =11
+        Text: ="Milestone Name"
+        Visible: =billingpm
+        Width: =129
+        X: =193
+        Y: =129
+        ZIndex: =56
+
+    Label25_16 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =69
+        Size: =11
+        Text: ="Milestone Planned Amount"
+        Visible: =billingpm
+        Width: =148
+        X: =335
+        Y: =126
         ZIndex: =57
 
     Group2_2 As group:
@@ -2725,7 +2752,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =50
             Width: =1366
-            ZIndex: =13
+            ZIndex: =12
 
         Label3_10 As label:
             Align: =Align.Right
@@ -2736,7 +2763,7 @@
             Width: =161
             X: =1135
             Y: =4
-            ZIndex: =14
+            ZIndex: =13
 
         Label3_11 As label:
             Align: =Align.Center
@@ -2750,7 +2777,7 @@
             Width: =45
             X: =1244
             Y: =24
-            ZIndex: =15
+            ZIndex: =14
 
         TextInput14_4 As text:
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -2760,7 +2787,7 @@
             Width: =312
             X: =823
             Y: =6
-            ZIndex: =16
+            ZIndex: =15
 
         Image13_2 As image:
             Height: =46
@@ -2768,7 +2795,7 @@
             ImagePosition: =ImagePosition.Stretch
             Width: =50
             X: =1312
-            ZIndex: =17
+            ZIndex: =16
 
         Circle1_2 As circle:
             BorderThickness: =0.2
@@ -2776,7 +2803,7 @@
             Height: =46
             Width: =50
             X: =1312
-            ZIndex: =18
+            ZIndex: =17
 
         Image6_5 As image:
             Height: =41
@@ -2784,33 +2811,7 @@
             ImagePosition: =ImagePosition.Stretch
             Width: =195
             X: =3
-            ZIndex: =29
-
-    Label25_15 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =66
-        Size: =11
-        Text: ="Milestone Name"
-        Visible: =billingpm
-        Width: =129
-        X: =193
-        Y: =129
-        ZIndex: =58
-
-    Label25_16 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =69
-        Size: =11
-        Text: ="Milestone Planned Amount"
-        Visible: =billingpm
-        Width: =148
-        X: =335
-        Y: =126
-        ZIndex: =59
+            ZIndex: =28
 
     Label25_17 As label:
         Align: =Align.Center
@@ -2823,7 +2824,7 @@
         Width: =145
         X: =478
         Y: =141
-        ZIndex: =60
+        ZIndex: =58
 
     Label25_18 As label:
         Align: =Align.Center
@@ -2836,7 +2837,7 @@
         Width: =158
         X: =917
         Y: =131
-        ZIndex: =61
+        ZIndex: =59
 
     Label25_19 As label:
         Align: =Align.Center
@@ -2849,7 +2850,7 @@
         Width: =158
         X: =1072
         Y: =136
-        ZIndex: =62
+        ZIndex: =60
 
     Label25_23 As label:
         Align: =Align.Center
@@ -2862,7 +2863,7 @@
         Width: =145
         X: =778
         Y: =136
-        ZIndex: =64
+        ZIndex: =62
 
     Label25_22 As label:
         Align: =Align.Center
@@ -2875,7 +2876,7 @@
         Width: =145
         X: =627
         Y: =137
-        ZIndex: =65
+        ZIndex: =63
 
     Button19_11 As button:
         Height: =45
@@ -2886,6 +2887,17 @@
         Width: =117
         X: =980
         Y: =512
+        ZIndex: =65
+
+    Button19_12 As button:
+        Height: =41
+        OnSelect: |-
+            =UpdateContext({addpm:false})
+        Text: ="Back"
+        Visible: =addpm
+        Width: =142
+        X: =888
+        Y: =641
         ZIndex: =67
 
     Group1_2 As group:
@@ -2900,7 +2912,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =768
             Width: =198
-            ZIndex: =19
+            ZIndex: =18
 
         Rectangle2_14 As rectangle:
             BorderThickness: =0.2
@@ -2909,7 +2921,7 @@
             OnSelect: =Navigate(Dashboard)
             Width: =198
             Y: =50
-            ZIndex: =20
+            ZIndex: =19
 
         Rectangle2_15 As rectangle:
             BorderThickness: =0.2
@@ -2917,7 +2929,7 @@
             Height: =50
             Width: =198
             Y: =96
-            ZIndex: =21
+            ZIndex: =20
 
         Rectangle2_16 As rectangle:
             BorderThickness: =0.2
@@ -2926,7 +2938,7 @@
             OnSelect: =Navigate(Timeline)
             Width: =198
             Y: =146
-            ZIndex: =22
+            ZIndex: =21
 
         Label9_34 As label:
             Color: =RGBA(166, 166, 166, 1)
@@ -2937,7 +2949,7 @@
             Width: =80
             X: =43
             Y: =60
-            ZIndex: =23
+            ZIndex: =22
 
         Label9_35 As label:
             FontWeight: =FontWeight.Semibold
@@ -2947,7 +2959,7 @@
             Width: =118
             X: =43
             Y: =110
-            ZIndex: =24
+            ZIndex: =23
 
         Label9_36 As label:
             Color: =RGBA(166, 166, 166, 1)
@@ -2958,7 +2970,7 @@
             Width: =68
             X: =43
             Y: =160
-            ZIndex: =25
+            ZIndex: =24
 
         Image8_3 As image:
             Height: =23
@@ -2967,7 +2979,7 @@
             Width: =23
             X: =11
             Y: =60
-            ZIndex: =26
+            ZIndex: =25
 
         Image11_3 As image:
             Height: =23
@@ -2975,7 +2987,7 @@
             Width: =23
             X: =11
             Y: =109
-            ZIndex: =27
+            ZIndex: =26
 
         Image14_3 As image:
             Height: =23
@@ -2984,7 +2996,19 @@
             Width: =23
             X: =11
             Y: =160
-            ZIndex: =28
+            ZIndex: =27
+
+    Button19_13 As button:
+        Height: =41
+        OnSelect: |-
+            =SubmitForm(Form5_2);
+            UpdateContext({addpm:false})
+        Text: ="Save"
+        Visible: =addpm
+        Width: =142
+        X: =1054
+        Y: =641
+        ZIndex: =68
 
     "'Billing Milestone_1' As group":
         Height: =5
@@ -3000,7 +3024,7 @@
             Width: =1096
             X: =169
             Y: =62
-            ZIndex: =55
+            ZIndex: =53
 
         "Gallery2_3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             BorderThickness: =2
@@ -3013,7 +3037,7 @@
             Width: =1043
             X: =195
             Y: =194
-            ZIndex: =56
+            ZIndex: =54
 
             Title4_3 As label:
                 OnSelect: =Select(Parent)
@@ -3121,7 +3145,7 @@
             Width: =117
             X: =1110
             Y: =512
-            ZIndex: =63
+            ZIndex: =61
 
         FormViewer1_3 As formViewer:
             DataSource: ='Project Detailss'
@@ -3132,7 +3156,7 @@
             Width: =633
             X: =170
             Y: =81
-            ZIndex: =66
+            ZIndex: =64
 
             "'Project Name_DataCard4_3' As typedDataCard.textualViewCard":
                 BorderStyle: =BorderStyle.Solid
@@ -3207,29 +3231,6 @@
                     Y: =10
                     ZIndex: =2
 
-    Button19_12 As button:
-        Height: =41
-        OnSelect: |-
-            =UpdateContext({addpm:false})
-        Text: ="Back"
-        Visible: =addpm
-        Width: =142
-        X: =888
-        Y: =641
-        ZIndex: =69
-
-    Button19_13 As button:
-        Height: =41
-        OnSelect: |-
-            =SubmitForm(Form5_2);
-            UpdateContext({addpm:false})
-        Text: ="Save"
-        Visible: =addpm
-        Width: =142
-        X: =1054
-        Y: =641
-        ZIndex: =70
-
     Button2_1 As button:
         Fill: =RGBA(0, 130, 204, 1)
         Height: =32
@@ -3242,7 +3243,7 @@
         Width: =183
         X: =1135
         Y: =78
-        ZIndex: =71
+        ZIndex: =69
 
     Button19_9 As button:
         Height: =46
@@ -3253,7 +3254,7 @@
         Width: =115
         X: =933
         Y: =524
-        ZIndex: =72
+        ZIndex: =70
 
     Button19_7 As button:
         Height: =53
@@ -3264,7 +3265,7 @@
         Width: =142
         X: =917
         Y: =517
-        ZIndex: =73
+        ZIndex: =71
 
     Group5_1 As group:
         Height: =5
@@ -3280,7 +3281,7 @@
             Width: =1096
             X: =169
             Y: =60
-            ZIndex: =74
+            ZIndex: =72
 
         Form7_1 As form:
             DataSource: ='Project Summarys'
@@ -3292,7 +3293,7 @@
             Width: =748
             X: =304
             Y: =98
-            ZIndex: =75
+            ZIndex: =73
 
             "'Billing Date_DataCard4_1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -3547,17 +3548,14 @@
         Button22_1 As button:
             Height: =46
             OnSelect: |-
-                =//SubmitForm(Form7_1);
-                //UpdateContext({monthlyedit:false})
-                
-                SubmitForm(Form7_1);
-                UpdateContext({monthlyedit:false})
+                =SubmitForm(Form7_1);
+                UpdateContext( {monthlyedit:false})
             Text: ="Update"
             Visible: =monthlyedit
             Width: =156
             X: =839
             Y: =597
-            ZIndex: =76
+            ZIndex: =74
 
         Button23_1 As button:
             Height: =46
@@ -3568,7 +3566,18 @@
             Width: =156
             X: =663
             Y: =594
-            ZIndex: =77
+            ZIndex: =75
+
+    Button12_2 As button:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =32
+        OnSelect: =Navigate('Main Screen')
+        Size: =13
+        Text: ="Sign Out"
+        Width: =120
+        X: =40
+        Y: =726
+        ZIndex: =80
 
     Group3_1 As group:
         Height: =5
@@ -3584,7 +3593,7 @@
             Width: =1100
             X: =168
             Y: =62
-            ZIndex: =78
+            ZIndex: =76
 
         Form5_4 As form:
             DataSource: ='Project Summarys'
@@ -3595,7 +3604,7 @@
             Width: =1019
             X: =199
             Y: =104
-            ZIndex: =79
+            ZIndex: =77
 
             "'Billing Date_DataCard3_1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -4375,7 +4384,7 @@
             Width: =155
             X: =1033
             Y: =524
-            ZIndex: =80
+            ZIndex: =78
 
         Button20_1 As button:
             Height: =46
@@ -4386,18 +4395,7 @@
             Width: =155
             X: =838
             Y: =524
-            ZIndex: =81
-
-    Button12_2 As button:
-        Fill: =RGBA(0, 130, 204, 1)
-        Height: =32
-        OnSelect: =Navigate('Main Screen')
-        Size: =13
-        Text: ="Sign Out"
-        Width: =120
-        X: =40
-        Y: =726
-        ZIndex: =82
+            ZIndex: =79
 
     Group6 As group:
         Height: =5
