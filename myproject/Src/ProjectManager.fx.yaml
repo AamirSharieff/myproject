@@ -2594,6 +2594,7 @@
                 OnSelect: |
                     =//NewForm(Form7_1);
                     UpdateContext({monthlyedit:true});
+                Visible: =false
                 Width: =33
                 X: =1012
                 Y: =8
