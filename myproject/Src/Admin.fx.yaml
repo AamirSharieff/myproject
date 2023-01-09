@@ -196,40 +196,6 @@
         Y: =143
         ZIndex: =8
 
-    Rectangle8 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =70
-        Width: =1139
-        X: =210
-        Y: =60
-        ZIndex: =9
-
-    Label30_6 As label:
-        Align: =Align.Center
-        Color: =RGBA(0, 130, 204, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =21
-        Size: =18
-        Text: ="Recent Projects"
-        Width: =199
-        X: =225
-        Y: =88
-        ZIndex: =10
-
-    Button2 As button:
-        Fill: =RGBA(0, 130, 204, 1)
-        Height: =32
-        OnSelect: |
-            =Navigate('Add projects admin',ScreenTransition.Fade);
-            ResetForm(Form1)
-        Size: =13
-        Text: ="Create New Project"
-        Width: =183
-        X: =1135
-        Y: =82
-        ZIndex: =11
-
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         Fill: =RGBA(227, 234, 243, 1)
         Height: =708
@@ -4949,4 +4915,45 @@
         X: =40
         Y: =726
         ZIndex: =99
+
+    Group7 As group:
+        Height: =5
+        Width: =5
+        X: =80
+        Y: =80
+        ZIndex: =100
+
+        Rectangle8 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =70
+            Width: =1139
+            X: =210
+            Y: =60
+            ZIndex: =9
+
+        Label30_6 As label:
+            Align: =Align.Center
+            Color: =RGBA(0, 130, 204, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =21
+            Size: =18
+            Text: ="Recent Projects"
+            Width: =199
+            X: =225
+            Y: =88
+            ZIndex: =10
+
+        Button2 As button:
+            Fill: =RGBA(0, 130, 204, 1)
+            Height: =32
+            OnSelect: |
+                =Navigate('Add projects admin',ScreenTransition.Fade);
+                ResetForm(Form1)
+            Size: =13
+            Text: ="Create New Project"
+            Width: =183
+            X: =1135
+            Y: =82
+            ZIndex: =11
 

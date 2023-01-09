@@ -2,6 +2,20 @@
     Fill: =RGBA(230, 230, 230, 1)
     OnVisible: =Reset(Gallery2_2);
 
+    Button2_1 As button:
+        Fill: =RGBA(0, 130, 204, 1)
+        Height: =32
+        OnSelect: |
+            =Navigate('Add projects admin',ScreenTransition.Fade);
+            ResetForm(Form1)
+        Size: =13
+        Text: ="Create  New  Project"
+        Visible: =popupvisible=false
+        Width: =183
+        X: =1135
+        Y: =78
+        ZIndex: =3
+
     Rectangle7_1 As rectangle:
         Fill: =RGBA(0, 130, 204, 1)
         Height: =45
@@ -3565,18 +3579,6 @@
         Y: =726
         ZIndex: =80
 
-    Label30_17 As label:
-        Align: =Align.Center
-        Color: =RGBA(0, 130, 204, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =26
-        Size: =18
-        Text: ="Projects"
-        Width: =151
-        X: =391
-        Y: =90
-        ZIndex: =81
-
     Group3_1 As group:
         Height: =5
         Width: =5
@@ -4395,45 +4397,44 @@
             Y: =524
             ZIndex: =79
 
-    Group6 As group:
+    Group7_1 As group:
         Height: =5
         Width: =5
-        X: =80
-        Y: =80
-        ZIndex: =81
+        X: =17
+        Y: =20
+        ZIndex: =84
 
         Rectangle8_1 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =70
             Width: =1139
-            X: =210
-            Y: =58
-            ZIndex: =1
+            X: =208
+            Y: =60
+            ZIndex: =81
 
         Label30_8 As label:
             Align: =Align.Center
             Color: =RGBA(0, 130, 204, 1)
             FontWeight: =FontWeight.Semibold
-            Height: =26
+            Height: =21
             Size: =18
-            Text: ="Projects"
-            Width: =151
-            X: =237
-            Y: =86
-            ZIndex: =2
+            Text: ="Recent Projects"
+            Width: =199
+            X: =223
+            Y: =88
+            ZIndex: =82
 
-        Button2_1 As button:
+        Button2_2 As button:
             Fill: =RGBA(0, 130, 204, 1)
             Height: =32
             OnSelect: |
                 =Navigate('Add projects admin',ScreenTransition.Fade);
                 ResetForm(Form1)
             Size: =13
-            Text: ="Create  New  Project"
-            Visible: =popupvisible=false
+            Text: ="Create New Project"
             Width: =183
-            X: =1135
-            Y: =78
-            ZIndex: =3
+            X: =1133
+            Y: =82
+            ZIndex: =83
 
