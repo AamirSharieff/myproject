@@ -3231,20 +3231,6 @@
                     Y: =10
                     ZIndex: =2
 
-    Button2_1 As button:
-        Fill: =RGBA(0, 130, 204, 1)
-        Height: =32
-        OnSelect: |
-            =Navigate('Add projects admin',ScreenTransition.Fade);
-            ResetForm(Form1)
-        Size: =13
-        Text: ="Create  New  Project"
-        Visible: =popupvisible=false
-        Width: =183
-        X: =1135
-        Y: =78
-        ZIndex: =69
-
     Button19_9 As button:
         Height: =46
         OnSelect: |-
@@ -4400,9 +4386,9 @@
     Group6 As group:
         Height: =5
         Width: =5
-        X: =100
-        Y: =100
-        ZIndex: =85
+        X: =80
+        Y: =80
+        ZIndex: =81
 
         Rectangle8_1 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -4421,7 +4407,21 @@
             Size: =18
             Text: ="Projects"
             Width: =151
-            X: =225
+            X: =237
             Y: =86
             ZIndex: =2
+
+        Button2_1 As button:
+            Fill: =RGBA(0, 130, 204, 1)
+            Height: =32
+            OnSelect: |
+                =Navigate('Add projects admin',ScreenTransition.Fade);
+                ResetForm(Form1)
+            Size: =13
+            Text: ="Create  New  Project"
+            Visible: =popupvisible=false
+            Width: =183
+            X: =1135
+            Y: =78
+            ZIndex: =69
 
