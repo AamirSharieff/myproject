@@ -2998,18 +2998,6 @@
             Y: =160
             ZIndex: =27
 
-    Button19_13 As button:
-        Height: =41
-        OnSelect: |-
-            =SubmitForm(Form5_2);
-            UpdateContext({addpm:false})
-        Text: ="Save"
-        Visible: =addpm
-        Width: =142
-        X: =1054
-        Y: =641
-        ZIndex: =68
-
     "'Billing Milestone_1' As group":
         Height: =5
         Width: =5
@@ -3230,6 +3218,18 @@
                     X: =DataCardKey28_3.X + DataCardKey28_3.Width
                     Y: =10
                     ZIndex: =2
+
+    Button19_13 As button:
+        Height: =41
+        OnSelect: |-
+            =SubmitForm(Form5_2);
+            UpdateContext({addpm:false})
+        Text: ="Save"
+        Visible: =addpm
+        Width: =142
+        X: =1054
+        Y: =641
+        ZIndex: =69
 
     Button19_9 As button:
         Height: =46
@@ -4423,5 +4423,5 @@
             Width: =183
             X: =1135
             Y: =78
-            ZIndex: =69
+            ZIndex: =68
 
