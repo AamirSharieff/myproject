@@ -4,15 +4,15 @@
 
     Button2_1 As button:
         Fill: =RGBA(0, 130, 204, 1)
-        Height: =32
+        Height: =36
         OnSelect: |
             =Navigate('Add projects admin',ScreenTransition.Fade);
             ResetForm(Form1)
         Size: =13
         Text: ="Create  New  Project"
         Visible: =popupvisible=false
-        Width: =183
-        X: =1135
+        Width: =208
+        X: =1110
         Y: =78
         ZIndex: =4
 
@@ -1049,7 +1049,7 @@
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
+                Height: =106
                 Required: =false
                 Update: =DateValue12_2.SelectedDate + Time(Value(HourValue12_2.Selected.Value), Value(MinuteValue12_2.Selected.Value), 0)
                 Width: =1064
@@ -1061,10 +1061,10 @@
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.4
+                    Width: =Parent.Width - 60
                     Wrap: =false
-                    X: =30
-                    Y: =10 + (DateValue12_2.Height / 2) + (Self.Height / 2)
+                    X: =29
+                    Y: =10
                     ZIndex: =1
 
                 DateValue12_2 As datepicker:
@@ -1072,14 +1072,15 @@
                     DefaultDate: =
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
+                    Height: =50
                     IsEditable: =true
                     PaddingBottom: =0
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.6
-                    X: =DataCardKey43_2.X + DataCardKey43_2.Width
-                    Y: =10
+                    Width: =500
+                    X: =30
+                    Y: =DataCardKey43_2.Y + DataCardKey43_2.Height + 5
                     ZIndex: =2
 
                 HourValue12_2 As dropdown:
@@ -1094,9 +1095,9 @@
                     PaddingTop: =5
                     Tooltip: =Parent.DisplayName
                     Visible: =false
-                    Width: =DateValue12_2.Width / 2 - 5
-                    X: =DateValue12_2.X
-                    Y: =DateValue12_2.Y + DateValue12_2.Height + 10
+                    Width: =DateValue12_2.Width / 2 - 10
+                    X: =DateValue12_2.X + DateValue12_2.Width + 10
+                    Y: =DateValue12_2.Y
                     ZIndex: =3
 
                 Separator13_2 As label:
@@ -1177,10 +1178,10 @@
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.4
+                    Width: =Parent.Width - 60
                     Wrap: =false
-                    X: =30
-                    Y: =10 + (DataCardValue30_2.Height / 2) - (Self.Height / 2)
+                    X: =18
+                    Y: =10
                     ZIndex: =1
 
                 DataCardValue30_2 As text:
@@ -1189,15 +1190,16 @@
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Format: =TextFormat.Number
+                    Height: =50
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.6
-                    X: =DataCardKey44_2.X + DataCardKey44_2.Width
-                    Y: =10
+                    Width: =498
+                    X: =30
+                    Y: =DataCardKey44_2.Y + DataCardKey44_2.Height + 5
                     ZIndex: =2
 
                 ErrorMessage37_2 As label:
@@ -1244,10 +1246,10 @@
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.4
+                    Width: =Parent.Width - 60
                     Wrap: =false
                     X: =30
-                    Y: =10 + (DataCardValue34_2.Height / 2) - (Self.Height / 2)
+                    Y: =10
                     ZIndex: =1
 
                 DataCardValue34_2 As text:
@@ -1256,15 +1258,16 @@
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Format: =TextFormat.Number
+                    Height: =50
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.6
-                    X: =DataCardKey46_2.X + DataCardKey46_2.Width
-                    Y: =10
+                    Width: =499
+                    X: =30
+                    Y: =DataCardKey46_2.Y + DataCardKey46_2.Height + 5
                     ZIndex: =2
 
                 ErrorMessage41_2 As label:
@@ -1313,10 +1316,10 @@
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.4
+                    Width: =Parent.Width - 60
                     Wrap: =false
                     X: =30
-                    Y: =10 + (DataCardValue35_2.Height / 2) - (Self.Height / 2)
+                    Y: =10
                     ZIndex: =1
 
                 DataCardValue35_2 As text:
@@ -1331,9 +1334,9 @@
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.6
-                    X: =DataCardKey47_2.X + DataCardKey47_2.Width
-                    Y: =10
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey47_2.Y + DataCardKey47_2.Height + 5
                     ZIndex: =2
 
                 ErrorMessage42_2 As label:
@@ -1382,10 +1385,10 @@
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.4
+                    Width: =Parent.Width - 60
                     Wrap: =false
                     X: =30
-                    Y: =10 + (DataCardValue28.Height / 2) - (Self.Height / 2)
+                    Y: =10
                     ZIndex: =1
 
                 DataCardValue28 As text:
@@ -1400,9 +1403,9 @@
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.6
-                    X: =DataCardKey34.X + DataCardKey34.Width
-                    Y: =10
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey34.Y + DataCardKey34.Height + 5
                     ZIndex: =2
 
                 ErrorMessage36 As label:
@@ -1451,10 +1454,10 @@
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.4
+                    Width: =Parent.Width - 60
                     Wrap: =false
                     X: =30
-                    Y: =10 + (DataCardValue29.Height / 2) - (Self.Height / 2)
+                    Y: =10
                     ZIndex: =1
 
                 DataCardValue29 As text:
@@ -1469,9 +1472,9 @@
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) * 0.6
-                    X: =DataCardKey35.X + DataCardKey35.Width
-                    Y: =10
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey35.Y + DataCardKey35.Height + 5
                     ZIndex: =2
 
                 ErrorMessage37 As label:
@@ -2589,9 +2592,8 @@
                 Height: =33
                 Icon: =Icon.ChevronRight
                 OnSelect: |
-                    =NewForm(Form7_1);
+                    =//NewForm(Form7_1);
                     UpdateContext({monthlyedit:true});
-                Visible: =false
                 Width: =33
                 X: =1012
                 Y: =8
