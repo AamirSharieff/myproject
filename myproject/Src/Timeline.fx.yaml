@@ -117,7 +117,7 @@
 
         Dropdown1 As dropdown:
             Height: =36
-            Items: =["Completed","Pending","On-Hold"]
+            Items: =["Completed","On-going","Pending","On-Hold"]
             OnChange: |-
                 =//Patch('Project Detailss',
                 //LookUp('Project Detailss',ID = ThisItem.ID),
