@@ -204,7 +204,9 @@
     Button7 As button:
         Color: =RGBA(4, 127, 194, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        OnSelect: =Navigate(ProjectManager,Fade)
+        OnSelect: |-
+            =UpdateContext({popupvisible1: false});
+            UpdateContext({popupvisible: false})
         Text: ="Plan a project"
         Visible: =popupvisible
         X: =208
