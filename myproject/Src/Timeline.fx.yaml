@@ -104,7 +104,7 @@
             Align: =Align.Center
             Color: =RGBA(225,225,225,1)
             Fill: |
-                =If(ThisItem.'Project Status' ="On-Hold",Red,If(ThisItem.'Project Status' ="Pending",Orange, If(ThisItem.'Project Status'="Completed",Green,AntiqueWhite)))
+                =If(ThisItem.'Project Status' ="On-Hold",Red, If(ThisItem.'Project Status'="On-going",OrangeRed, If(ThisItem.'Project Status' ="Pending",Orange, If(ThisItem.'Project Status'="Completed",Green,AntiqueWhite))))
             FontWeight: =FontWeight.Semibold
             Height: =28
             OnSelect: =Select(Parent)

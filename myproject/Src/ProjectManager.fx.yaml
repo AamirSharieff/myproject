@@ -1045,7 +1045,7 @@
             "'Billing Date_DataCard2_2' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingdate"
-                Default: =ThisItem.'Billing Date'
+                Default: =ThisItem.'Invoice Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -1515,10 +1515,78 @@
             Y: =123
             ZIndex: =68
 
+            "'Invoice No_DataCard1' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_invoiceno"
+                Default: =ThisItem.'Invoice No'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_invoiceno")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_invoiceno")
+                Required: =false
+                Update: =DataCardValue6.Text
+                Width: =532
+                X: =1
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey6 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue6 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =359
+                    X: =30
+                    Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage3 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue6.Y + DataCardValue6.Height
+                    ZIndex: =3
+
+                StarVisible3 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey6.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey6.Y
+                    ZIndex: =4
+
             "'Billing Date_DataCard2' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingdate"
-                Default: =ThisItem.'Billing Date'
+                Default: =ThisItem.'Invoice Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -1643,8 +1711,8 @@
                 Required: =false
                 Update: =DataCardValue23_2.Text
                 Width: =531
-                X: =1
-                Y: =0
+                X: =0
+                Y: =1
                 ZIndex: =1
 
                 DataCardKey29_2 As label:
@@ -1710,7 +1778,7 @@
                 Required: =false
                 Update: =Value(DataCardValue40.Text)
                 Width: =531
-                X: =0
+                X: =1
                 Y: =1
                 ZIndex: =1
 
@@ -1777,8 +1845,8 @@
                 Required: =false
                 Update: =Value(DataCardValue25_2.Text)
                 Width: =531
-                X: =1
-                Y: =1
+                X: =0
+                Y: =2
                 ZIndex: =1
 
                 DataCardKey31_2 As label:
@@ -1844,7 +1912,7 @@
                 Required: =false
                 Update: =DateValue7_2.SelectedDate + Time(Value(HourValue7_2.Selected.Value), Value(MinuteValue7_2.Selected.Value), 0)
                 Width: =531
-                X: =0
+                X: =1
                 Y: =2
                 ZIndex: =1
 
@@ -1960,8 +2028,8 @@
                 Required: =false
                 Update: =DateValue8_2.SelectedDate + Time(Value(HourValue8_2.Selected.Value), Value(MinuteValue8_2.Selected.Value), 0)
                 Width: =531
-                X: =1
-                Y: =2
+                X: =0
+                Y: =3
                 ZIndex: =1
 
                 DataCardKey33_2 As label:
@@ -2075,7 +2143,7 @@
                 Required: =false
                 Update: =DateValue10_2.SelectedDate + Time(Value(HourValue10_2.Selected.Value), Value(MinuteValue10_2.Selected.Value), 0)
                 Width: =531
-                X: =0
+                X: =1
                 Y: =3
                 ZIndex: =1
 
@@ -2190,8 +2258,8 @@
                 Required: =false
                 Update: =DateValue9_2.SelectedDate + Time(Value(HourValue9_2.Selected.Value), Value(MinuteValue9_2.Selected.Value), 0)
                 Width: =531
-                X: =1
-                Y: =3
+                X: =0
+                Y: =4
                 ZIndex: =1
 
                 DataCardKey34_2 As label:
@@ -2308,7 +2376,7 @@
                 Update: =DataCardValue31.Text
                 Visible: =false
                 Width: =531
-                X: =0
+                X: =1
                 Y: =4
                 ZIndex: =1
 
@@ -2377,8 +2445,8 @@
                 Update: =DataCardValue39.Text
                 Visible: =false
                 Width: =531
-                X: =1
-                Y: =4
+                X: =0
+                Y: =5
                 ZIndex: =1
 
                 DataCardKey46 As label:
@@ -2556,7 +2624,7 @@
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =15
-                Text: =ThisItem.'Billing Date'
+                Text: =ThisItem.'Invoice Date'
                 VerticalAlign: =VerticalAlign.Top
                 Width: =220
                 X: =251
@@ -3301,7 +3369,7 @@
             "'Billing Date_DataCard4_1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingdate"
-                Default: =Gallery2_1.Selected.'Billing Date'
+                Default: =Gallery2_1.Selected.'Invoice Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -3325,7 +3393,7 @@
 
                 DateValue14_1 As datepicker:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultDate: =Gallery2_2.Selected.'Billing Date'
+                    DefaultDate: =Gallery2_2.Selected.'Invoice Date'
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
                     IsEditable: =true
@@ -3612,7 +3680,7 @@
             "'Billing Date_DataCard3_1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingdate"
-                Default: =Gallery2.Selected.'Billing Date'
+                Default: =Gallery2.Selected.'Invoice Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -3636,7 +3704,7 @@
 
                 DateValue9_3 As datepicker:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultDate: =Gallery2_3.Selected.'Billing Date'
+                    DefaultDate: =Gallery2_3.Selected.'Invoice Date'
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
                     IsEditable: =true
