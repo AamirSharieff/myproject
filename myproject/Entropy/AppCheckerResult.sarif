@@ -8431,6 +8431,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ProjectManager.Form6_2.'Invoice No_DataCard2'.DataCardValue14.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ProjectManager.Form6_2.'Invoice No_DataCard2'.DataCardValue14.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ProjectManager",
+                "type": "ProjectManager.Form6_2.'Invoice No_DataCard2'.DataCardValue14"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.1609392125837"
                 }
               ],
