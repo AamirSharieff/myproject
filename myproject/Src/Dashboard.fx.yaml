@@ -28,7 +28,7 @@ Dashboard As screen:
             Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Height: =20
-            Size: =8
+            Size: =10
             Text: =User().FullName
             Width: =166
             X: =1146
@@ -72,6 +72,7 @@ Dashboard As screen:
 
     Button12_1 As button:
         Fill: =RGBA(0, 130, 204, 1)
+        FontWeight: =FontWeight.Bold
         Height: =32
         OnSelect: =Navigate('Main Screen')
         Size: =13
@@ -124,7 +125,7 @@ Dashboard As screen:
             ZIndex: =19
 
         Label9_40 As label:
-            FontWeight: =FontWeight.Semibold
+            FontWeight: =FontWeight.Bold
             Height: =23
             Size: =10
             Text: ="Dashboard"
@@ -135,6 +136,7 @@ Dashboard As screen:
 
         Label9_41 As label:
             Color: =RGBA(128, 128, 128, 1)
+            FontWeight: =FontWeight.Bold
             Height: =23
             OnSelect: |-
                 =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin))||
@@ -148,6 +150,7 @@ Dashboard As screen:
 
         Label9_42 As label:
             Color: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
             Height: =23
             OnSelect: =Navigate(Timeline)
             Size: =10

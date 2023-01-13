@@ -131,6 +131,7 @@
 
     Button10_2 As button:
         Fill: =RGBA(0, 130, 204, 1)
+        FontWeight: =FontWeight.Bold
         Height: =32
         OnSelect: |-
             =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin)) || If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager)) 
