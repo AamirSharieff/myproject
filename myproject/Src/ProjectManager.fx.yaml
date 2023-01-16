@@ -1039,8 +1039,8 @@
             DataSource: ='Project Summarys'
             DefaultMode: =FormMode.New
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =363
-            NumberOfColumns: =2
+            Height: =449
+            NumberOfColumns: =1
             Visible: = add1pm
             Width: =1064
             X: =183
@@ -1057,7 +1057,7 @@
                 Height: =106
                 Required: =false
                 Update: =DateValue12_2.SelectedDate + Time(Value(HourValue12_2.Selected.Value), Value(MinuteValue12_2.Selected.Value), 0)
-                Width: =532
+                Width: =1064
                 X: =0
                 Y: =0
                 ZIndex: =1
@@ -1077,13 +1077,12 @@
                     DefaultDate: =
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
-                    Height: =50
                     IsEditable: =true
                     PaddingBottom: =0
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =(Parent.Width - 60) / 2
+                    Width: =471
                     X: =30
                     Y: =DataCardKey43_2.Y + DataCardKey43_2.Height + 5
                     ZIndex: =2
@@ -1175,9 +1174,9 @@
                 MaxLength: =DataSourceInfo([@'Project Summarys'], DataSourceInfo.MaxLength, "cre9a_invoiceno")
                 Required: =false
                 Update: =DataCardValue14.Text
-                Width: =532
-                X: =1
-                Y: =0
+                Width: =1064
+                X: =0
+                Y: =1
                 ZIndex: =1
 
                 DataCardKey22 As label:
@@ -1202,7 +1201,8 @@
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: |
+                        =470
                     X: =30
                     Y: =DataCardKey22.Y + DataCardKey22.Height + 5
                     ZIndex: =2
@@ -1242,9 +1242,9 @@
                 Height: =50
                 Required: =false
                 Update: =Value(DataCardValue30_2.Text)
-                Width: =532
+                Width: =1064
                 X: =0
-                Y: =1
+                Y: =2
                 ZIndex: =1
 
                 DataCardKey44_2 As label:
@@ -1263,14 +1263,14 @@
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Format: =TextFormat.Number
-                    Height: =50
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: |
+                        =470
                     X: =30
                     Y: =DataCardKey44_2.Y + DataCardKey44_2.Height + 5
                     ZIndex: =2
@@ -1310,9 +1310,9 @@
                 Height: =50
                 Required: =false
                 Update: =Value(DataCardValue34_2.Text)
-                Width: =532
-                X: =1
-                Y: =1
+                Width: =1064
+                X: =0
+                Y: =3
                 ZIndex: =1
 
                 DataCardKey46_2 As label:
@@ -1331,14 +1331,13 @@
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     Format: =TextFormat.Number
-                    Height: =50
                     PaddingLeft: =5
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =470
                     X: =30
                     Y: =DataCardKey46_2.Y + DataCardKey46_2.Height + 5
                     ZIndex: =2
@@ -1380,9 +1379,9 @@
                 Required: =false
                 Update: =DataCardValue35_2.Text
                 Visible: =false
-                Width: =532
+                Width: =1064
                 X: =0
-                Y: =2
+                Y: =4
                 ZIndex: =1
 
                 DataCardKey47_2 As label:
@@ -1449,9 +1448,9 @@
                 Required: =false
                 Update: =DataCardValue28.Text
                 Visible: =false
-                Width: =532
-                X: =1
-                Y: =2
+                Width: =1064
+                X: =0
+                Y: =5
                 ZIndex: =1
 
                 DataCardKey34 As label:
@@ -1518,9 +1517,9 @@
                 Required: =false
                 Update: =DataCardValue29.Text
                 Visible: =false
-                Width: =532
+                Width: =1064
                 X: =0
-                Y: =3
+                Y: =6
                 ZIndex: =1
 
                 DataCardKey35 As label:
@@ -2748,8 +2747,8 @@
             Text: ="ADD"
             Visible: =billing1pm
             Width: =115
-            X: =1075
-            Y: =524
+            X: =1079
+            Y: =636
             ZIndex: =46
 
         FormViewer1_2 As formViewer:
@@ -2853,15 +2852,15 @@
         ZIndex: =52
 
     Button19_8 As button:
-        Height: =53
+        Height: =55
         OnSelect: |-
             =SubmitForm(Form6_2);
             UpdateContext({add1pm:false})
         Text: ="Save"
         Visible: =add1pm
-        Width: =142
-        X: =1068
-        Y: =517
+        Width: =161
+        X: =1064
+        Y: =629
         ZIndex: =54
 
     Rectangle2_3 As rectangle:
@@ -3396,19 +3395,19 @@
         Text: ="Back"
         Visible: =billing1pm
         Width: =115
-        X: =933
-        Y: =524
+        X: =895
+        Y: =636
         ZIndex: =71
 
     Button19_7 As button:
-        Height: =53
+        Height: =55
         OnSelect: |-
             =UpdateContext({add1pm:false})
         Text: ="Back"
         Visible: =add1pm
-        Width: =142
-        X: =917
-        Y: =517
+        Width: =167
+        X: =879
+        Y: =632
         ZIndex: =72
 
     Group5_1 As group:
