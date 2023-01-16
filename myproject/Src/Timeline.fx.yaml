@@ -261,7 +261,7 @@
 
     Label30_23 As label:
         Align: =Align.Center
-        FontWeight: =FontWeight.Semibold
+        FontWeight: =FontWeight.Bold
         Height: =18
         OnSelect: |-
             =Reset(Gallery6_2);Refresh('Project Detailss');
@@ -274,25 +274,25 @@
 
     Label30_24 As label:
         Align: =Align.Center
-        FontWeight: =FontWeight.Semibold
-        Height: =21
+        FontWeight: =FontWeight.Bold
+        Height: =20
         OnSelect: |-
             =UpdateContext({pmoapp:Filter('Project Detailss','Project Status'="Pending")})
         Text: =" Pending"
-        Width: =84
+        Width: =104
         X: =360
         Y: =151
         ZIndex: =25
 
     Label30_25 As label:
         Align: =Align.Center
-        FontWeight: =FontWeight.Semibold
+        FontWeight: =FontWeight.Bold
         Height: =22
         OnSelect: |-
             =UpdateContext({pmoapp:Filter('Project Detailss','Project Status'="Completed")})
         Size: =14
         Text: ="Completed"
-        Width: =117
+        Width: =129
         X: =497
         Y: =149
         ZIndex: =26
@@ -340,17 +340,19 @@
 
         Label9_28 As label:
             Color: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
             Height: =23
             OnSelect: =Navigate(Dashboard)
             Size: =10
             Text: ="Dashboard"
-            Width: =80
+            Width: =99
             X: =43
             Y: =60
             ZIndex: =20
 
         Label9_29 As label:
             Color: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
             Height: =23
             OnSelect: |
                 =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin)) || If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager)) 
@@ -362,7 +364,7 @@
             ZIndex: =21
 
         Label9_30 As label:
-            FontWeight: =FontWeight.Semibold
+            FontWeight: =FontWeight.Bold
             Height: =23
             Size: =10
             Text: ="Timeline"
