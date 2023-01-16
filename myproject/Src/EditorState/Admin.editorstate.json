@@ -28272,7 +28272,14 @@
         "Color",
         "DisabledColor",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "X",
         "Y",
         "ZIndex",
@@ -28929,7 +28936,14 @@
         "Color",
         "DisabledColor",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "X",
         "Y",
         "ZIndex",
@@ -29254,7 +29268,14 @@
         "Color",
         "DisabledColor",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "X",
         "Y",
         "ZIndex",
@@ -31943,7 +31964,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "X",
         "Y",
         "ZIndex",
@@ -32613,7 +32641,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "X",
         "Y",
         "ZIndex",
@@ -51273,7 +51308,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon4",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -54008,7 +54043,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label16",
-      "ParentIndex": 6,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -55123,7 +55158,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label24_1",
-      "ParentIndex": 5,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -55398,7 +55433,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label24_2",
-      "ParentIndex": 8,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -55990,7 +56025,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_1",
-      "ParentIndex": 66,
+      "ParentIndex": 65,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -56300,7 +56335,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_11",
-      "ParentIndex": 67,
+      "ParentIndex": 66,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -56624,7 +56659,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_2",
-      "ParentIndex": 69,
+      "ParentIndex": 68,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -56948,7 +56983,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_20",
-      "ParentIndex": 64,
+      "ParentIndex": 72,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -57272,7 +57307,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_21",
-      "ParentIndex": 68,
+      "ParentIndex": 67,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -57596,7 +57631,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_3",
-      "ParentIndex": 70,
+      "ParentIndex": 69,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -57913,7 +57948,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_5",
-      "ParentIndex": 71,
+      "ParentIndex": 70,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -58244,7 +58279,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_6",
-      "ParentIndex": 72,
+      "ParentIndex": 71,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -58568,7 +58603,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label25_7",
-      "ParentIndex": 65,
+      "ParentIndex": 64,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
