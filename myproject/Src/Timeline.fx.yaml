@@ -22,6 +22,7 @@
             FontWeight: =FontWeight.Normal
             Height: =21
             OnSelect: =Select(Parent)
+            Overflow: =Overflow.Scroll
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -74,6 +75,7 @@
         Label4_2 As label:
             Height: =44
             OnSelect: =Select(Parent)
+            Overflow: =Overflow.Scroll
             Text: =ThisItem.'Project Manager'
             Width: =218
             X: =506
