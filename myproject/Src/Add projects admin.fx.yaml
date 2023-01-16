@@ -74,6 +74,7 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -775,8 +776,8 @@
             If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Project Manager"))>=1,Navigate(ProjectManager));
         Text: ="Back"
         Width: =125
-        X: =1059
-        Y: =715
+        X: =991
+        Y: =677
         ZIndex: =5
 
     Button16 As button:
@@ -806,19 +807,20 @@
             
         Text: ="Save"
         Width: =110
-        X: =1203
-        Y: =715
+        X: =1160
+        Y: =676
         ZIndex: =6
 
     Label1 As label:
+        Height: =45
         Text: ="Project Manager"
+        Width: =178
         X: =244
-        Y: =429
+        Y: =441
         ZIndex: =7
 
     ComboBox2 As combobox:
         DisplayFields: =["DisplayName"]
-        Height: =50
         InputTextPlaceholder: =""
         Items: |-
             = Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName
@@ -827,7 +829,7 @@
             =Search( Office365Users.SearchUser({searchTerm:ComboBox2.SearchText}).DisplayName,ComboBox2.SearchText,"DisplayName")
         Width: =313
         X: =244
-        Y: =498
+        Y: =486
         ZIndex: =8
 
     Button12_3 As button:
@@ -871,12 +873,12 @@
 
         Label3_8 As label:
             Align: =Align.Right
-            FontWeight: =FontWeight.Semibold
+            FontWeight: =FontWeight.Bold
             Height: =20
             Size: =8
             Text: =User().FullName
-            Width: =161
-            X: =1135
+            Width: =255
+            X: =1022
             Y: =4
             ZIndex: =20
 
@@ -887,17 +889,6 @@
             Width: =195
             X: =3
             ZIndex: =21
-
-        TextInput14_3 As text:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            Default: =""
-            DisplayMode: =DisplayMode.Disabled
-            Height: =35
-            HintText: ="Search here"
-            Width: =312
-            X: =823
-            Y: =6
-            ZIndex: =22
 
         Image13_1 As image:
             Height: =46
@@ -960,17 +951,18 @@
 
         Label9_31 As label:
             Color: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
             Height: =23
             OnSelect: =Navigate(Dashboard)
             Size: =10
             Text: ="Dashboard"
-            Width: =80
+            Width: =96
             X: =43
             Y: =60
             ZIndex: =13
 
         Label9_32 As label:
-            FontWeight: =FontWeight.Semibold
+            FontWeight: =FontWeight.Bold
             Height: =23
             OnSelect: |-
                 =If(CountRows(Filter('Login users','Email ID' = User().Email , login_as = "Admin"))>=1,Navigate(Admin))||
@@ -984,6 +976,7 @@
 
         Label9_33 As label:
             Color: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
             Height: =23
             OnSelect: =Navigate(Timeline)
             Size: =10
