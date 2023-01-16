@@ -274,9 +274,9 @@
         ZIndex: =38
 
     Rectangle2 As rectangle:
-        Height: =61
+        Height: =58
         Visible: =billing
-        Width: =1058
+        Width: =1072
         X: =187
         Y: =206
         ZIndex: =46
@@ -885,22 +885,23 @@
         "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
             BorderThickness: =2
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =269
+            Height: =286
             Items: =Filter('Project Summarys',ProjectsID = DataCardValue22.Text)
             Layout: =Layout.Vertical
             OnSelect: =
             TemplateFill: =If(ThisItem.IsSelected,ColorFade(RGBA(153,207,236,1),0),RGBA(0,0,0,0)
             TemplatePadding: =0
-            TemplateSize: =84
+            TemplateSize: =72
             Visible: =billing
-            Width: =1057
+            Width: =1062
             X: =187
-            Y: =281
+            Y: =261
             ZIndex: =45
 
             Title4 As label:
-                Height: =55
+                Height: =49
                 OnSelect: =Select(Parent)
+                Overflow: =Overflow.Scroll
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -908,14 +909,14 @@
                 Size: =13
                 Text: =ThisItem.'Milestone Name'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =151
-                X: =10
-                Y: =25
+                Width: =137
+                Y: =11
                 ZIndex: =1
 
             Subtitle4 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
+                Height: =45
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -924,9 +925,9 @@
                 Size: =13
                 Text: =ThisItem.'Milestone Planned Start Date'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =118
-                X: =163
-                Y: =20
+                Width: =120
+                X: =151
+                Y: =11
                 ZIndex: =2
 
             Separator10 As rectangle:
@@ -938,38 +939,38 @@
 
             Label16 As label:
                 FontWeight: =FontWeight.Semibold
-                Height: =33
                 OnSelect: =Select(Parent)
+                Overflow: =Overflow.Scroll
                 Text: =ThisItem.'Milestone Actual Amount'
-                Width: =116
+                Width: =96
                 X: =623
                 Y: =20
                 ZIndex: =5
 
             Label24_1 As label:
                 FontWeight: =FontWeight.Semibold
-                Height: =33
+                Height: =48
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.'Milestone Actual Start Date'
-                Width: =105
-                X: =761
-                Y: =25
+                Width: =141
+                X: =758
+                Y: =17
                 ZIndex: =7
 
             Label24_2 As label:
                 FontWeight: =FontWeight.Semibold
-                Height: =33
+                Height: =47
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.'Milestone Actual End Date'
                 Width: =110
                 X: =899
-                Y: =25
+                Y: =11
                 ZIndex: =8
 
             Subtitle4_4 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
-                Height: =38
+                Height: =49
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -980,16 +981,18 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =108
                 X: =327
-                Y: =20
+                Y: =11
                 ZIndex: =9
 
             Label10 As label:
                 FontWeight: =FontWeight.Semibold
+                Height: =45
                 OnSelect: =Select(Parent)
+                Overflow: =Overflow.Scroll
                 Text: =ThisItem.'Milestone Planned Amount'
-                Width: =149
-                X: =459
-                Y: =20
+                Width: =119
+                X: =474
+                Y: =11
                 ZIndex: =10
 
             Icon4 As icon.ChevronRight:
@@ -999,8 +1002,8 @@
                 OnSelect: |-
                     =UpdateContext({milestoneupdate:true})
                 Width: =33
-                X: =1004
-                Y: =23
+                X: =1029
+                Y: =11
                 ZIndex: =11
 
         Button19 As button:
@@ -3122,8 +3125,8 @@
         Text: ="Milestone Planned End Date"
         Visible: =billing
         Width: =151
-        X: =482
-        Y: =211
+        X: =484
+        Y: =222
         ZIndex: =72
 
     Label25_21 As label:
