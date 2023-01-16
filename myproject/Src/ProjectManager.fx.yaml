@@ -1054,7 +1054,7 @@
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
-                Height: =106
+                Height: =58
                 Required: =false
                 Update: =DateValue12_2.SelectedDate + Time(Value(HourValue12_2.Selected.Value), Value(MinuteValue12_2.Selected.Value), 0)
                 Width: =1064
@@ -1063,12 +1063,11 @@
                 ZIndex: =1
 
                 DataCardKey43_2 As label:
-                    AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =388
                     Wrap: =false
-                    X: =29
+                    X: =58
                     Y: =10
                     ZIndex: =1
 
@@ -1083,8 +1082,8 @@
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
                     Width: =471
-                    X: =30
-                    Y: =DataCardKey43_2.Y + DataCardKey43_2.Height + 5
+                    X: =58
+                    Y: =59
                     ZIndex: =2
 
                 HourValue12_2 As dropdown:
@@ -1180,12 +1179,11 @@
                 ZIndex: =1
 
                 DataCardKey22 As label:
-                    AutoHeight: =true
-                    Height: =34
+                    Height: =39
                     Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =795
                     Wrap: =false
-                    X: =30
+                    X: =55
                     Y: =10
                     ZIndex: =1
 
@@ -1203,8 +1201,8 @@
                     Tooltip: =Parent.DisplayName
                     Width: |
                         =470
-                    X: =30
-                    Y: =DataCardKey22.Y + DataCardKey22.Height + 5
+                    X: =55
+                    Y: =64
                     ZIndex: =2
 
                 ErrorMessage20 As label:
@@ -1248,12 +1246,11 @@
                 ZIndex: =1
 
                 DataCardKey44_2 As label:
-                    AutoHeight: =true
-                    Height: =34
+                    Height: =42
                     Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =761
                     Wrap: =false
-                    X: =18
+                    X: =55
                     Y: =10
                     ZIndex: =1
 
@@ -1271,7 +1268,7 @@
                     Tooltip: =Parent.DisplayName
                     Width: |
                         =470
-                    X: =30
+                    X: =55
                     Y: =DataCardKey44_2.Y + DataCardKey44_2.Height + 5
                     ZIndex: =2
 
@@ -1316,12 +1313,11 @@
                 ZIndex: =1
 
                 DataCardKey46_2 As label:
-                    AutoHeight: =true
-                    Height: =34
+                    Height: =39
                     Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =907
                     Wrap: =false
-                    X: =30
+                    X: =53
                     Y: =10
                     ZIndex: =1
 
@@ -1338,7 +1334,7 @@
                     RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
                     Width: =470
-                    X: =30
+                    X: =53
                     Y: =DataCardKey46_2.Y + DataCardKey46_2.Height + 5
                     ZIndex: =2
 
@@ -2861,7 +2857,7 @@
         Visible: =add1pm
         Width: =161
         X: =1064
-        Y: =629
+        Y: =632
         ZIndex: =54
 
     Rectangle2_3 As rectangle:
