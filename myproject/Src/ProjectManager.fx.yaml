@@ -3175,6 +3175,7 @@
 
             Title4_3 As label:
                 OnSelect: =Select(Parent)
+                Overflow: =Overflow.Scroll
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -3223,7 +3224,6 @@
             Label24_5 As label:
                 Height: =48
                 OnSelect: =Select(Parent)
-                Overflow: =Overflow.Scroll
                 Text: =ThisItem.'Milestone Actual Start Date'
                 Width: =139
                 X: =732
@@ -3233,7 +3233,6 @@
             Label24_6 As label:
                 Height: =45
                 OnSelect: =Select(Parent)
-                Overflow: =Overflow.Scroll
                 Text: =ThisItem.'Milestone Actual End Date'
                 Width: =124
                 X: =885
@@ -3252,7 +3251,6 @@
             Label25 As label:
                 Height: =41
                 OnSelect: =Select(Parent)
-                Overflow: =Overflow.Scroll
                 Text: =ThisItem.'Milestone Planned Start Date'
                 Width: =130
                 X: =446
@@ -3262,7 +3260,6 @@
             Label31 As label:
                 Height: =44
                 OnSelect: =Select(Parent)
-                Overflow: =Overflow.Scroll
                 Text: =ThisItem.'Milestone Planned End Date'
                 Width: =112
                 X: =602

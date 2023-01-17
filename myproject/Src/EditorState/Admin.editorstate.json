@@ -51884,7 +51884,7 @@
       "LayoutName": "horizontal",
       "MetaDataIDKey": "",
       "Name": "ID_DataCard2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -52031,7 +52031,7 @@
       "LayoutName": "horizontal",
       "MetaDataIDKey": "",
       "Name": "ID_DataCard2_1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -73920,7 +73920,7 @@
       "LayoutName": "horizontal",
       "MetaDataIDKey": "",
       "Name": "Project Name_DataCard4",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -74054,7 +74054,7 @@
       "LayoutName": "horizontal",
       "MetaDataIDKey": "",
       "Name": "Project Name_DataCard4_1",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
