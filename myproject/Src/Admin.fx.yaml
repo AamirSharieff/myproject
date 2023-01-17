@@ -719,7 +719,7 @@
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =15
-                Text: =ThisItem.'Invoice Date'
+                Text: =ThisItem.'Billing Date'
                 VerticalAlign: =VerticalAlign.Top
                 Width: =220
                 X: =251
@@ -2163,7 +2163,7 @@
             "'Billing Date_DataCard1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingdate"
-                Default: =ThisItem.'Invoice Date'
+                Default: =ThisItem.'Billing Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -3172,7 +3172,7 @@
             "'Billing Date_DataCard1_1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingdate"
-                Default: =ThisItem.'Invoice Date'
+                Default: =ThisItem.'Billing Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -3605,12 +3605,12 @@
             Y: =113
             ZIndex: =79
 
-            "'Billing Date_DataCard3' As typedDataCard.dateTimeEditCard":
+            "'Invoice Date_DataCard1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
-                DataField: ="cre9a_billingdate"
-                Default: =Gallery2.Selected.'Invoice Date'
+                DataField: ="cre9a_invoicedate"
+                Default: =ThisItem.'Invoice Date'
                 DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
+                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_invoicedate")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =false
@@ -3620,7 +3620,7 @@
                 Y: =0
                 ZIndex: =1
 
-                DataCardKey50 As label:
+                DataCardKey23 As label:
                     AutoHeight: =true
                     Height: =34
                     Text: =Parent.DisplayName
@@ -3632,18 +3632,17 @@
 
                 DateValue9 As datepicker:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultDate: =Gallery2.Selected.'Invoice Date'
+                    DefaultDate: =Parent.Default
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
                     IsEditable: =true
-                    OnChange: =
                     PaddingBottom: =0
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     StartYear: =1899
                     Tooltip: =Parent.DisplayName
-                    Width: =319
+                    Width: =307
                     X: =30
-                    Y: =DataCardKey50.Y + DataCardKey50.Height + 5
+                    Y: =49
                     ZIndex: =2
 
                 HourValue9 As dropdown:
@@ -3657,12 +3656,13 @@
                     PaddingRight: =5
                     PaddingTop: =5
                     Tooltip: =Parent.DisplayName
+                    Visible: =false
                     Width: =DateValue9.Width / 2 - 10
                     X: =DateValue9.X + DateValue9.Width + 10
                     Y: =DateValue9.Y
                     ZIndex: =3
 
-                Separator9 As label:
+                Separator20 As label:
                     Align: =Align.Center
                     FontWeight: =FontWeight.Bold
                     Height: =HourValue9.Height
@@ -3672,6 +3672,7 @@
                     PaddingTop: =0
                     Text: |-
                         =":"
+                    Visible: =false
                     Width: =10
                     Wrap: =false
                     X: =HourValue9.X + HourValue9.Width
@@ -3689,8 +3690,9 @@
                     PaddingRight: =5
                     PaddingTop: =5
                     Tooltip: =Parent.DisplayName
+                    Visible: =false
                     Width: =HourValue9.Width
-                    X: =HourValue9.X + HourValue9.Width + Separator9.Width
+                    X: =HourValue9.X + HourValue9.Width + Separator20.Width
                     Y: =HourValue9.Y
                     ZIndex: =5
 
@@ -3711,13 +3713,80 @@
 
                 StarVisible25 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey50.Height
+                    Height: =DataCardKey23.Height
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey50.Y
+                    Y: =DataCardKey23.Y
                     ZIndex: =7
+
+            "'Milestone Planned Amount_DataCard3' As typedDataCard.numberEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="cre9a_milestoneplannedamount"
+                Default: =ThisItem.'Milestone Planned Amount'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_milestoneplannedamount")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =Value(DataCardValue43.Text)
+                Width: =350
+                X: =2
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey52 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue43 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Format: =TextFormat.Number
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey52.Y + DataCardKey52.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage46 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue43.Y + DataCardValue43.Height
+                    ZIndex: =3
+
+                StarVisible47 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey52.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey52.Y
+                    ZIndex: =4
 
             "'Milestone Name_DataCard1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -3785,73 +3854,6 @@
                     Width: =30
                     Wrap: =false
                     Y: =DataCardKey51.Y
-                    ZIndex: =4
-
-            "'Milestone Planned Amount_DataCard3' As typedDataCard.numberEditCard":
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="cre9a_milestoneplannedamount"
-                Default: =ThisItem.'Milestone Planned Amount'
-                DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_milestoneplannedamount")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
-                Required: =false
-                Update: =Value(DataCardValue43.Text)
-                Width: =350
-                X: =2
-                Y: =0
-                ZIndex: =1
-
-                DataCardKey52 As label:
-                    AutoHeight: =true
-                    Height: =34
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue43 As text:
-                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
-                    DelayOutput: =true
-                    DisplayMode: =Parent.DisplayMode
-                    Format: =TextFormat.Number
-                    PaddingLeft: =5
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
-                    Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey52.Y + DataCardKey52.Height + 5
-                    ZIndex: =2
-
-                ErrorMessage46 As label:
-                    AutoHeight: =true
-                    Height: =10
-                    Live: =Live.Assertive
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =Parent.Error
-                    Visible: =Parent.DisplayMode=DisplayMode.Edit
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardValue43.Y + DataCardValue43.Height
-                    ZIndex: =3
-
-                StarVisible47 As label:
-                    Align: =Align.Center
-                    Height: =DataCardKey52.Height
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    Wrap: =false
-                    Y: =DataCardKey52.Y
                     ZIndex: =4
 
             "'Milestone Planned Start Date_DataCard1' As typedDataCard.dateTimeEditCard":
@@ -4424,7 +4426,7 @@
             "'Billing Date_DataCard4' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingdate"
-                Default: =Gallery2_1.Selected.'Invoice Date'
+                Default: =Gallery2_1.Selected.'Billing Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -4448,7 +4450,7 @@
 
                 DateValue14 As datepicker:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultDate: =Gallery2_1.Selected.'Invoice Date'
+                    DefaultDate: =Gallery2_1.Selected.'Billing Date'
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
                     IsEditable: =true

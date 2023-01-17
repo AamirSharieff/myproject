@@ -1050,7 +1050,7 @@
             "'Billing Date_DataCard2_2' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingdate"
-                Default: =ThisItem.'Invoice Date'
+                Default: =ThisItem.'Billing Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -1586,7 +1586,7 @@
             "'Billing Date_DataCard2' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingdate"
-                Default: =ThisItem.'Invoice Date'
+                Default: =ThisItem.'Billing Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -2693,7 +2693,7 @@
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =15
-                Text: =ThisItem.'Invoice Date'
+                Text: =ThisItem.'Billing Date'
                 VerticalAlign: =VerticalAlign.Top
                 Width: =196
                 X: =251
@@ -3450,7 +3450,7 @@
             "'Billing Date_DataCard4_1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingdate"
-                Default: =Gallery2_1.Selected.'Invoice Date'
+                Default: =Gallery2_1.Selected.'Billing Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -3474,7 +3474,7 @@
 
                 DateValue14_1 As datepicker:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultDate: =Gallery2_2.Selected.'Invoice Date'
+                    DefaultDate: =Gallery2_2.Selected.'Billing Date'
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
                     IsEditable: =true
@@ -3761,7 +3761,7 @@
             "'Billing Date_DataCard3_1' As typedDataCard.dateTimeEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="cre9a_billingdate"
-                Default: =Gallery2.Selected.'Invoice Date'
+                Default: =Gallery2.Selected.'Billing Date'
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'Project Summarys'],DataSourceInfo.DisplayName,"cre9a_billingdate")
                 Fill: =RGBA(0, 0, 0, 0)
@@ -3785,7 +3785,7 @@
 
                 DateValue9_3 As datepicker:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultDate: =Gallery2_3.Selected.'Invoice Date'
+                    DefaultDate: =Gallery2_3.Selected.'Billing Date'
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
                     IsEditable: =true
